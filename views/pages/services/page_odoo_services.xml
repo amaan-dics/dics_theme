@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="dics_odoo_services" model="ir.ui.view">
+        <field name="name">DataInteger Odoo ERP Service</field>
+        <field name="type">qweb</field>
+        <field name="key">dics_theme.dics_odoo_services</field>
+        <field name="website_id" ref="dics_theme.dics_website"/>
+        <field name="arch" type="xml">
+            <t t-name="dics_theme.dics_odoo_services">
+                <t t-call="website.layout">
+
+                    <t t-set="additional_title">
+                        Odoo &amp; ERP Services — DataInteger
+                    </t>
+
+                    <div id="wrap" class="dics-service-detail-page">
+
+                        <!-- HERO -->
+                        <section class="dics-service-detail-hero"
+                                 id="top-odoo-erp">
+
+                            <div class="dics-service-detail-hero__glow"></div>
+                            <div class="dics-service-detail-hero__grid"></div>
+
+                            <div class="dics-container">
+
+                                <a href="/services"
+                                   class="dics-service-detail-back">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                    Back to Services
+                                </a>
+
+                                <div class="dics-service-detail-hero__layout">
+
+                                    <div class="dics-service-detail-hero__content">
+
+                                        <span class="dics-detail-eyebrow">
+                                            Odoo &amp; ERP
+                                        </span>
+
+                                        <h1>
+                                            Odoo, configured the
+                                            <span>right way.</span>
+                                        </h1>
+
+                                        <p>
+                                            We implement, customize, and maintain Odoo so
+                                            sales, inventory, accounting, and HR finally run
+                                            off one system instead of five disconnected ones.
+                                        </p>
+
+                                        <div class="dics-detail-hero__actions">
+                                            <a href="/contact"
+                                               class="dics-btn dics-btn-primary">
+                                                Book a Consultation
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward
+                                                </span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-service-detail-hero__visual">
+
+                                        <div class="dics-detail-visual-orbit"></div>
+
+                                        <div class="dics-detail-visual-card">
+                                            <img src="/dics_theme/static/src/images/odoo_plus_ai.png"
+                                                 alt="Odoo ERP"/>
+                                        </div>
+
+                                        <div class="dics-detail-visual-status">
+                                            <span></span>
+                                            ERP Architecture
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- WHAT WE DELIVER -->
+                        <section class="dics-detail-section">
+
+                            <div class="dics-container">
+
+                                <div class="dics-detail-section-head">
+
+                                    <span class="dics-detail-eyebrow">
+                                        What We Deliver
+                                    </span>
+
+                                    <h2>
+                                        Everything an Odoo rollout needs.
+                                    </h2>
+
+                                    <p>
+                                        From first implementation to the module nobody else
+                                        wants to touch.
+                                    </p>
+
+                                </div>
+
+                                <div class="dics-detail-capability-grid">
+
+                                    <article class="dics-detail-capability-card">
+
+                                        <div class="dics-detail-card-icon">
+                                            <span class="material-symbols-outlined">
+                                                account_tree
+                                            </span>
+                                        </div>
+
+                                        <h3>Full Implementation</h3>
+
+                                        <p>
+                                            End-to-end Odoo rollout, including scoping,
+                                            configuration, and go-live, mapped to how your
+                                            business actually operates rather than a generic
+                                            template.
+                                        </p>
+
+                                    </article>
+
+
+                                    <article class="dics-detail-capability-card">
+
+                                        <div class="dics-detail-card-icon">
+                                            <span class="material-symbols-outlined">
+                                                code
+                                            </span>
+                                        </div>
+
+                                        <h3>Module Customization</h3>
+
+                                        <p>
+                                            Custom modules and workflow changes when a stock
+                                            Odoo app almost fits. Built clean, upgrade-safe,
+                                            and documented.
+                                        </p>
+
+                                    </article>
+
+
+                                    <article class="dics-detail-capability-card">
+
+                                        <div class="dics-detail-card-icon">
+                                            <span class="material-symbols-outlined">
+                                                sync
+                                            </span>
+                                        </div>
+
+                                        <h3>Data Migration</h3>
+
+                                        <p>
+                                            Move away from spreadsheets, QuickBooks, or a
+                                            legacy ERP without losing history. Data is cleaned,
+                                            mapped, and validated before go-live.
+                                        </p>
+
+                                    </article>
+
+
+                                    <article class="dics-detail-capability-card">
+
+                                        <div class="dics-detail-card-icon">
+                                            <span class="material-symbols-outlined">
+                                                hub
+                                            </span>
+                                        </div>
+
+                                        <h3>Integrations &amp; APIs</h3>
+
+                                        <p>
+                                            Connect Odoo to your payment gateway, shipping
+                                            carrier, marketplace, or in-house tools so data
+                                            flows automatically.
+                                        </p>
+
+                                    </article>
+
+
+                                    <article class="dics-detail-capability-card">
+
+                                        <div class="dics-detail-card-icon">
+                                            <span class="material-symbols-outlined">
+                                                school
+                                            </span>
+                                        </div>
+
+                                        <h3>Staff Training</h3>
+
+                                        <p>
+                                            Hands-on training for the teams who use Odoo daily,
+                                            so adoption sticks after the implementation is
+                                            complete.
+                                        </p>
+
+                                    </article>
+
+
+                                    <article class="dics-detail-capability-card">
+
+                                        <div class="dics-detail-card-icon">
+                                            <span class="material-symbols-outlined">
+                                                support_agent
+                                            </span>
+                                        </div>
+
+                                        <h3>Ongoing Support</h3>
+
+                                        <p>
+                                            Version upgrades, new module rollouts, and a partner
+                                            to call when something needs to change, not just a
+                                            one-time handoff.
+                                        </p>
+
+                                    </article>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- PROCESS -->
+                        <section class="dics-detail-section dics-detail-section--soft">
+
+                            <div class="dics-container">
+
+                                <div class="dics-detail-section-head dics-detail-section-head--center">
+
+                                    <span class="dics-detail-eyebrow">
+                                        Our Process
+                                    </span>
+
+                                    <h2>
+                                        How an implementation actually goes.
+                                    </h2>
+
+                                    <p>
+                                        Four stages, no surprises halfway through.
+                                    </p>
+
+                                </div>
+
+                                <div class="dics-detail-process">
+
+                                    <article class="dics-detail-process-item">
+
+                                        <span class="dics-detail-process-number">
+                                            01
+                                        </span>
+
+                                        <div>
+                                            <h3>Discovery &amp; Scoping</h3>
+
+                                            <p>
+                                                We map your current processes across sales,
+                                                inventory, accounting, and HR to figure out
+                                                exactly which modules and customizations you
+                                                need, and which you don't.
+                                            </p>
+                                        </div>
+
+                                    </article>
+
+
+                                    <article class="dics-detail-process-item">
+
+                                        <span class="dics-detail-process-number">
+                                            02
+                                        </span>
+
+                                        <div>
+                                            <h3>Configuration &amp; Customization</h3>
+
+                                            <p>
+                                                Core modules get configured to your business
+                                                rules. Anything a stock module can't do gets
+                                                built as a clean, upgrade-safe custom module.
+                                            </p>
+                                        </div>
+
+                                    </article>
+
+
+                                    <article class="dics-detail-process-item">
+
+                                        <span class="dics-detail-process-number">
+                                            03
+                                        </span>
+
+                                        <div>
+                                            <h3>Data Migration &amp; Testing</h3>
+
+                                            <p>
+                                                Historical data is cleaned, mapped, and
+                                                migrated. We run the new setup in parallel
+                                                against real scenarios before anyone relies
+                                                on it.
+                                            </p>
+                                        </div>
+
+                                    </article>
+
+
+                                    <article class="dics-detail-process-item">
+
+                                        <span class="dics-detail-process-number">
+                                            04
+                                        </span>
+
+                                        <div>
+                                            <h3>Go-Live &amp; Training</h3>
+
+                                            <p>
+                                                A structured cutover, hands-on training for
+                                                your team, and support on standby for the
+                                                first weeks of real-world use.
+                                            </p>
+                                        </div>
+
+                                    </article>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- MODULES -->
+                        <section class="dics-detail-section">
+
+                            <div class="dics-container">
+
+                                <div class="dics-detail-section-head dics-detail-section-head--center">
+
+                                    <span class="dics-detail-eyebrow">
+                                        Modules
+                                    </span>
+
+                                    <h2>
+                                        Whichever part of the business needs it.
+                                    </h2>
+
+                                </div>
+
+                                <div class="dics-detail-pills">
+
+                                    <span>Sales</span>
+                                    <span>CRM</span>
+                                    <span>Inventory</span>
+                                    <span>Accounting</span>
+                                    <span>Purchase</span>
+                                    <span>Manufacturing</span>
+                                    <span>HR</span>
+                                    <span>Point of Sale</span>
+                                    <span>eCommerce</span>
+                                    <span>Project</span>
+                                    <span>Helpdesk</span>
+                                    <span>Field Service</span>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- WHY DATAINTEGER -->
+                        <section class="dics-detail-section dics-detail-section--dark">
+
+                            <div class="dics-container">
+
+                                <div class="dics-detail-section-head dics-detail-section-head--center">
+
+                                    <span class="dics-detail-eyebrow">
+                                        Why DataInteger
+                                    </span>
+
+                                    <h2>
+                                        An ERP partner, not just an installer.
+                                    </h2>
+
+                                </div>
+
+                                <div class="dics-detail-why-grid">
+                                    <article>
+                                        <span class="material-symbols-outlined">precision_manufacturing</span>
+                                        <h3>Certified Odoo Experts</h3>
+                                        <p>Deep, hands-on experience across Odoo versions and modules, not a general
+                                            development shop bolting on ERP work.
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <span class="material-symbols-outlined">upgrade</span>
+                                        <h3>Faster Time-to-Value</h3>
+                                        <p>Scoped implementations that avoid over-building. You get a working system in
+                                            weeks, not a never-ending project.
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <span class="material-symbols-outlined">trending_up</span>
+                                        <h3>Ongoing Partnership</h3>
+                                        <p>We stay on after go-live for upgrades, new modules, and the changes that come
+                                            once your team is actually using Odoo.
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <span class="material-symbols-outlined">architecture</span>
+                                        <h3>Upgrade-Safe Architecture</h3>
+                                        <p>We build customizations around Odoo's framework instead of fighting it,
+                                            keeping your modules clean, maintainable, and easier to upgrade as your
+                                            business and Odoo evolve.
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <span class="material-symbols-outlined">tune</span>
+                                        <h3>Business-First Configuration</h3>
+                                        <p>We configure Odoo around your real workflows, approval rules, and operational
+                                            needs, so the system supports the way your teams actually work.
+                                        </p>
+                                    </article>
+
+                                    <article>
+                                        <span class="material-symbols-outlined">insights</span>
+                                        <h3>Built to Scale</h3>
+                                        <p>Your Odoo setup is designed with future growth in mind, making it easier to
+                                            add users, modules, integrations, and new workflows as your business
+                                            evolves.
+                                        </p>
+                                    </article>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- CTA -->
+                        <section class="dics-detail-cta">
+
+                            <div class="dics-container">
+
+                                <div class="dics-detail-cta-card">
+
+                                    <div class="dics-detail-cta-glow"></div>
+
+                                    <div class="dics-detail-cta-content">
+
+                                        <span class="dics-detail-eyebrow">
+                                            Start the conversation
+                                        </span>
+
+                                        <h2>
+                                            Ready to unify your operations?
+                                        </h2>
+
+                                        <p>
+                                            Book a free technical consultation and we'll map
+                                            out exactly what an Odoo implementation would look
+                                            like for your business.
+                                        </p>
+
+                                        <a href="/contact"
+                                           class="dics-btn dics-btn-primary">
+                                            Book a Consultation
+                                            <span class="material-symbols-outlined">
+                                                arrow_forward
+                                            </span>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

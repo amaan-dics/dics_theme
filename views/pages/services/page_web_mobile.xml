@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_web_mobile" name="Web &amp; Mobile Development" key="dics_theme.dics_web_mobile" website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Web &amp; Mobile Development | DataInteger</t>
+
+            <div id="wrap" class="dics-home">
+                <main class="dics-main">
+
+                    <!-- HERO -->
+                    <section class="dics-hero">
+                        <div class="dics-hero-grid services-hero-grid dics-container">
+                            <div class="dics-hero-copy">
+                                <div class="dics-eyebrow-pill">
+                                    <span class="dics-status-dot"/>
+                                    <span>Full-Stack Enterprise Applications</span>
+                                </div>
+                                <h1>High-Performance <span class="dics-red">Web &amp; Mobile</span> Apps.</h1>
+                                <p class="dics-hero-lead">
+                                    We build scalable web portals, mobile platforms, and custom SaaS products fully synced with your backend systems and Odoo databases.
+                                </p>
+                                <div class="dics-actions">
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                        <span>Start Your Project</span>
+                                        <span class="dics-arrow">→</span>
+                                    </a>
+                                    <a href="#tech-stack" class="dics-btn dics-btn-secondary">
+                                        <span>Explore Our Tech Stack</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CAPABILITIES -->
+                    <section class="dics-detail-section dics-detail-section--dark">
+                        <div class="dics-container">
+                            <div class="dics-detail-section-head dics-detail-section-head--center">
+                                <span class="dics-eyebrow">Services</span>
+                                <h2>Modern Frontend &amp; Native Mobile</h2>
+                                <p class="dics-section-lead text-gray-100">
+                                    End-to-end digital experiences tailored for performance, security, and seamless ERP connectivity.
+                                </p>
+                            </div>
+                            <div class="dics-detail-why-grid">
+                                <article >
+                                    <h3>Custom Web Portals</h3>
+                                    <p>B2B client portals, supplier dashboards, and custom web frontends integrated via API.</p>
+                                </article>
+                                <article >
+                                    <h3>Cross-Platform Mobile Apps</h3>
+                                    <p>Performant Android and iOS apps designed for field teams, sales reps, and end-users.</p>
+                                </article>
+                                <article >
+                                    <h3>Progressive Web Apps (PWA)</h3>
+                                    <p>Fast, offline-ready web applications providing native mobile experiences without app stores.</p>
+                                </article>
+                                <article >
+                                    <h3>UI/UX Architecture</h3>
+                                    <p>Intuitive interface designs built specifically for efficient workplace operations.</p>
+                                </article>
+                                <article >
+                                    <h3>UI/UX Architecture</h3>
+                                    <p>Intuitive interface designs built specifically for efficient workplace operations.</p>
+                                </article>
+                                <article >
+                                    <h3>UI/UX Architecture</h3>
+                                    <p>Intuitive interface designs built specifically for efficient workplace operations.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CORE ARCHITECTURE & INTEGRATION -->
+                    <section class="dics-section">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Integration First</span>
+                                <h2>Directly Connected to Your ERP Core</h2>
+                                <p class="dics-section-lead">
+                                    We bridge front-end user experiences with back-end business logic without sacrificing performance or data integrity.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-capability-grid">
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">api</span>
+                                    </div>
+                                    <h3>REST &amp; GraphQL APIs</h3>
+                                    <p>
+                                        High-speed custom endpoints that allow external mobile apps and portals to perform real-time CRUD operations safely inside Odoo.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">wifi_off</span>
+                                    </div>
+                                    <h3>Offline-First Mobile Engines</h3>
+                                    <p>
+                                        Enable field service engineers, warehouse personnel, and mobile salespeople to continue working smoothly even with zero network coverage.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">point_of_sale</span>
+                                    </div>
+                                    <h3>B2B E-Commerce Portals</h3>
+                                    <p>
+                                        Custom order portals showing customer-specific pricelists, live credit limits, quotation approvals, and automated invoice payment options.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">widgets</span>
+                                    </div>
+                                    <h3>Owl &amp; Web Component Engineering</h3>
+                                    <p>
+                                        Custom JS modules leveraging Odoo's native Owl framework for hyper-responsive interactive interfaces within backend views.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">sync_alt</span>
+                                    </div>
+                                    <h3>Third-Party System Integration</h3>
+                                    <p>Connect Odoo with CRMs, payment gateways, logistics platforms, accounting tools,
+                                        and other business systems through reliable, automated data synchronization.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">hub</span>
+                                    </div>
+                                    <h3>Real-Time Data Synchronization</h3>
+                                    <p>Keep customer, product, inventory, order, and transaction data synchronized
+                                        across connected platforms with consistent, dependable data flows.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- TECH STACK -->
+                    <section id="tech-stack" class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Technology</span>
+                                <h2>Built with Modern Ecosystems</h2>
+                                <p class="dics-section-lead">
+                                    We choose scalable, battle-tested technologies to build fast, maintainable applications.
+                                </p>
+                            </div>
+
+                            <div class="dics-stat-grid">
+                                <article class="dics-stat-card">
+                                    <h3>Frontend Technologies</h3>
+                                    <p>Flutter, React, Vue.js, Owl Framework, HTML5, SCSS / Bootstrap 5.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <h3>Backend &amp; APIs</h3>
+                                    <p>Python / Odoo Framework, Node.js, Fast API, REST, JSON-RPC, GraphQL.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <h3>Mobile Platforms</h3>
+                                    <p>Native Android (Kotlin), Native iOS (Swift), Cross-platform Flutter &amp; React Native.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <h3>Database &amp; Cloud</h3>
+                                    <p>PostgreSQL, Redis, Docker, Nginx, AWS, Google Cloud Platform.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- DEVELOPMENT PROCESS -->
+                    <section class="dics-section">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Process</span>
+                                <h2>How We Execute Digital Projects</h2>
+                                <p class="dics-section-lead">
+                                    A structured development roadmap designed to deliver functional software iteratively and reliably.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-process">
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">01</span>
+                                    <div>
+                                        <h3>Discovery &amp; Wireframing</h3>
+                                        <p>
+                                            We analyze your workflow requirements, define target user roles, and construct high-fidelity interactive wireframes before writing code.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">02</span>
+                                    <div>
+                                        <h3>API &amp; Database Architecture</h3>
+                                        <p>
+                                            Designing secure data models and high-throughput endpoint integrations between frontends and backend databases.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">03</span>
+                                    <div>
+                                        <h3>Iterative Development</h3>
+                                        <p>
+                                            Agile sprint cycles with continuous integration, enabling your stakeholders to test functional builds every fortnight.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">04</span>
+                                    <div>
+                                        <h3>Deployment &amp; Support</h3>
+                                        <p>
+                                            Automated CI/CD pipeline deployments to production servers with ongoing monitoring, security patches, and performance optimization.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <section class="dics-section">
+                        <div class="dics-container">
+                            <div class="dics-detail-cta-card">
+                                <span class="dics-eyebrow">Ready to expand your reach?</span>
+                                <h2>
+                                    Let’s build a world-class application for your business.
+                                </h2>
+
+                                <a href="/contact" class="dics-btn dics-btn-primary" style="background-color: #bb0112d6; color: white;">
+                                    <span>Schedule a Discovery Call</span>
+                                    <span class="dics-arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

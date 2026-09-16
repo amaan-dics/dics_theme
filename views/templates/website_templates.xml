@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- 1. HEAD -->
+    <record id="dics_theme_head" model="ir.ui.view">
+        <field name="name">DataInteger: head injections</field>
+        <field name="type">qweb</field>
+        <field name="key">dics_theme.dics_theme_head</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="website_id" ref="dics_theme.dics_website"/>
+        <field name="arch" type="xml">
+            <xpath expr="//head" position="inside">
+                <meta name="theme-color" content="#101827"/>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+                <link rel="stylesheet"
+                      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap"/>
+                <link rel="stylesheet"
+                      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- 2. HEADER: hide native + inject custom sibling -->
+    <record id="dics_theme_header" model="ir.ui.view">
+        <field name="name">DataInteger: custom header</field>
+        <field name="type">qweb</field>
+        <field name="key">dics_theme.dics_theme_header</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="website_id" ref="dics_theme.dics_website"/>
+        <field name="arch" type="xml">
+
+            <!-- Keep native header in DOM for core JS; only hide it -->
+            <xpath expr="//header[@id='top']" position="attributes">
+                <attribute name="class" add="d-none" separator=" "/>
+                <attribute name="style">display:none !important;</attribute>
+            </xpath>
+
+            <!-- Custom visible header AFTER native #top -->
+            <xpath expr="//header[@id='top']" position="after">
+                <header id="dics_top" class="dics-header">
+                    <div id="scrollProgress" class="dics-scroll-progress" aria-hidden="true"></div>
+
+                    <div class="dics-header-inner dics-container">
+                        <a href="/" class="dics-header-brand">
+                            <img src="/dics_theme/static/src/images/DataInteger.png" alt="DataInteger"
+                                 class="dics-header-logo"/>
+                        </a>
+
+                        <nav class="dics-nav" aria-label="Primary navigation">
+                            <div class="dics-mega" id="dics-services-mega">
+                                <a href="/services"
+                                   t-attf-class="dics-nav-link dics-mega-trigger #{'is-active' if request.httprequest.path.startswith('/services') else ''}">
+                                    <span>Services</span>
+                                    <span class="material-symbols-outlined dics-mega-chevron">expand_more</span>
+                                </a>
+
+                                <div class="dics-mega-panel" id="dics-services-panel">
+                                    <div class="dics-mega-inner dics-container">
+
+                                        <!-- LEFT CATEGORY NAV -->
+                                        <div class="dics-mega-sidebar">
+                                            <button type="button" class="dics-mega-cat is-active" data-cat="odoo_erp">
+                                                <span class="dics-mega-cat-icon dics-mega-cat-icon--odoo">
+                                                    <span class="material-symbols-outlined">apps</span>
+                                                </span>
+                                                <span class="dics-mega-cat-label">Odoo &amp; ERP</span>
+                                                <span class="material-symbols-outlined dics-mega-cat-arrow">
+                                                    arrow_forward
+                                                </span>
+                                            </button>
+
+                                            <button type="button" class="dics-mega-cat" data-cat="odoo_claude">
+                                                <span class="dics-mega-cat-icon dics-mega-cat-icon--claude">
+                                                    <span class="material-symbols-outlined">psychology</span>
+                                                </span>
+                                                <span class="dics-mega-cat-label">Odoo + Claude</span>
+                                                <span class="material-symbols-outlined dics-mega-cat-arrow">
+                                                    arrow_forward
+                                                </span>
+                                            </button>
+
+                                            <button type="button" class="dics-mega-cat" data-cat="odoo_whatsapp">
+                                                <span class="dics-mega-cat-icon dics-mega-cat-icon--whatsapp">
+                                                    <span class="material-symbols-outlined">chat</span>
+                                                </span>
+                                                <span class="dics-mega-cat-label">Odoo + WhatsApp</span>
+                                                <span class="material-symbols-outlined dics-mega-cat-arrow">
+                                                    arrow_forward
+                                                </span>
+                                            </button>
+
+                                            <button type="button" class="dics-mega-cat" data-cat="ai">
+                                                <span class="dics-mega-cat-icon dics-mega-cat-icon--ai">
+                                                    <span class="material-symbols-outlined">neurology</span>
+                                                </span>
+                                                <span class="dics-mega-cat-label">AI &amp; Intelligence</span>
+                                                <span class="material-symbols-outlined dics-mega-cat-arrow">
+                                                    arrow_forward
+                                                </span>
+                                            </button>
+
+                                            <button type="button" class="dics-mega-cat" data-cat="web_mobile">
+                                                <span class="dics-mega-cat-icon dics-mega-cat-icon--web">
+                                                    <span class="material-symbols-outlined">language</span>
+                                                </span>
+                                                <span class="dics-mega-cat-label">Web &amp; Mobile</span>
+                                                <span class="material-symbols-outlined dics-mega-cat-arrow">
+                                                    arrow_forward
+                                                </span>
+                                            </button>
+
+                                            <button type="button" class="dics-mega-cat" data-cat="growth">
+                                                <span class="dics-mega-cat-icon dics-mega-cat-icon--growth">
+                                                    <span class="material-symbols-outlined">rocket_launch</span>
+                                                </span>
+                                                <span class="dics-mega-cat-label">Growth &amp; Marketing</span>
+                                                <span class="material-symbols-outlined dics-mega-cat-arrow">
+                                                    arrow_forward
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <!-- RIGHT CONTENT -->
+                                        <div class="dics-mega-content">
+                                            <!-- ODOO + ERP -->
+                                            <div class="dics-mega-group dics-mega-group--cols-4 is-active"
+                                                 data-cat="odoo_erp">
+                                                <div class="dics-mega-group-heading">
+                                                    <span class="dics-mega-group-title">Odoo &amp; ERP</span>
+                                                    <span class="dics-mega-group-kicker">BUSINESS SYSTEMS</span>
+                                                </div>
+                                                <div class="dics-mega-divider"/>
+                                                <div class="dics-mega-grid">
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            settings
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Development</div>
+                                                        <div class="dics-mega-item-desc">Full ERP implementation &amp;
+                                                            customization
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            cloud
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo SAAS Development</div>
+                                                        <div class="dics-mega-item-desc">Multi-tenant cloud solutions
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            person
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Hire Odoo Developer</div>
+                                                        <div class="dics-mega-item-desc">Dedicated Odoo experts</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            code
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Headless Development
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Modern frontend integrations
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            rocket_launch
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Implementation Services
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">End-to-end ERP rollout</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            smartphone
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Mobile App Development
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Native &amp; hybrid mobile
+                                                            apps
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            point_of_sale
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo POS Development</div>
+                                                        <div class="dics-mega-item-desc">Point of Sale solutions</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            search
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo SEO Services</div>
+                                                        <div class="dics-mega-item-desc">Search engine optimization
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            palette
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Theme Development
+                                                            Services
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Custom themes &amp; UI</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            apps
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Custom App Development
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Tailored business
+                                                            applications
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            local_shipping
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Shipping Method
+                                                            Development
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Advanced logistics
+                                                            integration
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            support_agent
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Consulting Services</div>
+                                                        <div class="dics-mega-item-desc">Strategic ERP guidance</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            tune
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Customization Services
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Deep module customization</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            inventory_2
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo PIM Development
+                                                            Services
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Product Information
+                                                            Management
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            sync_alt
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Migration Services</div>
+                                                        <div class="dics-mega-item-desc">Seamless data transitions</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            hub
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Multi-Platform
+                                                            Integration
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Connect with other systems
+                                                        </div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            headset_mic
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Support and Maintenance
+                                                            Services
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Ongoing technical support</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            store
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Marketplace Pioneers
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Marketplace integrations</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            credit_card
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Odoo Payment Method
+                                                            Development
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Custom payment gateways</div>
+                                                    </a>
+                                                    <a class="dics-mega-item" href="/services/odoo-erp">
+                                                        <span class="material-symbols-outlined dics-mega-item-icon">
+                                                            swap_horiz
+                                                        </span>
+                                                        <div class="dics-mega-item-title">Salesforce Odoo Migration
+                                                            Services
+                                                        </div>
+                                                        <div class="dics-mega-item-desc">Salesforce to Odoo migration
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <!-- ODOO + CLAUDE -->
+<div class="dics-mega-group dics-mega-group--cols-2" data-cat="odoo_claude">
+    <div class="dics-mega-group-heading">
+        <span class="dics-mega-group-title">Odoo + Claude</span>
+        <span class="dics-mega-group-kicker">AI-ASSISTED ERP</span>
+    </div>
+    <div class="dics-mega-divider"/>
+    <div class="dics-mega-grid">
+        <a class="dics-mega-item" href="/services/claude-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">mic</span>
+            <div class="dics-mega-item-title">Voice &amp; Text Input</div>
+            <div class="dics-mega-item-desc">Works with typed text or voice commands anywhere in Odoo</div>
+        </a>
+        <a class="dics-mega-item" href="/services/claude-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">psychology</span>
+            <div class="dics-mega-item-title">Deep Odoo Context Awareness</div>
+            <div class="dics-mega-item-desc">Understands your real customers, stock and business rules</div>
+        </a>
+        <a class="dics-mega-item" href="/services/claude-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">person_check</span>
+            <div class="dics-mega-item-title">Human-in-the-Loop</div>
+            <div class="dics-mega-item-desc">Every critical action is summarized before it runs</div>
+        </a>
+        <a class="dics-mega-item" href="/services/claude-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">chat</span>
+            <div class="dics-mega-item-title">Dedicated Claude Chat Panel</div>
+            <div class="dics-mega-item-desc">A persistent chat window inside Odoo</div>
+        </a>
+        <a class="dics-mega-item" href="/services/claude-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">auto_awesome</span>
+            <div class="dics-mega-item-title">Zero Manual Entry</div>
+            <div class="dics-mega-item-desc">Claude handles the updates, you just review</div>
+        </a>
+        <a class="dics-mega-item" href="/services/claude-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">apps</span>
+            <div class="dics-mega-item-title">Works Across Modules</div>
+            <div class="dics-mega-item-desc">Sales, Inventory, Purchases &amp; Helpdesk</div>
+        </a>
+    </div>
+</div>
+
+                                            <!-- ODOO + WHATSAPP -->
+<div class="dics-mega-group dics-mega-group--cols-2" data-cat="odoo_whatsapp">
+    <div class="dics-mega-group-heading">
+        <span class="dics-mega-group-title">Odoo + WhatsApp</span>
+        <span class="dics-mega-group-kicker">CONNECTED COMMERCE</span>
+    </div>
+    <div class="dics-mega-divider"/>
+    <div class="dics-mega-grid">
+        <a class="dics-mega-item" href="/services/whatsapp-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">auto_awesome</span>
+            <div class="dics-mega-item-title">Zero Human Intervention</div>
+            <div class="dics-mega-item-desc">Orders, stock &amp; client records update themselves</div>
+        </a>
+        <a class="dics-mega-item" href="/services/whatsapp-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">local_shipping</span>
+            <div class="dics-mega-item-title">Automated Order Tracking</div>
+            <div class="dics-mega-item-desc">Shipping links texted the moment an order ships</div>
+        </a>
+        <a class="dics-mega-item" href="/services/whatsapp-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">history</span>
+            <div class="dics-mega-item-title">Self-Service History</div>
+            <div class="dics-mega-item-desc">Customers can pull up or repeat past orders by chat</div>
+        </a>
+        <a class="dics-mega-item" href="/services/whatsapp-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">support_agent</span>
+            <div class="dics-mega-item-title">Proactive Support Routing</div>
+            <div class="dics-mega-item-desc">Order changes trigger smart quick-reply alerts</div>
+        </a>
+    </div>
+</div>
+
+                                            <!-- AI -->
+<div class="dics-mega-group dics-mega-group--cols-3" data-cat="ai">
+    <div class="dics-mega-group-heading">
+        <span class="dics-mega-group-title">AI &amp; Intelligence</span>
+        <span class="dics-mega-group-kicker">INTELLIGENT SYSTEMS</span>
+    </div>
+    <div class="dics-mega-divider"/>
+    <div class="dics-mega-grid">
+        <a class="dics-mega-item" href="/services/ai-solutions">
+            <span class="material-symbols-outlined dics-mega-item-icon">neurology</span>
+            <div class="dics-mega-item-title">AI Solutions</div>
+            <div class="dics-mega-item-desc">Custom LLM pipelines</div>
+        </a>
+        <a class="dics-mega-item" href="/services/ai-solutions">
+            <span class="material-symbols-outlined dics-mega-item-icon">settings_suggest</span>
+            <div class="dics-mega-item-title">Process Automation</div>
+            <div class="dics-mega-item-desc">Intelligent workflow automation</div>
+        </a>
+        <a class="dics-mega-item" href="/services/ai-solutions">
+            <span class="material-symbols-outlined dics-mega-item-icon">analytics</span>
+            <div class="dics-mega-item-title">Data Analytics</div>
+            <div class="dics-mega-item-desc">Predictive insights</div>
+        </a>
+        <a class="dics-mega-item" href="/services/ai-solutions">
+            <span class="material-symbols-outlined dics-mega-item-icon">extension</span>
+            <div class="dics-mega-item-title">AI Integration with Odoo</div>
+            <div class="dics-mega-item-desc">LLM assistants inside Odoo</div>
+        </a>
+        <a class="dics-mega-item" href="/services/ai-solutions">
+            <span class="material-symbols-outlined dics-mega-item-icon">smart_toy</span>
+            <div class="dics-mega-item-title">Odoo AI Agents</div>
+            <div class="dics-mega-item-desc">Autonomous AI agents for ERP</div>
+        </a>
+        <a class="dics-mega-item" href="/services/ai-solutions">
+            <span class="material-symbols-outlined dics-mega-item-icon">trending_up</span>
+            <div class="dics-mega-item-title">Predictive Analytics</div>
+            <div class="dics-mega-item-desc">Smart forecasting in Odoo</div>
+        </a>
+        <a class="dics-mega-item" href="/services/ai-solutions">
+            <span class="material-symbols-outlined dics-mega-item-icon">visibility</span>
+            <div class="dics-mega-item-title">Computer Vision</div>
+            <div class="dics-mega-item-desc">Image &amp; video AI systems</div>
+        </a>
+    </div>
+</div>
+
+                                            <!-- WEB + MOBILE -->
+<div class="dics-mega-group dics-mega-group--cols-3" data-cat="web_mobile">
+    <div class="dics-mega-group-heading">
+        <span class="dics-mega-group-title">Web &amp; Mobile</span>
+        <span class="dics-mega-group-kicker">DIGITAL PRODUCTS</span>
+    </div>
+    <div class="dics-mega-divider"></div>
+    <div class="dics-mega-grid">
+        <a class="dics-mega-item" href="/services/web-mobile-apps">
+            <span class="material-symbols-outlined dics-mega-item-icon">web</span>
+            <div class="dics-mega-item-title">Web Applications</div>
+            <div class="dics-mega-item-desc">High-performance SPAs &amp; SSR</div>
+        </a>
+        <a class="dics-mega-item" href="/services/web-mobile-apps">
+            <span class="material-symbols-outlined dics-mega-item-icon">smartphone</span>
+            <div class="dics-mega-item-title">Mobile Apps</div>
+            <div class="dics-mega-item-desc">iOS, Android &amp; Cross-platform</div>
+        </a>
+        <a class="dics-mega-item" href="/services/web-mobile-apps">
+            <span class="material-symbols-outlined dics-mega-item-icon">code</span>
+            <div class="dics-mega-item-title">Custom Software</div>
+            <div class="dics-mega-item-desc">Tailored business solutions</div>
+        </a>
+        <a class="dics-mega-item" href="/services/odoo-erp">
+            <span class="material-symbols-outlined dics-mega-item-icon">widgets</span>
+            <div class="dics-mega-item-title">Odoo Mobile App Development</div>
+            <div class="dics-mega-item-desc">Native Odoo companion apps</div>
+        </a>
+        <a class="dics-mega-item" href="/services/web-mobile-apps">
+            <span class="material-symbols-outlined dics-mega-item-icon">install_mobile</span>
+            <div class="dics-mega-item-title">Progressive Web Apps</div>
+            <div class="dics-mega-item-desc">Installable offline-first apps</div>
+        </a>
+        <a class="dics-mega-item" href="/services/odoo-erp">
+            <span class="material-symbols-outlined dics-mega-item-icon">shopping_cart</span>
+            <div class="dics-mega-item-title">Headless Commerce</div>
+            <div class="dics-mega-item-desc">Modern frontend for Odoo</div>
+        </a>
+    </div>
+</div>
+
+                                            <!-- GROWTH -->
+<div class="dics-mega-group dics-mega-group--cols-3" data-cat="growth">
+    <div class="dics-mega-group-heading">
+        <span class="dics-mega-group-title">Growth &amp; Marketing</span>
+        <span class="dics-mega-group-kicker">DIGITAL GROWTH</span>
+    </div>
+    <div class="dics-mega-divider"></div>
+    <div class="dics-mega-grid">
+        <a class="dics-mega-item" href="/services/digital-marketing">
+            <span class="material-symbols-outlined dics-mega-item-icon">campaign</span>
+            <div class="dics-mega-item-title">Digital Marketing</div>
+            <div class="dics-mega-item-desc">SEO, PPC &amp; Content</div>
+        </a>
+        <a class="dics-mega-item" href="/services/digital-marketing">
+            <span class="material-symbols-outlined dics-mega-item-icon">manage_search</span>
+            <div class="dics-mega-item-title">Technical SEO</div>
+            <div class="dics-mega-item-desc">Engineering-grade optimization</div>
+        </a>
+        <a class="dics-mega-item" href="/services/digital-marketing">
+            <span class="material-symbols-outlined dics-mega-item-icon">ads_click</span>
+            <div class="dics-mega-item-title">Performance Marketing</div>
+            <div class="dics-mega-item-desc">CRO &amp; Paid campaigns</div>
+        </a>
+        <a class="dics-mega-item" href="/services/odoo-erp">
+            <span class="material-symbols-outlined dics-mega-item-icon">find_in_page</span>
+            <div class="dics-mega-item-title">Odoo SEO Services</div>
+            <div class="dics-mega-item-desc">ERP-optimized search visibility</div>
+        </a>
+        <a class="dics-mega-item" href="/services/system-integration">
+            <span class="material-symbols-outlined dics-mega-item-icon">hub</span>
+            <div class="dics-mega-item-title">System Integration</div>
+            <div class="dics-mega-item-desc">Integrate Odoo with third party system</div>
+        </a>
+    </div>
+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="dics-nav-link" href="/#architecture">Solutions</a>
+                            <a class="dics-nav-link" href="/#industries">Industries</a>
+                            <a class="dics-nav-link" href="/#process">Process</a>
+                            <a class="dics-nav-link" href="/#insights">Insights</a>
+                            <a class="dics-nav-link" href="/about">About</a>
+                        </nav>
+
+                        <div class="dics-header-actions">
+
+                            <a t-if="not request.env.user._is_public()"
+                               href="/web/session/logout?redirect=/"
+                               class="dics-nav-link dics-header-signin">
+                                Logout
+                            </a>
+                            <a href="/contact" class="dics-btn dics-btn-primary dics-header-cta">
+                                <span>Let's Talk</span>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                            <button id="dicsMenuOpen" class="dics-hamburger" type="button" aria-label="Open menu"
+                                    aria-expanded="false">
+                                <span class="dics-hamburger__bar"/>
+                                <span class="dics-hamburger__bar"/>
+                                <span class="dics-hamburger__bar"/>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile dropdown — sits inside <header>, drops down from under the nav bar -->
+                    <div id="dicsMobileMenu" class="dics-mobile-dropdown" aria-hidden="true">
+                        <div class="dics-mobile-dropdown__inner">
+
+                            <nav class="dics-mobile-nav">
+
+                                <!-- Services accordion -->
+                                <div class="dics-mobile-services">
+                                    <button type="button" class="dics-mobile-link dics-mobile-services-toggle"
+                                            aria-expanded="false">
+                                        <span>Services</span>
+                                        <span class="material-symbols-outlined dics-mobile-services-chevron">
+                                            expand_more
+                                        </span>
+                                    </button>
+                                    <ul class="dics-mobile-services-dropdown" aria-hidden="true">
+                                        <li>
+                                            <a href="/services/odoo-erp"
+                                               class="dics-mobile-services-item dics-mobile-link">
+                                                <span class="material-symbols-outlined">apps</span>
+                                                Odoo &amp; ERP
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/claude-integration"
+                                               class="dics-mobile-services-item dics-mobile-link">
+                                                <span class="material-symbols-outlined">psychology</span>
+                                                Odoo + Claude
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/whatsapp-integration"
+                                               class="dics-mobile-services-item dics-mobile-link">
+                                                <span class="material-symbols-outlined">chat</span>
+                                                Odoo + WhatsApp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/ai-solutions" class="dics-mobile-services-item dics-mobile-link">
+                                                <span class="material-symbols-outlined">neurology</span>
+                                                AI &amp; Intelligence
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/web-mobile-apps"
+                                               class="dics-mobile-services-item dics-mobile-link">
+                                                <span class="material-symbols-outlined">language</span>
+                                                Web &amp; Mobile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/digital-marketing"
+                                               class="dics-mobile-services-item dics-mobile-link">
+                                                <span class="material-symbols-outlined">rocket_launch</span>
+                                                Growth &amp; Marketing
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <a href="/#architecture" class="dics-mobile-link">Solutions</a>
+                                <a href="/#industries" class="dics-mobile-link">Industries</a>
+                                <a href="/#process" class="dics-mobile-link">Process</a>
+                                <a href="/#insights" class="dics-mobile-link">Insights</a>
+                                <a href="/about" class="dics-mobile-link">About</a>
+
+                                <div class="dics-mobile-cta-row">
+
+                                    <a t-if="not request.env.user._is_public()"
+                                       href="/web/session/logout?redirect=/"
+                                       class="dics-mobile-link">
+                                        Logout
+                                    </a>
+                                    <a href="/contact" class="dics-btn dics-btn-primary dics-mobile-cta-btn">
+                                        Let's Talk
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                    </a>
+                                </div>
+
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            </xpath>
+
+        </field>
+    </record>
+
+
+    <!-- 4. FOOTER: hide native + inject custom via website.layout -->
+    <record id="dics_theme_footer" model="ir.ui.view">
+        <field name="name">DataInteger: custom footer</field>
+        <field name="type">qweb</field>
+        <field name="key">dics_theme.dics_theme_footer</field>
+        <field name="inherit_id" ref="website.layout"/>
+        <field name="website_id" ref="dics_theme.dics_website"/>
+        <field name="arch" type="xml">
+
+            <!-- Hide native footer — keep in DOM for Odoo core JS compatibility -->
+            <xpath expr="//div[@id='footer']" position="attributes">
+                <attribute name="style">display:none !important;</attribute>
+            </xpath>
+
+            <!-- Inject custom footer inside wrapwrap, after the native footer -->
+            <xpath expr="//div[@id='footer']" position="after">
+                <footer class="dics-footer">
+                    <div class="dics-container">
+                        <div class="dics-footer-top">
+
+                            <div class="dics-footer-brand">
+                                <div class="dics-header-wordmark" style="margin-bottom:12px;">
+                                    <span class="dics-header-name" style="font-size:20px;">DataInteger</span>
+                                    <span class="dics-header-sub">Consultancy Services LLP</span>
+                                </div>
+                                <p class="dics-footer-tagline">
+                                    Engineering intelligent business systems
+                                    with Odoo ERP, automation, and custom software.
+                                </p>
+                                <address class="dics-footer-address">
+                                    Ahmedabad, Gujarat, India
+                                    <br/>
+                                    <a href="mailto:contact@datainteger.com">contact@datainteger.com</a>
+                                </address>
+                            </div>
+
+                            <div class="dics-footer-links">
+                                <div>
+                                    <p class="dics-footer-col-title">Services</p>
+                                    <ul>
+                                        <li>
+                                            <a href="/services">Odoo Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services">ERP Implementation</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services">System Integration</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services">Custom Software</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="dics-footer-col-title">Solutions</p>
+                                    <ul>
+                                        <li>
+                                            <a href="/#architecture">Manufacturing</a>
+                                        </li>
+                                        <li>
+                                            <a href="/#architecture">Distribution</a>
+                                        </li>
+                                        <li>
+                                            <a href="/#architecture">Finance &amp; Accounting</a>
+                                        </li>
+                                        <li>
+                                            <a href="/#architecture">eCommerce</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="dics-footer-col-title">Company</p>
+                                    <ul>
+                                        <li>
+                                            <a href="/about">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="/#case-studies">Case Studies</a>
+                                        </li>
+                                        <li>
+                                            <a href="/#insights">Insights</a>
+                                        </li>
+                                        <li>
+                                            <a href="/contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="dics-footer-col-title">Technology</p>
+                                    <ul>
+                                        <li>
+                                            <a href="/services">Odoo 17 / 18</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services">Python / PostgreSQL</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services">REST &amp; XML-RPC</a>
+                                        </li>
+                                        <li>
+                                            <a href="/services">OWL Components</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="dics-footer-bottom">
+                            <span>
+                                ©
+                                <t t-esc="datetime.date.today().year"/>
+                                DataInteger Consultancy Services LLP. All rights reserved.
+                            </span>
+                            <div class="dics-footer-meta">
+                                <span class="dics-footer-iso">ISO-Ready</span>
+                                <span>Odoo Partner</span>
+                                <span>Ahmedabad, India</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
+            </xpath>
+
+        </field>
+    </record>
+    <record id="dics_theme_favicon" model="ir.ui.view">
+    <field name="name">DataInteger: favicon</field>
+    <field name="type">qweb</field>
+    <field name="key">dics_theme.dics_theme_favicon</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="website_id" ref="dics_theme.dics_website"/>
+    <field name="arch" type="xml">
+        <xpath expr="//link[@rel='shortcut icon']" position="replace">
+            <link rel="icon" type="image/svg+xml" href="/dics_theme/static/src/images/DataInteger-favicon.svg"/>
+            <link rel="shortcut icon" type="image/svg+xml" href="/dics_theme/static/src/images/DataInteger-favicon.svg"/>
+        </xpath>
+    </field>
+</record>
+</odoo>

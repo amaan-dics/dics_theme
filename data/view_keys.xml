@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <function model="ir.ui.view" name="write">
+        <value eval="[ref('dics_theme.dics_home')]"/>
+        <value eval="{'key': 'dics_theme.dics_home'}"/>
+    </function>
+    <function model="ir.ui.view" name="write">
+        <value eval="[ref('dics_theme.dics_about')]"/>
+        <value eval="{'key': 'dics_theme.dics_about'}"/>
+    </function>
+    <record id="dics_ai_solutions" model="ir.ui.view">
+        <field name="key">dics_theme.dics_ai_solutions</field>
+    </record>
+    <record id="dics_web_mobile" model="ir.ui.view">
+        <field name="key">dics_theme.dics_web_mobile</field>
+    </record>
+    <record id="dics_saas" model="ir.ui.view">
+        <field name="key">dics_theme.dics_saas</field>
+    </record>
+    <record id="dics_contact" model="ir.ui.view">
+        <field name="key">dics_theme.dics_contact</field>
+    </record>
+    <record id="dics_contact_thank_you" model="ir.ui.view">
+        <field name="key">dics_theme.dics_contact_thank_you</field>
+    </record>
+    <record id="page_whatsapp_integration" model="ir.ui.view">
+        <field name="key">dics_theme.page_whatsapp_integration</field>
+    </record>
+    <record id="page_claude_integration" model="ir.ui.view">
+        <field name="key">dics_theme.page_claude_integration</field>
+    </record>
+    <record id="page_404" model="ir.ui.view">
+        <field name="key">dics_theme.page_404</field>
+    </record>
+</odoo>

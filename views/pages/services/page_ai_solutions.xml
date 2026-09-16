@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_ai_solutions" name="AI &amp; Intelligence Services" key="dics_theme.dics_ai_solutions" website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
+            <t t-set="additional_title">AI &amp; Intelligence Services | DataInteger</t>
+
+            <div id="wrap" class="dics-home">
+                <main class="dics-main">
+
+                    <!-- HERO -->
+                    <section class="dics-hero">
+                        <div class="dics-hero-grid services-hero-grid dics-container">
+                            <div class="dics-hero-copy">
+                                <div class="dics-eyebrow-pill">
+                                    <span class="dics-status-dot"/>
+                                    <span>Enterprise AI • Multi-Model Intelligence</span>
+                                </div>
+                                <h1>
+                                    Transform Data into Action with
+                                    <span class="dics-red">Artificial Intelligence</span>.
+                                </h1>
+                                <p class="dics-hero-lead">
+                                    We embed Claude, Gemini, Grok and OpenAI directly inside Odoo —
+                                    so your team can create orders, update records, and run complex
+                                    operations using plain text or voice commands.
+                                </p>
+                                <div class="dics-actions">
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                        <span>Consult AI Experts</span>
+                                        <span class="dics-arrow">→</span>
+                                    </a>
+                                    <a href="#use-cases" class="dics-btn dics-btn-secondary">
+                                        <span>See Use Cases</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CAPABILITIES -->
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Solutions</span>
+                                <h2>Smart Automation &amp; Insights</h2>
+                                <p class="dics-section-lead">
+                                    Production-grade AI capabilities engineered to work inside real ERP workflows.
+                                </p>
+                            </div>
+
+                            <div class="dics-stat-grid">
+                                <article class="dics-stat-card">
+                                    <h3>Custom LLM &amp; RAG Solutions</h3>
+                                    <p>Train private AI agents on your internal documentation, product data, and ERP history with full data isolation.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <h3>Predictive Analytics</h3>
+                                    <p>Forecast demand, inventory risk, and customer churn using models that continuously learn from your live Odoo data.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <h3>Document &amp; OCR Intelligence</h3>
+                                    <p>Automatically extract data from POs, invoices, and delivery notes and push clean records straight into Odoo.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <h3>Automated Decision Engines</h3>
+                                    <p>Replace repetitive multi-step processes with intelligent agents that execute rules and take action in real time.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- AI + ODOO INTEGRATION -->
+                    <section class="dics-section">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">AI × Odoo</span>
+                                <h2>Native AI Agents Inside Your ERP</h2>
+                                <p class="dics-section-lead">
+                                    We don’t just connect AI to Odoo — we embed multiple frontier models
+                                    so the system can understand and execute business operations from natural language.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-capability-grid">
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">psychology</span>
+                                    </div>
+                                    <h3>Multi-Model AI Engine</h3>
+                                    <p>
+                                        We have integrated <strong>Claude AI</strong>, <strong>Gemini</strong>,
+                                        <strong>Grok</strong> and <strong>OpenAI</strong> directly into Odoo.
+                                        You can switch models or run them side-by-side depending on the task —
+                                        reasoning depth, speed, or cost.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">record_voice_over</span>
+                                    </div>
+                                    <h3>Voice &amp; Text Commands</h3>
+                                    <p>
+                                        Users can issue instructions in plain English (or other languages)
+                                        via text chat or voice. The AI understands context across Sales,
+                                        Purchase, Inventory, Accounting and CRM modules.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">shopping_cart</span>
+                                    </div>
+                                    <h3>Create Orders Instantly</h3>
+                                    <p>
+                                        A single sentence such as “Create a sales order for Acme Corp for
+                                        50 units of Product X at the contracted price” is enough for the AI
+                                        to generate a complete quotation or sales order with correct taxes,
+                                        pricelists and delivery terms.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">sync_alt</span>
+                                    </div>
+                                    <h3>Change Record States</h3>
+                                    <p>
+                                        Confirm quotations, validate deliveries, post invoices, or move
+                                        manufacturing orders to the next stage — all through natural language.
+                                        The AI respects your existing approval workflows and access rights.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">person_add</span>
+                                    </div>
+                                    <h3>Create &amp; Enrich Customers</h3>
+                                    <p>
+                                        “Add a new customer called Nova Logistics, set payment terms to 30 days
+                                        and tag them as Strategic” — the AI creates the partner record,
+                                        applies the correct fiscal position, and links related contacts.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">bolt</span>
+                                    </div>
+                                    <h3>Full Operational Automation</h3>
+                                    <p>
+                                        From raising purchase orders when stock hits reorder points, to
+                                        updating project tasks, logging timesheets, or generating analytical
+                                        reports — complex multi-step operations can be triggered with one
+                                        clear instruction.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- USE CASES -->
+                    <section id="use-cases" class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Use Cases</span>
+                                <h2>What Teams Actually Do With AI Inside Odoo</h2>
+                                <p class="dics-section-lead">
+                                    Real operational scenarios we implement for clients — not theoretical demos.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-usecase-grid">
+                                <article class="dics-detail-usecase-card">
+                                    <div class="dics-detail-usecase-header">
+                                        <span class="material-symbols-outlined">point_of_sale</span>
+                                        <small>Sales &amp; CRM</small>
+                                    </div>
+                                    <h3>Conversational Order Capture</h3>
+                                    <p>
+                                        Sales reps dictate or type order details while on a call. The AI builds the quotation,
+                                        applies the right pricelist and discounts, checks stock, and prepares the document for review.
+                                    </p>
+                                    <ul>
+                                        <li>Natural-language order creation</li>
+                                        <li>Automatic tax &amp; pricelist application</li>
+                                        <li>Stock availability checks in real time</li>
+                                    </ul>
+                                </article>
+                                <article class="dics-detail-usecase-card">
+                                    <div class="dics-detail-usecase-header">
+                                        <span class="material-symbols-outlined">inventory_2</span>
+                                        <small>Inventory &amp; Procurement</small>
+                                    </div>
+                                    <h3>Intelligent Replenishment</h3>
+                                    <p>
+                                        Agents monitor reorder rules, supplier lead times and demand signals, then draft or even
+                                        confirm purchase orders within defined thresholds and approval limits.
+                                    </p>
+                                    <ul>
+                                        <li>Demand-aware PO generation</li>
+                                        <li>Supplier recommendation based on history</li>
+                                        <li>Exception handling with human review</li>
+                                    </ul>
+                                </article>
+                                <article class="dics-detail-usecase-card">
+                                    <div class="dics-detail-usecase-header">
+                                        <span class="material-symbols-outlined">receipt_long</span>
+                                        <small>Finance &amp; Accounting</small>
+                                    </div>
+                                    <h3>Invoice &amp; Document Intelligence</h3>
+                                    <p>
+                                        Upload supplier invoices or delivery notes. OCR + LLM extract header and line data,
+                                        match against POs, flag discrepancies, and create vendor bills ready for validation.
+                                    </p>
+                                    <ul>
+                                        <li>Multi-format document parsing</li>
+                                        <li>3-way matching assistance</li>
+                                        <li>Exception queues for finance teams</li>
+                                    </ul>
+                                </article>
+                                <article class="dics-detail-usecase-card">
+                                    <div class="dics-detail-usecase-header">
+                                        <span class="material-symbols-outlined">precision_manufacturing</span>
+                                        <small>Manufacturing</small>
+                                    </div>
+                                    <h3>Production Status &amp; Planning</h3>
+                                    <p>
+                                        Ask “What’s blocking MO/00123?” or “Reschedule jobs delayed by material shortage.”
+                                        The AI reads work orders, component availability and capacity to surface answers and actions.
+                                    </p>
+                                    <ul>
+                                        <li>Natural-language shop-floor queries</li>
+                                        <li>Material shortage impact analysis</li>
+                                        <li>Suggested reschedule actions</li>
+                                    </ul>
+                                </article>
+                                <article class="dics-detail-usecase-card">
+                                    <div class="dics-detail-usecase-header">
+                                        <span class="material-symbols-outlined">support_agent</span>
+                                        <small>Customer Support</small>
+                                    </div>
+                                    <h3>Context-Aware Support Agents</h3>
+                                    <p>
+                                        Support agents (or self-service portals) query order status, delivery ETAs, open invoices
+                                        and warranty history without leaving the conversation or opening multiple apps.
+                                    </p>
+                                    <ul>
+                                        <li>Unified customer 360 answers</li>
+                                        <li>Order &amp; shipment status on demand</li>
+                                        <li>Guided escalation to humans</li>
+                                    </ul>
+                                </article>
+                                <article class="dics-detail-usecase-card">
+                                    <div class="dics-detail-usecase-header">
+                                        <span class="material-symbols-outlined">analytics</span>
+                                        <small>Leadership &amp; Ops</small>
+                                    </div>
+                                    <h3>On-Demand Business Insights</h3>
+                                    <p>
+                                        Executives ask plain-language questions about revenue, margin, pipeline health or
+                                        inventory risk and receive structured answers grounded in live Odoo data.
+                                    </p>
+                                    <ul>
+                                        <li>Conversational analytics</li>
+                                        <li>Grounded in live ERP data</li>
+                                        <li>Exportable summaries &amp; charts</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HOW IT WORKS -->
+                    <section class="dics-section">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Architecture</span>
+                                <h2>How We Wire AI Into Odoo</h2>
+                                <p class="dics-section-lead">
+                                    A secure, controlled stack designed for enterprise ERP environments — not a fragile chatbot overlay.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-process">
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">01</span>
+                                    <div>
+                                        <h3>Secure Model Gateway</h3>
+                                        <p>
+                                            All calls to Claude, Gemini, Grok and OpenAI go through a private
+                                            gateway that enforces rate limits, logging, and data-redaction rules
+                                            so sensitive ERP data never leaves your control unnecessarily.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">02</span>
+                                    <div>
+                                        <h3>Context-Aware Agents</h3>
+                                        <p>
+                                            Each agent receives live context from the current Odoo record,
+                                            user permissions, and company configuration. This prevents the AI
+                                            from hallucinating prices, tax rules or stock levels.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">03</span>
+                                    <div>
+                                        <h3>Action Layer with Guardrails</h3>
+                                        <p>
+                                            Before any write operation is executed, the system validates the
+                                            proposed changes against business rules and user access rights.
+                                            Critical actions can require human confirmation.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">04</span>
+                                    <div>
+                                        <h3>Continuous Learning Loop</h3>
+                                        <p>
+                                            Successful and corrected actions are logged so the agents improve
+                                            over time for your specific terminology, product catalog and
+                                            operational patterns.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- BENEFITS / IMPACT -->
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Impact</span>
+                                <h2>What Changes When AI Lives Inside Odoo</h2>
+                                <p class="dics-section-lead">
+                                    Measurable operational improvements teams typically see after going live.
+                                </p>
+                            </div>
+
+                            <div class="dics-stat-grid dics-impact-grid">
+                                <article class="dics-stat-card rem-2">
+                                    <strong>40–70<span>%</span></strong>
+                                    <h3>Faster Order Entry</h3>
+                                    <p>Sales and customer service teams capture and confirm orders in a fraction of the clicks previously required.</p>
+                                </article>
+                                <article class="dics-stat-card rem-2">
+                                    <strong>3–5<span>×</span></strong>
+                                    <h3>Faster Document Processing</h3>
+                                    <p>Invoices, delivery notes and POs move from inbox to validated records with far less manual keying.</p>
+                                </article>
+                                <article class="dics-stat-card rem-2">
+                                    <strong>Fewer</strong>
+                                    <h3>Process Errors</h3>
+                                    <p>Context-aware agents apply correct taxes, pricelists and approval rules consistently, reducing rework.</p>
+                                </article>
+                                <article class="dics-stat-card rem-2">
+                                    <strong>Always</strong>
+                                    <h3>On-Demand Answers</h3>
+                                    <p>Managers and ops teams get reliable answers from live data without waiting for reports or analysts.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SECURITY & GOVERNANCE -->
+                    <section class="dics-section">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Trust &amp; Control</span>
+                                <h2>Enterprise-Grade Safety by Design</h2>
+                                <p class="dics-section-lead">
+                                    AI that can act inside your ERP must be governed as carefully as any other privileged user.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-capability-grid">
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">shield_lock</span>
+                                    </div>
+                                    <h3>Role-Based Action Control</h3>
+                                    <p>
+                                        Every AI action is evaluated against the same access rights and record rules
+                                        that apply to human users. The AI cannot do what the current user is not allowed to do.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">history</span>
+                                    </div>
+                                    <h3>Full Audit Trail</h3>
+                                    <p>
+                                        Prompts, model responses, proposed changes and final outcomes are logged.
+                                        You can always reconstruct why a particular order or invoice was created or modified.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">verified_user</span>
+                                    </div>
+                                    <h3>Human-in-the-Loop Options</h3>
+                                    <p>
+                                        High-impact actions (large orders, payment runs, master data changes) can be
+                                        configured to require explicit human confirmation before execution.
+                                    </p>
+                                </article>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">cloud_off</span>
+                                    </div>
+                                    <h3>Private &amp; On-Premise Ready</h3>
+                                    <p>
+                                        Deploy the gateway and agents in your private cloud or on-premise.
+                                        Sensitive data can be redacted or kept entirely within your environment.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- WHY DATAINTEGER -->
+                    <section class="dics-detail-section dics-detail-section--dark">
+                        <div class="dics-container">
+                            <div class="dics-detail-section-head dics-detail-section-head--center">
+                                <span class="dics-eyebrow">Why DataInteger</span>
+                                <h2>Not another chatbot bolted onto Odoo</h2>
+                            </div>
+
+                            <div class="dics-detail-why-grid">
+                                <article>
+                                    <span class="material-symbols-outlined">hub</span>
+                                    <h3>True Multi-Model Support</h3>
+                                    <p>
+                                        Claude for deep reasoning, Gemini for multimodal tasks,
+                                        Grok for speed and real-time knowledge, OpenAI for broad
+                                        ecosystem compatibility — all available inside the same Odoo instance.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">security</span>
+                                    <h3>Enterprise-Grade Safety</h3>
+                                    <p>
+                                        Role-based access, audit trails, confirmation steps for high-risk
+                                        actions, and the ability to run fully on-premise or in a private cloud.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">precision_manufacturing</span>
+                                    <h3>Built by Odoo Experts</h3>
+                                    <p>
+                                        Our team lives in Odoo daily. The AI layer is designed by people who
+                                        understand real ERP constraints — not by pure AI researchers guessing
+                                        how business software works.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FAQ -->
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">FAQ</span>
+                                <h2>Common Questions About AI in Odoo</h2>
+                            </div>
+
+                            <div class="dics-faq-container" style="margin: 0 auto;">
+                                <div class="dics-faq-list">
+                                    <div class="dics-faq-item">
+                                        <button type="button">
+                                            <span>Which AI models do you support?</span>
+                                            <b>+</b>
+                                        </button>
+                                        <div class="dics-faq-answer">
+                                            <p>
+                                                We currently integrate Claude (Anthropic), Gemini (Google), Grok (xAI) and OpenAI models.
+                                                You can route different tasks to different models based on reasoning needs, latency or cost.
+                                                New models can be added through the same secure gateway.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-faq-item">
+                                        <button type="button">
+                                            <span>Does the AI respect Odoo access rights and approvals?</span>
+                                            <b>+</b>
+                                        </button>
+                                        <div class="dics-faq-answer">
+                                            <p>
+                                                Yes. Every action is executed in the security context of the current user.
+                                                Record rules, access rights and approval workflows continue to apply.
+                                                Critical actions can be forced through a human confirmation step.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-faq-item">
+                                        <button type="button">
+                                            <span>Can this run on-premise or in a private cloud?</span>
+                                            <b>+</b>
+                                        </button>
+                                        <div class="dics-faq-answer">
+                                            <p>
+                                                Yes. The model gateway and agent layer can be deployed in your own infrastructure.
+                                                Data redaction and logging policies are configurable so sensitive fields never leave your control.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-faq-item">
+                                        <button type="button">
+                                            <span>How long does a typical implementation take?</span>
+                                            <b>+</b>
+                                        </button>
+                                        <div class="dics-faq-answer">
+                                            <p>
+                                                A focused pilot (for example, conversational sales order creation + document OCR)
+                                                can often go live in 4–8 weeks depending on data quality and process complexity.
+                                                Broader rollouts across multiple modules are planned in phases.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-faq-item">
+                                        <button type="button">
+                                            <span>Will the AI invent prices or stock levels?</span>
+                                            <b>+</b>
+                                        </button>
+                                        <div class="dics-faq-answer">
+                                            <p>
+                                                No. Agents are grounded in live Odoo data. Prices, taxes, stock quantities and
+                                                partner details are read from the database at request time. The system is designed
+                                                to refuse or escalate when required context is missing.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-faq-item">
+                                        <button type="button">
+                                            <span>Do we need to replace our existing Odoo customizations?</span>
+                                            <b>+</b>
+                                        </button>
+                                        <div class="dics-faq-answer">
+                                            <p>
+                                                In most cases, no. The AI layer sits on top of your existing modules and business
+                                                logic. We work with your current custom fields, workflows and approval chains rather
+                                                than requiring a rewrite.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

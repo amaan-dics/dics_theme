@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="dics_website" model="website">
+            <field name="name">Datainteger Consultancy Services</field>
+            <field name="sequence">0</field>
+             <field name="configurator_done" eval="True"/>
+        </record>
+        <record id="website.action_website" model="ir.actions.act_url">
+            <field name="url">/</field>
+            <field name="target">self</field>
+        </record>
+
+    </data>
+</odoo>

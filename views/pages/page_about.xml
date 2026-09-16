@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_about"
+              name="DataInteger About"
+              key="dics_theme.dics_about"
+              website_id="dics_theme.dics_website">
+
+        <t t-call="website.layout">
+            <t t-set="additional_title">About — DataInteger Consultancy Services</t>
+
+            <div id="wrap" class="dics-home dics-about-page">
+                <main class="dics-main">
+
+                    <!-- ─── HERO ─── -->
+                    <section class="dics-section dics-section-light" style="padding-top: 64px; padding-bottom: 80px;">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">About DataInteger</span>
+                                <h1 style="font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1.15; margin-bottom: 1.25rem;">
+                                    Systems that fit the business.<br/>
+                                    Not the other way around.
+                                </h1>
+                                <p style="max-width: 640px; margin: 0 auto; font-size: 1.15rem;">
+                                    We are an engineering consultancy obsessed with building clean,
+                                    powerful, and maintainable systems — especially around Odoo ERP,
+                                    automation, and intelligent software.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ─── OUR STORY ─── -->
+                    <section class="dics-section dics-section-surface">
+                        <div class="dics-container">
+                            <div class="dics-detail-section-head">
+                                <span class="dics-eyebrow">Who We Are</span>
+                                <h2>Enterprise engineering, without the noise.</h2>
+                            </div>
+
+                            <div style="max-width: 780px; margin-top: 2rem;">
+                                <p style="font-size: 1.15rem; line-height: 1.75; color: var(--dics-text-muted, #64748b);">
+                                    DataInteger was founded in Ahmedabad with a simple belief:
+                                    most companies are forced to adapt their processes to rigid software.
+                                    We reverse that. We study how your business actually works,
+                                    then design systems that fit — whether that means a clean-slate
+                                    Odoo architecture, a zero-downtime migration, or deep AI agents
+                                    that run inside your ERP.
+                                </p>
+                                <p style="font-size: 1.15rem; line-height: 1.75; color: var(--dics-text-muted, #64748b); margin-top: 1.25rem;">
+                                    Today we are a focused team of senior Odoo engineers, automation
+                                    specialists, and product thinkers helping organizations across
+                                    India and international markets modernize with technology that
+                                    stays maintainable for years.
+                                </p>
+                            </div>
+
+                            <div class="dics-stat-grid" style="margin-top: 3.5rem;">
+                                <article class="dics-stat-card">
+                                    <strong>11<span>+</span></strong>
+                                    <h3>Years of Engineering</h3>
+                                    <p>ERP and business systems since the early OpenERP days.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <strong>35<span>+</span></strong>
+                                    <h3>Enterprise Clients</h3>
+                                    <p>Supply chain, finance, manufacturing and operations.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <strong>19<span>+</span></strong>
+                                    <h3>Global Markets</h3>
+                                    <p>Multi-currency, regional tax, distributed teams.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <strong>97<span>%</span></strong>
+                                    <h3>Client Retention</h3>
+                                    <p>Long-term partnerships built on reliable delivery.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ─── OUR SPECIALITY ─── -->
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Our Home Turf</span>
+                                <h2>Odoo is where we truly excel</h2>
+                                <p>While we build across the full technology stack, Odoo ERP + intelligent automation is our deepest expertise.</p>
+                            </div>
+
+                            <div class="dics-detail-capability-grid" style="margin-top: 3rem;">
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">workspace_premium</span>
+                                    </div>
+                                    <h3>Official Odoo Partner</h3>
+                                    <p>Deep, hands-on experience across Odoo 16, 17, 18 and the latest versions. We don't just implement — we engineer for longevity.</p>
+                                </article>
+
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">psychology</span>
+                                    </div>
+                                    <h3>AI + Odoo Integration</h3>
+                                    <p>We embed Claude, Gemini, Grok and OpenAI directly inside Odoo so teams can create orders, update records and run operations with voice or text.</p>
+                                </article>
+
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">account_tree</span>
+                                    </div>
+                                    <h3>End-to-End Delivery</h3>
+                                    <p>From discovery and process design to go-live, training and multi-year support. One accountable partner, not a chain of vendors.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ─── ODOO SERVICES ─── NEW SECTION -->
+                    <section class="dics-section dics-section-surface" id="odoo-services">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">What We Build</span>
+                                <h2>Every Odoo service, under one roof</h2>
+                                <p>From first deployment to years-later migrations and bespoke modules — we cover the full Odoo lifecycle.</p>
+                            </div>
+
+                            <div class="dics-about-services-grid" style="margin-top: 3rem;">
+
+                                <!-- 1 -->
+                                <article class="dics-about-service-card">
+                                    <div class="dics-about-service-card__icon">
+                                        <span class="material-symbols-outlined">deployed_code</span>
+                                    </div>
+                                    <div class="dics-about-service-card__body">
+                                        <h3>Custom Module Development</h3>
+                                        <p>
+                                            Every business has workflows that no off-the-shelf app covers cleanly.
+                                            We design and build Python/ORM modules from scratch — complete with
+                                            QWeb views, access controls and wizard flows — that slot directly
+                                            into your existing Odoo installation.
+                                        </p>
+                                        <ul>
+                                            <li>Business-logic models with full ORM inheritance</li>
+                                            <li>Custom wizards, reports and scheduled actions</li>
+                                            <li>Role-based access and multi-company support</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <!-- 2 -->
+                                <article class="dics-about-service-card">
+                                    <div class="dics-about-service-card__icon">
+                                        <span class="material-symbols-outlined">upgrade</span>
+                                    </div>
+                                    <div class="dics-about-service-card__body">
+                                        <h3>Version Migration</h3>
+                                        <p>
+                                            Moving from Odoo 14 → 16 → 17 → 18 is not a simple upgrade click.
+                                            We audit every custom module, rewrite deprecated ORM patterns,
+                                            migrate data cleanly and run parallel-environment testing before
+                                            a zero-downtime cutover.
+                                        </p>
+                                        <ul>
+                                            <li>Module-by-module compatibility audit and rewrite</li>
+                                            <li>Data migration scripts with rollback safety</li>
+                                            <li>Staging environment validation before production switch</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <!-- 3 -->
+                                <article class="dics-about-service-card">
+                                    <div class="dics-about-service-card__icon">
+                                        <span class="material-symbols-outlined">settings_applications</span>
+                                    </div>
+                                    <div class="dics-about-service-card__body">
+                                        <h3>ERP Implementation &amp; Configuration</h3>
+                                        <p>
+                                            Full-cycle Odoo implementations — from chart-of-accounts setup
+                                            and multi-warehouse routing to localized tax compliance and
+                                            user training. We configure Odoo to mirror how your operations
+                                            actually run, not the other way around.
+                                        </p>
+                                        <ul>
+                                            <li>Inventory, manufacturing, purchase and sales flows</li>
+                                            <li>Indian GST, TDS and multi-currency accounting</li>
+                                            <li>Go-live support and team onboarding</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <!-- 4 -->
+                                <article class="dics-about-service-card">
+                                    <div class="dics-about-service-card__icon">
+                                        <span class="material-symbols-outlined">language</span>
+                                    </div>
+                                    <div class="dics-about-service-card__body">
+                                        <h3>Odoo Website &amp; eCommerce</h3>
+                                        <p>
+                                            Custom Odoo website themes built with QWeb, SCSS and OWL — designed
+                                            to your brand, not to Odoo's default templates. We also build
+                                            fully integrated eCommerce stores where products, inventory and
+                                            orders sync live with your backend.
+                                        </p>
+                                        <ul>
+                                            <li>Pixel-precise QWeb theme development</li>
+                                            <li>Product catalogue, cart and checkout customisation</li>
+                                            <li>Real-time inventory sync and customer portal</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <!-- 5 -->
+                                <article class="dics-about-service-card">
+                                    <div class="dics-about-service-card__icon">
+                                        <span class="material-symbols-outlined">phone_iphone</span>
+                                    </div>
+                                    <div class="dics-about-service-card__body">
+                                        <h3>Mobile &amp; Progressive Web Apps</h3>
+                                        <p>
+                                            OWL-powered PWAs and companion mobile interfaces that surface
+                                            the right Odoo data to field teams, warehouse staff and on-the-go
+                                            managers — without handing them a full ERP login.
+                                        </p>
+                                        <ul>
+                                            <li>OWL components connected to Odoo JSON-RPC</li>
+                                            <li>Offline-capable PWAs with background sync</li>
+                                            <li>Role-scoped views for field and warehouse teams</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <!-- 6 -->
+                                <article class="dics-about-service-card">
+                                    <div class="dics-about-service-card__icon">
+                                        <span class="material-symbols-outlined">hub</span>
+                                    </div>
+                                    <div class="dics-about-service-card__body">
+                                        <h3>Third-Party Integrations</h3>
+                                        <p>
+                                            Odoo rarely lives alone. We connect it to payment gateways,
+                                            logistics APIs, marketplaces, CRMs and legacy databases using
+                                            REST, XML-RPC and webhook-driven event pipelines — keeping
+                                            data consistent across your entire stack.
+                                        </p>
+                                        <ul>
+                                            <li>Payment gateways: Razorpay, Stripe, PayTM</li>
+                                            <li>Logistics: Shiprocket, Delhivery, FedEx</li>
+                                            <li>Marketplace sync: Amazon, Flipkart, Shopify</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <!-- 7 -->
+                                <article class="dics-about-service-card">
+                                    <div class="dics-about-service-card__icon">
+                                        <span class="material-symbols-outlined">support_agent</span>
+                                    </div>
+                                    <div class="dics-about-service-card__body">
+                                        <h3>Odoo Support &amp; AMC</h3>
+                                        <p>
+                                            Ongoing annual maintenance contracts that cover bug fixes,
+                                            minor enhancements, security patches and version-compatibility
+                                            monitoring — so your system stays healthy long after go-live
+                                            without needing a full project each time.
+                                        </p>
+                                        <ul>
+                                            <li>Priority bug resolution with defined SLAs</li>
+                                            <li>Minor feature additions within monthly hours</li>
+                                            <li>Proactive monitoring and Odoo security advisories</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <!-- 8 -->
+                                <article class="dics-about-service-card">
+                                    <div class="dics-about-service-card__icon">
+                                        <span class="material-symbols-outlined">terminal</span>
+                                    </div>
+                                    <div class="dics-about-service-card__body">
+                                        <h3>Custom Software &amp; Automation</h3>
+                                        <p>
+                                            When the business problem lives outside Odoo's scope, we build
+                                            standalone Python services, internal tools and automation pipelines
+                                            that integrate cleanly with your ERP — from document-processing
+                                            bots to scheduled ETL jobs.
+                                        </p>
+                                        <ul>
+                                            <li>Python microservices and background workers</li>
+                                            <li>Document parsing, PDF generation and OCR pipelines</li>
+                                            <li>Scheduled data sync and notification engines</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ─── MIGRATION HIGHLIGHT ─── NEW SECTION -->
+                    <section class="dics-detail-section dics-detail-section--dark" id="migration">
+                        <div class="dics-container">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+
+                                <div>
+                                    <span class="dics-detail-eyebrow">Version Migration</span>
+                                    <h2 style="color: #ffffff; margin-bottom: 1.25rem;">
+                                        Upgrading Odoo versions without the horror story
+                                    </h2>
+                                    <p style="color: rgba(255,255,255,0.65); font-size: 1.05rem; line-height: 1.75; margin-bottom: 1.5rem;">
+                                        Most migration projects fail because they are treated as a technical
+                                        task rather than an operational one. We start by auditing what your
+                                        custom modules actually do — then rewrite, not just port — so the
+                                        new version is cleaner than the one you left behind.
+                                    </p>
+                                    <a href="/services" class="dics-btn dics-btn-primary">
+                                        Talk to us about your migration
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                    </a>
+                                </div>
+
+                                <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                                    <div class="dics-about-migration-step">
+                                        <span class="dics-about-migration-num">01</span>
+                                        <div>
+                                            <h4>Full module audit</h4>
+                                            <p>Every custom module mapped against the target version's breaking changes and deprecated APIs.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-about-migration-step">
+                                        <span class="dics-about-migration-num">02</span>
+                                        <div>
+                                            <h4>Data migration scripts</h4>
+                                            <p>ORM-level migration scripts with checksums, rollback capability and field-mapping documentation.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-about-migration-step">
+                                        <span class="dics-about-migration-num">03</span>
+                                        <div>
+                                            <h4>Parallel staging environment</h4>
+                                            <p>A full production mirror runs alongside your live system. You sign off before we cut over.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-about-migration-step">
+                                        <span class="dics-about-migration-num">04</span>
+                                        <div>
+                                            <h4>Zero-downtime cutover</h4>
+                                            <p>Coordinated switch with a defined rollback window. Your team keeps working through the transition.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ─── HOW WE WORK ─── -->
+                    <section class="dics-section">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">How We Work</span>
+                                <h2>A transparent, outcome-focused process</h2>
+                                <p>Four stages that remove guesswork and keep every project on schedule.</p>
+                            </div>
+
+                            <div class="dics-detail-process" style="margin-top: 3rem;">
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">01</span>
+                                    <div>
+                                        <h3>Discovery</h3>
+                                        <p>We map real floor operations, approval matrices, billing milestones and pain points before any architecture is proposed.</p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">02</span>
+                                    <div>
+                                        <h3>Design &amp; Plan</h3>
+                                        <p>Clear technical architecture, realistic timeline, transparent scope and pricing. No surprises halfway through.</p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">03</span>
+                                    <div>
+                                        <h3>Build &amp; Iterate</h3>
+                                        <p>Agile delivery with regular demos. You see working software early and can course-correct while it is still cheap.</p>
+                                    </div>
+                                </article>
+                                <article class="dics-detail-process-item">
+                                    <span class="dics-detail-process-number">04</span>
+                                    <div>
+                                        <h3>Support &amp; Scale</h3>
+                                        <p>We stay after go-live for upgrades, new modules, performance tuning and the continuous improvements that come with real usage.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ─── SYSTEMS WE'VE SHIPPED ─── -->
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Our Work</span>
+                                <h2>Systems we've actually shipped</h2>
+                                <p>Two examples of what happens when Odoo becomes the operational core of a business — not just the back office.</p>
+                            </div>
+
+                            <div class="dics-shipped-grid">
+
+                                <!-- Card 1 -->
+                                <article class="dics-shipped-card">
+                                    <div class="dics-shipped-card__header">
+                                        <div class="dics-detail-card-icon">
+                                            <span class="material-symbols-outlined">chat</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-eyebrow">Module 01</span>
+                                            <h3>Order, Pay &amp; Track — Without Leaving WhatsApp</h3>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        A WhatsApp-to-Odoo commerce layer that turns a chat into a fully processed order.
+                                        Customers browse, order and pay without ever leaving the conversation.
+                                    </p>
+
+                                    <ul class="dics-shipped-card__list">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Sale order created in Odoo the instant a customer orders</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Payment link generated and delivery validated automatically</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Real-time order status and full history available in-chat</span>
+                                        </li>
+                                    </ul>
+
+                                    <a href="/services/whatsapp-integration" class="dics-btn dics-btn-secondary">
+                                        View Full Module →
+                                    </a>
+                                </article>
+
+                                <!-- Card 2 -->
+                                <article class="dics-shipped-card">
+                                    <div class="dics-shipped-card__header">
+                                        <div class="dics-detail-card-icon">
+                                            <span class="material-symbols-outlined">record_voice_over</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-eyebrow">Module 02</span>
+                                            <h3>Run Odoo With Your Voice — Or Just Type It</h3>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Claude (and other frontier models) connected directly to Odoo's operational core.
+                                        Quotations, sale orders and deliveries can be created and validated through natural voice or text.
+                                    </p>
+
+                                    <ul class="dics-shipped-card__list">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Create and confirm quotations &amp; sale orders by voice or text</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Generate and validate deliveries hands-free</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Understands context across your existing Odoo data</span>
+                                        </li>
+                                    </ul>
+
+                                    <a href="/services/claude-integration" class="dics-btn dics-btn-secondary">
+                                        View Full Module →
+                                    </a>
+                                </article>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ─── WHY DATAINTEGER ─── -->
+                    <section class="dics-detail-section dics-detail-section--dark">
+                        <div class="dics-container">
+                            <div class="dics-detail-section-head dics-detail-section-head--center">
+                                <span class="dics-detail-eyebrow">Why DataInteger</span>
+                                <h2>What you actually get when you work with us</h2>
+                            </div>
+
+                            <div class="dics-detail-why-grid">
+                                <article>
+                                    <span class="material-symbols-outlined">engineering</span>
+                                    <h3>Senior Engineers Only</h3>
+                                    <p>No junior hand-offs. Every project is owned by experienced Odoo and automation engineers from day one.</p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">visibility</span>
+                                    <h3>Transparent &amp; Predictable</h3>
+                                    <p>Fixed scope where possible, clear timelines, honest communication, and no hidden change-request traps.</p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">verified</span>
+                                    <h3>Long-term Partnership</h3>
+                                    <p>We stay after go-live for upgrades, new modules, performance and the continuous evolution of your system.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ─── CTA ─── -->
+                    <section class="dics-detail-cta" id="contact">
+                        <div class="dics-container">
+                            <div class="dics-detail-cta-card">
+                                <div class="dics-detail-cta-glow"></div>
+                                <div class="dics-detail-cta-content">
+                                    <span class="dics-eyebrow">Work with us</span>
+                                    <h2>Ready to improve how your business runs?</h2>
+                                    <p>
+                                        Tell us what you want to automate, migrate, or build.
+                                        We start with the operational problem — not the software.
+                                    </p>
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                        Start a Conversation
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                    </a>
+                                    <a href="/" class="dics-btn dics-btn-secondary">
+                                        Back to Home
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

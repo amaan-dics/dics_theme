@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <template id="dics_saas" name="Datainteger Consultancy Services SaaS Products" key="dics_theme.dics_saas" website_id="dics_theme.dics_website">
+    <t t-call="website.layout">
+
+
+      <t t-set="hero_anchor_id">top-saas</t>
+      <t t-set="svc_eyebrow">SaaS Products</t>
+      <t t-set="svc_title_main">From idea to</t>
+      <t t-set="svc_title_accent">recurring revenue.</t>
+      <t t-set="svc_subtitle">We help founders and enterprises design, build, and launch Software as a Service products. We handle the complex infrastructure so you can focus on product-market fit.</t>
+
+      <t t-set="capabilities_heading">Everything a real SaaS launch needs</t>
+      <t t-set="capabilities_subheading">Infrastructure that's ready to scale before you actually need it to.</t>
+      <t t-set="capabilities" t-value="[
+        {'icon': 'cloud', 'title': 'Multi-Tenant Architecture', 'description': 'Built to serve many customers securely from one system, from day one, not bolted on after growth forces it.'},
+        {'icon': 'code2', 'title': 'Subscription Billing Integration', 'description': 'Plans, trials, upgrades, and invoicing wired up correctly, so revenue doesn\'t leak through billing edge cases.'},
+        {'icon': 'layout-dashboard', 'title': 'Admin &amp; Customer Dashboards', 'description': 'Interfaces for your team and your customers that make the product usable, not just functional.'},
+        {'icon': 'line-chart', 'title': 'Usage Analytics &amp; Metrics', 'description': 'Visibility into activation, retention, and usage patterns so you know what\'s actually working.'},
+        {'icon': 'brain-circuit', 'title': 'Security &amp; Compliance', 'description': 'Authentication, data isolation, and compliance handled properly from the start, not retrofitted under pressure.'},
+        {'icon': 'smartphone', 'title': 'Onboarding &amp; Activation Flows', 'description': 'First-run experiences designed to get new users to their first real value, fast.'},
+      ]"/>
+
+      <t t-set="process_steps" t-value="[
+        {'title': 'Product Strategy &amp; MVP Scoping', 'description': 'Cutting the idea down to the smallest version that actually tests product-market fit.'},
+        {'title': 'Architecture &amp; Build', 'description': 'Building on infrastructure that won\'t need a rewrite the moment you get real traction.'},
+        {'title': 'Beta Launch &amp; Iteration', 'description': 'Getting the product in front of real users early, and shipping fast based on what they actually do.'},
+        {'title': 'Scale &amp; Growth Support', 'description': 'Staying on as a technical partner as usage, features, and infrastructure needs grow.'},
+      ]"/>
+
+      <t t-set="tags_eyebrow">Stack We Use</t>
+      <t t-set="tags_heading">Our typical SaaS stack</t>
+      <t t-set="tags" t-value="['Stripe', 'AWS', 'PostgreSQL', 'Next.js', 'Node.js', 'Docker', 'Auth0', 'Redis']"/>
+
+      <t t-set="why_heading">A technical co-founder, on demand</t>
+      <t t-set="why_cards" t-value="[
+        {'icon': 'cloud', 'title': 'Built for Scale from Day One', 'description': 'Architecture decisions made upfront so growth doesn\'t force a costly rebuild later.'},
+        {'icon': 'brain-circuit', 'title': 'Founder-Friendly Process', 'description': 'We work at startup speed and communicate in plain terms, not enterprise process for its own sake.'},
+        {'icon': 'layout-dashboard', 'title': 'Infrastructure You Won\'t Outgrow', 'description': 'Systems designed to handle your next stage of growth, not just your current one.'},
+      ]"/>
+
+      <t t-set="cta_title">Have an idea? Let's ship it.</t>
+      <t t-set="cta_text">Book a free consultation and we'll help scope what an MVP would actually take to build.</t>
+
+      <div id="wrap" class="dics-website-page">
+        <t t-call="dics_theme.dics_service_detail_body"/>
+      </div>
+    </t>
+  </template>
+</odoo>

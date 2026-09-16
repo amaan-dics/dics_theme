@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+  <!-- Shared body for every individual service deep-dive page (Odoo & ERP,
+       AI Solutions, Web & Mobile, Custom Software, Digital Marketing, SaaS).
+       Callers t-set the variables below, then t-call this template inside
+       their own website.layout wrapper. Keeping this in one place means
+       every service page renders with identical structure/styling, and a
+       future design tweak only needs to happen once instead of six times.
+
+       Required variables the caller must t-set before calling this:
+         hero_anchor_id, svc_eyebrow, svc_title_main, svc_title_accent,
+         svc_subtitle, capabilities_heading, capabilities_subheading,
+         capabilities (list of {icon, title, description}),
+         process_steps (list of {title, description}),
+         tags_eyebrow, tags_heading, tags (list of strings, or empty to skip),
+         why_heading, why_cards (list of {icon, title, description}),
+         cta_title, cta_text -->
+  <template id="dics_service_detail_body" name="Datainteger Consultancy Services Service Detail Body">
+
+    <!-- ─── HERO ─── -->
+    <section class="dics-services-hero" t-att-id="hero_anchor_id">
+      <div class="dics-services-hero__glow"></div>
+      <div class="dics-services-hero__dotgrid"></div>
+      <div class="container">
+        <a href="/services" class="dics-view-all odoo-hero__back">
+          <span class="icon-flip">
+            <t t-call="dics_theme.dics_icon"><t t-set="icon">arrow-right</t></t>
+          </span>
+          Back to Services
+        </a>
+        <div class="dics-section-head">
+          <span class="hero-badge">
+            <span class="hero-badge__dot"></span>
+            <t t-esc="svc_eyebrow"/>
+          </span>
+          <h1>
+            <t t-esc="svc_title_main"/>
+            <span class="dics-accent"><t t-esc="svc_title_accent"/></span>
+          </h1>
+          <p t-esc="svc_subtitle">Subtitle</p>
+          <div class="hero-actions" style="margin-top: 2rem;">
+            <a href="/contactus" class="btn btn-primary dics-magnetic-button">
+              Book a Consultation <t t-call="dics_theme.dics_icon"><t t-set="icon">arrow-right</t></t>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHAT WE DELIVER ─── -->
+    <section class="dics-odoo-capabilities" style="padding: 2rem 0 5rem;">
+      <div class="container">
+        <div class="dics-section-head dics-section-head--centered">
+          <span class="section-eyebrow">What We Deliver</span>
+          <h2 t-esc="capabilities_heading">Heading</h2>
+          <p t-esc="capabilities_subheading">Sub</p>
+        </div>
+        <div class="odoo-capability-grid">
+          <t t-foreach="capabilities" t-as="cap" t-key="cap_index">
+            <div class="odoo-capability-card">
+              <div class="odoo-capability-card__icon">
+                <t t-call="dics_theme.dics_icon"><t t-set="icon" t-value="cap['icon']"/></t>
+              </div>
+              <h3 t-esc="cap['title']">Capability title</h3>
+              <p t-esc="cap['description']">Capability description</p>
+            </div>
+          </t>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROCESS ─── -->
+    <section class="dics-odoo-process" style="padding: 0 0 5rem;">
+      <div class="container">
+        <div class="dics-section-head dics-section-head--centered">
+          <span class="section-eyebrow">Our Process</span>
+          <h2>How we get there</h2>
+          <p>Structured, without the bureaucracy.</p>
+        </div>
+        <div class="how-grid">
+          <t t-foreach="process_steps" t-as="step" t-key="step_index">
+            <div class="how-card">
+              <div class="how-card__step" t-esc="'%02d' % (step_index + 1)">01</div>
+              <h3 t-esc="step['title']">Step title</h3>
+              <p t-esc="step['description']">Step description</p>
+            </div>
+          </t>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TAGS / STACK ─── -->
+    <section class="dics-odoo-modules" t-if="tags" style="padding: 0 0 5rem;">
+      <div class="container">
+        <div class="dics-section-head dics-section-head--centered">
+          <span class="section-eyebrow" t-esc="tags_eyebrow">Stack</span>
+          <h2 t-esc="tags_heading">Heading</h2>
+        </div>
+        <div class="odoo-modules">
+          <t t-foreach="tags" t-as="tag" t-key="tag_index">
+            <span class="odoo-modules__pill">
+              <t t-call="dics_theme.dics_icon"><t t-set="icon">check-circle</t></t>
+              <t t-esc="tag"/>
+            </span>
+          </t>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WHY DICS ─── -->
+    <section class="dics-why-choose">
+      <div class="container">
+        <div class="dics-section-head dics-section-head--centered">
+          <span class="section-eyebrow" style="color: rgba(255,255,255,0.6);">Why Datainteger Consultancy Services</span>
+          <h2 t-esc="why_heading">Heading</h2>
+        </div>
+        <div class="why-choose-grid">
+          <t t-foreach="why_cards" t-as="wc" t-key="wc_index">
+            <div class="why-choose-card">
+              <div class="why-choose-card__icon">
+                <t t-call="dics_theme.dics_icon"><t t-set="icon" t-value="wc['icon']"/></t>
+              </div>
+              <h3 t-esc="wc['title']">Title</h3>
+              <p t-esc="wc['description']">Description</p>
+            </div>
+          </t>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section class="dics-services-cta">
+      <div class="container">
+        <div class="services-cta-card">
+          <div class="services-cta-card__glow services-cta-card__glow--1"></div>
+          <div class="services-cta-card__glow services-cta-card__glow--2"></div>
+          <div class="services-cta-card__ring"></div>
+          <div class="services-cta-card__content">
+            <h2 t-esc="cta_title">CTA title</h2>
+            <p t-esc="cta_text">CTA text</p>
+            <a href="/contactus" class="btn btn-secondary services-cta-card__btn dics-magnetic-button">
+              Book a Consultation <t t-call="dics_theme.dics_icon"><t t-set="icon">arrow-right</t></t>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </template>
+</odoo>

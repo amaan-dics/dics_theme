@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="dics_digital_marketing" model="ir.ui.view">
+        <field name="name">DataInteger Odoo ERP Service</field>
+        <field name="type">qweb</field>
+        <field name="key">dics_theme.dics_digital_marketing</field>
+        <field name="website_id" ref="dics_theme.dics_website"/>
+        <field name="arch" type="xml">
+            <t t-name="dics_theme.dics_digital_marketing">
+                <t t-call="website.layout">
+
+                    <t t-set="additional_title">
+                        Digital Marketing — DataInteger
+                    </t>
+
+
+                    <div id="wrap" class="dics-home">
+                        <main class="dics-main">
+
+                            <!-- ═══════════════════════════════════════
+                                 HERO
+                            ═══════════════════════════════════════ -->
+                            <section class="dics-hero">
+                                <div class="dics-hero-grid dics-container">
+                                    <div class="dics-hero-copy">
+
+                                        <div class="dics-eyebrow-pill">
+                                            <span class="dics-status-dot"/>
+                                            <span>SEO • Performance Marketing • Automation • Analytics</span>
+                                        </div>
+
+                                        <h1>
+                                            Scale acquisition with
+                                            <span class="dics-red">data-driven marketing.</span>
+                                        </h1>
+
+                                        <p class="dics-hero-lead">
+                                            We don't run campaigns in isolation. We connect your marketing
+                                            channels directly into Odoo CRM — so every lead, every click,
+                                            and every conversion is tracked, attributed, and fed back
+                                            into a pipeline your sales team can actually act on.
+                                        </p>
+
+                                        <div class="dics-actions">
+                                            <a href="/contact" class="dics-btn dics-btn-primary">
+                                                <span>Grow Your Brand</span>
+                                                <span class="dics-arrow">→</span>
+                                            </a>
+                                            <a href="#channels" class="dics-btn dics-btn-secondary">
+                                                <span>See Channels</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="dics-proof">
+                                            <span>
+                                                <b>✓</b>
+                                                Odoo CRM Connected
+                                            </span>
+                                            <span>
+                                                <b>✓</b>
+                                                Full Attribution
+                                            </span>
+                                            <span>
+                                                <b>✓</b>
+                                                ROI Per Channel
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Console widget -->
+                                    <div class="dics-console dics-delay-2">
+                                        <div class="dics-console-header">
+                                            <div class="dics-console-title">
+                                                <span class="dics-console-dot dics-console-dot-red"/>
+                                                <span class="dics-console-dot"/>
+                                                <span class="dics-console-dot"/>
+                                                <span>DATAINTEGER::MARKETING_BUS</span>
+                                            </div>
+                                            <div class="dics-sync">
+                                                <span/>Live
+                                            </div>
+                                        </div>
+                                        <div class="dics-console-nodes">
+                                            <div class="dics-system-node">
+                                                <div class="dics-node-icon">◎</div>
+                                                <div class="dics-node-info">
+                                                    <strong>Meta Ads → Odoo CRM</strong>
+                                                    <small>Lead forms synced • Auto-qualified</small>
+                                                </div>
+                                                <span class="dics-node-state">LIVE</span>
+                                            </div>
+                                            <div class="dics-system-node dics-node-offset">
+                                                <div class="dics-node-icon dics-node-red">▦</div>
+                                                <div class="dics-node-info">
+                                                    <strong>WhatsApp Campaign Broadcast</strong>
+                                                    <small>2,400 contacts • 94% open rate</small>
+                                                </div>
+                                                <span class="dics-node-metric">Sent</span>
+                                            </div>
+                                            <div class="dics-system-node">
+                                                <div class="dics-node-icon">⌁</div>
+                                                <div class="dics-node-info">
+                                                    <strong>SEO Rank Tracker</strong>
+                                                    <small>48 keywords in top 10 · GSC linked</small>
+                                                </div>
+                                                <span class="dics-node-state">SYNC</span>
+                                            </div>
+                                            <div class="dics-system-node dics-node-offset-right">
+                                                <div class="dics-node-icon">↗</div>
+                                                <div class="dics-node-info">
+                                                    <strong>Google Ads Attribution</strong>
+                                                    <small>CPL ₹ 340 · ROAS 4.2x</small>
+                                                </div>
+                                                <span class="dics-node-metric">ROAS 4.2x</span>
+                                            </div>
+                                        </div>
+                                        <div class="dics-console-footer">
+                                            <span>All channels: Healthy</span>
+                                            <strong>Pipeline: 142 active leads</strong>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+
+                            <!-- ═══════════════════════════════════════
+                                 CHANNELS
+                            ═══════════════════════════════════════ -->
+                            <section class="dics-section dics-section-light" id="channels">
+                                <div class="dics-container">
+                                    <div class="dics-centered-heading">
+                                        <span class="dics-eyebrow">Channels</span>
+                                        <h2>Every channel, connected to your CRM.</h2>
+                                        <p class="dics-section-lead">
+                                            We run campaigns across every relevant channel and wire the results
+                                            directly into Odoo — so your sales team sees leads, not spreadsheets.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-stat-grid">
+                                        <article class="dics-stat-card">
+                                            <h3>Search Engine Optimisation</h3>
+                                            <p>Technical SEO, content strategy, and link building that ranks enterprise
+                                                pages and drives qualified organic traffic — not just impressions.
+                                            </p>
+                                        </article>
+                                        <article class="dics-stat-card">
+                                            <h3>Google &amp; Meta Ads</h3>
+                                            <p>Performance campaigns on Google Search, Display, and Meta with conversion
+                                                tracking wired back to Odoo CRM for true cost-per-lead visibility.
+                                            </p>
+                                        </article>
+                                        <article class="dics-stat-card">
+                                            <h3>WhatsApp &amp; Social Marketing</h3>
+                                            <p>Bulk WhatsApp broadcasts, catalog campaigns, and LinkedIn outreach — all
+                                                automated and routed into Odoo pipelines on reply.
+                                            </p>
+                                        </article>
+                                        <article class="dics-stat-card">
+                                            <h3>Email Marketing Automation</h3>
+                                            <p>Multi-step drip sequences, lead nurturing campaigns, and re-engagement
+                                                workflows triggered by CRM stage changes inside Odoo.
+                                            </p>
+                                        </article>
+                                        <article class="dics-stat-card">
+                                            <h3>LinkedIn B2B Outreach</h3>
+                                            <p>Targeted LinkedIn campaigns and connection sequences for enterprise
+                                                decision-makers — with replies logged directly to Odoo CRM records.
+                                            </p>
+                                        </article>
+                                        <article class="dics-stat-card">
+                                            <h3>Analytics &amp; Attribution</h3>
+                                            <p>Full-funnel attribution across every channel with custom dashboards
+                                                showing precise ROI, CPL, and ROAS per source — not vanity metrics.
+                                            </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- ═══════════════════════════════════════
+                                 DEEP CAPABILITIES
+                            ═══════════════════════════════════════ -->
+                            <section class="dics-section">
+                                <div class="dics-container">
+                                    <div class="dics-centered-heading">
+                                        <span class="dics-eyebrow">What Makes Us Different</span>
+                                        <h2>Marketing wired into your ERP — not running beside it.</h2>
+                                        <p class="dics-section-lead">
+                                            Most agencies hand you a leads spreadsheet. We hand you
+                                            a pipeline in Odoo where every lead is attributed, qualified,
+                                            and ready for your sales team to action.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-detail-capability-grid">
+
+                                        <article class="dics-detail-capability-card">
+                                            <div class="dics-detail-card-icon">
+                                                <span class="material-symbols-outlined">sync_alt</span>
+                                            </div>
+                                            <h3>Odoo CRM Integration</h3>
+                                            <p>
+                                                Every lead from Meta, Google, LinkedIn, and WhatsApp flows
+                                                directly into Odoo CRM with source attribution, UTM data,
+                                                and campaign context attached. Your sales team works in one
+                                                place — not across five platforms and a spreadsheet.
+                                            </p>
+                                        </article>
+
+                                        <article class="dics-detail-capability-card">
+                                            <div class="dics-detail-card-icon">
+                                                <span class="material-symbols-outlined">auto_fix_high</span>
+                                            </div>
+                                            <h3>Automated Lead Qualification</h3>
+                                            <p>
+                                                Inbound leads are automatically scored and routed based on
+                                                rules you define — industry, budget range, page visited,
+                                                or keyword matched. High-intent leads reach a salesperson
+                                                within minutes, not the next morning.
+                                            </p>
+                                        </article>
+
+                                        <article class="dics-detail-capability-card">
+                                            <div class="dics-detail-card-icon">
+                                                <span class="material-symbols-outlined">insights</span>
+                                            </div>
+                                            <h3>Full-Funnel Attribution</h3>
+                                            <p>
+                                                We connect campaign spend data to closed deals in Odoo —
+                                                so you know which channel actually generated revenue, not
+                                                just which one generated clicks. CPL and ROAS calculated
+                                                against real sale values, not form fills.
+                                            </p>
+                                        </article>
+
+                                        <article class="dics-detail-capability-card">
+                                            <div class="dics-detail-card-icon">
+                                                <span class="material-symbols-outlined">mark_email_read</span>
+                                            </div>
+                                            <h3>Behaviour-Triggered Automation</h3>
+                                            <p>
+                                                Email sequences, WhatsApp follow-ups, and retargeting
+                                                audiences that fire based on what a prospect actually does —
+                                                opened a quote, visited the pricing page, replied to a campaign.
+                                                Not just time-based drips.
+                                            </p>
+                                        </article>
+
+                                        <article class="dics-detail-capability-card">
+                                            <div class="dics-detail-card-icon">
+                                                <span class="material-symbols-outlined">search</span>
+                                            </div>
+                                            <h3>Technical SEO for Enterprise</h3>
+                                            <p>
+                                                Core Web Vitals, schema markup, crawl budget optimisation,
+                                                and content architecture for B2B enterprise sites. We focus
+                                                on rankings that drive demo requests and RFQs — not traffic
+                                                that looks good in a report but converts at 0.1%.
+                                            </p>
+                                        </article>
+
+                                        <article class="dics-detail-capability-card">
+                                            <div class="dics-detail-card-icon">
+                                                <span class="material-symbols-outlined">dashboard</span>
+                                            </div>
+                                            <h3>Unified Marketing Dashboard</h3>
+                                            <p>
+                                                A single dashboard — built in Odoo or your BI tool of choice —
+                                                showing spend, leads, pipeline value, and closed revenue
+                                                by channel, campaign, keyword, and sales rep. No manual
+                                                data pulls, no conflicting numbers.
+                                            </p>
+                                        </article>
+
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- ═══════════════════════════════════════
+                                 WORKFLOW / PIPELINE
+                            ═══════════════════════════════════════ -->
+                            <section class="dics-section dics-section-surface">
+                                <div class="dics-container">
+                                    <div class="dics-centered-heading">
+                                        <span class="dics-eyebrow">How a Lead Flows</span>
+                                        <h2>From ad click to closed deal — automated.</h2>
+                                        <p class="dics-section-lead">
+                                            Every step below runs without a human touching it.
+                                            Your team picks up at step 5, already knowing everything about the lead.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-pipeline">
+                                        <article class="dics-pipeline-card">
+                                            <small>01 • ACQUISITION</small>
+                                            <span class="dics-pipeline-dot"/>
+                                            <h3>Ad or Organic Click</h3>
+                                            <p>Google, Meta, LinkedIn, WhatsApp</p>
+                                            <b>UTM Tagged</b>
+                                        </article>
+                                        <article class="dics-pipeline-card">
+                                            <small>02 • CAPTURE</small>
+                                            <span class="dics-pipeline-dot"/>
+                                            <h3>Lead Form Submitted</h3>
+                                            <p>Landing page or native lead form</p>
+                                            <b>Instant Webhook</b>
+                                        </article>
+                                        <article class="dics-pipeline-card dics-pipeline-active">
+                                            <small>03 • CRM ENTRY</small>
+                                            <span class="dics-pipeline-dot"/>
+                                            <h3>Odoo CRM Record Created</h3>
+                                            <p>Source, campaign, keyword attached</p>
+                                            <b>Auto-Qualified</b>
+                                        </article>
+                                        <article class="dics-pipeline-card">
+                                            <small>04 • NURTURE</small>
+                                            <span class="dics-pipeline-dot"/>
+                                            <h3>Automated Follow-Up</h3>
+                                            <p>Email + WhatsApp sequence triggered</p>
+                                            <b>Behaviour-Driven</b>
+                                        </article>
+                                        <article class="dics-pipeline-card">
+                                            <small>05 • SALES</small>
+                                            <span class="dics-pipeline-dot"/>
+                                            <h3>Sales Rep Assigned</h3>
+                                            <p>Full context in Odoo CRM record</p>
+                                            <b>Context Ready</b>
+                                        </article>
+                                        <article class="dics-pipeline-card">
+                                            <small>06 • ATTRIBUTION</small>
+                                            <span class="dics-pipeline-dot"/>
+                                            <h3>Deal Closed → Revenue Tracked</h3>
+                                            <p>Linked back to original campaign</p>
+                                            <b>True ROAS</b>
+                                        </article>
+                                    </div>
+
+                                    <div class="dics-workflow-meta">
+                                        <span>Lead → CRM latency:
+                                            <b>&lt; 30 seconds</b>
+                                        </span>
+                                        <span>Manual steps eliminated:
+                                            <b>~8 per lead</b>
+                                        </span>
+                                        <strong>100% attribution retained</strong>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- ═══════════════════════════════════════
+                                 PROCESS
+                            ═══════════════════════════════════════ -->
+                            <section class="dics-section dics-section-light">
+                                <div class="dics-container">
+                                    <div class="dics-section-heading">
+                                        <div>
+                                            <span class="dics-eyebrow">Our Process</span>
+                                            <h2>How we launch a marketing engagement.</h2>
+                                        </div>
+                                        <p>Strategy before spend. Measurement before scale.</p>
+                                    </div>
+
+                                    <div class="dics-process-grid">
+                                        <article class="dics-process-card">
+                                            <strong>01</strong>
+                                            <h3>Audit &amp; Strategy</h3>
+                                            <p>Existing channel performance, competitor landscape, keyword opportunity,
+                                                and ICP definition — before we propose a single campaign.
+                                            </p>
+                                        </article>
+                                        <article class="dics-process-card">
+                                            <strong>02</strong>
+                                            <h3>Tracking &amp; CRM Setup</h3>
+                                            <p>UTM framework, conversion tracking, Odoo CRM pipeline configuration, and
+                                                attribution model agreed before campaigns go live.
+                                            </p>
+                                        </article>
+                                        <article class="dics-process-card">
+                                            <strong>03</strong>
+                                            <h3>Campaign Launch</h3>
+                                            <p>Ads, SEO, and automation launched in parallel with daily monitoring
+                                                during the first two weeks to catch and fix early inefficiencies.
+                                            </p>
+                                        </article>
+                                        <article class="dics-process-card">
+                                            <strong>04</strong>
+                                            <h3>Optimise &amp; Scale</h3>
+                                            <p>Budget shifted to what's working — not spread evenly. Underperforming ad
+                                                sets paused, winning ones scaled based on CPL and pipeline data.
+                                            </p>
+                                        </article>
+                                        <article class="dics-process-card">
+                                            <strong>05</strong>
+                                            <h3>Report &amp; Evolve</h3>
+                                            <p>Monthly reporting tied to pipeline and revenue — not impressions.
+                                                Strategy reviewed quarterly against business targets, not channel
+                                                benchmarks.
+                                            </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- ═══════════════════════════════════════
+                                 WHY DATAINTEGER
+                            ═══════════════════════════════════════ -->
+                            <section class="dics-detail-section dics-detail-section--dark">
+                                <div class="dics-container">
+                                    <div class="dics-detail-section-head dics-detail-section-head--center">
+                                        <span class="dics-eyebrow">Why DataInteger</span>
+                                        <h2>Marketing that knows your ERP.</h2>
+                                    </div>
+
+                                    <div class="dics-detail-why-grid">
+                                        <article>
+                                            <span class="material-symbols-outlined">hub</span>
+                                            <h3>Odoo-native attribution</h3>
+                                            <p>
+                                                We're Odoo engineers first. Every campaign we run is wired into
+                                                your CRM — so attribution, lead quality, and closed revenue are
+                                                visible in the same system your sales and finance teams use.
+                                            </p>
+                                        </article>
+                                        <article>
+                                            <span class="material-symbols-outlined">trending_up</span>
+                                            <h3>Revenue over reach</h3>
+                                            <p>
+                                                We optimise for pipeline value and closed deals — not impressions,
+                                                followers, or traffic that doesn't convert. Budget goes where the
+                                                data says it should, not where the report looks best.
+                                            </p>
+                                        </article>
+                                        <article>
+                                            <span class="material-symbols-outlined">precision_manufacturing</span>
+                                            <h3>B2B and enterprise focus</h3>
+                                            <p>
+                                                Our clients sell complex products and services with long sales cycles.
+                                                We understand how to market to procurement teams, CFOs, and operations
+                                                heads — not just consumers.
+                                            </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- ═══════════════════════════════════════
+                                 FAQ
+                            ═══════════════════════════════════════ -->
+                            <section class="dics-section dics-section-light">
+                                <div class="dics-container">
+                                    <div class="dics-centered-heading">
+                                        <span class="dics-eyebrow">FAQ</span>
+                                        <h2>Common Marketing Questions</h2>
+                                    </div>
+
+                                    <div class="dics-faq-container" style="margin: 0 auto;">
+                                        <div class="dics-faq-list">
+
+                                            <div class="dics-faq-item">
+                                                <button type="button">
+                                                    <span>Do you run marketing for any industry or only ERP clients?
+                                                    </span>
+                                                    <b>+</b>
+                                                </button>
+                                                <div class="dics-faq-answer">
+                                                    <p>We focus on B2B businesses — manufacturing, distribution,
+                                                        professional services, and technology companies. Our strength is
+                                                        connecting marketing to Odoo CRM and ERP data, so clients using
+                                                        Odoo get the deepest integration.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="dics-faq-item">
+                                                <button type="button">
+                                                    <span>How do you measure ROI if the sales cycle is 3–6 months?
+                                                    </span>
+                                                    <b>+</b>
+                                                </button>
+                                                <div class="dics-faq-answer">
+                                                    <p>We track leads through the full Odoo CRM pipeline — so when a
+                                                        deal closes six months after the first click, the attribution is
+                                                        still there. We report on pipeline value created (leading
+                                                        indicator) and revenue closed (lagging indicator) separately.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="dics-faq-item">
+                                                <button type="button">
+                                                    <span>Can you run WhatsApp campaigns legally at scale?</span>
+                                                    <b>+</b>
+                                                </button>
+                                                <div class="dics-faq-answer">
+                                                    <p>Yes — through the official WhatsApp Business API (Meta-approved
+                                                        providers), not grey-route bulk senders. Campaigns use opt-in
+                                                        contact lists and approved message templates, compliant with
+                                                        Meta's Business Messaging Policy.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="dics-faq-item">
+                                                <button type="button">
+                                                    <span>Do you manage ad spend directly or just advise?</span>
+                                                    <b>+</b>
+                                                </button>
+                                                <div class="dics-faq-answer">
+                                                    <p>We manage directly — campaign setup, creative briefing, audience
+                                                        targeting, bid strategy, and ongoing optimisation. Ad spend goes
+                                                        to the platforms from your account so you retain full ownership
+                                                        and visibility of billing.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="dics-faq-item">
+                                                <button type="button">
+                                                    <span>How long before we see results from SEO?</span>
+                                                    <b>+</b>
+                                                </button>
+                                                <div class="dics-faq-answer">
+                                                    <p>Technical SEO improvements and quick-win content can show ranking
+                                                        movement within 6–8 weeks. Competitive keywords in enterprise
+                                                        segments typically take 4–6 months of consistent effort. We're
+                                                        transparent about timelines and never promise first-page
+                                                        rankings on day one.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="dics-faq-item">
+                                                <button type="button">
+                                                    <span>What's the minimum engagement to work with you?</span>
+                                                    <b>+</b>
+                                                </button>
+                                                <div class="dics-faq-answer">
+                                                    <p>We work on retainer engagements with a minimum 3-month commitment
+                                                        — enough time to set up tracking properly, run initial
+                                                        campaigns, and iterate based on real data. One-off campaign
+                                                        setups are available for existing clients.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- ═══════════════════════════════════════
+                                 CTA
+                            ═══════════════════════════════════════ -->
+                            <section class="dics-contact-section">
+                                <div class="dics-container dics-contact-grid">
+                                    <div class="dics-contact-copy">
+                                        <span class="dics-eyebrow">Start the Conversation</span>
+                                        <h2>Ready to connect marketing to your pipeline?</h2>
+                                        <p>
+                                            Tell us your current channels, your target customer, and
+                                            what's not working. We'll scope exactly what a data-driven
+                                            marketing engagement would look like for your business.
+                                        </p>
+                                        <div class="dics-contact-details">
+                                            <strong>Ahmedabad, Gujarat, India</strong>
+                                            <a href="mailto:contact@datainteger.com">contact@datainteger.com</a>
+                                        </div>
+                                    </div>
+                                    <form class="dics-contact-form">
+                                        <div class="dics-form-grid">
+                                            <label>
+                                                <span>Your Name *</span>
+                                                <input type="text" name="name" placeholder="Alex Morgan"
+                                                       required="required"/>
+                                            </label>
+                                            <label>
+                                                <span>Company *</span>
+                                                <input type="text" name="company" placeholder="Acme Logistics LLP"
+                                                       required="required"/>
+                                            </label>
+                                        </div>
+                                        <div class="dics-form-grid">
+                                            <label>
+                                                <span>Business Email *</span>
+                                                <input type="email" name="email" placeholder="alex@acme.com"
+                                                       required="required"/>
+                                            </label>
+                                            <label>
+                                                <span>Phone / WhatsApp</span>
+                                                <input type="tel" name="phone" placeholder="+91 98765 43210"/>
+                                            </label>
+                                        </div>
+                                        <div class="dics-scope">
+                                            <span>Current channels (select all that apply)</span>
+                                            <div>
+                                                <label>
+                                                    <input type="checkbox" name="scope" value="google"/>
+                                                    <span>Google Ads</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="scope" value="meta"/>
+                                                    <span>Meta Ads</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="scope" value="seo"/>
+                                                    <span>SEO</span>
+                                                </label>
+                                                <label>
+                                                    <input type="checkbox" name="scope" value="whatsapp"/>
+                                                    <span>WhatsApp</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <label>
+                                            <span>What are you trying to achieve? *</span>
+                                            <textarea name="message" rows="4"
+                                                      placeholder="More leads, better lead quality, lower CPL, proper attribution..."
+                                                      required="required"/>
+                                        </label>
+                                        <button type="submit" class="dics-btn dics-btn-primary dics-submit">
+                                            <span>Submit Inquiry</span>
+                                            <span>→</span>
+                                        </button>
+                                        <p class="dics-form-status" hidden="hidden"/>
+                                    </form>
+                                </div>
+                            </section>
+
+                        </main>
+                    </div>
+
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

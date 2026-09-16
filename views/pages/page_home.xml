@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--
+        WHY website_id here?
+
+        Without website_id, this template is visible to and editable from
+        every website in the database. Adding website_id="dics_theme.dics_website"
+        tells Odoo's website module to only serve/edit this template in the
+        context of this specific website.
+
+        This is what makes the Website Editor, SEO panel, and page manager
+        in the backend correctly scope this page to DataInteger's website only.
+
+        DO NOT touch anything inside <t t-call="website.layout"> — that is
+        your existing content, completely preserved.
+    -->
+    <template id="dics_home"
+              name="DataInteger Home"
+              key="dics_theme.dics_home"
+              website_id="dics_theme.dics_website">
+
+        <t t-call="website.layout">
+            <!--            <t t-set="no_footer" t-value="True"/>-->
+
+            <t t-set="additional_title">
+                DataInteger Consultancy Services LLP
+            </t>
+
+            <div id="wrap" class="dics-home">
+
+                <!-- Scroll progress -->
+                <div id="scrollProgress" class="dics-scroll-progress" aria-hidden="true"></div>
+
+                <main class="dics-main">
+
+                    <!-- =====================================================
+                         HERO
+                    ====================================================== -->
+                    <section id="home" class="dics-hero">
+
+                        <div class="dics-hero-grid services-hero-grid dics-container">
+
+                            <div class="dics-hero-copy ">
+
+                                <div class="dics-eyebrow-pill">
+                                    <span class="dics-status-dot"/>
+                                    <span>Digital Systems • Odoo ERP • Automation</span>
+                                </div>
+
+                                <h1>
+                                    Turn complexity into
+                                    <span class="dics-red">intelligent</span>
+                                    business systems.
+                                </h1>
+
+                                <p class="dics-hero-lead">
+                                    We help growing businesses design, build, and evolve
+                                    the systems that connect people, processes, and data.
+                                    From Odoo ERP to custom software and high-availability
+                                    integrations, we turn operational friction into
+                                    scalable clarity.
+                                </p>
+
+                                <div class="dics-actions">
+                                    <a href="#contact" class="dics-btn dics-btn-primary">
+                                        <span>Start a Conversation</span>
+                                        <span class="dics-arrow">→</span>
+                                    </a>
+
+                                    <a href="#capabilities" class="dics-btn dics-btn-secondary">
+                                        <span>Explore Capabilities</span>
+                                        <span>↓</span>
+                                    </a>
+                                </div>
+
+                                <div class="dics-proof">
+                                    <span>
+                                        <b>✓</b>
+                                        Odoo 17/18 Ready
+                                    </span>
+                                    <span>
+                                        <b>⌘</b>
+                                        Custom Python/PostgreSQL
+                                    </span>
+                                    <span>
+                                        <b>⌘</b>
+                                        REST &amp; XML-RPC APIs
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <!-- System console -->
+                            <div class="dics-console  dics-delay-2">
+
+                                <div class="dics-console-header">
+
+                                    <div class="dics-console-title">
+                                        <span class="dics-console-dot dics-console-dot-red"/>
+                                        <span class="dics-console-dot"/>
+                                        <span class="dics-console-dot"/>
+                                        <span>DATAINTEGER::CORE_BUS</span>
+                                    </div>
+
+                                    <div class="dics-sync">
+                                        <span/>
+                                        99.98% Sync Rate
+                                    </div>
+
+                                </div>
+
+                                <div class="dics-console-nodes">
+
+                                    <div class="dics-system-node">
+                                        <div class="dics-node-icon">◎</div>
+                                        <div class="dics-node-info">
+                                            <strong>CRM &amp; Sales Pipeline</strong>
+                                            <small>42 Active Deals • Realtime Sync</small>
+                                        </div>
+                                        <span class="dics-node-state">LIVE</span>
+                                    </div>
+
+                                    <div class="dics-system-node dics-node-offset">
+                                        <div class="dics-node-icon dics-node-red">▦</div>
+                                        <div class="dics-node-info">
+                                            <strong>Global Inventory Allocation</strong>
+                                            <small>Multi-Warehouse Multi-Currency</small>
+                                        </div>
+                                        <span class="dics-node-metric">0.14ms</span>
+                                    </div>
+
+                                    <div class="dics-system-node">
+                                        <div class="dics-node-icon">⌁</div>
+                                        <div class="dics-node-info">
+                                            <strong>Financial Ledger &amp; Tax Engine</strong>
+                                            <small>GST • E-Invoicing • Auto-Reconcile</small>
+                                        </div>
+                                        <span class="dics-node-state">SYNC</span>
+                                    </div>
+
+                                    <div class="dics-system-node dics-node-offset-right">
+                                        <div class="dics-node-icon">↗</div>
+                                        <div class="dics-node-info">
+                                            <strong>Fulfillment &amp; 3PL Connector</strong>
+                                            <small>FedEx • DHL • Custom Couriers</small>
+                                        </div>
+                                        <span class="dics-node-metric">Queue: 0</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="dics-console-footer">
+                                    <span>PostgreSQL Cluster: Healthy</span>
+                                    <strong>Instance: v18.0-PROD</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         TRUST
+                    ====================================================== -->
+                    <section id="trust" class="dics-section dics-section-light">
+
+                        <div class="dics-container">
+
+                            <div class="dics-centered-heading ">
+                                <span class="dics-eyebrow">Proven Track Record</span>
+                                <h2>Trusted technology partner for growing enterprises</h2>
+                            </div>
+
+                            <div class="dics-stat-grid">
+
+                                <article class="dics-stat-card ">
+                                    <strong>11
+                                        <span>+</span>
+                                    </strong>
+                                    <h3>Years of Engineering</h3>
+                                    <p>
+                                        Delivering robust business technologies and ERP
+                                        deployments since the early OpenERP days.
+                                    </p>
+                                </article>
+
+                                <article class="dics-stat-card  dics-delay-1">
+                                    <strong>35
+                                        <span>+</span>
+                                    </strong>
+                                    <h3>Enterprise Businesses</h3>
+                                    <p>
+                                        Corporate organizations running their daily
+                                        supply chains and accounting with our systems.
+                                    </p>
+                                </article>
+
+                                <article class="dics-stat-card  dics-delay-2">
+                                    <strong>19
+                                        <span>+</span>
+                                    </strong>
+                                    <h3>Global Markets</h3>
+                                    <p>
+                                        Deployments supporting multi-currency,
+                                        regional tax laws, and distributed operations.
+                                    </p>
+                                </article>
+
+                                <article class="dics-stat-card  dics-delay-3">
+                                    <strong>97
+                                        <span>%</span>
+                                    </strong>
+                                    <h3>Retention &amp; Success</h3>
+                                    <p>
+                                        Long-term partnerships built on reliable SLAs
+                                        and continuous system improvements.
+                                    </p>
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         ABOUT / PHILOSOPHY
+                    ====================================================== -->
+                    <section id="about" class="dics-section dics-section-surface">
+
+                        <div class="dics-container dics-philosophy">
+
+                            <div class="dics-philosophy-title ">
+
+                                <span class="dics-eyebrow">Our Core Conviction</span>
+
+                                <h2>
+                                    Systems that fit the business.
+                                    Not the other way around.
+                                </h2>
+
+                                <div class="dics-rule">
+                                    <span/>
+                                    <small>Architectural Integrity</small>
+                                </div>
+
+                            </div>
+
+                            <div class="dics-philosophy-content ">
+
+                                <p class="dics-large-copy">
+                                    Businesses rarely struggle because they lack
+                                    software. They struggle because their systems
+                                    don't work together. Disjointed tools, siloed
+                                    spreadsheets, and brittle one-off scripts drain
+                                    executive focus and stall growth.
+                                </p>
+
+                                <div class="dics-two-cards">
+
+                                    <article class="dics-info-card">
+
+                                        <div class="dics-card-icon">◈</div>
+
+                                        <h3>Single Source of Truth</h3>
+
+                                        <p>
+                                            Eliminate double data entries and mismatched
+                                            spreadsheets. We architect a centralized
+                                            relational repository so sales, purchasing,
+                                            and finance share identical numbers.
+                                        </p>
+
+                                    </article>
+
+                                    <article class="dics-info-card">
+
+                                        <div class="dics-card-icon">↻</div>
+
+                                        <h3>Process-First Automation</h3>
+
+                                        <p>
+                                            We study your actual floor operations,
+                                            billing milestones, and approval matrices
+                                            before writing code. Technology is wrapped
+                                            around your operational advantages.
+                                        </p>
+
+                                    </article>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         CAPABILITIES
+                    ====================================================== -->
+                    <section id="capabilities" class="dics-section dics-section-light">
+
+                        <div class="dics-container">
+
+                            <div class="dics-section-heading ">
+
+                                <div>
+                                    <span class="dics-eyebrow">Comprehensive Practice</span>
+                                    <h2>Enterprise Capabilities</h2>
+                                </div>
+
+                                <p>
+                                    Precision engineering from clean-slate Odoo
+                                    architectures to zero-downtime database migrations.
+                                </p>
+
+                            </div>
+
+                            <div id="capabilities-container" class="dics-capabilities">
+
+                                <div class="dics-capability "
+                                >
+
+                                    <div class="dics-capability-row">
+
+                                        <div class="dics-capability-name">
+                                            <span>01</span>
+                                            <h3>Odoo Development</h3>
+                                        </div>
+
+                                        <div class="dics-capability-meta">
+                                            <small>Full-Stack Python • QWeb • PostgreSQL</small>
+                                            <b>+</b>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Full-cycle architecture and module engineering
+                                                tailored to exact operational workflows.
+                                                We develop proprietary business logic,
+                                                custom view models, automated server actions,
+                                                and domain-specific calculation engines
+                                                without compromising future Odoo upgrade paths.
+                                            </p>
+
+                                            <div class="dics-tags">
+                                                <span>Custom Models</span>
+                                                <span>ORM Extensions</span>
+                                                <span>Custom OWL Components</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dics-capability "
+                                >
+
+                                    <div class="dics-capability-row">
+
+                                        <div class="dics-capability-name">
+                                            <span>02</span>
+                                            <h3>Odoo Customization</h3>
+                                        </div>
+
+                                        <div class="dics-capability-meta">
+                                            <small>Tailored Business Rules • Field Logic</small>
+                                            <b>+</b>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Standard ERP rarely aligns with unique
+                                                competitive strengths. We customize approval
+                                                trees, identifiers, PDF invoice layouts,
+                                                role-based field restrictions, and KPI
+                                                reporting widgets.
+                                            </p>
+
+                                            <div class="dics-tags">
+                                                <span>Approval Hierarchies</span>
+                                                <span>Tax Logic</span>
+                                                <span>Automated Actions</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dics-capability "
+                                >
+
+                                    <div class="dics-capability-row">
+
+                                        <div class="dics-capability-name">
+                                            <span>03</span>
+                                            <h3>Odoo Implementation</h3>
+                                        </div>
+
+                                        <div class="dics-capability-meta">
+                                            <small>Scoping • Configuration • Go-Live</small>
+                                            <b>+</b>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                End-to-end deployment management covering
+                                                business process analysis, chart of accounts,
+                                                warehouse configuration, master data cleansing,
+                                                UAT, training, and production cutover.
+                                            </p>
+
+                                            <div class="dics-tags">
+                                                <span>Master Data</span>
+                                                <span>Warehouse Routes</span>
+                                                <span>UAT Guidance</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dics-capability "
+                                >
+
+                                    <div class="dics-capability-row">
+
+                                        <div class="dics-capability-name">
+                                            <span>04</span>
+                                            <h3>Odoo Integration</h3>
+                                        </div>
+
+                                        <div class="dics-capability-meta">
+                                            <small>Shopify • Amazon • Payments • 3PL</small>
+                                            <b>+</b>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                High-reliability middleware connectors binding
+                                                your ERP with external digital touchpoints,
+                                                including eCommerce, payments, logistics,
+                                                WhatsApp, and legacy enterprise systems.
+                                            </p>
+
+                                            <div class="dics-tags">
+                                                <span>REST / Webhooks</span>
+                                                <span>eCommerce Sync</span>
+                                                <span>3PL Dispatch</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dics-capability "
+                                >
+
+                                    <div class="dics-capability-row">
+
+                                        <div class="dics-capability-name">
+                                            <span>05</span>
+                                            <h3>Odoo Migration</h3>
+                                        </div>
+
+                                        <div class="dics-capability-meta">
+                                            <small>OpenERP 7 • v14/15/16 → v17/v18</small>
+                                            <b>+</b>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Migrate legacy databases to modern Odoo
+                                                versions without losing transaction histories.
+                                                We script data transformations, refactor
+                                                deprecated APIs, test transactional balances,
+                                                and execute controlled production cutovers.
+                                            </p>
+
+                                            <div class="dics-tags">
+                                                <span>Zero Data Loss</span>
+                                                <span>API Refactoring</span>
+                                                <span>Ledger Reconciliation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dics-capability "
+                                >
+
+                                    <div class="dics-capability-row">
+
+                                        <div class="dics-capability-name">
+                                            <span>06</span>
+                                            <h3>Odoo Training &amp; Support</h3>
+                                        </div>
+
+                                        <div class="dics-capability-meta">
+                                            <small>SLA Maintenance • Role Training</small>
+                                            <b>+</b>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Tier-2 and tier-3 functional and technical
+                                                support, performance optimization, backups,
+                                                user workshops, and role-specific operational
+                                                training.
+                                            </p>
+
+                                            <div class="dics-tags">
+                                                <span>Guaranteed SLAs</span>
+                                                <span>Role-Specific SOPs</span>
+                                                <span>Server Health Audits</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="dics-capability "
+                                >
+
+                                    <div class="dics-capability-row">
+
+                                        <div class="dics-capability-name">
+                                            <span>07</span>
+                                            <h3>Custom Software &amp; Mobile</h3>
+                                        </div>
+
+                                        <div class="dics-capability-meta">
+                                            <small>Android Apps • Web Portals • Cloud SaaS</small>
+                                            <b>+</b>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Bespoke companion mobile applications,
+                                                customer portals, warehouse barcode systems,
+                                                and offline-first applications for workflows
+                                                that extend beyond standard ERP capabilities.
+                                            </p>
+
+                                            <div class="dics-tags">
+                                                <span>Android / Barcode SDK</span>
+                                                <span>Client Portals</span>
+                                                <span>Offline Queuing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         ARCHITECTURE
+                    ====================================================== -->
+                    <section id="architecture" class="dics-section dics-section-surface">
+
+                        <div class="dics-container">
+
+                            <div class="dics-centered-heading ">
+
+                                <span class="dics-eyebrow">
+                                    Unified Business Architecture
+                                </span>
+
+                                <h2>
+                                    One connected system.
+                                    Built around your business.
+                                </h2>
+
+                                <p>
+                                    Odoo is the open, extensible foundation.
+                                    DataInteger is the engineering master that
+                                    binds every operational organ into harmony.
+                                </p>
+
+                            </div>
+
+                            <div class="dics-module-grid">
+
+                                <article class="dics-module-card ">
+                                    <div class="dics-module-icon">◎</div>
+                                    <h3>CRM &amp; Inquiries</h3>
+                                    <p>Lead routing, pipeline tracking, omnichannel WhatsApp &amp; Email capture.</p>
+                                </article>
+
+                                <article class="dics-module-card  dics-delay-1">
+                                    <div class="dics-module-icon">▤</div>
+                                    <h3>Sales &amp; Quotations</h3>
+                                    <p>Instant e-signatures, pricing matrices, and customer portal approvals.</p>
+                                </article>
+
+                                <article class="dics-module-card  dics-delay-2">
+                                    <div class="dics-module-icon">⌁</div>
+                                    <h3>Financial Ledger</h3>
+                                    <p>Automated bank feeds, multi-currency valuation, P&amp;L, and GST.</p>
+                                </article>
+
+                                <article class="dics-module-card ">
+                                    <div class="dics-module-icon">▦</div>
+                                    <h3>Smart Inventory</h3>
+                                    <p>Lot and serial tracking, replenishment triggers, and warehouse visibility.</p>
+                                </article>
+
+                                <article class="dics-module-card  dics-delay-1">
+                                    <div class="dics-module-icon">⌂</div>
+                                    <h3>Manufacturing</h3>
+                                    <p>Multi-level BOMs, work-center routing, quality control, and maintenance.</p>
+                                </article>
+
+                                <article class="dics-module-card  dics-delay-2">
+                                    <div class="dics-module-icon">↗</div>
+                                    <h3>Purchase Automation</h3>
+                                    <p>Automated RFQs, vendor grids, receipt validation, and three-way matching.</p>
+                                </article>
+
+                                <article class="dics-module-card ">
+                                    <div class="dics-module-icon">◇</div>
+                                    <h3>HR &amp; Payroll</h3>
+                                    <p>Attendance, leave management, appraisals, resource allocation, and payroll.</p>
+                                </article>
+
+                                <article class="dics-module-card  dics-delay-1">
+                                    <div class="dics-module-icon">☷</div>
+                                    <h3>Projects &amp; Tasks</h3>
+                                    <p>Timesheets, milestones, resource scheduling, and client portals.</p>
+                                </article>
+
+                                <article class="dics-module-card  dics-delay-2">
+                                    <div class="dics-module-icon">▣</div>
+                                    <h3>Point of Sale</h3>
+                                    <p>Offline-capable checkout, barcode scanning, and register management.</p>
+                                </article>
+
+                                <article class="dics-module-card dics-module-card-accent ">
+                                    <div class="dics-module-icon">◫</div>
+                                    <h3>Real-Time BI</h3>
+                                    <p>Executive dashboards, margin analysis, cash flow, and inventory velocity.</p>
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         WORKFLOW
+                    ====================================================== -->
+                    <section id="workflow" class="dics-workflow">
+
+                        <div class="dics-container">
+
+                            <div class="dics-workflow-heading ">
+
+                                <span class="dics-eyebrow">Zero Redundancy Engine</span>
+
+                                <h2>Automate the work between the work.</h2>
+
+                                <p>
+                                    Watch operational data flow across departments
+                                    without unnecessary human intervention.
+                                </p>
+
+                            </div>
+
+                            <div class="dics-pipeline">
+
+                                <article class="dics-pipeline-card">
+                                    <small>01 • INBOUND</small>
+                                    <span class="dics-pipeline-dot"/>
+                                    <h3>Customer Inquiry</h3>
+                                    <p>Captured via Web / API</p>
+                                    <b>Auto-Qualified</b>
+                                </article>
+
+                                <article class="dics-pipeline-card">
+                                    <small>02 • QUOTE</small>
+                                    <span class="dics-pipeline-dot"/>
+                                    <h3>Smart Quotation</h3>
+                                    <p>Pricing Rules Checked</p>
+                                    <b>1-Click E-Sign</b>
+                                </article>
+
+                                <article class="dics-pipeline-card dics-pipeline-active">
+                                    <small>03 • CONVERSION</small>
+                                    <span class="dics-pipeline-dot"/>
+                                    <h3>Sales Order Confirmed</h3>
+                                    <p>Multi-tier Approval Cleared</p>
+                                    <b>Broadcast Active</b>
+                                </article>
+
+                                <article class="dics-pipeline-card">
+                                    <small>04 • INVENTORY</small>
+                                    <span class="dics-pipeline-dot"/>
+                                    <h3>Stock Allocation</h3>
+                                    <p>Picking Slip Sent to Floor</p>
+                                    <b>Barcode Scanned</b>
+                                </article>
+
+                                <article class="dics-pipeline-card">
+                                    <small>05 • FINANCE</small>
+                                    <span class="dics-pipeline-dot"/>
+                                    <h3>Instant E-Invoicing</h3>
+                                    <p>Ledger Journal Posted</p>
+                                    <b>GST Portal Auto-Sync</b>
+                                </article>
+
+                                <article class="dics-pipeline-card">
+                                    <small>06 • INSIGHT</small>
+                                    <span class="dics-pipeline-dot"/>
+                                    <h3>BI &amp; Cashflow Pulse</h3>
+                                    <p>Profit Margin Calculated</p>
+                                    <b>Executive Alert</b>
+                                </article>
+
+                            </div>
+                            <div class="dics-pipeline-nav" aria-label="Pipeline navigation">
+                                <button
+                                        type="button"
+                                        class="dics-pipeline-nav__btn dics-pipeline-nav__btn--prev"
+                                        aria-label="Previous pipeline step">
+                                    <span class="material-symbols-outlined">arrow_back</span>
+                                    <span>Previous</span>
+                                </button>
+
+                                <div class="dics-pipeline-nav__progress">
+                                    <span class="dics-pipeline-nav__current">01</span>
+                                    <span>/</span>
+                                    <span>06</span>
+                                </div>
+
+                                <button
+                                        type="button"
+                                        class="dics-pipeline-nav__btn dics-pipeline-nav__btn--next"
+                                        aria-label="Next pipeline step">
+                                    <span>Next</span>
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </button>
+                            </div>
+                            <div class="dics-workflow-meta">
+                                <span>Total System Latency:
+                                    <b>0.42 seconds</b>
+                                </span>
+                                <span>Human Interventions Saved:
+                                    <b>~14 minutes/order</b>
+                                </span>
+                                <strong>100% Audit Trail Retention</strong>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         PROCESS
+                    ====================================================== -->
+                    <section id="process" class="dics-section dics-section-light">
+
+                        <div class="dics-container">
+
+                            <div class="dics-section-heading ">
+
+                                <div>
+                                    <span class="dics-eyebrow">Engineered Delivery</span>
+                                    <h2>Good technology starts with understanding the business.</h2>
+                                </div>
+
+                                <p>
+                                    We do not plunge into code until your data
+                                    dependencies, warehouse movements, and
+                                    executive priorities are clearly understood.
+                                </p>
+
+                            </div>
+
+                            <div class="dics-process-grid">
+
+                                <article class="dics-process-card">
+                                    <strong>01</strong>
+                                    <h3>Understand</h3>
+                                    <p>
+                                        Deep dive into spreadsheets, software
+                                        logjams, pain points, and operational boundaries.
+                                    </p>
+                                </article>
+
+                                <article class="dics-process-card">
+                                    <strong>02</strong>
+                                    <h3>Design</h3>
+                                    <p>
+                                        Architect relational schemas, module choices,
+                                        UI views, and validated prototypes.
+                                    </p>
+                                </article>
+
+                                <article class="dics-process-card">
+                                    <strong>03</strong>
+                                    <h3>Build</h3>
+                                    <p>
+                                        Clean Python engineering, PostgreSQL indexing,
+                                        automated tests, and API connectors.
+                                    </p>
+                                </article>
+
+                                <article class="dics-process-card">
+                                    <strong>04</strong>
+                                    <h3>Launch</h3>
+                                    <p>
+                                        Team training, UAT, mock company data,
+                                        and synchronized production cutover.
+                                    </p>
+                                </article>
+
+                                <article class="dics-process-card">
+                                    <strong>05</strong>
+                                    <h3>Evolve</h3>
+                                    <p>
+                                        SLA-backed support, upgrades, performance
+                                        improvements, and scalable feature expansion.
+                                    </p>
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         INDUSTRIES
+                    ====================================================== -->
+                    <section id="industries" class="dics-section dics-section-surface">
+
+                        <div class="dics-container">
+
+                            <div class="dics-section-heading ">
+
+                                <div>
+                                    <span class="dics-eyebrow">Sector Expertise</span>
+                                    <h2>Engineered for your industry's reality.</h2>
+                                </div>
+
+                                <p>
+                                    Generic solutions fail when tested by factory
+                                    floors, complex tax requirements, or high-volume
+                                    eCommerce fulfillment.
+                                </p>
+
+                            </div>
+
+                            <div class="dics-industry-grid">
+
+                                <article class="dics-industry-card ">
+
+                                    <div>
+                                        <small>INDUSTRIAL &amp; FABRICATION</small>
+
+                                        <h3>Manufacturing &amp; Assembly</h3>
+
+                                        <p>
+                                            Multi-tier BOMs, scrap rate computations,
+                                            shop floor barcode scanners, routing,
+                                            and preventive maintenance.
+                                        </p>
+
+                                        <ul>
+                                            <li>Work-Center Capacity Planning</li>
+                                            <li>Batch &amp; Lot Compliance</li>
+                                            <li>Live Cost-of-Goods Calculation</li>
+                                        </ul>
+                                    </div>
+
+                                    <footer>
+                                        <span>Deployments</span>
+                                        <strong>12+ Plants Live</strong>
+                                    </footer>
+
+                                </article>
+
+
+                                <article class="dics-industry-card  dics-delay-1">
+
+                                    <div>
+                                        <small>COMMERCE &amp; TRADE</small>
+
+                                        <h3>Wholesale &amp; Distribution</h3>
+
+                                        <p>
+                                            Cross-docking, tier pricing, multi-warehouse
+                                            transfers, carrier integration, and B2B portals.
+                                        </p>
+
+                                        <ul>
+                                            <li>Automated Reordering</li>
+                                            <li>B2B Self-Service Portal</li>
+                                            <li>Credit Limit Enforcement</li>
+                                        </ul>
+                                    </div>
+
+                                    <footer>
+                                        <span>Deployments</span>
+                                        <strong>14+ Distribution Hubs</strong>
+                                    </footer>
+
+                                </article>
+
+
+                                <article class="dics-industry-card  dics-delay-2">
+
+                                    <div>
+                                        <small>SERVICES &amp; CONSULTING</small>
+
+                                        <h3>Professional Services</h3>
+
+                                        <p>
+                                            Timesheet governance, milestone billing,
+                                            utilization analytics, expenses, and SLA management.
+                                        </p>
+
+                                        <ul>
+                                            <li>Automated Milestone Retainers</li>
+                                            <li>Resource Allocation Calendars</li>
+                                            <li>Role-Based Portal Access</li>
+                                        </ul>
+                                    </div>
+
+                                    <footer>
+                                        <span>Deployments</span>
+                                        <strong>9+ Global Agencies</strong>
+                                    </footer>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         CASE STUDIES
+                    ====================================================== -->
+                    <section id="case-studies" class="dics-section dics-section-light">
+
+                        <div class="dics-container">
+
+                            <div class="dics-section-heading ">
+
+                                <div>
+                                    <span class="dics-eyebrow">Proven Transformation</span>
+                                    <h2>Engineering in action. Real results.</h2>
+                                </div>
+
+                            </div>
+
+                            <div class="dics-case-grid">
+
+                                <article class="dics-case-card ">
+
+                                    <div class="dics-case-top">
+                                        <span>Global Manufacturing</span>
+                                        <strong>Odoo 17 Enterprise</strong>
+                                    </div>
+
+                                    <h3>
+                                        Multi-Plant Supply Chain &amp;
+                                        Automated Financial Consolidation
+                                    </h3>
+
+                                    <p>
+                                        <b>The Challenge:</b>
+                                        Four manufacturing units across two states
+                                        with fragmented accounting, manual Excel
+                                        inventory transfers, and production delays.
+                                    </p>
+
+                                    <p>
+                                        <b>What We Engineered:</b>
+                                        A centralized Odoo instance unifying MRP,
+                                        Warehouse Management, and multi-company
+                                        accounting with customized barcode modules.
+                                    </p>
+
+                                    <div class="dics-case-results">
+                                        <div>
+                                            <strong>-68%</strong>
+                                            <span>Order-to-Ship Lag</span>
+                                        </div>
+                                        <div>
+                                            <strong>100%</strong>
+                                            <span>Inventory Accuracy</span>
+                                        </div>
+                                        <div>
+                                            <strong>Zero</strong>
+                                            <span>Duplicate Data Entry</span>
+                                        </div>
+                                    </div>
+
+                                </article>
+
+
+                                <article class="dics-case-card  dics-delay-1">
+
+                                    <div class="dics-case-top">
+                                        <span>Omnichannel Retail &amp; B2B</span>
+                                        <strong>Odoo + Middleware</strong>
+                                    </div>
+
+                                    <h3>
+                                        E-Commerce Sync, POS &amp;
+                                        Automated Tax Compliance
+                                    </h3>
+
+                                    <p>
+                                        <b>The Challenge:</b>
+                                        High-volume retail operations with physical
+                                        showrooms and Shopify stores suffered stockouts,
+                                        overselling, and disconnected tax workflows.
+                                    </p>
+
+                                    <p>
+                                        <b>What We Engineered:</b>
+                                        Real-time bidirectional connectors synchronizing
+                                        web orders, POS, GST APIs, and courier webhooks.
+                                    </p>
+
+                                    <div class="dics-case-results">
+                                        <div>
+                                            <strong>45K+</strong>
+                                            <span>Orders / Month</span>
+                                        </div>
+                                        <div>
+                                            <strong>Real-time</strong>
+                                            <span>Inventory Sync</span>
+                                        </div>
+                                        <div>
+                                            <strong>100%</strong>
+                                            <span>Tax Traceability</span>
+                                        </div>
+                                    </div>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         INSIGHTS
+                    ====================================================== -->
+                    <section id="insights" class="dics-section dics-section-surface">
+
+                        <div class="dics-container">
+
+                            <div class="dics-section-heading ">
+
+                                <div>
+                                    <span class="dics-eyebrow">Architecture &amp; Insights</span>
+                                    <h2>Thinking beyond the implementation.</h2>
+                                </div>
+
+                                <p>
+                                    Practical perspectives on ERP architecture,
+                                    automation, migrations, and connected systems.
+                                </p>
+
+                            </div>
+
+                            <div class="dics-insights-grid">
+
+                                <article class="dics-insight-card ">
+                                    <small>ODOO ARCHITECTURE</small>
+                                    <h3>Designing Odoo systems that survive growth</h3>
+                                    <p>
+                                        Architecture decisions that keep customizations
+                                        maintainable as teams, transactions, and integrations grow.
+                                    </p>
+                                    <span>Read insight →</span>
+                                </article>
+
+                                <article class="dics-insight-card  dics-delay-1">
+                                    <small>AUTOMATION</small>
+                                    <h3>Automate the handoffs, not just the tasks</h3>
+                                    <p>
+                                        Why the biggest efficiency gains often exist
+                                        between departments rather than inside them.
+                                    </p>
+                                    <span>Read insight →</span>
+                                </article>
+
+                                <article class="dics-insight-card  dics-delay-2">
+                                    <small>MIGRATION</small>
+                                    <h3>What makes an Odoo migration safe?</h3>
+                                    <p>
+                                        Data transformation, API compatibility,
+                                        testing, reconciliation, and controlled cutovers.
+                                    </p>
+                                    <span>Read insight →</span>
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         FAQ
+                    ====================================================== -->
+                    <section id="faq" class="dics-section dics-section-light">
+
+                        <div class="dics-container dics-faq-container">
+
+                            <div class="dics-centered-heading ">
+                                <span class="dics-eyebrow">Frequently Asked Questions</span>
+                                <h2>Before we start building.</h2>
+                            </div>
+
+                            <div class="dics-faq-list">
+
+                                <article class="dics-faq-item">
+                                    <button type="button">
+                                        <span>Can you customize standard Odoo modules?</span>
+                                        <b>+</b>
+                                    </button>
+                                    <div class="dics-faq-answer">
+                                        <p>
+                                            Yes. We extend standard Odoo functionality
+                                            while keeping the implementation maintainable
+                                            and upgrade-conscious.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-faq-item">
+                                    <button type="button">
+                                        <span>Can you migrate an older Odoo database?</span>
+                                        <b>+</b>
+                                    </button>
+                                    <div class="dics-faq-answer">
+                                        <p>
+                                            Yes. Migration work can include data
+                                            transformations, deprecated API refactoring,
+                                            reconciliation, testing, and production cutover.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-faq-item">
+                                    <button type="button">
+                                        <span>Can Odoo integrate with external systems?</span>
+                                        <b>+</b>
+                                    </button>
+                                    <div class="dics-faq-answer">
+                                        <p>
+                                            Yes. We build REST, webhook, XML-RPC,
+                                            eCommerce, payment, logistics, and
+                                            custom middleware integrations.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-faq-item">
+                                    <button type="button">
+                                        <span>Do you provide ongoing support?</span>
+                                        <b>+</b>
+                                    </button>
+                                    <div class="dics-faq-answer">
+                                        <p>
+                                            Yes. Support can include SLA-backed technical
+                                            assistance, performance reviews, upgrades,
+                                            training, and continuous improvements.
+                                        </p>
+                                    </div>
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =====================================================
+                         CONTACT
+                    ====================================================== -->
+                    <section id="contact" class="dics-contact-section">
+
+                        <div class="dics-container dics-contact-grid">
+
+                            <div class="dics-contact-copy ">
+
+                                <span class="dics-eyebrow">Initiate Engagement</span>
+
+                                <h2>
+                                    Let's build a better way
+                                    to run your business.
+                                </h2>
+
+                                <p>
+                                    Tell us what you are trying to improve,
+                                    automate, or build. We start with the
+                                    operational problem, not the software.
+                                </p>
+
+                                <div class="dics-contact-details">
+                                    <strong>Ahmedabad, Gujarat, India</strong>
+                                    <a href="mailto:contact@datainteger.com">
+                                        contact@datainteger.com
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+                            <form class="dics-contact-form  dics-delay-1">
+
+                                <div class="dics-form-grid">
+
+                                    <label>
+                                        <span>Your Name *</span>
+                                        <input
+                                                type="text"
+                                                name="name"
+                                                placeholder="Alex Morgan"
+                                                required="required"/>
+                                    </label>
+
+                                    <label>
+                                        <span>Company / Organization *</span>
+                                        <input
+                                                type="text"
+                                                name="company"
+                                                placeholder="Acme Logistics LLP"
+                                                required="required"/>
+                                    </label>
+
+                                </div>
+
+                                <div class="dics-form-grid">
+
+                                    <label>
+                                        <span>Business Email *</span>
+                                        <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="alex@acme.com"
+                                                required="required"/>
+                                    </label>
+
+                                    <label>
+                                        <span>Phone / WhatsApp</span>
+                                        <input
+                                                type="tel"
+                                                name="phone"
+                                                placeholder="+91 98765 43210"/>
+                                    </label>
+
+                                </div>
+
+                                <div class="dics-scope">
+
+                                    <span>What do you need help with?</span>
+
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="scope" value="odoo"/>
+                                            <span>Odoo ERP</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox" name="scope" value="integration"/>
+                                            <span>Integration</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox" name="scope" value="migration"/>
+                                            <span>Migration</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="checkbox" name="scope" value="automation"/>
+                                            <span>Automation</span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <label>
+                                    <span>Describe Your Challenge or Timeline *</span>
+                                    <textarea
+                                            name="message"
+                                            rows="5"
+                                            placeholder="Briefly describe your current systems, approximate user count, and what you aim to achieve..."
+                                            required="required"/>
+                                </label>
+
+                                <button type="submit" class="dics-btn dics-btn-primary dics-submit">
+                                    <span>Submit Technical Inquiry</span>
+                                    <span>→</span>
+                                </button>
+
+                                <p class="dics-form-status" hidden="hidden"/>
+
+                            </form>
+
+                        </div>
+
+                    </section>
+
+                </main>
+
+                <!-- Odoo's native footer remains untouched. -->
+
+                <button
+                        id="backToTop"
+                        class="dics-back-top"
+                        type="button"
+                        aria-label="Back to top">
+                    ↑
+                </button>
+            </div>
+
+
+        </t>
+
+    </template>
+    <!--    <record id="dics_home" model="ir.ui.view">-->
+    <!--    <field name="website_id" ref="dics_theme.dics_website"/>-->
+    <!--</record>-->
+
+
+
+</odoo>

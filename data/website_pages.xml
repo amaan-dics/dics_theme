@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="page_home_page" model="website.page">
+            <field name="name">Home</field>
+            <field name="url">/</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_home"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_about_page" model="website.page">
+            <field name="name">About Us</field>
+            <field name="url">/about-us</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_about"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_contact_page" model="website.page">
+            <field name="name">Contact</field>
+            <field name="url">/contactus</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_contact"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_services_page" model="website.page">
+            <field name="name">Services</field>
+            <field name="url">/services</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_services"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_odoo_erp_page" model="website.page">
+            <field name="name">Odoo ERP Services</field>
+            <field name="url">/services/odoo-erp</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_odoo_services"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,117 @@
+
+.odoo-hero__back {
+  margin-bottom: 1.5rem;
+}
+
+.icon-flip {
+  display: inline-flex;
+  transform: scaleX(-1);
+}
+
+.odoo-capability-grid {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .odoo-capability-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 992px) {
+  .odoo-capability-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.odoo-capability-card {
+  @extend .card;
+  padding: 2.25rem;
+  transition: border-color 240ms ease, transform 240ms ease, box-shadow 240ms ease;
+}
+
+.odoo-capability-card:hover {
+  border-color: rgba(0, 173, 220, 0.3);
+  transform: translateY(-4px);
+  box-shadow: $shadow-md;
+}
+
+.odoo-capability-card__icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 1.1rem;
+  background: rgba(0, 173, 220, 0.1);
+  border: 1px solid rgba(0, 173, 220, 0.15);
+  color: $color-primary;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  transition: transform 300ms ease;
+}
+
+.odoo-capability-card:hover .odoo-capability-card__icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.odoo-capability-card h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.6rem;
+}
+
+.odoo-capability-card p {
+  margin: 0;
+  color: rgba(24, 30, 40, 0.62);
+  line-height: 1.7;
+}
+
+.odoo-modules {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.odoo-modules__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  background: $color-card;
+  border: 1px solid #18202a !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(24, 30, 40, 0.8);
+  transition: border-color 220ms ease,
+              color 220ms ease,
+              background-color 220ms ease,
+              transform 220ms ease;
+  white-space: nowrap;
+}
+
+.odoo-modules__pill:hover {
+  border-color: rgba(0, 173, 220, 0.35);
+  background: rgba(0, 173, 220, 0.06);
+  color: $color-primary;
+  transform: translateY(-2px);
+}
+.odoo-modules__pill .dics-icon-svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+@media (max-width: 720px) {
+  .odoo-modules {
+    gap: 0.65rem;
+    padding: 0 0.5rem;
+  }
+  .odoo-modules__pill {
+    padding: 0.6rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 720px) {
+  .odoo-capability-card { padding: 1.75rem; }
+}
+
+

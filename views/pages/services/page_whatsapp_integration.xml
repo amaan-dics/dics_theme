@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="page_whatsapp_integration" name="Datainteger Consultancy Services WhatsApp Integration Page" key="dics_theme.page_whatsapp_integration" website_id="dics_theme.dics_website">
+    <t t-call="website.layout">
+
+      <div id="wrap" class="dics-home dics-whatsapp-page">
+                <main class="dics-main">
+
+                    <!-- ─── HERO SECTION ─── -->
+<section class="dics-hero style-greenish">
+    <div class="dics-container">
+        <div class="dics-hero-copy">
+            <div class="dics-eyebrow-container d-flex gap-2 mb-3 flex-wrap">
+                <div class="dics-eyebrow-pill dics-pill-emerald">
+                    <span class="dics-status-dot dics-status-dot-green"/>
+                    <span>WhatsApp Business API Integration</span>
+                </div>
+                <div class="dics-eyebrow-pill bg-light border text-secondary px-3 py-1 rounded-pill small">
+                    <span>Native Commerce Layer</span>
+                </div>
+            </div>
+
+            <h1>
+                Seamless Odoo to WhatsApp<br/>
+                <span class="dics-emerald" style="color: #25D366;">Native Commerce Integration</span>
+            </h1>
+
+            <p class="dics-hero-lead">
+                Managing an e-commerce store often means forcing your customers to leave their favorite messaging apps to browse external websites, only for your backend team to manually copy-paste details into your ERP. Our custom Odoo-WhatsApp Integration Module fixes this entirely.
+            </p>
+
+            <div class="dics-tags-container mb-4">
+                <span class="dics-tag">Meta Cloud API</span>
+                <span class="dics-tag">Odoo ERP Sync</span>
+                <span class="dics-tag">Native Catalogs</span>
+                <span class="dics-tag">Automated Checkouts</span>
+                <span class="dics-tag">Instant Invoicing</span>
+            </div>
+
+            <div class="dics-actions">
+                <a href="/contact" class="dics-btn dics-btn-emerald">
+                    <span>Get Started Now</span>
+                    <span class="dics-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- HORIZONTAL SEPARATOR LINE -->
+        <hr class="dics-hero-divider my-4 border-top opacity-25"/>
+
+        <!-- HERO METRICS GRID (4 COLUMNS HORIZONTAL) -->
+        <div class="dics-hero-metrics-grid row text-start pt-2">
+            <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
+                <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1" style="color: #25D366;">100%</div>
+                <div class="dics-metric-label text-muted small">Zero Human Intervention</div>
+            </div>
+            <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
+                <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1" style="color: #25D366;">Direct</div>
+                <div class="dics-metric-label text-muted small">Meta API Connection</div>
+            </div>
+            <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
+                <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1" style="color: #25D366;">Hourly</div>
+                <div class="dics-metric-label text-muted small">Auto Stock Sync</div>
+            </div>
+            <div class="col-6 col-md-3 dics-metric-card">
+                <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1" style="color: #25D366;">Real-Time</div>
+                <div class="dics-metric-label text-muted small">Order Tracking</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                    <!-- ─── THE CUSTOMER JOURNEY (HOW IT WORKS) ─── -->
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading mb-5">
+                                <span class="dics-eyebrow dics-emerald-eyebrow">The Customer Experience</span>
+                                <h2>🛍️ How It Works: The Customer Journey</h2>
+                                <p class="dics-lead-sub">The entire shopping, checkout, and customer service loop happens right inside the chat window. Here is the exact native flow your customers see.</p>
+                            </div>
+
+                            <!-- Step 1 & Step 2 Showcase -->
+                            <div class="row align-items-center mb-5 pb-4">
+                                <div class="col-lg-6 pr-lg-5 mb-4 mb-lg-0">
+                                    <div class="dics-step-badge mb-3">
+                                        <span class="dics-badge-dot"></span> Step 1: Browse the Native Catalog
+                                    </div>
+                                    <h3>Clean Storefront, Native Browsing</h3>
+                                    <p class="text-muted">
+                                        When a customer messages your number, they are presented with a clean storefront menu. Tapping <strong>"View items"</strong> opens a beautifully organized in-app menu complete with categories, product images, and live prices pulled straight from Odoo.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <div class="p-2 border rounded-4 shadow-sm">
+                                        <img src="/dics_theme/static/src/img/whatsapp-integration-img-1.png" alt="MPM Template Message and Item List View" class="img-fluid rounded-3"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center mb-5 pb-4">
+                                <div class="col-lg-6 order-lg-2 pl-lg-5 mb-4 mb-lg-0">
+                                    <div class="dics-step-badge mb-3">
+                                        <span class="dics-badge-dot"></span> Step 2: View Details &amp; Manage the Cart
+                                    </div>
+                                    <h3>Rich Details &amp; Seamless Cart Assembly</h3>
+                                    <p class="text-muted">
+                                        Customers can tap on individual items to see long descriptions, view specific product variants, and quickly add items to their native WhatsApp cart. They can adjust quantities easily before sending the final cart over to your business text thread.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6 order-lg-1 text-center">
+                                    <div class="p-2 border rounded-4 shadow-sm">
+                                        <img src="/dics_theme/static/src/img/whatsapp-integration-img-2.png" alt="Cart View and Item Details View" class="img-fluid rounded-3"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 Detailed Split Breakdown -->
+                            <div class="dics-card-box border rounded-4 p-4 p-lg-5 bg-white shadow-sm">
+                                <div class="dics-step-badge dics-step-badge-emerald mb-3">Step 3: Fast Checkout &amp; Secure Payment</div>
+                                <h3 class="mb-4">The Final Conversion Milestone</h3>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <div class="d-flex gap-3 align-items-start">
+                                            <div class="dics-icon-circle bg-emerald-light text-emerald mt-1">
+                                                <span class="material-symbols-outlined">auto_awesome</span>
+                                            </div>
+                                            <div>
+                                                <h5>Smart Profiles Framework</h5>
+                                                <p class="text-muted small mb-0">The moment the cart is sent, our module checks Odoo. If it's a returning customer, it skips data entry and pulls their saved address for a Fast Checkout. If they are new, the bot cleanly asks for their address and automatically creates a new Customer Card in Odoo.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="d-flex gap-3 align-items-start">
+                                            <div class="dics-icon-circle bg-emerald-light text-emerald mt-1">
+                                                <span class="material-symbols-outlined">credit_card</span>
+                                            </div>
+                                            <div>
+                                                <h5>One-Click Payment &amp; Instant Receipts</h5>
+                                                <p class="text-muted small mb-0">The bot replies with an encrypted, short payment link. Tapping it opens a secure Odoo payment gateway (like Stripe). Once paid, the sale order confirms, and Odoo instantly sends a message with an attached PDF Pro-Forma Receipt directly in the chat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- ─── AUTOMATED BACKEND SYNCHRONIZATION ─── -->
+                    <section class="dics-section dics-section-emerald-tint">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading mb-5">
+                                <span class="dics-eyebrow dics-emerald-eyebrow">⚙️ Engine Architecture</span>
+                                <h2>Automated Backend Synchronization</h2>
+                                <p class="dics-lead-sub">While the storefront looks like a simple chat to your client, the backend operates as a fully automated, high-performance e-commerce engine.</p>
+                            </div>
+
+                            <!-- Live Split: WhatsApp UI Mock + Odoo ERP Mock -->
+                            <div class="row align-items-stretch mb-5">
+                                <!-- WhatsApp UI Box -->
+                                <div class="col-lg-6 mb-4 mb-lg-0">
+                                    <div class="wa-phone-card h-100 p-4 rounded-4 shadow-sm" style="background: #efeae2; border: 1px solid #128C7E;">
+                                        <img src="/dics_theme/static/src/img/whatsapp-integration-img-3.png" alt="MPM Template Message and Item List View" class="img-fluid rounded-3"/>
+                                    </div>
+                                </div>
+
+                                <!-- Odoo ERP Control Table Box -->
+                                <div class="col-lg-6">
+                                    <div class="odoo-table-card h-100 p-4 rounded-4 bg-white border shadow-sm d-flex flex-column justify-content-between">
+                                        <div>
+                                            <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="dot-red"/> <span class="dot-yellow"/> <span class="dot-green"/>
+                                                    <strong>Odoo ERP Backend Control</strong>
+                                                </div>
+                                                <span class="badge bg-emerald-light text-emerald p-2 rounded-pill">
+                                                    ● Sync Catalog Now
+                                                </span>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-hover align-middle">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th>Order Ref</th>
+                                                            <th>Method</th>
+                                                            <th>Items</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="table-active">
+                                                            <td class="fw-bold text-primary">SO-2026-003</td>
+                                                            <td>WhatsApp Cart</td>
+                                                            <td>2 items</td>
+                                                            <td><span class="badge bg-primary">Draft Generated</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="fw-bold text-primary">SO-2026-002</td>
+                                                            <td>WhatsApp Cart</td>
+                                                            <td>1 item</td>
+                                                            <td><span class="badge bg-success">Paid &amp; Confirmed</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="fw-bold text-primary">SO-2026-001</td>
+                                                            <td>Manual Form</td>
+                                                            <td>5 items</td>
+                                                            <td><span class="badge bg-info text-dark">Delivered</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center text-muted small pt-2 border-top">
+                                            <span>Odoo Catalog Native Mapping Engine</span>
+                                            <span class="text-success fw-bold">&#10003; Meta API Verified</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Synchronization Details Cards -->
+                            <div class="row">
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <div class="bg-white p-4 border rounded-4 h-100 shadow-sm">
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="material-symbols-outlined text-emerald">sync</span>
+                                            <h5 class="mb-0">Hourly Catalog Updates</h5>
+                                        </div>
+                                        <p class="text-muted small mb-0">You don’t have to upload images or edit product pricing tiers in two disconnected places. A background automated engine scripts updates your WhatsApp native catalog every single hour with Odoo's live stock tallies, active pricing rules, and strategic structural variations.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="bg-white p-4 border rounded-4 h-100 shadow-sm">
+                                        <div class="d-flex align-items-center gap-2 mb-3">
+                                            <span class="material-symbols-outlined text-emerald">bolt</span>
+                                            <h5 class="mb-0">Instant Manual Publish Button</h5>
+                                        </div>
+                                        <p class="text-muted small mb-0">Need to update a clearance price or drop a hot new line item right away? We've embedded a custom, prominent <strong>"Sync Catalog Now"</strong> core asset button directly inside Odoo's backend settings so administrative users can force immediate web hooks across Meta servers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- ─── BUSINESS ADVANTAGES (KEY ADVANTAGES) ─── -->
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading mb-5">
+                                <span class="dics-eyebrow dics-emerald-eyebrow">ROI Drivers</span>
+                                <h2>🚀 Key Advantages for Your Business</h2>
+                                <p class="dics-lead-sub">Eliminate human operational bottlenecks and match modern client onboarding standards cleanly.</p>
+                            </div>
+
+                            <div class="dics-stat-grid">
+                                <article class="dics-stat-card dics-card-emerald-hover">
+                                    <div class="dics-icon-circle bg-emerald-light text-emerald mb-3">
+                                        <span class="material-symbols-outlined">auto_awesome</span>
+                                    </div>
+                                    <h3>Zero Human Intervention</h3>
+                                    <p>Orders are automatically initialized, live stock positions are accurately reserved, and client record classifications are updated in Odoo without your front-office teams typing a single keystroke.</p>
+                                </article>
+
+                                <article class="dics-stat-card dics-card-emerald-hover">
+                                    <div class="dics-icon-circle bg-emerald-light text-emerald mb-3">
+                                        <span class="material-symbols-outlined">local_shipping</span>
+                                    </div>
+                                    <h3>Automated Order Tracking</h3>
+                                    <p>When your warehouse execution crew processes and handles updates for an outbound delivery route right inside Odoo, our architecture automatically texts targeted shipping links onto the customer's chat thread.</p>
+                                </article>
+
+                                <article class="dics-stat-card dics-card-emerald-hover">
+                                    <div class="dics-icon-circle bg-emerald-light text-emerald mb-3">
+                                        <span class="material-symbols-outlined">history</span>
+                                    </div>
+                                    <h3>Self-Service History</h3>
+                                    <p>Customers can text simple target utilities like "Help" to automatically review a compiled table structure containing details of their last 9 historical orders or choose "Repeat Last Order" to complete checkouts in seconds.</p>
+                                </article>
+
+                                <article class="dics-stat-card dics-card-emerald-hover">
+                                    <div class="dics-icon-circle bg-emerald-light text-emerald mb-3">
+                                        <span class="material-symbols-outlined">verified_user</span>
+                                    </div>
+                                    <h3>Proactive Support Routing</h3>
+                                    <p>If an internal business manager modifies, adjusts, or drops an active pipeline tracking order, our module immediately flags notifications onto WhatsApp and provides smart quick-reply routing tools.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- ─── MODULE CTA ─── -->
+                    <section class="dics-detail-cta">
+                        <div class="dics-container">
+                            <div class="dics-detail-cta-card">
+                                <div class="dics-detail-cta-glow"></div>
+                                <div class="dics-detail-cta-content">
+                                    <span class="dics-eyebrow">chat</span>
+                                     <h2 >Unlock Native Conversational Commerce</h2>
+                                    <p>Let's integrate your Odoo system natively with Meta's official WhatsApp Business Catalog API and automate your complete ordering pipeline.</p>
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                    <span>Get Started Now</span>
+                                    <span class="dics-arrow">→</span>
+                                </a>
+                                <a href="/services" class="dics-btn dics-btn-secondary">
+                                    View Other Solutions
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+    </t>
+  </template>
+</odoo>

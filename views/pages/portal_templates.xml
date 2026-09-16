@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="dics_portal_layout"
+              inherit_id="portal.portal_layout"
+              website_id="dics_theme.dics_website">
+        <xpath expr="//div[hasclass('row') and hasclass('justify-content-between')]"
+               position="attributes">
+            <attribute name="t-attf-class"
+                       add="#{'dics-my-home' if request.httprequest.path in ('/my', '/my/home') else ''}"
+                       separator=" "/>
+        </xpath>
+    </template>
+
+    <template id="dics_portal_side_content"
+              inherit_id="portal.side_content"
+              website_id="dics_theme.dics_website">
+
+        <xpath expr="//div[hasclass('d-flex') and hasclass('mb-4')]" position="attributes">
+            <attribute name="class" add="dics-portal-header" separator=" "/>
+        </xpath>
+
+        <xpath expr="//img[hasclass('o_portal_contact_img')]" position="attributes">
+            <attribute name="class" add="dics-portal-avatar" separator=" "/>
+        </xpath>
+
+        <xpath expr="//h5[hasclass('mb-0')]" position="attributes">
+            <attribute name="class" add="dics-portal-name" separator=" "/>
+        </xpath>
+
+
+        <xpath expr="//p[hasclass('text-muted')]" position="attributes">
+            <attribute name="class" add="dics-portal-company-line d-none" separator=" "/>
+        </xpath>
+
+
+        <xpath expr="//div[hasclass('o_portal_my_details')]" position="replace">
+            <div class="o_portal_my_details dics-portal-details">
+
+                <div t-if="user_id.partner_id.commercial_company_name"
+                     class="dics-portal-details__row">
+                    <i class="fa fa-building-o"/>
+                    <div>
+                        <span class="dics-portal-details__label">Company</span>
+                        <div t-esc="user_id.partner_id.commercial_company_name"/>
+                    </div>
+                </div>
+
+                <div t-if="user_id.partner_id.street or user_id.partner_id.city"
+                     class="dics-portal-details__row">
+                    <i class="fa fa-map-marker"/>
+                    <div>
+                        <span class="dics-portal-details__label">Address</span>
+                        <div t-if="user_id.partner_id.street" t-esc="user_id.partner_id.street"/>
+                        <div>
+                            <t t-if="user_id.partner_id.city" t-esc="user_id.partner_id.city"/>
+                            <t t-if="user_id.partner_id.zip">, <t t-esc="user_id.partner_id.zip"/></t>
+                        </div>
+                        <div t-if="user_id.partner_id.country_id" t-esc="user_id.partner_id.country_id.name"/>
+                    </div>
+                </div>
+
+                <div t-if="user_id.partner_id.phone" class="dics-portal-details__row">
+                    <i class="fa fa-phone"/>
+                    <div>
+                        <span class="dics-portal-details__label">Phone</span>
+                        <div t-esc="user_id.partner_id.phone"/>
+                    </div>
+                </div>
+
+                <div t-if="user_id.partner_id.email" class="dics-portal-details__row">
+                    <i class="fa fa-envelope-o"/>
+                    <div>
+                        <span class="dics-portal-details__label">Email</span>
+                        <div t-esc="user_id.partner_id.email"/>
+                    </div>
+                </div>
+
+            </div>
+        </xpath>
+
+        <xpath expr="//a[@href='/my/account']" position="attributes">
+            <attribute name="class" add="dics-portal-edit-btn" separator=" "/>
+        </xpath>
+
+    </template>
+
+    <template id="dics_portal_docs_entry"
+              inherit_id="portal.portal_docs_entry"
+              website_id="dics_theme.dics_website">
+
+        <xpath expr="//a" position="attributes">
+            <attribute name="class" add="dics-portal-card" separator=" "/>
+            <attribute name="t-attf-class" add="#{'dics-portal-card--wide' if config_card else 'dics-portal-card--stacked'}" separator=" "/>
+        </xpath>
+
+        <xpath expr="//div[hasclass('o_portal_icon')]" position="attributes">
+            <attribute name="class" add="dics-portal-card__icon" separator=" "/>
+        </xpath>
+
+
+        <xpath expr="//div[hasclass('opacity-75')]" position="after">
+            <span class="dics-portal-card__cta">
+                <t t-esc="cta_label or ('View %s' % title)"/>
+                <i class="fa fa-angle-right ms-1"/>
+            </span>
+        </xpath>
+
+<!--        remove pay now button-->
+        <xpath expr="//button[hasclass('btn-secondary') and hasclass('ms-auto')]" position="replace"/>
+    </template>
+
+
+
+    <!-- 1. Sidebar + Breadcrumb + Communication wrapper -->
+    <template id="dics_sale_order_portal_template"
+              inherit_id="sale.sale_order_portal_template"
+              website_id="dics_theme.dics_website">
+
+        <xpath expr="//h2[@data-id='total_amount']" position="before">
+            <span class="dics-sale-total-label">Total Amount</span>
+        </xpath>
+        <xpath expr="//h2[@data-id='total_amount']" position="attributes">
+            <attribute name="class" add="dics-sale-total-amount" separator=" "/>
+        </xpath>
+
+        <xpath expr="//h6[small[contains(text(), 'Your contact')]]" position="attributes">
+            <attribute name="class" add="d-none" separator=" "/>
+        </xpath>
+
+        <xpath expr="//div[@id='sale_order_communication']" position="attributes">
+            <attribute name="class" add="dics-portal-communication" separator=" "/>
+        </xpath>
+
+    </template>
+
+    <template id="dics_sale_order_portal_content"
+              inherit_id="sale.sale_order_portal_content"
+              website_id="dics_theme.dics_website">
+
+        <xpath expr="//em[@t-out='sale_order.name']" position="attributes">
+            <attribute name="class" add="dics-sale-order-name" separator=" "/>
+        </xpath>
+
+        <xpath expr="//div[@t-field='sale_order.partner_invoice_id']" position="replace">
+            <div class="dics-sale-address">
+                <div t-if="sale_order.partner_invoice_id.name"
+                     class="dics-sale-address__row dics-sale-address__row--name">
+                    <i class="fa fa-user"/>
+                    <span t-field="sale_order.partner_invoice_id.commercial_partner_id.name"/>,
+                    <span t-field="sale_order.partner_invoice_id.name"/>
+                </div>
+                <div t-if="sale_order.partner_invoice_id.street or sale_order.partner_invoice_id.city"
+                     class="dics-sale-address__row">
+                    <i class="fa fa-map-marker"/>
+                    <div>
+                        <t t-if="sale_order.partner_invoice_id.street">
+                            <t t-esc="sale_order.partner_invoice_id.street"/><br/>
+                        </t>
+                        <t t-esc="', '.join(filter(None, [sale_order.partner_invoice_id.city, sale_order.partner_invoice_id.state_id.name, sale_order.partner_invoice_id.zip]))"/>
+                        <t t-if="sale_order.partner_invoice_id.country_id">,
+                            <t t-esc="sale_order.partner_invoice_id.country_id.name"/>
+                        </t>
+                    </div>
+                </div>
+                <div t-if="sale_order.partner_invoice_id.phone" class="dics-sale-address__row">
+                    <i class="fa fa-phone"/>
+                    <span t-field="sale_order.partner_invoice_id.phone"/>
+                </div>
+                <div t-if="sale_order.partner_invoice_id.email" class="dics-sale-address__row">
+                    <i class="fa fa-envelope"/>
+                    <span t-field="sale_order.partner_invoice_id.email"/>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[hasclass('table-responsive')]" position="before">
+            <div class="dics-portal-section-head">
+                <h4 class="mb-0">Products</h4>
+                <t t-set="dics_item_count"
+                   t-value="len([l for l in sale_order._get_order_lines_to_report() if not l.display_type])"/>
+                <span class="dics-portal-section-count">
+                    <t t-esc="dics_item_count"/> Items
+                </span>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[@id='total']" position="before">
+            <div id="dics_sale_bottom_row" class="row dics-sale-bottom-row">
+                <div id="dics_sale_documents_col" class="col-12 col-lg-6 mb-4 mb-lg-0"/>
+                <div id="dics_sale_total_col" class="col-12 col-lg-6"/>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='dics_sale_documents_col']" position="inside">
+            <xpath expr="//t[@t-if='product_documents']" position="move"/>
+        </xpath>
+        <xpath expr="//div[@id='dics_sale_total_col']" position="inside">
+            <xpath expr="//div[@id='total']" position="move"/>
+        </xpath>
+    </template>
+
+    <template id="dics_portal_message_thread"
+              inherit_id="portal.message_thread"
+              website_id="dics_theme.dics_website">
+        <xpath expr="//div[@id='discussion']" position="attributes">
+            <attribute name="class" add="dics-portal-chatter" separator=" "/>
+        </xpath>
+    </template>
+
+    <template id="dics_portal_purchase_communication"
+              inherit_id="purchase.portal_my_purchase_order"
+              website_id="dics_theme.dics_website">
+        <xpath expr="//div[@id='purchase_order_communication']" position="attributes">
+            <attribute name="class" add="dics-portal-communication" separator=" "/>
+        </xpath>
+    </template>
+
+    <template id="dics_portal_record_sidebar"
+              inherit_id="portal.portal_record_sidebar"
+              website_id="dics_theme.dics_website">
+
+        <xpath expr="//div[@id='sidebar_content']" position="attributes">
+            <attribute name="class" add="dics-portal-sidebar" separator=" "/>
+        </xpath>
+
+        <xpath expr="//div[contains(@class, 'text-muted') and contains(., 'Powered by')]" position="replace">
+            <div class="small mt-3 text-muted" groups="!base.group_portal">
+                Powered by <a href="/" title="Datainteger Consultancy Services Solutions">Datainteger Consultancy Services</a>
+            </div>
+        </xpath>
+
+    </template>
+
+<template id="dics_purchase_order_portal_content"
+          inherit_id="purchase.purchase_order_portal_content"
+          website_id="dics_theme.dics_website">
+
+    <xpath expr="//div[hasclass('table-responsive')]" position="before">
+        <div class="dics-portal-section-head">
+            <h4 class="mb-0">Products</h4>
+            <t t-set="dics_po_item_count"
+               t-value="len([l for l in order.order_line if not l.display_type])"/>
+            <span class="dics-portal-section-count">
+                <t t-esc="dics_po_item_count"/> Items
+            </span>
+        </div>
+    </xpath>
+
+</template>
+</odoo>

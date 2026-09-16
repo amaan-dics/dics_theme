@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="page_claude_integration" name="Datainteger Consultancy Services Claude Integration Page" key="dics_theme.page_claude_integration" website_id="dics_theme.dics_website">
+    <t t-call="website.layout">
+
+      <div id="wrap" class="dics-website-page dics-module-page">
+
+        <!-- ─── HERO ─── -->
+        <section class="module-hero" id="top-claude">
+          <div class="module-hero__glow"></div>
+          <div class="module-hero__dotgrid"></div>
+          <div class="container">
+            <a href="/about" class="module-back-link">
+              <t t-call="dics_theme.dics_icon"><t t-set="icon">arrow-left</t></t>
+              Back to Our Work
+            </a>
+
+            <div class="module-hero__inner">
+              <div class="module-badges">
+                <span class="module-badge module-badge--primary">
+                  <span class="module-badge__dot"></span>
+                  Module 02 &#183; AI Inside Odoo
+                </span>
+              </div>
+
+              <h1 class="module-hero__title module-hero__title--sm">Claude lives inside your Odoo.</h1>
+
+              <p class="module-hero__subtitle">
+                Speak or type naturally anywhere in Odoo — "Create a sale order for John with 5 units of Apples" — and Claude will understand, execute, and return complete details.
+              </p>
+
+              <div class="module-hero__cta-row">
+                <a href="/contactus" class="btn btn-primary dics-magnetic-button">
+                  Get Claude in Your Odoo <t t-call="dics_theme.dics_icon"><t t-set="icon">arrow-right</t></t>
+                </a>
+                <a href="/whatsapp-integration" class="module-hero__link">
+                  See WhatsApp Module <t t-call="dics_theme.dics_icon"><t t-set="icon">arrow-right</t></t>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── CHALLENGE / SOLUTION ─── -->
+        <section class="module-section">
+          <div class="container">
+            <div class="module-cards-grid">
+              <t t-foreach="[
+                ('layers', 'The Situation', 'Getting things done in Odoo meant clicking through menus, every time.', 'Creating sale orders, quotations, or updating records required navigating multiple forms — slowing down your team and increasing errors.'),
+                ('bot', 'What We Built', 'Claude — Your AI Assistant Living Inside Odoo', 'A powerful conversational layer that understands natural language and executes actions directly in your Odoo environment — no switching apps, no manual data entry.'),
+              ]" t-as="cs" t-key="cs_index">
+                <article class="dics-tilt-card challenge-card reveal-on-scroll" t-attf-style="transition-delay: #{cs_index * 0.12}s;">
+                  <div class="dics-tilt-card__inner">
+                    <div class="challenge-card__icon">
+                      <t t-call="dics_theme.dics_icon"><t t-set="icon" t-value="cs[0]"/></t>
+                    </div>
+                    <span class="challenge-card__tag" t-esc="cs[1]">Tag</span>
+                    <h3 t-esc="cs[2]">Title</h3>
+                    <p t-esc="cs[3]">Description</p>
+                  </div>
+                </article>
+              </t>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── HOW IT WORKS ─── -->
+        <section class="module-section--tint">
+          <div class="container">
+            <div class="dics-section-head dics-section-head--centered reveal-on-scroll">
+              <h2>How Our Claude Module Works</h2>
+              <p>Natural language &#8594; Instant Odoo action with full transparency.</p>
+            </div>
+
+            <div class="module-vtimeline">
+              <t t-foreach="[
+                ('mic', 'Speak or Type Naturally', 'Anywhere in Odoo, simply say something like: &#8220;Create a sale order for customer John with 5 units of Apples&#8221;.'),
+                ('bot', 'Claude Understands Context', 'Claude reads your live Odoo data (customers, products, inventory, pricing) and intelligently interprets your request.'),
+                ('workflow', 'Instant Action in Odoo', 'Claude creates or updates records directly — sale orders, quotations, deliveries, etc.'),
+                ('shield-check', 'Review &amp; Confirm', 'Claude shows a clear summary before executing. You stay in full control.'),
+                ('check-circle', 'Get Immediate Feedback', 'Claude returns details like SO number, total amount, status, and other relevant information.'),
+              ]" t-as="step" t-key="step_index">
+                <div class="module-vtimeline__item reveal-on-scroll" t-attf-style="transition-delay: #{step_index * 0.08}s;">
+                  <div class="module-vtimeline__icon">
+                    <t t-call="dics_theme.dics_icon"><t t-set="icon" t-value="step[0]"/></t>
+                    <span class="module-vtimeline__num" t-esc="step_index + 1">1</span>
+                  </div>
+                  <div class="module-vtimeline__body">
+                    <h3 t-esc="step[1]">Title</h3>
+                    <p t-raw="step[2]">Description</p>
+                  </div>
+                </div>
+              </t>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── DEMO / SCREENSHOT ─── -->
+        <section class="module-section">
+          <div class="module-hero__dotgrid"></div>
+          <div class="container">
+            <div class="dics-section-head dics-section-head--centered reveal-on-scroll">
+              <span class="module-badge module-badge--primary">
+                <span class="module-badge__dot"></span>
+                Live Inside Odoo
+              </span>
+              <h2>Talk to Claude Directly in Odoo</h2>
+              <p>Use the dedicated chat panel or give commands anywhere in the interface.</p>
+            </div>
+
+            <div class="claude-browser-wrap reveal-on-scroll">
+              <div class="claude-browser-wrap__glow"></div>
+              <div class="claude-browser">
+                <div class="claude-browser__topbar">
+                  <span class="claude-browser__dot claude-browser__dot--red"></span>
+                  <span class="claude-browser__dot claude-browser__dot--yellow"></span>
+                  <span class="claude-browser__dot claude-browser__dot--green"></span>
+                  <span class="claude-browser__url">yourcompany.odoo.com/sales</span>
+                </div>
+                <div class="claude-browser__body">
+                  <div class="claude-browser__sidebar">
+                    <t t-foreach="['layout-dashboard', 'layers', 'users', 'file-text', 'database']" t-as="sidebar_icon" t-key="sidebar_icon_index">
+                      <div t-attf-class="claude-browser__sidebar-icon #{'is-active' if sidebar_icon_index == 1 else ''}">
+                        <t t-call="dics_theme.dics_icon"><t t-set="icon" t-value="sidebar_icon"/></t>
+                      </div>
+                    </t>
+                  </div>
+                  <div class="claude-browser__chat">
+                    <div class="claude-browser__chat-title">
+                      <t t-call="dics_theme.dics_icon"><t t-set="icon">bot</t></t> Claude Assistant
+                    </div>
+                    <t t-foreach="[
+                      ('user', 'Create a sale order with Customer name &#8220;John&#8221; and product &#8220;Apples&#8221; 5 quantity'),
+                      ('claude', 'Creating Sale Order...\n\nCustomer: John\nProduct: Apples (5 units)\nSubtotal: &#8377;2,500\nTotal: &#8377;2,500\n\nSO0247 has been created successfully.'),
+                      ('system', '&#10003; Sale Order SO0247 Created'),
+                      ('user', 'What is the total of SO0247?'),
+                      ('claude', 'Sale Order SO0247\nTotal Amount: &#8377;2,500\nStatus: Draft\n5 units of Apples confirmed.'),
+                    ]" t-as="msg" t-key="msg_index">
+                      <div t-attf-class="claude-browser__msg claude-browser__msg--#{msg[0]}" t-raw="msg[1]">Message</div>
+                    </t>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── FEATURES ─── -->
+        <section class="module-section--tint">
+          <div class="container">
+            <div class="dics-section-head dics-section-head--centered reveal-on-scroll">
+              <h2>Powerful Features</h2>
+              <p>Claude is deeply integrated into your Odoo environment.</p>
+            </div>
+
+            <div class="module-feature-grid">
+              <t t-foreach="[
+                ('mic', 'Voice &amp; Text Input', 'Works with typed text or voice commands anywhere in Odoo.'),
+                ('database', 'Deep Odoo Context Awareness', 'Understands your real customers, products, stock levels, and business rules.'),
+                ('shield-check', 'Human-in-the-Loop', 'Every critical action is summarized and requires your confirmation.'),
+                ('bot', 'Dedicated Claude Chat Panel', 'A persistent chat window inside Odoo where you can have ongoing conversations and give complex instructions.'),
+                ('refresh-cw', 'Zero Manual Entry', 'Claude handles creation and updates — you just review the results.'),
+                ('workflow', 'Works Across Modules', 'Sales, Inventory, Purchases, Helpdesk — Claude can operate wherever needed.'),
+              ]" t-as="feat" t-key="feat_index">
+                <article class="dics-tilt-card module-feature-card-claude reveal-on-scroll" t-attf-style="transition-delay: #{feat_index * 0.06}s;">
+                  <div class="dics-tilt-card__inner">
+                    <div class="module-feature-card__icon module-feature-card__icon--primary">
+                      <t t-call="dics_theme.dics_icon"><t t-set="icon" t-value="feat[0]"/></t>
+                    </div>
+                    <h3 t-raw="feat[1]">Feature</h3>
+                    <p t-esc="feat[2]">Description</p>
+                  </div>
+                </article>
+              </t>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── OUTCOMES ─── -->
+        <section class="module-section--dark">
+          <div class="container">
+            <div class="dics-section-head dics-section-head--centered reveal-on-scroll">
+              <h2 style="color:#fff;">Real Business Impact</h2>
+            </div>
+            <div class="module-cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+              <t t-foreach="[
+                ('Dramatically Faster Operations', 'Create complex records in seconds using natural language.'),
+                ('Reduced Training Time', 'New team members can be productive immediately without deep Odoo knowledge.'),
+                ('Full Audit Trail', 'Every action performed by Claude is logged as normal Odoo records.'),
+              ]" t-as="outcome" t-key="outcome_index">
+                <article class="dics-tilt-card outcome-card reveal-on-scroll" t-attf-style="transition-delay: #{outcome_index * 0.1}s;">
+                  <div class="dics-tilt-card__inner">
+                    <t t-call="dics_theme.dics_icon"><t t-set="icon">sparkles</t></t>
+                    <h3 t-esc="outcome[0]">Title</h3>
+                    <p t-esc="outcome[1]">Description</p>
+                  </div>
+                </article>
+              </t>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── TECH STACK ─── -->
+        <section class="module-section" style="padding: 4rem 0; text-align: center;">
+          <div class="container">
+            <p style="font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(24,30,40,0.4); margin-bottom: 1.5rem;">Built With</p>
+            <div class="module-tech-pills">
+              <t t-foreach="['Claude API', 'Odoo ORM', 'Odoo API', 'Natural Language Understanding', 'Real-time Execution', 'Secure Context']" t-as="tech" t-key="tech_index">
+                <span class="module-tech-pill" t-esc="tech">Tech</span>
+              </t>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── CTA ─── -->
+        <section class="module-cta">
+          <div class="container">
+            <h2>Ready to put Claude inside your Odoo?</h2>
+            <p class="module-cta__lead">Let's install and configure the module for your specific workflows.</p>
+            <div class="module-cta__actions">
+              <a href="/contactus" class="btn btn-primary dics-magnetic-button">
+                Install Claude in My Odoo <t t-call="dics_theme.dics_icon"><t t-set="icon">arrow-right</t></t>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </t>
+  </template>
+</odoo>

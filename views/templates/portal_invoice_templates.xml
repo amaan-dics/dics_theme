@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="dics_invoice_portal_page" inherit_id="account.portal_invoice_page">
+    <xpath expr="//div[hasclass('o_portal_html_view')]" position="replace">
+
+        <!-- Keep iframe in DOM and visible to print JS, hide it visually only -->
+        <div class="o_portal_html_view dics-iframe-hidden">
+      <iframe id="invoice_html"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              scrolling="no"
+              t-att-src="invoice.get_portal_url(report_type='html')"/>
+    </div>
+
+        <!-- Our custom layout shown on screen -->
+        <div class="dics-custom-invoice-container d-print-none">
+            <t t-call="dics_theme.portal_invoice_detail"/>
+        </div>
+
+    </xpath>
+</template>
+
+<!--    <template id="dics_invoice_sidebar_pdf"-->
+<!--          inherit_id="account.portal_invoice_page"-->
+<!--          website_id="dics_theme.dics_website">-->
+
+<!--  <xpath expr="//a[hasclass('o_download_btn')]" position="attributes">-->
+<!--    <attribute name="t-att-href">invoice.get_portal_url(report_type='pdf', download=True)</attribute>-->
+<!--    <attribute name="target">_blank</attribute>-->
+<!--  </xpath>-->
+
+<!--  <xpath expr="//a[hasclass('o_print_btn')]" position="attributes">-->
+<!--    <attribute name="t-att-href">invoice.get_portal_url(report_type='pdf')</attribute>-->
+<!--    <attribute name="target">_blank</attribute>-->
+<!--  </xpath>-->
+
+<!--</template>-->
+
+    <template id="portal_invoice_detail" name="Datainteger Consultancy Services Portal Invoice Detail">
+        <div class="dics-invoice-card">
+
+            <div class="dics-invoice-header">
+                <div>
+                    <span class="dics-section-label">Invoice</span>
+                    <h2 class="mb-1">
+                        <t t-esc="invoice.name"/>
+                    </h2>
+                    <div class="text-muted">
+                        <strong>Date:</strong>
+                        <span t-field="invoice.invoice_date"/>
+                    </div>
+                </div>
+
+                <div class="text-end">
+                    <t t-if="invoice.payment_state == 'paid'">
+                        <span class="dics-status-badge paid">
+                            <i class="fa fa-check-circle me-1"/> Paid
+                        </span>
+                    </t>
+                    <t t-elif="invoice.payment_state == 'in_payment'">
+                        <span class="dics-status-badge in-payment">
+                            <i class="fa fa-refresh me-1"/> In Payment
+                        </span>
+                    </t>
+                    <t t-elif="invoice.payment_state == 'partial'">
+                        <span class="dics-status-badge partial">
+                            <i class="fa fa-adjust me-1"/> Partially Paid
+                        </span>
+                    </t>
+                    <t t-elif="invoice.payment_state == 'reversed'">
+                        <span class="dics-status-badge reversed">
+                            <i class="fa fa-undo me-1"/> Reversed
+                        </span>
+                    </t>
+                    <t t-else="">
+                        <span class="dics-status-badge unpaid">
+                            <i class="fa fa-clock-o me-1"/> Payment Due
+                        </span>
+                    </t>
+                </div>
+            </div>
+
+            <div class="row mt-4 g-4">
+                <div class="col-md-6">
+                    <div class="dics-info-card">
+                        <h5>Customer</h5>
+                        <div t-field="invoice.partner_id"
+                             t-options='{
+                                "widget": "contact",
+                                "fields": ["name", "address", "phone", "email"],
+                                "no_marker": True
+                             }'/>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="dics-info-card">
+                        <h5>Invoice Details</h5>
+                        <table class="table table-sm mb-0">
+                            <tr>
+                                <th>Invoice</th>
+                                <td><t t-esc="invoice.name"/></td>
+                            </tr>
+                            <tr>
+                                <th>Date</th>
+                                <td><span t-field="invoice.invoice_date"/></td>
+                            </tr>
+                            <tr>
+                                <th>Due Date</th>
+                                <td><span t-field="invoice.invoice_date_due"/></td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td><span t-field="invoice.amount_total"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dics-portal-section-head mt-5">
+                <h4 class="mb-0">Products</h4>
+                <span class="dics-portal-section-count">
+                    <t t-esc="len(dics_lines)"/> Items
+                </span>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table mb-0">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th class="text-center">Qty</th>
+                            <th class="text-end">Unit Price</th>
+                            <th class="text-end">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-if="dics_lines">
+                            <t t-foreach="dics_lines" t-as="line">
+                                <tr>
+                                    <td>
+                                        <span t-field="line.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.quantity"/>
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-field="line.price_unit"/>
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-field="line.price_subtotal"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </t>
+                        <t t-else="">
+                            <tr>
+                                <td colspan="4" class="text-center text-muted py-4">
+                                    No products found on this invoice.
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row justify-content-end mt-4">
+                <div class="col-lg-4">
+                    <div class="dics-summary-card">
+                        <table class="table table-sm mb-0">
+                            <tr>
+                                <th>Untaxed</th>
+                                <td class="text-end"><span t-field="invoice.amount_untaxed"/></td>
+                            </tr>
+                            <tr>
+                                <th>Tax</th>
+                                <td class="text-end"><span t-field="invoice.amount_tax"/></td>
+                            </tr>
+                            <tr class="fw-bold">
+                                <th>Total</th>
+                                <td class="text-end"><span t-field="invoice.amount_total"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </template>
+
+    <template id="portal_my_invoices_dics"
+          inherit_id="account.portal_my_invoices"
+          name="Invoice List with Summary">
+
+    <xpath expr="//t[@t-call='portal.portal_searchbar']" position="after">
+        <div class="row mb-4 mt-3" t-if="dics_invoice_totals">
+            <!-- Total Outstanding -->
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card border-0 bg-white h-100"
+                     style="box-shadow: 0 2px 8px rgba(0,0,0,.08); border-radius: 12px; padding: 1.5rem;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <p class="text-muted mb-1"
+                               style="font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;">
+                                Total Outstanding
+                            </p>
+                            <h3 class="mb-0" style="color:#0099ee;font-weight:700;">
+                                $<span t-out="'{:,.2f}'.format(dics_invoice_totals['outstanding'])"/>
+                            </h3>
+                        </div>
+                        <div style="width:50px;height:50px;background:rgba(0,153,238,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+                            <i class="fa fa-money" style="font-size:1.5rem;color:#0099ee;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card border-0 bg-white h-100"
+                     style="box-shadow: 0 2px 8px rgba(0,0,0,.08); border-radius: 12px; padding: 1.5rem;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <p class="text-muted mb-1"
+                               style="font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;">
+                                Overdue
+                            </p>
+                            <h3 class="mb-0" style="color:#dc3545;font-weight:700;">
+                                $<span t-out="'{:,.2f}'.format(dics_invoice_totals['overdue'])"/>
+                            </h3>
+                        </div>
+                        <div style="width:50px;height:50px;background:rgba(220,53,69,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+                            <i class="fa fa-exclamation-circle" style="font-size:1.5rem;color:#dc3545;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-12 mb-3">
+                <div class="card border-0 bg-white h-100"
+                     style="box-shadow: 0 2px 8px rgba(0,0,0,.08); border-radius: 12px; padding: 1.5rem;">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div>
+                            <p class="text-muted mb-1"
+                               style="font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;">
+                                Pending
+                            </p>
+                            <h3 class="mb-0" style="color:#ffc107;font-weight:700;">
+                                $<span t-out="'{:,.2f}'.format(dics_invoice_totals['pending'])"/>
+                            </h3>
+                        </div>
+                        <div style="width:50px;height:50px;background:rgba(255,193,7,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+                            <i class="fa fa-clock-o" style="font-size:1.5rem;color:#ffc107;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </xpath>
+
+</template>
+    <template id="portal_my_invoices_status_mobile"
+          inherit_id="account.portal_my_invoices"
+          name="Invoice Status Text Visible on Mobile">
+
+    <xpath expr="//t[@t-foreach='invoices']/tr/td[hasclass('text-center')]/a[hasclass('btn-primary')]/span[hasclass('d-none')]"
+       position="attributes">
+    <attribute name="class" remove="d-none d-md-inline" separator=" "/>
+</xpath>
+
+
+</template>
+
+
+</odoo>
