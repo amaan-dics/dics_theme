@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<template id="dics_whats_new_in_odoo_20"
+          name="DataInteger — What's New in Odoo 20"
+          key="dics_theme.dics_whats_new_in_odoo_20"
+          website_id="dics_theme.dics_website">
+
+    <t t-call="website.layout">
+        <t t-set="additional_title">
+            What's New in Odoo 20? New Features and Changes | DataInteger
+        </t>
+        <t t-set="meta_description">
+            Learn what's new in Odoo 20, including AI, offline mode, eCommerce, inventory, manufacturing, project management, and the new JSON-2 API.
+        </t>
+
+        <div id="wrap" class="dics-home dics-knowledge-page">
+            <main class="dics-main">
+
+
+                <!-- =====================================================
+                     HERO SECTION
+                ====================================================== -->
+                <section class="dics-kb-hero">
+                    <div class="dics-kb-dot-grid"/>
+                    <div class="dics-container dics-kb-hero__inner">
+
+
+
+                        <div class="dics-kb-hero-grid">
+                            <div class="dics-kb-hero-copy">
+                                <h1>
+                                    What's New in Odoo 20?
+                                    <br class="dics-kb-desktop-break"/>
+                                    <span>AI, Offline Mode,</span>
+                                    Better eCommerce &amp; More.
+                                </h1>
+
+                                <div class="dics-kb-lead">
+                                    <p>
+                                        Odoo 20 brings new features and improvements to help businesses work faster and manage their operations more easily.
+                                    </p>
+                                    <p>
+                                        Some of the biggest changes in Odoo 20 include AI features, offline mode, new eCommerce features, better inventory management, manufacturing improvements, field service improvements, better project reporting, CRM and marketing improvements, Python 3.12, PostgreSQL 15, and the new JSON-2 API.
+                                        Odoo 20 also includes important technical changes that businesses need to check before upgrading.
+                                    </p>
+                                </div>
+
+                                <div class="dics-kb-byline">
+                                    <div>
+                                        <span class="material-symbols-outlined">engineering</span>
+                                        <span class="dics-kb-byline__strong">Written by DataInteger ERP Solutions Team</span>
+                                    </div>
+                                    <span>•</span>
+                                    <div>
+                                        <span class="material-symbols-outlined">schedule</span>
+                                        <span>18 Min Read</span>
+                                    </div>
+                                    <span>•</span>
+                                    <div>
+                                        <span class="material-symbols-outlined dics-kb-icon-green">check_circle</span>
+                                        <span class="dics-kb-byline__strong">Updated for Odoo 20</span>
+                                    </div>
+                                    <span class="dics-kb-audience">Beginners to System Architects</span>
+                                </div>
+                            </div>
+
+                            <!-- Architectural telemetry panel -->
+                            <aside class="dics-kb-telemetry">
+                                <div class="dics-kb-telemetry__top">
+                                    <div class="dics-kb-window-dots">
+                                        <span class="is-red"/>
+                                        <span class="is-gray"/>
+                                        <span class="is-light"/>
+                                    </div>
+                                    <span class="dics-kb-mono dics-kb-mono--strong">ODOO 20 AT A GLANCE</span>
+                                </div>
+
+                                <div class="dics-kb-telemetry__metric">
+                                    <span class="dics-kb-mono">PLATFORM REQUIREMENTS</span>
+                                    <div class="dics-kb-telemetry__metric-row">
+                                        <strong>Python 3.12</strong>
+                                        <span>REQUIRED</span>
+                                    </div>
+                                    <p>
+                                        Odoo 20 requires Python 3.12 and PostgreSQL 15.
+                                        Custom modules, servers, and integrations should be checked before upgrading.
+                                    </p>
+                                </div>
+
+                                <div class="dics-kb-telemetry__grid">
+                                    <div>
+                                        <span class="dics-kb-mono">AI</span>
+                                        <strong>Plain Language</strong>
+                                    </div>
+                                    <div>
+                                        <span class="dics-kb-mono">OFFLINE</span>
+                                        <strong>Sync Queue</strong>
+                                    </div>
+                                    <div>
+                                        <span class="dics-kb-mono">API</span>
+                                        <strong>JSON-2</strong>
+                                    </div>
+                                    <div>
+                                        <span class="dics-kb-mono">DATABASE</span>
+                                        <strong>PostgreSQL 15</strong>
+                                    </div>
+                                </div>
+
+                                <a href="/contact" class="dics-kb-dark-btn">
+                                    <span>Plan Your Odoo 20 Upgrade</span>
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </a>
+                            </aside>
+                        </div>
+
+                        <!-- KPI row -->
+                        <div class="dics-kb-kpis">
+                            <article class="dics-kb-kpi">
+                                <div class="dics-kb-kpi__icon">
+                                    <span class="material-symbols-outlined">psychology</span>
+                                </div>
+                                <div>
+                                    <strong>AI Features</strong>
+                                    <span>PLAIN LANGUAGE TASKS</span>
+                                    <p>You can use plain language to ask Odoo to find information, create activities, update records, and perform other tasks.</p>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-kpi">
+                                <div class="dics-kb-kpi__icon">
+                                    <span class="material-symbols-outlined">wifi_off</span>
+                                </div>
+                                <div>
+                                    <strong>Offline Mode</strong>
+                                    <span>WORK WITHOUT INTERNET</span>
+                                    <p>Some Odoo users can continue working without an internet connection and sync their changes when the connection comes back.</p>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-kpi">
+                                <div class="dics-kb-kpi__icon">
+                                    <span class="material-symbols-outlined">storefront</span>
+                                </div>
+                                <div>
+                                    <strong>New eCommerce Features</strong>
+                                    <span>WEBSITE &amp; STORE IMPROVEMENTS</span>
+                                    <p>Odoo 20 brings new website designs, better product pages, AI content tools, and improved shopping features.</p>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-kpi">
+                                <div class="dics-kb-kpi__icon">
+                                    <span class="material-symbols-outlined">api</span>
+                                </div>
+                                <div>
+                                    <strong>JSON-2 API</strong>
+                                    <span>NEW API STANDARD</span>
+                                    <p>Odoo 20 introduces the JSON-2 API and moves away from older RPC APIs.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- =====================================================
+                     RELEASE CONTEXT
+                ====================================================== -->
+                <section class="dics-kb-section dics-kb-section--light" style="padding: 1.5rem 0;">
+                    <div class="dics-container">
+                        <div class="dics-mg-callout dics-mg-callout--note">
+                            <span class="material-symbols-outlined">info</span>
+                            <div>
+                                <strong>About this guide</strong>
+                                <p>
+                                    This guide explains the main new features and changes in Odoo 20 in simple language for business users, consultants, administrators, and developers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Table of Contents -->
+                <section class="dics-kb-section dics-kb-section--light" style="padding: 2.5rem 0;">
+                    <div class="dics-container">
+                        <nav class="dics-mg-toc">
+                            <div class="dics-mg-toc__header row">
+                                <div class="dics-mg-toc__badge">
+                                    <span class="material-symbols-outlined">format_list_bulleted</span>
+                                    <span>TABLE OF CONTENTS</span>
+                                </div>
+                                <span class="dics-mg-toc__subtitle">Select a section to jump directly</span>
+                            </div>
+
+                            <div class="dics-mg-toc__grid">
+                                <a href="#ai-conversational" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">01</span>
+                                    <span class="dics-mg-toc__title">AI in Odoo 20</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+
+                                <a href="#offline-mode" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">02</span>
+                                    <span class="dics-mg-toc__title">Odoo 20 Offline Mode</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+
+                                <a href="#ecommerce-website" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">03</span>
+                                    <span class="dics-mg-toc__title">Website and eCommerce</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+
+                                <a href="#inventory-manufacturing" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">04</span>
+                                    <span class="dics-mg-toc__title">Inventory, Manufacturing and Field Service</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+
+                                <a href="#project-crm" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">05</span>
+                                    <span class="dics-mg-toc__title">Project, CRM and Marketing</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+
+                                <a href="#technical-platform" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">06</span>
+                                    <span class="dics-mg-toc__title">Technical Changes and JSON-2 API</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+
+                                <a href="#role-based-guide" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">07</span>
+                                    <span class="dics-mg-toc__title">What Odoo 20 Means for Different Users</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+
+                                <a href="#upgrade-checklist" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">08</span>
+                                    <span class="dics-mg-toc__title">Odoo 20 Upgrade Checklist</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+
+                                <a href="#bigger-picture" class="dics-mg-toc__card">
+                                    <span class="dics-mg-toc__num">09</span>
+                                    <span class="dics-mg-toc__title">The Bigger Picture</span>
+                                    <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+
+                <!-- =====================================================
+                     FEATURE SECTION: AI & CONVERSATIONAL
+                ====================================================== -->
+                <section id="ai-conversational" class="dics-kb-section">
+                    <div class="dics-container">
+                        <div class="dics-kb-article">
+                            <div class="dics-kb-article__head">
+                                <span class="dics-kb-eyebrow">NEW IN ODOO 20</span>
+                                <h2>1. AI in Odoo 20</h2>
+                            </div>
+                            <div class="dics-kb-article__body">
+                                <p>
+                                    AI is one of the biggest new areas in Odoo 20.
+                                    Instead of clicking through different menus, users can give Odoo instructions using normal language.
+                                </p>
+
+                                <div class="dics-mg-callout dics-mg-callout--note">
+                                    <span class="material-symbols-outlined">lightbulb</span>
+                                    <div>
+                                        <strong>Examples of AI instructions</strong>
+                                        <p>
+                                            "Show me all quotations from ABC Ltd that are still waiting for approval."
+                                            Or: "Create a follow-up activity for these customers."
+                                            Odoo can use these instructions to work with business records while following the user's permissions.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p>AI features in Odoo 20 include:</p>
+
+                                <ul class="dics-kb-list dics-kb-list--good" style="margin-bottom: 1.5rem;">
+                                    <li>
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <strong>AI Content Creation:</strong>
+                                        Odoo can help create product descriptions, product titles, marketing content, and SEO content.
+                                        This can reduce the amount of time employees spend writing repetitive content.
+                                    </li>
+                                    <li>
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <strong>AI for Websites:</strong>
+                                        AI can help businesses improve website content, SEO, layouts, and promotional content.
+                                    </li>
+                                    <li>
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <strong>AI for Business Records:</strong>
+                                        Users can use plain language to assign CRM leads, create activities, update records, change statuses, and update fields.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =====================================================
+                     FEATURE SECTION: OFFLINE MODE
+                ====================================================== -->
+                <section id="offline-mode" class="dics-kb-section dics-kb-section--gray">
+                    <div class="dics-container">
+                        <div class="dics-kb-engineering">
+                            <div class="dics-kb-engineering__copy">
+                                <span class="dics-kb-eyebrow">WORK ANYWHERE</span>
+                                <h2>2. Odoo 20 Offline Mode</h2>
+                                <p>
+                                    One of the useful new features in Odoo 20 is offline mode.
+                                    This can be helpful for employees who work in places where the internet connection is not always available —
+                                    for example field service workers, warehouse employees, and sales teams.
+                                    Users can continue working and then sync their changes when the internet connection returns.
+                                </p>
+
+                                <div class="dics-kb-pillars">
+                                    <article>
+                                        <span>01</span>
+                                        <div>
+                                            <h3>What You Can Do Offline</h3>
+                                            <p>Depending on the Odoo app, users can view, search, create, edit, archive, unarchive, and delete records without an internet connection.</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <span>02</span>
+                                        <div>
+                                            <h3>Changes Sync Later</h3>
+                                            <p>When the internet connection returns, Odoo can sync the changes that were made offline.</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <span>03</span>
+                                        <div>
+                                            <h3>Conflict Handling</h3>
+                                            <p>If two people change the same record while offline, Odoo 20 includes tools to identify and review the conflict so changes are not silently overwritten.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="dics-kb-terminal">
+                                <div class="dics-kb-terminal__head">
+                                    <div>
+                                        <i/>
+                                        <i/>
+                                        <i/>
+                                    </div>
+                                    <span>ODOO 20 // OFFLINE MODE</span>
+                                </div>
+                                <div class="dics-kb-terminal__body">
+                                    <div>
+                                        <span>01</span>
+                                        <b>Internet lost</b>
+                                        <em>Offline mode starts</em>
+                                    </div>
+                                    <div>
+                                        <span>02</span>
+                                        <b>User keeps working</b>
+                                        <em>View or change records</em>
+                                    </div>
+                                    <div>
+                                        <span>03</span>
+                                        <b>Changes saved</b>
+                                        <em>Waiting in sync queue</em>
+                                    </div>
+                                    <div>
+                                        <span>04</span>
+                                        <b>Internet returns</b>
+                                        <em>Odoo starts syncing</em>
+                                    </div>
+                                    <div>
+                                        <span>05</span>
+                                        <b>Conflicts checked</b>
+                                        <em>Review and resolve</em>
+                                    </div>
+                                </div>
+                                <div class="dics-kb-terminal__footer">
+                                    <span>OFFLINE MODE</span>
+                                    <strong>AVAILABLE</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =====================================================
+                     FEATURE SECTION: WEBSITE & ECOMMERCE
+                ====================================================== -->
+                <section id="ecommerce-website" class="dics-kb-section">
+                    <div class="dics-container">
+                        <div class="dics-kb-section-head dics-kb-section-head--center">
+                            <span class="dics-kb-eyebrow">WEBSITE &amp; ONLINE STORE</span>
+                            <h2>3. Odoo 20 Website and eCommerce</h2>
+                            <p>
+                                Odoo 20 brings several improvements to websites and online stores,
+                                including new website designs, AI content tools, better product organisation,
+                                improved shopping experience, better mobile support, Click &amp; Collect improvements, and better product combinations.
+                            </p>
+                        </div>
+
+                        <div class="dics-kb-module-grid">
+                            <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">web</span>
+                                    </div>
+                                    <span>WEB_01</span>
+                                </div>
+                                <h3>New Website Features</h3>
+                                <p>Odoo 20 includes improvements to the website builder.
+                                    Businesses can use AI to help create website content and improve SEO.
+                                    The new designs are also built with mobile users in mind.</p>
+                                <div class="dics-kb-tags">
+                                    <span>AI Content</span>
+                                    <span>SEO</span>
+                                    <span>Mobile-friendly</span>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">category</span>
+                                    </div>
+                                    <span>WEB_02</span>
+                                </div>
+                                <h3>Better Product Categories</h3>
+                                <p>Odoo 20 makes it easier to organise large product catalogs.
+                                    Products can be grouped into smaller sections so customers can find products more easily.
+                                    This can be especially useful for businesses with large numbers of products.</p>
+                                <div class="dics-kb-tags">
+                                    <span>Easier browsing</span>
+                                    <span>Large catalogs</span>
+                                    <span>Better organisation</span>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">shopping_bag</span>
+                                    </div>
+                                    <span>WEB_03</span>
+                                </div>
+                                <h3>Combo Products</h3>
+                                <p>Businesses can sell product combinations across Odoo Sales, Odoo eCommerce, and Odoo POS.
+                                    The same product information can be used across these channels.</p>
+                                <div class="dics-kb-tags">
+                                    <span>Sales + POS + Web</span>
+                                    <span>One product setup</span>
+                                    <span>Shared inventory</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =====================================================
+                     FEATURE SECTION: INVENTORY, MFG & FIELD SERVICE
+                ====================================================== -->
+                <section id="inventory-manufacturing" class="dics-kb-section dics-kb-section--light">
+                    <div class="dics-container">
+                        <div class="dics-kb-article">
+                            <div class="dics-kb-article__head">
+                                <span class="dics-kb-eyebrow">OPERATIONS</span>
+                                <h2>4. Odoo 20 Inventory, Manufacturing and Field Service</h2>
+                            </div>
+                            <div class="dics-kb-article__body">
+                                <p>
+                                    Odoo 20 also includes improvements for businesses that manage stock, manufacturing, warehouses, and field service.
+                                </p>
+
+                                <div class="dics-mg-callout">
+                                    <span class="material-symbols-outlined">inventory_2</span>
+                                    <div>
+                                        <strong>Inventory Improvements</strong>
+                                        <p>
+                                            Odoo 20 improves areas such as stock management, product allocation, reordering, warehouses, inventory transfers, and branch and company stock movement.
+                                            These changes can help businesses keep better track of their stock.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <ul class="dics-kb-list dics-kb-list--good">
+                                    <li>
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <strong>Better Stock Reordering:</strong>
+                                        Odoo 20 adds more options for setting stock levels and managing when products need to be reordered.
+                                        This can help businesses avoid running out of important products.
+                                    </li>
+                                    <li>
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <strong>Better Warehouse Documents:</strong>
+                                        Odoo 20 includes improvements to warehouse labels and CMR transport documents.
+                                        These can help warehouse teams with picking, packing, shipping, and transport.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Project / CRM section -->
+                <section id="project-crm" class="dics-kb-section">
+                    <div class="dics-container">
+                        <div class="dics-kb-article">
+                            <div class="dics-kb-article__head">
+                                <span class="dics-kb-eyebrow">PROJECTS &amp; SALES</span>
+                                <h2>5. Odoo 20 Project, CRM and Marketing</h2>
+                            </div>
+                            <div class="dics-kb-article__body">
+                                <p>
+                                    Odoo 20 also brings improvements to project management, CRM, and marketing.
+                                    Businesses can get better information about project costs, project profits, sales opportunities, customers, and marketing activities.
+                                    These tools can help managers understand how projects and sales are performing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =====================================================
+                     FEATURE SECTION: TECHNICAL PLATFORM
+                ====================================================== -->
+                <section id="technical-platform" class="dics-kb-section dics-kb-section--dark">
+                    <div class="dics-container">
+                        <div class="dics-kb-section-head dics-kb-section-head--center">
+                            <span class="dics-kb-eyebrow dics-kb-eyebrow--light">TECHNICAL CHANGES</span>
+                            <h2>6. Odoo 20 Technical Changes and JSON-2 API</h2>
+                            <p>
+                                Odoo 20 includes some important technical changes.
+                                These changes are especially important for businesses with custom Odoo modules or integrations.
+                            </p>
+                        </div>
+
+                        <div class="dics-kb-why-grid">
+                            <article>
+                                <span class="material-symbols-outlined">code</span>
+                                <h3>Python 3.12</h3>
+                                <p>Odoo 20 requires Python 3.12.
+                                    Businesses should check their custom modules, servers, Docker setup, deployment scripts, third-party libraries, and development environment before upgrading.</p>
+                            </article>
+
+                            <article>
+                                <span class="material-symbols-outlined">database</span>
+                                <h3>PostgreSQL 15</h3>
+                                <p>Odoo 20 also requires PostgreSQL 15.
+                                    Your database and server setup should be checked before the upgrade.
+                                    Some Odoo features and APIs have changed or been removed — custom modules should be reviewed.</p>
+                            </article>
+
+                            <article>
+                                <span class="material-symbols-outlined">api</span>
+                                <h3>JSON-2 API</h3>
+                                <p>Odoo 20 moves toward the new JSON-2 API.
+                                    Older XML-RPC and JSON-RPC APIs are being phased out.
+                                    Integrations with Shopify, mobile apps, payment systems, shipping systems, BI tools, and other software may need to be updated.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JSON-2 Detail Section -->
+                <section class="dics-kb-section">
+                    <div class="dics-container">
+                        <div class="dics-kb-engineering">
+                            <div class="dics-kb-engineering__copy">
+                                <span class="dics-kb-eyebrow">FOR DEVELOPERS &amp; INTEGRATORS</span>
+                                <h2>What Should Businesses Do About JSON-2?</h2>
+                                <p>
+                                    Before upgrading, make a list of every system connected to Odoo.
+                                    Then check which API it uses, how it connects to Odoo, whether it needs to move to JSON-2, whether permissions still work, and whether data is transferred correctly.
+                                    This should be tested before the new Odoo version goes live.
+                                </p>
+
+                                <div class="dics-kb-pillars">
+                                    <article>
+                                        <span>01</span>
+                                        <div>
+                                            <h3>List Connected Systems</h3>
+                                            <p>Include Shopify, mobile apps, payment systems, shipping systems, BI tools, custom software, and any other external applications.</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <span>02</span>
+                                        <div>
+                                            <h3>Check the API Used</h3>
+                                            <p>See whether each connection uses XML-RPC, JSON-RPC, or another method, and plan the move to JSON-2 where needed.</p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <span>03</span>
+                                        <div>
+                                            <h3>Test Before Go-Live</h3>
+                                            <p>Confirm permissions still work and data is transferred correctly after the API changes.</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div class="dics-kb-terminal">
+                                <div class="dics-kb-terminal__head">
+                                    <div>
+                                        <i/>
+                                        <i/>
+                                        <i/>
+                                    </div>
+                                    <span>ODOO 20 // JSON-2 CHECKLIST</span>
+                                </div>
+                                <div class="dics-kb-terminal__body">
+                                    <div>
+                                        <span>01</span>
+                                        <b>List integrations</b>
+                                        <em>All systems linked to Odoo</em>
+                                    </div>
+                                    <div>
+                                        <span>02</span>
+                                        <b>Check API type</b>
+                                        <em>XML-RPC / JSON-RPC / other</em>
+                                    </div>
+                                    <div>
+                                        <span>03</span>
+                                        <b>Plan JSON-2 move</b>
+                                        <em>Where needed</em>
+                                    </div>
+                                    <div>
+                                        <span>04</span>
+                                        <b>Test permissions</b>
+                                        <em>Access still works</em>
+                                    </div>
+                                    <div>
+                                        <span>05</span>
+                                        <b>Test data flow</b>
+                                        <em>Before go-live</em>
+                                    </div>
+                                </div>
+                                <div class="dics-kb-terminal__footer">
+                                    <span>OLD RPC APIS</span>
+                                    <strong>BEING PHASED OUT</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- =====================================================
+                     FEATURE SECTION: ROLE-BASED GUIDE
+                ====================================================== -->
+                <section id="role-based-guide" class="dics-kb-section">
+                    <div class="dics-container">
+                        <div class="dics-kb-section-head dics-kb-section-head--center">
+                            <span class="dics-kb-eyebrow">WHO IS AFFECTED?</span>
+                            <h2>8. What Odoo 20 Means for Different Users</h2>
+                            <p>
+                                Odoo 20 affects different people in different ways.
+                            </p>
+                        </div>
+
+                        <div class="dics-kb-module-grid">
+                            <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">school</span>
+                                    </div>
+                                    <span>ROLE_01</span>
+                                </div>
+                                <h3>For Business Owners and Odoo Users</h3>
+                                <p>
+                                    The biggest benefits are AI features, offline work, better eCommerce, better inventory management, better reporting, and more connected business processes.
+                                    You do not need to understand the technical side of Odoo to use these features.
+                                </p>
+                                <div class="dics-kb-tags">
+                                    <span>AI</span>
+                                    <span>Offline work</span>
+                                    <span>Better reporting</span>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">schema</span>
+                                    </div>
+                                    <span>ROLE_02</span>
+                                </div>
+                                <h3>For Odoo Consultants</h3>
+                                <p>
+                                    Consultants should first check whether new Odoo 20 features can replace existing customizations.
+                                    Some businesses may no longer need custom solutions because Odoo now includes the required feature.
+                                </p>
+                                <div class="dics-kb-tags">
+                                    <span>Less custom code</span>
+                                    <span>Process design</span>
+                                    <span>Standard features</span>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">terminal</span>
+                                    </div>
+                                    <span>ROLE_03</span>
+                                </div>
+                                <h3>For Odoo Developers</h3>
+                                <p>
+                                    Developers should review Python 3.12 compatibility, PostgreSQL 15, custom modules, Odoo APIs, JSON-2 integrations, third-party libraries, and database changes.
+                                    Testing should be done before production.
+                                </p>
+                                <div class="dics-kb-tags">
+                                    <span>Python 3.12</span>
+                                    <span>API changes</span>
+                                    <span>Testing</span>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">admin_panel_settings</span>
+                                    </div>
+                                    <span>ROLE_04</span>
+                                </div>
+                                <h3>For System Administrators</h3>
+                                <p>
+                                    System administrators should check servers, backups, Docker containers, deployment scripts, custom modules, third-party apps, integrations, and database setup.
+                                    A system starting successfully does not always mean the Odoo upgrade is fully ready.
+                                </p>
+                                <div class="dics-kb-tags">
+                                    <span>Servers</span>
+                                    <span>Backups</span>
+                                    <span>Integrations</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =====================================================
+                     FEATURE SECTION: PRACTICAL BUSINESS EXAMPLES
+                ====================================================== -->
+                <section class="dics-kb-section dics-kb-section--gray">
+                    <div class="dics-container">
+                        <div class="dics-kb-article">
+                            <div class="dics-kb-article__head">
+                                <span class="dics-kb-eyebrow">REAL BUSINESS EXAMPLE</span>
+                                <h2>9. How Odoo 20 Works in a Real Business</h2>
+                            </div>
+                            <div class="dics-kb-article__body">
+                                <p>
+                                    The easiest way to understand Odoo 20 is to look at a normal business process.
+                                    Imagine a company that sells products and also sends technicians to customer locations.
+                                </p>
+
+                                <div class="dics-kb-pillars">
+                                    <article>
+                                        <span>01</span>
+                                        <div>
+                                            <h3>Customer visits the website</h3>
+                                            <p>
+                                                The customer can browse products, read information, and place an order through the Odoo website or eCommerce store.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <span>02</span>
+                                        <div>
+                                            <h3>Sales team handles the customer</h3>
+                                            <p>
+                                                The sales team can manage the customer and sales opportunity through Odoo CRM and Sales.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <span>03</span>
+                                        <div>
+                                            <h3>Inventory handles the order</h3>
+                                            <p>
+                                                Odoo Inventory manages stock, product allocation, picking, packing, and delivery.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <span>04</span>
+                                        <div>
+                                            <h3>Field service handles the job</h3>
+                                            <p>
+                                                If a technician needs to visit the customer, Odoo Field Service can help manage the appointment and service work.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <span>05</span>
+                                        <div>
+                                            <h3>Accounting tracks the money</h3>
+                                            <p>
+                                                Odoo Accounting can track invoices, payments, costs, and business results.
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="dics-mg-callout dics-mg-callout--note">
+                                    <span class="material-symbols-outlined">tips_and_updates</span>
+                                    <div>
+                                        <strong>Main benefit</strong>
+                                        <p>
+                                            These activities can work together instead of being managed in separate systems.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =====================================================
+                     FEATURE SECTION: UPGRADE CHECKLIST
+                ====================================================== -->
+                <section id="upgrade-checklist" class="dics-detail-section dics-detail-section--soft">
+
+                    <div class="dics-container">
+
+                        <div class="dics-detail-section-head dics-detail-section-head--center">
+
+                            <span class="dics-detail-eyebrow">
+                                Before You Upgrade
+                            </span>
+
+                            <h2>
+                                10. Odoo 20 Upgrade Checklist
+                            </h2>
+
+                            <p>
+                                Before upgrading to Odoo 20, businesses should check these areas.
+                            </p>
+
+                        </div>
+
+                        <div class="dics-detail-process">
+
+                            <article class="dics-detail-process-item">
+
+                                <span class="dics-detail-process-number">
+                                    01
+                                </span>
+
+                                <div>
+                                    <h3>Check Your Server</h3>
+
+                                    <p>
+                                        Make sure your servers support Python 3.12, PostgreSQL 15, and the required third-party software.
+                                    </p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="dics-detail-process-item">
+
+                                <span class="dics-detail-process-number">
+                                    02
+                                </span>
+
+                                <div>
+                                    <h3>Check Custom Modules</h3>
+
+                                    <p>
+                                        Review your custom Odoo code and check what needs to be changed.
+                                    </p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="dics-detail-process-item">
+
+                                <span class="dics-detail-process-number">
+                                    03
+                                </span>
+
+                                <div>
+                                    <h3>Check Integrations</h3>
+
+                                    <p>
+                                        Make a list of all systems connected to Odoo.
+                                        Check your APIs, payment integrations, shipping integrations, mobile apps, marketplaces, BI tools, and webhooks.
+                                    </p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="dics-detail-process-item">
+
+                                <span class="dics-detail-process-number">
+                                    04
+                                </span>
+
+                                <div>
+                                    <h3>Test Important Business Processes</h3>
+
+                                    <p>
+                                        Test the processes your business uses every day — sales orders, purchase orders, inventory, invoices, payments, manufacturing, POS, eCommerce, and the customer portal.
+                                    </p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="dics-detail-process-item">
+
+                                <span class="dics-detail-process-number">
+                                    05
+                                </span>
+
+                                <div>
+                                    <h3>Test With Realistic Data</h3>
+
+                                    <p>
+                                        Do not test only with a small empty database.
+                                        Use enough data to see how the system performs with real business activity.
+                                    </p>
+                                </div>
+
+                            </article>
+
+
+                            <article class="dics-detail-process-item">
+
+                                <span class="dics-detail-process-number">
+                                    06
+                                </span>
+
+                                <div>
+                                    <h3>Let Your Team Test Odoo</h3>
+
+                                    <p>
+                                        Your employees should test the new Odoo version before the final upgrade.
+                                        Make sure they can complete their normal daily tasks.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- =====================================================
+                     FEATURE SECTION: BIGGER PICTURE
+                ====================================================== -->
+                <section id="bigger-picture" class="dics-kb-section dics-kb-section--dark">
+                    <div class="dics-container">
+                        <div class="dics-kb-section-head dics-kb-section-head--center">
+                            <span class="dics-kb-eyebrow dics-kb-eyebrow--light">THE BIGGER PICTURE</span>
+                            <h2>What Does Odoo 20 Change?</h2>
+                            <p>
+                                Odoo 20 is not only about one new feature.
+                                It continues to bring more parts of a business together.
+                            </p>
+                        </div>
+
+                        <div class="dics-detail-why-grid">
+                            <article>
+                                <span class="material-symbols-outlined">psychology</span>
+                                <h3>AI</h3>
+                                <p>
+                                    AI can help users work with business information and complete everyday tasks.
+                                </p>
+                            </article>
+
+                            <article>
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                                <h3>eCommerce</h3>
+                                <p>
+                                    Website, eCommerce, Sales, POS, and Inventory are becoming more connected.
+                                </p>
+                            </article>
+
+                            <article>
+                                <span class="material-symbols-outlined">precision_manufacturing</span>
+                                <h3>Business Operations</h3>
+                                <p>
+                                    Inventory, manufacturing, field service, planning, and logistics can work from the same business data.
+                                </p>
+                            </article>
+
+                            <article>
+                                <span class="material-symbols-outlined">bar_chart</span>
+                                <h3>Reporting</h3>
+                                <p>
+                                    Project reports, CRM information, marketing data, and other reports help businesses understand what is happening.
+                                </p>
+                            </article>
+                        </div>
+
+
+                    </div>
+                </section>
+
+
+                <!-- =====================================================
+                     QUICK REFERENCE
+                ====================================================== -->
+                <section class="dics-kb-section dics-kb-section--gray">
+                    <div class="dics-container">
+                        <div class="dics-kb-section-head dics-kb-section-head--center">
+                            <span class="dics-kb-eyebrow">FAQ</span>
+                            <h2>Odoo 20 FAQ</h2>
+                        </div>
+
+                        <div class="dics-kb-compare-grid">
+                            <article class="dics-kb-compare-card dics-kb-compare-card--good">
+                                <div class="dics-kb-card-head">
+                                    <div class="dics-kb-card-title">
+                                        <div class="dics-kb-square-icon dics-kb-square-icon--red-solid">
+                                            <span class="material-symbols-outlined">help</span>
+                                        </div>
+                                        <div>
+                                            <h3>Is Odoo 20 mainly about AI?</h3>
+                                            <span>BEGINNER VIEW</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    No.
+                                    AI is one of the major new features, but Odoo 20 also includes improvements to offline work, eCommerce, inventory, field service, projects, reporting, and integrations.
+                                </p>
+                            </article>
+
+                            <article class="dics-kb-compare-card dics-kb-compare-card--good">
+                                <div class="dics-kb-card-head">
+                                    <div class="dics-kb-card-title">
+                                        <div class="dics-kb-square-icon dics-kb-square-icon--red">
+                                            <span class="material-symbols-outlined">engineering</span>
+                                        </div>
+                                        <div>
+                                            <h3>Is Odoo 20 a normal update?</h3>
+                                            <span>TECHNICAL VIEW</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    No.
+                                    Businesses should treat Odoo 20 as a major Odoo version upgrade.
+                                    Custom modules, integrations, databases, and the technical setup should all be checked and tested.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- =====================================================
+                     CALL TO ACTION
+                ====================================================== -->
+                <section class="dics-kb-cta">
+                    <div class="dics-container">
+                        <div class="dics-kb-cta-card">
+                            <div>
+                                <span class="dics-kb-eyebrow">READY TO UPGRADE TO ODOO 20?</span>
+                                <h2>Upgrade Your Odoo System With DataInteger</h2>
+                                <p>
+                                    Planning an Odoo 20 upgrade?
+                                    DataInteger can help you check your current Odoo system, update custom modules, review integrations, test your business processes, and plan the migration.
+                                    We can help with Odoo 20 migration, Odoo version upgrades, Odoo custom module upgrades, Odoo API migration, Odoo integrations, Odoo testing, and Odoo customization.
+                                </p>
+                                <a href="/contact" class="dics-btn dics-btn-primary">
+                                    Talk to Our Odoo Experts
+                                    <span class="dics-arrow">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </t>
+</template>
+</odoo>

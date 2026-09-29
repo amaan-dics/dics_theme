@@ -539,7 +539,7 @@ $dics-bg: #0000;
         .dics-detail-section-head h2 { color: #fff; }
         .dics-detail-eyebrow { color: rgba($dics-secondary, 0.85); }
         .dics-detail-why-grid article h3 { color: #fff; }
-        .dics-detail-why-grid article p  { color: rgba(255,255,255,0.65); }
+        .dics-detail-why-grid article p  { color: #c6c6ca !important; }
         .dics-detail-why-grid article .material-symbols-outlined { color: $dics-secondary; }
     }
 }
@@ -559,7 +559,7 @@ $dics-bg: #0000;
 
     p {
         font-size: 1.05rem;
-        color: $dics-text-muted;
+        color: #c6c6ca !important;
         line-height: 1.7;
     }
 
@@ -847,7 +847,7 @@ $dics-bg: #0000;
     width: 3.25rem;
     height: 3.25rem;
     border-radius: 1.1rem;
-    background: rgba(201, 87, 98, 0.1);                 // soft red tint
+    background: #ffffff1a;                 // soft red tint
     border: 1px solid rgba(201, 87, 98, 0.18);
     color: #c95762;                                     // reddish
     display: grid;
@@ -1207,4 +1207,271 @@ $dics-bg: #0000;
         grid-template-columns: 1fr !important;
         gap: 2.5rem !important;
     }
+}
+// ============================================================
+// DATAINTEGER — 404 PAGE
+// ============================================================
+
+.dics-404-page {
+    background: $dics-surface;
+}
+
+.dics-404 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 60px;
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba($dics-secondary, 0.035),
+            transparent 35%
+        ),
+        $dics-surface;
+}
+
+.dics-404__content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dics-404__number {
+    margin-bottom: 24px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: clamp(8rem, 20vw, 14rem);
+    font-weight: 800;
+    line-height: 0.8;
+    letter-spacing: -0.08em;
+
+    color: $dics-surface-container;
+    user-select: none;
+}
+
+.dics-404__title {
+    margin: 0 0 18px;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 750;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+
+    color: $dics-text;
+}
+
+.dics-404__text {
+    max-width: 520px;
+    margin: 0 auto 40px;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: $dics-text-muted;
+}
+
+.dics-404__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.dics-404__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-height: 52px;
+    padding: 0 26px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 650;
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+
+    .material-symbols-outlined {
+        font-size: 19px;
+    }
+
+    &:hover {
+        text-decoration: none;
+        transform: translateY(-2px);
+    }
+
+    &--primary {
+        background: $dics-secondary;
+        color: $dics-surface-white;
+        border: 1px solid $dics-secondary;
+
+        &:hover {
+            background: darken($dics-secondary, 7%);
+            border-color: darken($dics-secondary, 7%);
+            color: $dics-surface-white;
+        }
+    }
+
+    &--secondary {
+        background: transparent;
+        color: $dics-text;
+        border: 1px solid $dics-outline-light;
+
+        &:hover {
+            background: $dics-surface-white;
+            border-color: $dics-text;
+            color: $dics-text;
+        }
+    }
+}
+
+
+// ── Responsive ───────────────────────────────────────────────
+
+@media (max-width: 767px) {
+
+    .dics-404 {
+        padding: 60px 0 40px;
+    }
+
+    .dics-404__number {
+        margin-bottom: 20px;
+        font-size: clamp(7rem, 30vw, 10rem);
+    }
+
+    .dics-404__title {
+        font-size: 2rem;
+    }
+
+    .dics-404__text {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .dics-404__actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dics-404__btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .dics-404 {
+        padding: 50px 0 30px;
+    }
+
+    .dics-404__number {
+        font-size: 7rem;
+    }
+
+    .dics-404__title {
+        font-size: 1.75rem;
+    }
+
+    .dics-404__text {
+        font-size: 15px;
+    }
+}
+#ai-serrvices{
+    margin-top: 80px !important;
+    }
+    .dics-btn-red {
+        background: $dics-secondary;
+        color: #fff;
+
+        &:hover { background: darken($dics-secondary, 8%); }
+    }
+.dics-detail-modules-marquee {
+    overflow: hidden;
+}
+
+.dics-marquee-track-wrap {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 12px;
+
+    &:last-child { margin-bottom: 0; }
+}
+
+.dics-marquee-track {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+
+    &.dics-marquee-fwd {
+        animation: dics-marquee-fwd 40s linear infinite;
+    }
+
+    &.dics-marquee-rev {
+        animation: dics-marquee-rev 46s linear infinite;
+    }
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes dics-marquee-fwd {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+@keyframes dics-marquee-rev {
+    from { transform: translateX(-50%); }
+    to   { transform: translateX(0); }
+}
+
+.dics-marquee-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid var(--your-border-color, #e5e5e5);
+    border-radius: 999px;
+    background: var(--your-surface, #fff);
+    white-space: nowrap;
+    cursor: default;
+    transition: border-color 0.2s;
+
+    .material-symbols-outlined {
+        font-size: 16px;
+        color: #888;
+        transition: color 0.2s;
+    }
+
+    &:hover {
+        border-color: #c0392b;
+
+        .material-symbols-outlined,
+        .dics-pill-name { color: #c0392b; }
+    }
+}
+
+.dics-pill-name {
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.dics-pill-desc {
+    font-size: 12px;
+    color: #aaa;
 }

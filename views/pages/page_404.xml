@@ -1,40 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="page_404" name="404 Page" key="dics_theme.page_404" website_id="dics_theme.dics_website">
+        <template id="page_404"
+                  name="404 Page"
+                  key="dics_theme.page_404"
+                  website_id="dics_theme.dics_website">
+
             <t t-call="website.layout">
-                <div id="wrap" class="oe_structure page_404">
 
-                    <section class="d-flex align-items-center justify-content-center text-center py-5 pb-0" style="min-height: 100vh; background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);">
-                        <div class="container">
-                            <div class="mb-5">
-                                <h1 style="font-size: 9rem; font-weight: 800; line-height: 0.9; color: #e2e8f0; font-family: 'Outfit', sans-serif; user-select: none;">
+                <div id="wrap" class="oe_structure dics-404-page">
+
+                    <section class="dics-404">
+                        <div class="dics-container">
+
+                            <div class="dics-404__content">
+
+                                <div class="dics-404__number">
                                     404
+                                </div>
+
+                                <h1 class="dics-404__title">
+                                    Oops! Page Not Found
                                 </h1>
+
+                                <p class="dics-404__text">
+                                    The page you're looking for doesn't exist or has been moved.
+                                </p>
+
+                                <div class="dics-404__actions">
+
+                                    <a href="/" class="dics-404__btn dics-404__btn--primary">
+                                        <span class="material-symbols-outlined">home</span>
+                                        <span>Go Home</span>
+                                    </a>
+
+                                    <a href="/services" class="dics-404__btn dics-404__btn--secondary">
+                                        <span>Explore Services</span>
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                    </a>
+
+                                </div>
+
                             </div>
-
-                            <h2 class="display-4 fw-bold mb-3" style="font-family: 'Outfit', sans-serif; color: #1e2937;">
-                                Oops! Page Not Found
-                            </h2>
-
-                            <p class="lead text-muted mx-auto mb-5" style="max-width: 520px; font-family: 'DM Sans', sans-serif;">
-                                The page you're looking for doesn't exist or has been moved.
-                            </p>
-
-                            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                                <a href="/" class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-semibold">
-                                    <i class="fa fa-home me-2"></i> Go Home
-                                </a>
-                                <a href="/services" class="btn btn-outline-primary btn-lg rounded-pill px-5 py-3 fw-semibold">
-                                    Explore Services
-                                </a>
-                            </div>
-
 
                         </div>
                     </section>
 
                 </div>
+
             </t>
         </template>
     </data>

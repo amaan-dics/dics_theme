@@ -28,7 +28,11 @@
                         </t>
                     </div>
 
-                    <div class="dics-svc-text__actions">
+                    <div class="dics-svc-text__actions" style="display: flex; align-items: center; gap: 1.5rem; margin-top: 1.5rem;">
+                        <a t-if="svc.get('url')" t-att-href="svc['url']" class="dics-btn dics-btn-secondary">
+                            Read More
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
                         <a href="/contact" class="dics-btn dics-btn-primary">
                             Discuss this service →
                         </a>
@@ -53,10 +57,11 @@
 
                     <t t-set="additional_title">Services — DataInteger Consultancy</t>
 
-                    <!-- Services data -->
+                    <!-- Services data mapped to routes from main.py -->
                     <t t-set="all_services" t-value="[
                         {
                             'id': 'odoo-erp',
+                            'url': '/services/odoo-erp',
                             'icon': '▤',
                             'title': 'Odoo ERP Implementation',
                             'subtitle': 'Unify your operations',
@@ -65,6 +70,7 @@
                         },
                         {
                             'id': 'custom-dev',
+                            'url': '/services/odoo-erp#custom-dev',
                             'icon': '⌘',
                             'title': 'Custom Module Development',
                             'subtitle': 'Precision-engineered for your workflow',
@@ -73,6 +79,7 @@
                         },
                         {
                             'id': 'integration',
+                            'url': '/services/custom-software',
                             'icon': '↗',
                             'title': 'System Integration',
                             'subtitle': 'Connect everything',
@@ -81,6 +88,7 @@
                         },
                         {
                             'id': 'migration',
+                            'url': '/odoo-migration',
                             'icon': '◎',
                             'title': 'ERP Migration',
                             'subtitle': 'Safe, zero-downtime cutovers',
@@ -89,6 +97,7 @@
                         },
                         {
                             'id': 'custom-software',
+                            'url': '/services/web-mobile',
                             'icon': '▦',
                             'title': 'Custom Software &amp; Mobile',
                             'subtitle': 'Beyond ERP',
@@ -97,6 +106,7 @@
                         },
                         {
                             'id': 'support',
+                            'url': '/services/odoo-erp#support',
                             'icon': '◇',
                             'title': 'Support &amp; Evolution',
                             'subtitle': 'SLA-backed, long-term',
@@ -166,9 +176,16 @@
                                                             <span class="dics-svc-scroll__overlay-eyebrow" t-esc="svc['subtitle']"/>
                                                             <h2 t-esc="svc['title']"/>
                                                             <p t-esc="svc['description']"/>
-                                                            <a href="/contact" class="dics-btn dics-btn-light dics-svc-overlay-cta">
-                                                                Discuss this service →
-                                                            </a>
+
+                                                            <div class="dics-svc-scroll__actions" style="display: flex; align-items: center; gap: 1.5rem; margin-top: 1.5rem;">
+                                                                <a t-if="svc.get('url')" t-att-href="svc['url']" class="dics-btn dics-btn-secondary">
+                                                                    Read More
+                                                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                                                </a>
+                                                                <a href="/contact" class="dics-btn dics-btn-red dics-svc-overlay-cta">
+                                                                    Discuss this service →
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -202,7 +219,7 @@
                         </section>
 
                         <!-- ── CTA ── -->
-                        <section class="dics-svc-cta-section">
+                        <section class="dics-svc-cta-section mx-auto w-75">
                             <div class="dics-container">
                                 <div class="dics-svc-cta-card dics-reveal">
                                     <div class="dics-svc-cta-card__glow dics-svc-cta-card__glow--1"/>
@@ -223,8 +240,6 @@
                         </section>
 
 <!--                        <t t-call="dics_theme.dics_footer"/>-->
-
-                        <button id="backToTop" class="dics-back-top" type="button" aria-label="Back to top">↑</button>
 
                     </div>
 

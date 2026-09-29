@@ -1,626 +1,665 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <template id="page_claude_integration" name="Datainteger Consultancy Services Claude Integration Page" key="dics_theme.page_claude_integration" website_id="dics_theme.dics_website">
-    <t t-call="website.layout">
+    <template id="page_claude_integration" name="Datainteger Consultancy Services Claude Integration Page"
+              key="dics_theme.page_claude_integration" website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
 
-      <div id="wrap" class="dics-claude-page">
+            <div id="wrap" class="dics-claude-page">
 
-                        <!-- ═══════════════════════════════════════════
-                             HERO
-                        ═══════════════════════════════════════════ -->
-                        <section class="dics-cl-hero">
-                            <div class="dics-cl-hero__bg-glow"/>
-                            <div class="dics-cl-hero__grid-dots"/>
-                            <div class="dics-container">
-                                <div class="dics-cl-hero__inner dics-cl-hero__inner--split">
+                <!-- ═══════════════════════════════════════════
+                     HERO
+                ═══════════════════════════════════════════ -->
+                <section class="dics-cl-hero">
+    <div class="dics-cl-hero__bg-glow"/>
+    <div class="dics-cl-hero__grid-dots"/>
 
-    <!-- Left: text content -->
-    <div class="dics-cl-hero__content">
+    <div class="dics-container">
+        <div class="dics-cl-hero__inner dics-cl-hero__inner--split">
 
-        <div class="dics-cl-hero__badge">
-            <span class="dics-cl-hero__badge-dot"/>
-            <span>Powered by Anthropic Claude · Production Live</span>
+            <!-- Left: Hero content -->
+            <div class="dics-cl-hero__content">
+
+                <div class="dics-cl-hero__badge">
+                    <span class="dics-cl-hero__badge-dot"/>
+                    <span>Powered by Anthropic Claude · Production Live</span>
+                </div>
+
+                <h1 class="dics-cl-hero__headline">
+                    We didn't just integrate Claude.
+                    <br/>
+                    <span>We let it run the business.</span>
+                </h1>
+
+                <p class="dics-cl-hero__sub">
+                    DataInteger has achieved full end-to-end ERP automation by
+                    embedding Anthropic's Claude directly into Odoo's business logic —
+                    reading records, making decisions, drafting documents, and
+                    executing multi-step workflows without a human touching a keyboard.
+                    This is not a chatbot. This is operational intelligence.
+                </p>
+
+                <div class="dics-cl-hero__actions">
+                    <a href="/contact" class="dics-cl-btn dics-cl-btn--primary">
+                        See It In Action
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+
+                    <a href="/services" class="dics-cl-btn dics-cl-btn--ghost">
+                        View All Services
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right: Proof -->
+            <div class="dics-cl-proof">
+                <div class="dics-cl-proof__item">
+                    <strong>100%</strong>
+                    <span>Automated Workflows</span>
+                </div>
+
+                <div class="dics-cl-proof__divider"/>
+
+                <div class="dics-cl-proof__item">
+                    <strong>0</strong>
+                    <span>Manual Re-entries</span>
+                </div>
+
+                <div class="dics-cl-proof__divider"/>
+
+                <div class="dics-cl-proof__item">
+                    <strong>Claude 3.5</strong>
+                    <span>Anthropic · Production</span>
+                </div>
+
+                <div class="dics-cl-proof__divider"/>
+
+                <div class="dics-cl-proof__item">
+                    <strong>Odoo 18</strong>
+                    <span>Native Integration</span>
+                </div>
+            </div>
+
         </div>
-
-        <h1 class="dics-cl-hero__headline">
-            We didn't just integrate Claude.<br/>
-            <span>We let it run the business.</span>
-        </h1>
-
-        <p class="dics-cl-hero__sub">
-            DataInteger has achieved full end-to-end ERP automation by
-            embedding Anthropic's Claude directly into Odoo's business logic —
-            reading records, making decisions, drafting documents, and
-            executing multi-step workflows without a human touching a keyboard.
-            This is not a chatbot. This is operational intelligence.
-        </p>
-
-        <div class="dics-cl-hero__actions">
-            <a href="/contact" class="dics-cl-btn dics-cl-btn--primary">
-                See It In Action
-                <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-            <a href="/services" class="dics-cl-btn dics-cl-btn--ghost">
-                View All Services
-            </a>
-        </div>
-
-        <!-- Proof bar -->
-        <div class="dics-cl-proof">
-            <div class="dics-cl-proof__item">
-                <strong>100%</strong>
-                <span>Automated Workflows</span>
-            </div>
-            <div class="dics-cl-proof__divider"/>
-            <div class="dics-cl-proof__item">
-                <strong>0</strong>
-                <span>Manual Re-entries</span>
-            </div>
-            <div class="dics-cl-proof__divider"/>
-            <div class="dics-cl-proof__item">
-                <strong>Claude 3.5</strong>
-                <span>Anthropic · Production</span>
-            </div>
-            <div class="dics-cl-proof__divider"/>
-            <div class="dics-cl-proof__item">
-                <strong>Odoo 18</strong>
-                <span>Native Integration</span>
-            </div>
-        </div>
-
     </div>
+</section>
 
+                <!-- ═══════════════════════════════════════════
+                     WHAT WE ACTUALLY BUILT
+                ═══════════════════════════════════════════ -->
+                <section class="dics-cl-section dics-cl-section--light">
+                    <div class="dics-container">
+                        <div class="dics-cl-section-head dics-cl-section-head--center">
+                            <span class="dics-cl-eyebrow">What We Built</span>
+                            <h2>Full automation, end to end.<br/>Not a pilot. Not a demo.
+                            </h2>
+                            <p>
+                                Every step in this list runs without a human in the loop —
+                                Claude reads Odoo's live data, reasons about it,
+                                and takes action directly inside the ERP.
+                            </p>
+                        </div>
 
+                        <div class="dics-cl-pipeline">
 
-</div>
-                            </div>
-                        </section>
-
-                        <!-- ═══════════════════════════════════════════
-                             WHAT WE ACTUALLY BUILT
-                        ═══════════════════════════════════════════ -->
-                        <section class="dics-cl-section dics-cl-section--light">
-                            <div class="dics-container">
-                                <div class="dics-cl-section-head dics-cl-section-head--center">
-                                    <span class="dics-cl-eyebrow">What We Built</span>
-                                    <h2>Full automation, end to end.<br/>Not a pilot. Not a demo.</h2>
-                                    <p>
-                                        Every step in this list runs without a human in the loop —
-                                        Claude reads Odoo's live data, reasons about it,
-                                        and takes action directly inside the ERP.
+                            <!-- Step 01 -->
+                            <div class="dics-cl-pipeline__item">
+                                <div class="dics-cl-pipeline__node">
+                                    <span class="dics-cl-pipeline__number">01</span>
+                                    <div class="dics-cl-pipeline__line"/>
+                                </div>
+                                <div class="dics-cl-pipeline__card">
+                                    <div class="dics-cl-pipeline__meta">
+                                        <span class="dics-cl-pipeline__badge">
+                                            <span class="material-symbols-outlined">database</span>
+                                            Real-time Sync
+                                        </span>
+                                    </div>
+                                    <h3>Claude reads live Odoo data</h3>
+                                    <p>Sales orders, stock levels, vendor records, accounting entries — Claude has read
+                                        access to your real-time relational database, not a stale export.
                                     </p>
                                 </div>
-
-                                <div class="dics-cl-pipeline">
-
-    <!-- Step 01 -->
-    <div class="dics-cl-pipeline__item">
-        <div class="dics-cl-pipeline__node">
-            <span class="dics-cl-pipeline__number">01</span>
-            <div class="dics-cl-pipeline__line"/>
-        </div>
-        <div class="dics-cl-pipeline__card">
-            <div class="dics-cl-pipeline__meta">
-                <span class="dics-cl-pipeline__badge">
-                    <span class="material-symbols-outlined">database</span> Real-time Sync
-                </span>
-            </div>
-            <h3>Claude reads live Odoo data</h3>
-            <p>Sales orders, stock levels, vendor records, accounting entries — Claude has read access to your real-time relational database, not a stale export.</p>
-        </div>
-    </div>
-
-    <!-- Step 02 -->
-    <div class="dics-cl-pipeline__item">
-        <div class="dics-cl-pipeline__node">
-            <span class="dics-cl-pipeline__number">02</span>
-            <div class="dics-cl-pipeline__line"/>
-        </div>
-        <div class="dics-cl-pipeline__card">
-            <div class="dics-cl-pipeline__meta">
-                <span class="dics-cl-pipeline__badge">
-                    <span class="material-symbols-outlined">psychology</span> Operational Logic
-                </span>
-            </div>
-            <h3>It reasons about the context</h3>
-            <p>Claude understands business rules, approval thresholds, vendor preferences, and inventory logic — it doesn't just execute instructions, it understands intent.</p>
-        </div>
-    </div>
-
-    <!-- Step 03 -->
-    <div class="dics-cl-pipeline__item">
-        <div class="dics-cl-pipeline__node">
-            <span class="dics-cl-pipeline__number">03</span>
-            <div class="dics-cl-pipeline__line"/>
-        </div>
-        <div class="dics-cl-pipeline__card">
-            <div class="dics-cl-pipeline__meta">
-                <span class="dics-cl-pipeline__badge">
-                    <span class="material-symbols-outlined">bolt</span> Native Execution
-                </span>
-            </div>
-            <h3>It drafts, creates, and executes</h3>
-            <p>Quotations written. Purchase orders raised. Emails drafted. Invoices posted. Journal entries created. All initiated by Claude through Odoo's native ORM — no brittle API hacks.</p>
-        </div>
-    </div>
-
-    <!-- Step 04 -->
-    <div class="dics-cl-pipeline__item">
-        <div class="dics-cl-pipeline__node">
-            <span class="dics-cl-pipeline__number">04</span>
-            <div class="dics-cl-pipeline__line"/>
-        </div>
-        <div class="dics-cl-pipeline__card">
-            <div class="dics-cl-pipeline__meta">
-                <span class="dics-cl-pipeline__badge dics-cl-pipeline__badge--accent">
-                    <span class="material-symbols-outlined">verified_user</span> Human Guardrail
-                </span>
-            </div>
-            <h3>Human validates at critical junctions</h3>
-            <p>For high-stakes actions, Claude surfaces a clear summary and waits for a single confirmation tap. The human stays accountable — Claude handles the work.</p>
-        </div>
-    </div>
-
-    <!-- Step 05 -->
-    <div class="dics-cl-pipeline__item">
-        <div class="dics-cl-pipeline__node">
-            <span class="dics-cl-pipeline__number">05</span>
-        </div>
-        <div class="dics-cl-pipeline__card">
-            <div class="dics-cl-pipeline__meta">
-                <span class="dics-cl-pipeline__badge">
-                    <span class="material-symbols-outlined">history</span> Governance &amp; Audit
-                </span>
-            </div>
-            <h3>Full audit trail in Odoo</h3>
-            <p>Every Claude-initiated action is logged with context, reasoning, and timestamp inside Odoo's chatter — fully traceable, fully auditable, fully compliant.</p>
-        </div>
-    </div>
-
-</div>
                             </div>
-                        </section>
 
-                        <!-- ═══════════════════════════════════════════
-                             AUTOMATION CAPABILITIES
-                        ═══════════════════════════════════════════ -->
-                        <section class="dics-cl-section">
-                            <div class="dics-container">
-                                <div class="dics-cl-section-head">
-                                    <span class="dics-cl-eyebrow">Automation Capabilities</span>
-                                    <h2>What Claude automates<br/>inside your Odoo.</h2>
-                                    <p>Across every major module, Claude handles the work that used to sit in someone's task list.</p>
+                            <!-- Step 02 -->
+                            <div class="dics-cl-pipeline__item">
+                                <div class="dics-cl-pipeline__node">
+                                    <span class="dics-cl-pipeline__number">02</span>
+                                    <div class="dics-cl-pipeline__line"/>
                                 </div>
-
-                                <div class="dics-cl-caps-grid">
-
-                                    <article class="dics-cl-cap-card">
-                                        <div class="dics-cl-cap-card__icon">
-                                            <span class="material-symbols-outlined">receipt_long</span>
-                                        </div>
-                                        <h3>Sales &amp; Quotations</h3>
-                                        <ul>
-                                            <li>Drafts quotations from email or voice brief</li>
-                                            <li>Applies pricing rules and discount logic</li>
-                                            <li>Sends to customer portal for e-signature</li>
-                                            <li>Converts confirmed quotes to sales orders</li>
-                                        </ul>
-                                    </article>
-
-                                    <article class="dics-cl-cap-card">
-                                        <div class="dics-cl-cap-card__icon">
-                                            <span class="material-symbols-outlined">inventory_2</span>
-                                        </div>
-                                        <h3>Inventory &amp; Procurement</h3>
-                                        <ul>
-                                            <li>Monitors reorder points in real time</li>
-                                            <li>Raises RFQs to preferred vendors automatically</li>
-                                            <li>Validates incoming receipts against PO</li>
-                                            <li>Updates lot tracking and storage locations</li>
-                                        </ul>
-                                    </article>
-
-                                    <article class="dics-cl-cap-card">
-                                        <div class="dics-cl-cap-card__icon">
-                                            <span class="material-symbols-outlined">account_balance</span>
-                                        </div>
-                                        <h3>Accounting &amp; Finance</h3>
-                                        <ul>
-                                            <li>Posts journal entries from summaries</li>
-                                            <li>Reconciles bank statements automatically</li>
-                                            <li>Drafts customer invoices from delivery</li>
-                                            <li>Flags overdue receivables with context</li>
-                                        </ul>
-                                    </article>
-
-                                    <article class="dics-cl-cap-card">
-                                        <div class="dics-cl-cap-card__icon">
-                                            <span class="material-symbols-outlined">support_agent</span>
-                                        </div>
-                                        <h3>CRM &amp; Customer Ops</h3>
-                                        <ul>
-                                            <li>Qualifies inbound leads from email</li>
-                                            <li>Schedules follow-up tasks in pipeline</li>
-                                            <li>Drafts personalised outreach emails</li>
-                                            <li>Logs call summaries to CRM records</li>
-                                        </ul>
-                                    </article>
-
-                                    <article class="dics-cl-cap-card">
-                                        <div class="dics-cl-cap-card__icon">
-                                            <span class="material-symbols-outlined">precision_manufacturing</span>
-                                        </div>
-                                        <h3>Manufacturing</h3>
-                                        <ul>
-                                            <li>Creates work orders from sales demand</li>
-                                            <li>Checks component availability before scheduling</li>
-                                            <li>Flags production delays with root cause</li>
-                                            <li>Updates BOM consumption on completion</li>
-                                        </ul>
-                                    </article>
-
-                                    <article class="dics-cl-cap-card">
-                                        <div class="dics-cl-cap-card__icon">
-                                            <span class="material-symbols-outlined">description</span>
-                                        </div>
-                                        <h3>Documents &amp; Reporting</h3>
-                                        <ul>
-                                            <li>Generates board-ready summary reports</li>
-                                            <li>Extracts data from uploaded PDFs into records</li>
-                                            <li>Translates reports into plain-English summaries</li>
-                                            <li>Schedules and distributes reports automatically</li>
-                                        </ul>
-                                    </article>
-
+                                <div class="dics-cl-pipeline__card">
+                                    <div class="dics-cl-pipeline__meta">
+                                        <span class="dics-cl-pipeline__badge">
+                                            <span class="material-symbols-outlined">psychology</span>
+                                            Operational Logic
+                                        </span>
+                                    </div>
+                                    <h3>It reasons about the context</h3>
+                                    <p>Claude understands business rules, approval thresholds, vendor preferences, and
+                                        inventory logic — it doesn't just execute instructions, it understands intent.
+                                    </p>
                                 </div>
                             </div>
-                        </section>
 
-                        <!-- ═══════════════════════════════════════════
-                             STAT STRIP
-                        ═══════════════════════════════════════════ -->
-                        <section class="dics-cl-stats">
-                            <div class="dics-container">
-                                <div class="dics-cl-stats__grid">
-                                    <div class="dics-cl-stats__item">
-                                        <strong>~14 min</strong>
-                                        <span>saved per order cycle</span>
+                            <!-- Step 03 -->
+                            <div class="dics-cl-pipeline__item">
+                                <div class="dics-cl-pipeline__node">
+                                    <span class="dics-cl-pipeline__number">03</span>
+                                    <div class="dics-cl-pipeline__line"/>
+                                </div>
+                                <div class="dics-cl-pipeline__card">
+                                    <div class="dics-cl-pipeline__meta">
+                                        <span class="dics-cl-pipeline__badge">
+                                            <span class="material-symbols-outlined">bolt</span>
+                                            Native Execution
+                                        </span>
                                     </div>
-                                    <div class="dics-cl-stats__item">
-                                        <strong>Zero</strong>
-                                        <span>duplicate data entry</span>
-                                    </div>
-                                    <div class="dics-cl-stats__item">
-                                        <strong>100%</strong>
-                                        <span>audit trail retention</span>
-                                    </div>
-                                    <div class="dics-cl-stats__item">
-                                        <strong>0.4 sec</strong>
-                                        <span>average response latency</span>
-                                    </div>
+                                    <h3>It drafts, creates, and executes</h3>
+                                    <p>Quotations written. Purchase orders raised. Emails drafted. Invoices posted.
+                                        Journal entries created. All initiated by Claude through Odoo's native ORM — no
+                                        brittle API hacks.
+                                    </p>
                                 </div>
                             </div>
-                        </section>
 
-                        <!-- ═══════════════════════════════════════════
-                             HOW WE BUILT IT
-                        ═══════════════════════════════════════════ -->
-                        <section class="dics-cl-section dics-cl-section--light">
-                            <div class="dics-container">
-                                <div class="dics-cl-section-head text-center mx-auto">
-                                    <span class="dics-cl-eyebrow">Architecture</span>
-                                    <h2>How the integration<br/>actually works.</h2>
-                                    <p>No middleware bloat. No brittle webhook chains. Claude speaks directly to Odoo's ORM through a purpose-built tool layer we engineered from scratch.</p>
+                            <!-- Step 04 -->
+                            <div class="dics-cl-pipeline__item">
+                                <div class="dics-cl-pipeline__node">
+                                    <span class="dics-cl-pipeline__number">04</span>
+                                    <div class="dics-cl-pipeline__line"/>
                                 </div>
+                                <div class="dics-cl-pipeline__card">
+                                    <div class="dics-cl-pipeline__meta">
+                                        <span class="dics-cl-pipeline__badge dics-cl-pipeline__badge--accent">
+                                            <span class="material-symbols-outlined">verified_user</span>
+                                            Human Guardrail
+                                        </span>
+                                    </div>
+                                    <h3>Human validates at critical junctions</h3>
+                                    <p>For high-stakes actions, Claude surfaces a clear summary and waits for a single
+                                        confirmation tap. The human stays accountable — Claude handles the work.
+                                    </p>
+                                </div>
+                            </div>
 
-                                <div class="dics-cl-arch">
+                            <!-- Step 05 -->
+                            <div class="dics-cl-pipeline__item">
+                                <div class="dics-cl-pipeline__node">
+                                    <span class="dics-cl-pipeline__number">05</span>
+                                </div>
+                                <div class="dics-cl-pipeline__card">
+                                    <div class="dics-cl-pipeline__meta">
+                                        <span class="dics-cl-pipeline__badge">
+                                            <span class="material-symbols-outlined">history</span>
+                                            Governance &amp; Audit
+                                        </span>
+                                    </div>
+                                    <h3>Full audit trail in Odoo</h3>
+                                    <p>Every Claude-initiated action is logged with context, reasoning, and timestamp
+                                        inside Odoo's chatter — fully traceable, fully auditable, fully compliant.
+                                    </p>
+                                </div>
+                            </div>
 
-    <!-- INPUT -->
-    <div class="dics-cl-arch__stage">
-        <div class="dics-cl-arch__stage-marker">
-            <span class="dics-cl-arch__stage-index">01</span>
-            <span class="dics-cl-arch__stage-label">INPUT</span>
-        </div>
-
-        <div class="dics-cl-arch__card">
-            <div class="dics-cl-arch__card-icon">
-                <span class="material-symbols-outlined">input</span>
-            </div>
-
-            <div class="dics-cl-arch__card-main">
-                <div class="dics-cl-arch__card-title">Business intent</div>
-                <div class="dics-cl-arch__card-subtitle">
-                    The request enters as language, an event, or a scheduled task.
-                </div>
-
-                <div class="dics-cl-arch__chips">
-                    <span>Natural language</span>
-                    <span>Voice command</span>
-                    <span>Scheduled trigger</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CONNECTOR -->
-    <div class="dics-cl-arch__connector">
-        <div class="dics-cl-arch__connector-line"></div>
-        <span class="material-symbols-outlined">south</span>
-        <span class="dics-cl-arch__connector-label">REQUEST</span>
-    </div>
-
-
-    <!-- CLAUDE -->
-    <div class="dics-cl-arch__stage dics-cl-arch__stage--claude">
-        <div class="dics-cl-arch__stage-marker">
-            <span class="dics-cl-arch__stage-index">02</span>
-            <span class="dics-cl-arch__stage-label">REASONING</span>
-        </div>
-
-        <div class="dics-cl-arch__card">
-            <div class="dics-cl-arch__card-icon">
-                <span class="material-symbols-outlined">psychology</span>
-            </div>
-
-            <div class="dics-cl-arch__card-main">
-                <div class="dics-cl-arch__card-kicker">
-                    ANTHROPIC CLAUDE
-                </div>
-
-                <div class="dics-cl-arch__card-title">
-                    Claude 3.5 Sonnet
-                </div>
-
-                <div class="dics-cl-arch__card-subtitle">
-                    Interprets intent, evaluates context, and selects the tools required to complete the task.
-                </div>
-
-                <div class="dics-cl-arch__capabilities">
-                    <span>
-                        <span class="material-symbols-outlined">build</span>
-                        Tool use
-                    </span>
-                    <span>
-                        <span class="material-symbols-outlined">data_object</span>
-                        Context
-                    </span>
-                    <span>
-                        <span class="material-symbols-outlined">rule</span>
-                        Business rules
-                    </span>
-                </div>
-            </div>
-
-            <div class="dics-cl-arch__status">
-                <span class="dics-cl-arch__status-dot"></span>
-                ACTIVE
-            </div>
-        </div>
-    </div>
-
-
-    <!-- CONNECTOR -->
-    <div class="dics-cl-arch__connector">
-        <div class="dics-cl-arch__connector-line"></div>
-        <span class="material-symbols-outlined">south</span>
-        <span class="dics-cl-arch__connector-label">TOOL CALL</span>
-    </div>
-
-
-    <!-- TOOL LAYER -->
-    <div class="dics-cl-arch__stage dics-cl-arch__stage--tool">
-        <div class="dics-cl-arch__stage-marker">
-            <span class="dics-cl-arch__stage-index">03</span>
-            <span class="dics-cl-arch__stage-label">CONTROL LAYER</span>
-        </div>
-
-        <div class="dics-cl-arch__card">
-            <div class="dics-cl-arch__card-icon">
-                <span class="material-symbols-outlined">integration_instructions</span>
-            </div>
-
-            <div class="dics-cl-arch__card-main">
-                <div class="dics-cl-arch__card-title">
-                    Purpose-built Python tool layer
-                </div>
-
-                <div class="dics-cl-arch__card-subtitle">
-                    A controlled interface between Claude and Odoo's native business logic.
-                </div>
-
-                <div class="dics-cl-arch__tool-flow">
-                    <div>
-                        <span class="material-symbols-outlined">terminal</span>
-                        <strong>Tool</strong>
-                        <small>Validated action</small>
+                        </div>
                     </div>
+                </section>
 
-                    <span class="material-symbols-outlined dics-cl-arch__mini-arrow">
-                        arrow_forward
-                    </span>
+                <!-- ═══════════════════════════════════════════
+                     AUTOMATION CAPABILITIES
+                ═══════════════════════════════════════════ -->
+                <section class="dics-cl-section">
+                    <div class="dics-container">
+                        <div class="dics-cl-section-head">
+                            <span class="dics-cl-eyebrow">Automation Capabilities</span>
+                            <h2>What Claude automates<br/>inside your Odoo.
+                            </h2>
+                            <p>Across every major module, Claude handles the work that used to sit in someone's task
+                                list.
+                            </p>
+                        </div>
 
-                    <div>
-                        <span class="material-symbols-outlined">security</span>
-                        <strong>Policy</strong>
-                        <small>Access control</small>
-                    </div>
+                        <div class="dics-cl-caps-grid">
 
-                    <span class="material-symbols-outlined dics-cl-arch__mini-arrow">
-                        arrow_forward
-                    </span>
-
-                    <div>
-                        <span class="material-symbols-outlined">fact_check</span>
-                        <strong>Audit</strong>
-                        <small>Traceable action</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- CONNECTOR -->
-    <div class="dics-cl-arch__connector">
-        <div class="dics-cl-arch__connector-line"></div>
-        <span class="material-symbols-outlined">south</span>
-        <span class="dics-cl-arch__connector-label">NATIVE ORM</span>
-    </div>
-
-
-    <!-- ODOO -->
-    <div class="dics-cl-arch__stage dics-cl-arch__stage--odoo">
-        <div class="dics-cl-arch__stage-marker">
-            <span class="dics-cl-arch__stage-index">04</span>
-            <span class="dics-cl-arch__stage-label">ODOO</span>
-        </div>
-
-        <div class="dics-cl-arch__card">
-            <div class="dics-cl-arch__card-icon">
-                <span class="material-symbols-outlined">database</span>
-            </div>
-
-            <div class="dics-cl-arch__card-main">
-                <div class="dics-cl-arch__card-title">
-                    Odoo native business layer
-                </div>
-
-                <div class="dics-cl-arch__card-subtitle">
-                    Actions execute through Odoo's ORM and existing business rules rather than a parallel data path.
-                </div>
-
-                <div class="dics-cl-arch__chips">
-                    <span>Native ORM</span>
-                    <span>Access control</span>
-                    <span>Business logic</span>
-                    <span>Audit log</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- CONNECTOR -->
-    <div class="dics-cl-arch__connector">
-        <div class="dics-cl-arch__connector-line"></div>
-        <span class="material-symbols-outlined">south</span>
-        <span class="dics-cl-arch__connector-label">EXECUTION</span>
-    </div>
-
-
-    <!-- OUTPUT -->
-    <div class="dics-cl-arch__stage dics-cl-arch__stage--output">
-        <div class="dics-cl-arch__stage-marker">
-            <span class="dics-cl-arch__stage-index">05</span>
-            <span class="dics-cl-arch__stage-label">OUTCOME</span>
-        </div>
-
-        <div class="dics-cl-arch__card">
-            <div class="dics-cl-arch__card-icon">
-                <span class="material-symbols-outlined">task_alt</span>
-            </div>
-
-            <div class="dics-cl-arch__card-main">
-                <div class="dics-cl-arch__card-title">
-                    Work completed inside Odoo
-                </div>
-
-                <div class="dics-cl-arch__card-subtitle">
-                    The result lands back in the ERP as real business activity.
-                </div>
-
-                <div class="dics-cl-arch__outcomes">
-                    <span>
-                        <span class="material-symbols-outlined">edit_document</span>
-                        Records created / updated
-                    </span>
-                    <span>
-                        <span class="material-symbols-outlined">mail</span>
-                        Emails &amp; documents
-                    </span>
-                    <span>
-                        <span class="material-symbols-outlined">forum</span>
-                        Chatter &amp; audit trail
-                    </span>
-                    <span>
-                        <span class="material-symbols-outlined">verified_user</span>
-                        Human review when required
-                    </span>
-                </div>
-            </div>
-
-            <div class="dics-cl-arch__complete">
-                <span class="material-symbols-outlined">check_circle</span>
-                COMPLETE
-            </div>
-        </div>
-    </div>
-
-</div>
-                            </div>
-                        </section>
-
-                        <!-- ═══════════════════════════════════════════
-                             WHY THIS MATTERS
-                        ═══════════════════════════════════════════ -->
-                        <section class="dics-cl-section dics-cl-section--dark">
-                            <div class="dics-container">
-                                <div class="dics-cl-section-head dics-cl-section-head--center">
-                                    <span class="dics-cl-eyebrow">Why It Matters</span>
-                                    <h2>This is what ERP was<br/>always supposed to feel like.</h2>
+                            <article class="dics-cl-cap-card">
+                                <div class="dics-cl-cap-card__icon">
+                                    <span class="material-symbols-outlined">receipt_long</span>
                                 </div>
-                                <div class="dics-cl-why-grid">
-                                    <article>
+                                <h3>Sales &amp; Quotations</h3>
+                                <ul>
+                                    <li>Drafts quotations from email or voice brief</li>
+                                    <li>Applies pricing rules and discount logic</li>
+                                    <li>Sends to customer portal for e-signature</li>
+                                    <li>Converts confirmed quotes to sales orders</li>
+                                </ul>
+                            </article>
+
+                            <article class="dics-cl-cap-card">
+                                <div class="dics-cl-cap-card__icon">
+                                    <span class="material-symbols-outlined">inventory_2</span>
+                                </div>
+                                <h3>Inventory &amp; Procurement</h3>
+                                <ul>
+                                    <li>Monitors reorder points in real time</li>
+                                    <li>Raises RFQs to preferred vendors automatically</li>
+                                    <li>Validates incoming receipts against PO</li>
+                                    <li>Updates lot tracking and storage locations</li>
+                                </ul>
+                            </article>
+
+                            <article class="dics-cl-cap-card">
+                                <div class="dics-cl-cap-card__icon">
+                                    <span class="material-symbols-outlined">account_balance</span>
+                                </div>
+                                <h3>Accounting &amp; Finance</h3>
+                                <ul>
+                                    <li>Posts journal entries from summaries</li>
+                                    <li>Reconciles bank statements automatically</li>
+                                    <li>Drafts customer invoices from delivery</li>
+                                    <li>Flags overdue receivables with context</li>
+                                </ul>
+                            </article>
+
+                            <article class="dics-cl-cap-card">
+                                <div class="dics-cl-cap-card__icon">
+                                    <span class="material-symbols-outlined">support_agent</span>
+                                </div>
+                                <h3>CRM &amp; Customer Ops</h3>
+                                <ul>
+                                    <li>Qualifies inbound leads from email</li>
+                                    <li>Schedules follow-up tasks in pipeline</li>
+                                    <li>Drafts personalised outreach emails</li>
+                                    <li>Logs call summaries to CRM records</li>
+                                </ul>
+                            </article>
+
+                            <article class="dics-cl-cap-card">
+                                <div class="dics-cl-cap-card__icon">
+                                    <span class="material-symbols-outlined">precision_manufacturing</span>
+                                </div>
+                                <h3>Manufacturing</h3>
+                                <ul>
+                                    <li>Creates work orders from sales demand</li>
+                                    <li>Checks component availability before scheduling</li>
+                                    <li>Flags production delays with root cause</li>
+                                    <li>Updates BOM consumption on completion</li>
+                                </ul>
+                            </article>
+
+                            <article class="dics-cl-cap-card">
+                                <div class="dics-cl-cap-card__icon">
+                                    <span class="material-symbols-outlined">description</span>
+                                </div>
+                                <h3>Documents &amp; Reporting</h3>
+                                <ul>
+                                    <li>Generates board-ready summary reports</li>
+                                    <li>Extracts data from uploaded PDFs into records</li>
+                                    <li>Translates reports into plain-English summaries</li>
+                                    <li>Schedules and distributes reports automatically</li>
+                                </ul>
+                            </article>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════
+                     STAT STRIP
+                ═══════════════════════════════════════════ -->
+                <section class="dics-cl-stats">
+                    <div class="dics-container">
+                        <div class="dics-cl-stats__grid">
+                            <div class="dics-cl-stats__item">
+                                <strong>~14 min</strong>
+                                <span>saved per order cycle</span>
+                            </div>
+                            <div class="dics-cl-stats__item">
+                                <strong>Zero</strong>
+                                <span>duplicate data entry</span>
+                            </div>
+                            <div class="dics-cl-stats__item">
+                                <strong>100%</strong>
+                                <span>audit trail retention</span>
+                            </div>
+                            <div class="dics-cl-stats__item">
+                                <strong>0.4 sec</strong>
+                                <span>average response latency</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════
+                     HOW WE BUILT IT
+                ═══════════════════════════════════════════ -->
+                <section class="dics-cl-section dics-cl-section--light">
+                    <div class="dics-container">
+                        <div class="dics-cl-section-head text-center mx-auto">
+                            <span class="dics-cl-eyebrow">Architecture</span>
+                            <h2>How the integration<br/>actually works.
+                            </h2>
+                            <p>No middleware bloat. No brittle webhook chains. Claude speaks directly to Odoo's ORM
+                                through a purpose-built tool layer we engineered from scratch.
+                            </p>
+                        </div>
+
+                        <div class="dics-cl-arch">
+
+                            <!-- INPUT -->
+                            <div class="dics-cl-arch__stage">
+                                <div class="dics-cl-arch__stage-marker">
+                                    <span class="dics-cl-arch__stage-index">01</span>
+                                    <span class="dics-cl-arch__stage-label">INPUT</span>
+                                </div>
+
+                                <div class="dics-cl-arch__card">
+                                    <div class="dics-cl-arch__card-icon">
+                                        <span class="material-symbols-outlined">input</span>
+                                    </div>
+
+                                    <div class="dics-cl-arch__card-main">
+                                        <div class="dics-cl-arch__card-title">Business intent</div>
+                                        <div class="dics-cl-arch__card-subtitle">
+                                            The request enters as language, an event, or a scheduled task.
+                                        </div>
+
+                                        <div class="dics-cl-arch__chips">
+                                            <span>Natural language</span>
+                                            <span>Voice command</span>
+                                            <span>Scheduled trigger</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CONNECTOR -->
+                            <div class="dics-cl-arch__connector">
+                                <div class="dics-cl-arch__connector-line"></div>
+                                <span class="material-symbols-outlined">south</span>
+                                <span class="dics-cl-arch__connector-label">REQUEST</span>
+                            </div>
+
+
+                            <!-- CLAUDE -->
+                            <div class="dics-cl-arch__stage dics-cl-arch__stage--claude">
+                                <div class="dics-cl-arch__stage-marker">
+                                    <span class="dics-cl-arch__stage-index">02</span>
+                                    <span class="dics-cl-arch__stage-label">REASONING</span>
+                                </div>
+
+                                <div class="dics-cl-arch__card">
+                                    <div class="dics-cl-arch__card-icon">
                                         <span class="material-symbols-outlined">psychology</span>
-                                        <h3>The ERP understands you</h3>
-                                        <p>Instead of navigating 14 menus to raise a PO, you describe what you need. Claude handles the path — you handle the decision.</p>
-                                    </article>
-                                    <article>
-                                        <span class="material-symbols-outlined">verified</span>
-                                        <h3>Accuracy that compounds</h3>
-                                        <p>Claude never miskeys a price, skips a required field, or forgets a tax rule. Downstream data is clean because the upstream was right the first time.</p>
-                                    </article>
-                                    <article>
-                                        <span class="material-symbols-outlined">trending_up</span>
-                                        <h3>Your team does more, not more of the same</h3>
-                                        <p>The hours recovered from manual ERP work go into analysis, customer engagement, and growth — not data re-entry and status checks.</p>
-                                    </article>
+                                    </div>
+
+                                    <div class="dics-cl-arch__card-main">
+                                        <div class="dics-cl-arch__card-kicker">
+                                            ANTHROPIC CLAUDE
+                                        </div>
+
+                                        <div class="dics-cl-arch__card-title">
+                                            Claude 3.5 Sonnet
+                                        </div>
+
+                                        <div class="dics-cl-arch__card-subtitle">
+                                            Interprets intent, evaluates context, and selects the tools required to
+                                            complete the task.
+                                        </div>
+
+                                        <div class="dics-cl-arch__capabilities">
+                                            <span>
+                                                <span class="material-symbols-outlined">build</span>
+                                                Tool use
+                                            </span>
+                                            <span>
+                                                <span class="material-symbols-outlined">data_object</span>
+                                                Context
+                                            </span>
+                                            <span>
+                                                <span class="material-symbols-outlined">rule</span>
+                                                Business rules
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dics-cl-arch__status">
+                                        <span class="dics-cl-arch__status-dot"></span>
+                                        ACTIVE
+                                    </div>
                                 </div>
                             </div>
-                        </section>
 
-                        <!-- ═══════════════════════════════════════════
-                             CTA
-                        ═══════════════════════════════════════════ -->
-                        <section class="dics-cl-cta-section">
-                            <div class="dics-container">
-                                <div class="dics-cl-cta-card">
-                                    <div class="dics-cl-cta-card__glow"/>
-                                    <div class="dics-cl-cta-card__content">
-                                        <span class="dics-cl-eyebrow">Work With Us</span>
-                                        <h2>Ready to stop operating your ERP manually?</h2>
-                                        <p>
-                                            We've built this. We can build it for you — integrated into your
-                                            existing Odoo instance, calibrated to your business rules,
-                                            deployed to production.
-                                        </p>
-                                        <div class="dics-cl-cta-card__actions">
-                                            <a href="/contact" class="dics-cl-btn dics-cl-btn--primary">
-                                                Book a Technical Demo
-                                                <span class="material-symbols-outlined">arrow_forward</span>
-                                            </a>
-                                            <a href="/services" class="dics-cl-btn dics-cl-btn--ghost-dark">
-                                                View All Services
-                                            </a>
+
+                            <!-- CONNECTOR -->
+                            <div class="dics-cl-arch__connector">
+                                <div class="dics-cl-arch__connector-line"></div>
+                                <span class="material-symbols-outlined">south</span>
+                                <span class="dics-cl-arch__connector-label">TOOL CALL</span>
+                            </div>
+
+
+                            <!-- TOOL LAYER -->
+                            <div class="dics-cl-arch__stage dics-cl-arch__stage--tool">
+                                <div class="dics-cl-arch__stage-marker">
+                                    <span class="dics-cl-arch__stage-index">03</span>
+                                    <span class="dics-cl-arch__stage-label">CONTROL LAYER</span>
+                                </div>
+
+                                <div class="dics-cl-arch__card">
+                                    <div class="dics-cl-arch__card-icon">
+                                        <span class="material-symbols-outlined">integration_instructions</span>
+                                    </div>
+
+                                    <div class="dics-cl-arch__card-main">
+                                        <div class="dics-cl-arch__card-title">
+                                            Purpose-built Python tool layer
+                                        </div>
+
+                                        <div class="dics-cl-arch__card-subtitle">
+                                            A controlled interface between Claude and Odoo's native business logic.
+                                        </div>
+
+                                        <div class="dics-cl-arch__tool-flow">
+                                            <div>
+                                                <span class="material-symbols-outlined">terminal</span>
+                                                <strong>Tool</strong>
+                                                <small>Validated action</small>
+                                            </div>
+
+                                            <span class="material-symbols-outlined dics-cl-arch__mini-arrow">
+                                                arrow_forward
+                                            </span>
+
+                                            <div>
+                                                <span class="material-symbols-outlined">security</span>
+                                                <strong>Policy</strong>
+                                                <small>Access control</small>
+                                            </div>
+
+                                            <span class="material-symbols-outlined dics-cl-arch__mini-arrow">
+                                                arrow_forward
+                                            </span>
+
+                                            <div>
+                                                <span class="material-symbols-outlined">fact_check</span>
+                                                <strong>Audit</strong>
+                                                <small>Traceable action</small>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
 
-<!--                        <button id="backToTop" class="dics-back-top" type="button" aria-label="Back to top">↑</button>-->
 
+                            <!-- CONNECTOR -->
+                            <div class="dics-cl-arch__connector">
+                                <div class="dics-cl-arch__connector-line"></div>
+                                <span class="material-symbols-outlined">south</span>
+                                <span class="dics-cl-arch__connector-label">NATIVE ORM</span>
+                            </div>
+
+
+                            <!-- ODOO -->
+                            <div class="dics-cl-arch__stage dics-cl-arch__stage--odoo">
+                                <div class="dics-cl-arch__stage-marker">
+                                    <span class="dics-cl-arch__stage-index">04</span>
+                                    <span class="dics-cl-arch__stage-label">ODOO</span>
+                                </div>
+
+                                <div class="dics-cl-arch__card">
+                                    <div class="dics-cl-arch__card-icon">
+                                        <span class="material-symbols-outlined">database</span>
+                                    </div>
+
+                                    <div class="dics-cl-arch__card-main">
+                                        <div class="dics-cl-arch__card-title">
+                                            Odoo native business layer
+                                        </div>
+
+                                        <div class="dics-cl-arch__card-subtitle">
+                                            Actions execute through Odoo's ORM and existing business rules rather than a
+                                            parallel data path.
+                                        </div>
+
+                                        <div class="dics-cl-arch__chips">
+                                            <span>Native ORM</span>
+                                            <span>Access control</span>
+                                            <span>Business logic</span>
+                                            <span>Audit log</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- CONNECTOR -->
+                            <div class="dics-cl-arch__connector">
+                                <div class="dics-cl-arch__connector-line"></div>
+                                <span class="material-symbols-outlined">south</span>
+                                <span class="dics-cl-arch__connector-label">EXECUTION</span>
+                            </div>
+
+
+                            <!-- OUTPUT -->
+                            <div class="dics-cl-arch__stage dics-cl-arch__stage--output">
+                                <div class="dics-cl-arch__stage-marker">
+                                    <span class="dics-cl-arch__stage-index">05</span>
+                                    <span class="dics-cl-arch__stage-label">OUTCOME</span>
+                                </div>
+
+                                <div class="dics-cl-arch__card">
+                                    <div class="dics-cl-arch__card-icon">
+                                        <span class="material-symbols-outlined">task_alt</span>
+                                    </div>
+
+                                    <div class="dics-cl-arch__card-main">
+                                        <div class="dics-cl-arch__card-title">
+                                            Work completed inside Odoo
+                                        </div>
+
+                                        <div class="dics-cl-arch__card-subtitle">
+                                            The result lands back in the ERP as real business activity.
+                                        </div>
+
+                                        <div class="dics-cl-arch__outcomes">
+                                            <span>
+                                                <span class="material-symbols-outlined">edit_document</span>
+                                                Records created / updated
+                                            </span>
+                                            <span>
+                                                <span class="material-symbols-outlined">mail</span>
+                                                Emails &amp; documents
+                                            </span>
+                                            <span>
+                                                <span class="material-symbols-outlined">forum</span>
+                                                Chatter &amp; audit trail
+                                            </span>
+                                            <span>
+                                                <span class="material-symbols-outlined">verified_user</span>
+                                                Human review when required
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dics-cl-arch__complete">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        COMPLETE
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-    </t>
-  </template>
+                </section>
+
+                <!-- ═══════════════════════════════════════════
+                     WHY THIS MATTERS
+                ═══════════════════════════════════════════ -->
+                <section class="dics-cl-section dics-cl-section--dark">
+                    <div class="dics-container">
+                        <div class="dics-cl-section-head dics-cl-section-head--center">
+                            <span class="dics-cl-eyebrow">Why It Matters</span>
+                            <h2>This is what ERP was<br/>always supposed to feel like.
+                            </h2>
+                        </div>
+                        <div class="dics-cl-why-grid">
+                            <article>
+                                <span class="material-symbols-outlined">psychology</span>
+                                <h3>The ERP understands you</h3>
+                                <p>Instead of navigating 14 menus to raise a PO, you describe what you need. Claude
+                                    handles the path — you handle the decision.
+                                </p>
+                            </article>
+                            <article>
+                                <span class="material-symbols-outlined">verified</span>
+                                <h3>Accuracy that compounds</h3>
+                                <p>Claude never miskeys a price, skips a required field, or forgets a tax rule.
+                                    Downstream data is clean because the upstream was right the first time.
+                                </p>
+                            </article>
+                            <article>
+                                <span class="material-symbols-outlined">trending_up</span>
+                                <h3>Your team does more, not more of the same</h3>
+                                <p>The hours recovered from manual ERP work go into analysis, customer engagement, and
+                                    growth — not data re-entry and status checks.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ═══════════════════════════════════════════
+                     CTA
+                ═══════════════════════════════════════════ -->
+                <section class="dics-cl-cta-section">
+                    <div class="dics-container">
+                        <div class="dics-cl-cta-card">
+                            <div class="dics-cl-cta-card__glow"/>
+                            <div class="dics-cl-cta-card__content">
+                                <span class="dics-cl-eyebrow">Work With Us</span>
+                                <h2>Ready to stop operating your ERP manually?</h2>
+                                <p>
+                                    We've built this. We can build it for you — integrated into your
+                                    existing Odoo instance, calibrated to your business rules,
+                                    deployed to production.
+                                </p>
+                                <div class="dics-cl-cta-card__actions">
+                                    <a href="/contact" class="dics-cl-btn dics-cl-btn--primary">
+                                        Book a Technical Demo
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                    </a>
+                                    <a href="/services" class="dics-cl-btn dics-cl-btn--ghost-dark">
+                                        View All Services
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </t>
+    </template>
 </odoo>

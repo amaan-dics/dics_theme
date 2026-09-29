@@ -7,68 +7,69 @@
                 <main class="dics-main">
 
                     <!-- ─── HERO SECTION ─── -->
-<section class="dics-hero style-greenish">
-    <div class="dics-container">
-        <div class="dics-hero-copy">
-            <div class="dics-eyebrow-container d-flex gap-2 mb-3 flex-wrap">
-                <div class="dics-eyebrow-pill dics-pill-emerald">
-                    <span class="dics-status-dot dics-status-dot-green"/>
-                    <span>WhatsApp Business API Integration</span>
-                </div>
-                <div class="dics-eyebrow-pill bg-light border text-secondary px-3 py-1 rounded-pill small">
-                    <span>Native Commerce Layer</span>
-                </div>
-            </div>
+                    <section class="dics-hero style-greenish">
+                        <div class="dics-container"> <!-- HERO IMAGE -->
 
-            <h1>
-                Seamless Odoo to WhatsApp<br/>
-                <span class="dics-emerald" style="color: #25D366;">Native Commerce Integration</span>
-            </h1>
-
-            <p class="dics-hero-lead">
-                Managing an e-commerce store often means forcing your customers to leave their favorite messaging apps to browse external websites, only for your backend team to manually copy-paste details into your ERP. Our custom Odoo-WhatsApp Integration Module fixes this entirely.
-            </p>
-
-            <div class="dics-tags-container mb-4">
-                <span class="dics-tag">Meta Cloud API</span>
-                <span class="dics-tag">Odoo ERP Sync</span>
-                <span class="dics-tag">Native Catalogs</span>
-                <span class="dics-tag">Automated Checkouts</span>
-                <span class="dics-tag">Instant Invoicing</span>
-            </div>
-
-            <div class="dics-actions">
-                <a href="/contact" class="dics-btn dics-btn-emerald">
-                    <span>Get Started Now</span>
-                    <span class="dics-arrow">→</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- HORIZONTAL SEPARATOR LINE -->
-        <hr class="dics-hero-divider my-4 border-top opacity-25"/>
-
-        <!-- HERO METRICS GRID (4 COLUMNS HORIZONTAL) -->
-        <div class="dics-hero-metrics-grid row text-start pt-2">
-            <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
-                <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1" style="color: #25D366;">100%</div>
-                <div class="dics-metric-label text-muted small">Zero Human Intervention</div>
-            </div>
-            <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
-                <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1" style="color: #25D366;">Direct</div>
-                <div class="dics-metric-label text-muted small">Meta API Connection</div>
-            </div>
-            <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
-                <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1" style="color: #25D366;">Hourly</div>
-                <div class="dics-metric-label text-muted small">Auto Stock Sync</div>
-            </div>
-            <div class="col-6 col-md-3 dics-metric-card">
-                <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1" style="color: #25D366;">Real-Time</div>
-                <div class="dics-metric-label text-muted small">Order Tracking</div>
-            </div>
-        </div>
-    </div>
-</section>
+                            <div class="dics-hero-copy">
+                                <div class="dics-eyebrow-container d-flex gap-2 mb-3 flex-wrap">
+                                    <div class="dics-eyebrow-pill dics-pill-emerald">
+                                        <span class="dics-status-dot dics-status-dot-green"/>
+                                        <span>WhatsApp Business API Integration</span>
+                                    </div>
+                                    <div class="dics-eyebrow-pill bg-light border text-secondary px-3 py-1 rounded-pill small">
+                                        <span>Native Commerce Layer</span>
+                                    </div>
+                                </div>
+                                <h1>Seamless Odoo to WhatsApp
+                                    <br/>
+                                    <span class="dics-emerald" style="color: #25D366;">Native Commerce Integration
+                                    </span>
+                                </h1>
+                                <p class="dics-hero-lead">Managing an e-commerce store often means forcing your
+                                    customers to leave their favorite messaging apps to browse external websites, only
+                                    for your backend team to manually copy-paste details into your ERP. Our custom
+                                    Odoo-WhatsApp Integration Module fixes this entirely.
+                                </p>
+                                <div class="dics-tags-container mb-4">
+                                    <span class="dics-tag">Meta Cloud API</span>
+                                    <span class="dics-tag">Odoo ERP Sync</span>
+                                    <span class="dics-tag">Native Catalogs</span>
+                                    <span class="dics-tag">Automated Checkouts</span>
+                                    <span class="dics-tag">Instant Invoicing</span>
+                                </div>
+                                <div class="dics-actions">
+                                    <a href="/contact" class="dics-btn dics-btn-emerald">
+                                        <span>Get Started Now</span>
+                                        <span class="dics-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div> <!-- HORIZONTAL SEPARATOR LINE -->
+                            <div class="dics-hero-image text-center mb-4 mb-md-5">
+                                <img src="/dics_theme/static/src/images/whatsapp_odoo_integration.png"
+                                     alt="WhatsApp Odoo Integration" class="dics-hero-image__img img-fluid"/>
+                            </div>
+                            <hr class="dics-hero-divider my-4 border-top opacity-25"/> <!-- HERO METRICS GRID -->
+                            <div class="dics-hero-metrics-grid row text-start pt-2">
+                                <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
+                                    <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1">100%</div>
+                                    <div class="dics-metric-label text-muted small">Zero Human Intervention</div>
+                                </div>
+                                <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
+                                    <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1">Direct</div>
+                                    <div class="dics-metric-label text-muted small">Meta API Connection</div>
+                                </div>
+                                <div class="col-6 col-md-3 dics-metric-card mb-3 mb-md-0">
+                                    <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1">Hourly</div>
+                                    <div class="dics-metric-label text-muted small">Auto Stock Sync</div>
+                                </div>
+                                <div class="col-6 col-md-3 dics-metric-card">
+                                    <div class="dics-metric-num dics-emerald-text fw-bold display-6 mb-1">Real-Time
+                                    </div>
+                                    <div class="dics-metric-label text-muted small">Order Tracking</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
 
                     <!-- ─── THE CUSTOMER JOURNEY (HOW IT WORKS) ─── -->

@@ -79,7 +79,23 @@
         <field name="directive">append</field>
         <field name="path">dics_theme/static/src/scss/dics_contact.scss</field>
         <field name="website_id" ref="dics_theme.dics_website"/>
-        <field name="sequence">5</field>
+        <field name="sequence">9</field>
+    </record>
+    <record id="asset_dics_insights_scss" model="ir.asset">
+        <field name="name">DataInteger: dics_insights.scss</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="directive">append</field>
+        <field name="path">dics_theme/static/src/scss/dics_insights.scss</field>
+        <field name="website_id" ref="dics_theme.dics_website"/>
+        <field name="sequence">9</field>
+    </record>
+    <record id="asset_dics_knowledge_pages_scss" model="ir.asset">
+        <field name="name">DataInteger: dics_knowledge_pages.scss</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="directive">append</field>
+        <field name="path">dics_theme/static/src/scss/dics_knowledge_pages.scss</field>
+        <field name="website_id" ref="dics_theme.dics_website"/>
+        <field name="sequence">10</field>
     </record>
 
 </odoo>

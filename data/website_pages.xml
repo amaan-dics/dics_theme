@@ -41,5 +41,191 @@
             <field name="is_published" eval="True"/>
             <field name="website_indexed" eval="True"/>
         </record>
+        <record id="page_odoo_vs_sap" model="website.page">
+            <field name="name">Odoo vs SAP</field>
+            <field name="url">/odoo-vs-sap</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_odoo_vs_sap"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_odoo_vs_zoho" model="website.page">
+            <field name="name">Odoo vs Zoho</field>
+            <field name="url">/odoo-vs-zoho</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_odoo_vs_zoho"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_industries_page" model="website.page">
+            <field name="name">Industries</field>
+            <field name="url">/industries</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_industries"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_industry_healthcare" model="website.page">
+            <field name="name">Healthcare</field>
+            <field name="url">/industries/healthcare</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_industry_detail"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_industry_construction" model="website.page">
+            <field name="name">Construction</field>
+            <field name="url">/industries/construction</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_industry_detail"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_industry_software" model="website.page">
+            <field name="name">Software &amp; Technology</field>
+            <field name="url">/industries/software</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_industry_detail"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_industry_ecommerce" model="website.page">
+            <field name="name">E-commerce &amp; Retail</field>
+            <field name="url">/industries/ecommerce</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_industry_detail"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_industry_finance" model="website.page">
+            <field name="name">Finance &amp; Professional Services</field>
+            <field name="url">/industries/finance</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_industry_detail"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_industry_manufacturing" model="website.page">
+            <field name="name">Manufacturing</field>
+            <field name="url">/industries/manufacturing</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_industry_detail"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_ai_solutions_page" model="website.page">
+            <field name="name">AI Solutions</field>
+            <field name="url">/services/ai-solutions</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_ai_solutions"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_web_mobile_page" model="website.page">
+            <field name="name">Web &amp; Mobile Development</field>
+            <field name="url">/services/web-mobile</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_web_mobile"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_custom_software_page" model="website.page">
+            <field name="name">Custom Software Development</field>
+            <field name="url">/services/custom-software</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_custom_software"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_saas_page" model="website.page">
+            <field name="name">SaaS Solutions</field>
+            <field name="url">/services/saas</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_saas"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_whatsapp_integration_page" model="website.page">
+            <field name="name">WhatsApp Integration</field>
+            <field name="url">/services/whatsapp-integration</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.page_whatsapp_integration"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_claude_integration_page" model="website.page">
+            <field name="name">Claude AI Integration</field>
+            <field name="url">/services/claude-integration</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.page_claude_integration"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_insights_page" model="website.page">
+            <field name="name">Insights</field>
+            <field name="url">/insights</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_insights"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_what_is_odoo_page" model="website.page">
+            <field name="name">What is Odoo?</field>
+            <field name="url">/what-is-odoo</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_what_is_odoo"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_whats_new_odoo20_page" model="website.page">
+            <field name="name">What's New in Odoo 20</field>
+            <field name="url">/whats-new-in-odoo-20</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_whats_new_in_odoo_20"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_odoo_vs_netsuite_page" model="website.page">
+            <field name="name">Odoo vs NetSuite</field>
+            <field name="url">/odoo-vs-netsuite</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_odoo_vs_netsuite"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_odoo_vs_salesforce_page" model="website.page">
+            <field name="name">Odoo vs Salesforce</field>
+            <field name="url">/odoo-vs-salesforce</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_odoo_vs_salesforce"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_odoo_vs_dynamics_page" model="website.page">
+            <field name="name">Odoo vs Microsoft Dynamics</field>
+            <field name="url">/odoo-vs-microsoft-dynamics</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_odoo_vs_microsoft_dynamics"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_odoo_vs_tally_page" model="website.page">
+            <field name="name">Odoo vs Tally</field>
+            <field name="url">/odoo-vs-tally</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_odoo_vs_tally"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+        <record id="page_glossary_page" model="website.page">
+            <field name="name">Glossary</field>
+            <field name="url">/glossary</field>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="view_id" ref="dics_theme.dics_glossary"/>
+            <field name="is_published" eval="True"/>
+            <field name="website_indexed" eval="True"/>
+        </record>
+
+
     </data>
 </odoo>

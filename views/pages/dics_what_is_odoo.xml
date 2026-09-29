@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_what_is_odoo"
+              name="DataInteger — What is Odoo?"
+              key="dics_theme.dics_what_is_odoo"
+              website_id="dics_theme.dics_website">
+
+        <t t-call="website.layout">
+            <t t-set="additional_title">
+                What is Odoo? Odoo ERP Explained Simply | DataInteger
+            </t>
+            <t t-set="meta_description">
+                Learn what Odoo is, how Odoo ERP works, what Odoo modules offer, and why businesses use Odoo for sales, accounting, inventory, manufacturing, CRM, HR, and eCommerce.
+            </t>
+
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main class="dics-main">
+
+
+                    <!-- =====================================================
+                         2. HERO / EXECUTIVE DEFINITION
+                    ====================================================== -->
+                    <section class="dics-kb-hero">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container dics-kb-hero__inner">
+
+                            <div class="dics-kb-badge-row">
+                                <div class="dics-kb-badge dics-kb-badge--red">
+                                    <span class="material-symbols-outlined">terminal</span>
+                                    <span>ODOO ERP EXPLAINED</span>
+                                </div>
+                                <span class="dics-kb-mono">• SIMPLE GUIDE</span>
+
+                                <div class="dics-kb-validation">
+                                    <span class="material-symbols-outlined">verified</span>
+                                    <span>UPDATED FOR ODOO 18</span>
+                                </div>
+                            </div>
+
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>
+                                        What is Odoo?
+                                        <br class="dics-kb-desktop-break"/>
+                                        <span>Odoo ERP Explained</span>
+                                        Simply.
+                                    </h1>
+
+                                    <div class="dics-kb-lead">
+                                        <p>
+                                            Odoo is an all-in-one business software that helps companies manage different parts of their business from one platform.
+                                        </p>
+                                        <p>
+                                            With Odoo, businesses can manage sales, CRM, accounting, invoicing, inventory, manufacturing, purchasing, projects, human resources, eCommerce, website, and marketing.
+                                            Instead of using separate software for every department, businesses can connect these activities in Odoo.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-kb-byline">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger Odoo Team
+                                            </span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>8 Min Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">check_circle
+                                            </span>
+                                            <span class="dics-kb-byline__strong">Updated for Odoo 18</span>
+                                        </div>
+                                        <span class="dics-kb-audience">Beginner Friendly</span>
+                                    </div>
+                                </div>
+
+                                <!-- Architectural telemetry panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">ODOO AT A GLANCE</span>
+                                    </div>
+
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">HOW IT WORKS</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>1 Platform</strong>
+                                            <span>CONNECTED APPS</span>
+                                        </div>
+                                        <p>
+                                            For example, when a customer places an order, Odoo can connect the sales order with inventory, invoicing, delivery, and accounting.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-kb-telemetry__grid">
+                                        <div>
+                                            <span class="dics-kb-mono">TECHNOLOGY</span>
+                                            <strong>Python + PostgreSQL</strong>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">WEB CLIENT</span>
+                                            <strong>OWL</strong>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">INTEGRATION</span>
+                                            <strong>REST / RPC</strong>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">DEPLOYMENT</span>
+                                            <strong>Cloud / On-Premise</strong>
+                                        </div>
+                                    </div>
+
+                                    <a href="/contact" class="dics-kb-dark-btn">
+                                        <span>Talk to an Odoo Expert</span>
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                    </a>
+                                </aside>
+                            </div>
+
+                            <!-- KPI row -->
+                            <div class="dics-kb-kpis">
+                                <article class="dics-kb-kpi">
+                                    <div class="dics-kb-kpi__icon">
+                                        <span class="material-symbols-outlined">apps</span>
+                                    </div>
+                                    <div>
+                                        <strong>80+ Business Apps</strong>
+                                        <span>CRM, SALES, INVENTORY &amp; MORE</span>
+                                        <p>CRM, Sales, Inventory, Accounting, Manufacturing, HR, eCommerce, and more.</p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-kpi">
+                                    <div class="dics-kb-kpi__icon">
+                                        <span class="material-symbols-outlined">hub</span>
+                                    </div>
+                                    <div>
+                                        <strong>One Platform</strong>
+                                        <span>CONNECTED BUSINESS DATA</span>
+                                        <p>Keep important business information in one connected system.</p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-kpi">
+                                    <div class="dics-kb-kpi__icon">
+                                        <span class="material-symbols-outlined">database</span>
+                                    </div>
+                                    <div>
+                                        <strong>Connected Apps</strong>
+                                        <span>SALES TO ACCOUNTING</span>
+                                        <p>Sales, inventory, accounting, manufacturing, and other apps can work together.</p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-kpi">
+                                    <div class="dics-kb-kpi__icon">
+                                        <span class="material-symbols-outlined">layers</span>
+                                    </div>
+                                    <div>
+                                        <strong>Flexible</strong>
+                                        <span>CUSTOMIZABLE</span>
+                                        <p>Use standard Odoo apps, add custom features, and connect Odoo with other software.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         3. BIG PICTURE
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--gray">
+                        <div class="dics-container">
+                            <div class="dics-kb-section-head dics-kb-section-head--split">
+                                <div>
+                                    <span class="dics-kb-eyebrow">WHY BUSINESSES CHOOSE ODOO</span>
+                                    <h2>Why Do Businesses Use Odoo?</h2>
+                                    <p>
+                                        Many businesses use different software for sales, accounting, inventory, eCommerce, HR, and other departments.
+                                        This can create problems. Odoo takes a different approach — its business apps are connected, so information can move between different parts of the business.
+                                    </p>
+                                </div>
+
+                                <div class="dics-kb-legend">
+                                    <span>
+                                        <i class="is-red"/>
+                                        Separate Systems
+                                    </span>
+                                    <b>vs</b>
+                                    <span>
+                                        <i class="is-green"/>
+                                        Odoo Platform
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="dics-kb-compare-grid">
+                                <article class="dics-kb-compare-card dics-kb-compare-card--bad">
+                                    <div class="dics-kb-card-corner"/>
+                                    <div class="dics-kb-card-head">
+                                        <div class="dics-kb-card-title">
+                                            <div class="dics-kb-square-icon dics-kb-square-icon--red">
+                                                <span class="material-symbols-outlined">warning</span>
+                                            </div>
+                                            <div>
+                                                <h3>Without Odoo: Too Many Separate Systems</h3>
+                                                <span>DISCONNECTED SOFTWARE • MULTIPLE DATA SOURCES</span>
+                                            </div>
+                                        </div>
+                                        <em>FRAGILE</em>
+                                    </div>
+
+                                    <p>
+                                        When every department uses different software, businesses may face duplicate information, repeated data entry, and more work keeping everything updated.
+                                    </p>
+
+                                    <div class="dics-kb-silo-grid">
+                                        <div>
+                                            <strong>CRM</strong>
+                                            <span>Customer data</span>
+                                            <small>Manual handoff</small>
+                                        </div>
+                                        <div>
+                                            <strong>Accounting</strong>
+                                            <span>Ledger</span>
+                                            <small>Reconciliation</small>
+                                        </div>
+                                        <div>
+                                            <strong>eCommerce</strong>
+                                            <span>Storefront</span>
+                                            <small>Stock sync</small>
+                                        </div>
+                                        <div>
+                                            <strong>Logistics</strong>
+                                            <span>Fulfillment</span>
+                                            <small>Tracking sync</small>
+                                        </div>
+                                        <div>
+                                            <strong>Projects</strong>
+                                            <span>Delivery</span>
+                                            <small>Time transfer</small>
+                                        </div>
+                                        <div>
+                                            <strong>HR</strong>
+                                            <span>People data</span>
+                                            <small>Duplicate entry</small>
+                                        </div>
+                                    </div>
+
+                                    <ul class="dics-kb-list dics-kb-list--bad">
+                                        <li><span class="material-symbols-outlined">close</span>Duplicate customer and product information
+                                        </li>
+                                        <li><span class="material-symbols-outlined">close</span>Repeated data entry between departments
+                                        </li>
+                                        <li><span class="material-symbols-outlined">close</span>More work when checking reports and keeping stock updated
+                                        </li>
+                                    </ul>
+
+                                    <footer>
+                                        <span>PROBLEM: MULTIPLE SOURCES OF TRUTH</span>
+                                        <strong>STATUS: FRAGMENTED</strong>
+                                    </footer>
+                                </article>
+
+                                <article class="dics-kb-compare-card dics-kb-compare-card--good">
+                                    <div class="dics-kb-card-corner"/>
+                                    <div class="dics-kb-card-head">
+                                        <div class="dics-kb-card-title">
+                                            <div class="dics-kb-square-icon dics-kb-square-icon--red-solid">
+                                                <span class="material-symbols-outlined">hub</span>
+                                            </div>
+                                            <div>
+                                                <h3>With Odoo: Connected Business Software</h3>
+                                                <span>ONE PLATFORM • CONNECTED WORKFLOWS</span>
+                                            </div>
+                                        </div>
+                                        <em>CONNECTED</em>
+                                    </div>
+
+                                    <p>
+                                        Odoo connects many common business activities in one platform.
+                                        When a sales order is confirmed, Odoo can automatically connect it with the next steps in the process.
+                                    </p>
+
+                                    <div class="dics-kb-flow">
+                                        <div class="dics-kb-flow__trigger">
+                                            <span class="material-symbols-outlined">sync_alt</span>
+                                            <strong>EXAMPLE: CONFIRMED SALES ORDER</strong>
+                                        </div>
+                                        <div class="dics-kb-flow__grid">
+                                            <div>
+                                                <span class="material-symbols-outlined">inventory_2</span>
+                                                <b>Inventory</b>
+                                                <small>Stock reservation</small>
+                                            </div>
+                                            <div>
+                                                <span class="material-symbols-outlined">receipt_long</span>
+                                                <b>Invoice</b>
+                                                <small>Invoice workflow</small>
+                                            </div>
+                                            <div>
+                                                <span class="material-symbols-outlined">precision_manufacturing</span>
+                                                <b>Manufacturing</b>
+                                                <small>Demand planning</small>
+                                            </div>
+                                            <div>
+                                                <span class="material-symbols-outlined">local_shipping</span>
+                                                <b>Delivery</b>
+                                                <small>Fulfillment workflow</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="dics-kb-list dics-kb-list--good">
+                                        <li><span class="material-symbols-outlined">check_circle</span>Reduce repeated data entry
+                                        </li>
+                                        <li><span class="material-symbols-outlined">check_circle</span>Keep information in one place
+                                        </li>
+                                        <li><span class="material-symbols-outlined">check_circle</span>Connect different departments and automate common tasks
+                                        </li>
+                                    </ul>
+
+                                    <footer>
+                                        <span>RESULT: CONNECTED BUSINESS PLATFORM</span>
+                                        <strong>STATUS: INTEGRATED FLOW</strong>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         4. CORE MODULES
+                    ====================================================== -->
+                    <section class="dics-kb-section">
+                        <div class="dics-container">
+                            <div class="dics-kb-section-head dics-kb-section-head--center">
+                                <span class="dics-kb-eyebrow">ODOO MODULES</span>
+                                <h2>Odoo Modules Explained</h2>
+                                <p>
+                                    One of the main benefits of Odoo is its large range of business apps.
+                                    You do not have to use every Odoo app. You can choose the apps your business needs and add more later.
+                                </p>
+                            </div>
+
+                            <div class="dics-kb-module-grid">
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">trending_up</span>
+                                        </div>
+                                        <span>MOD_01</span>
+                                    </div>
+                                    <h3>Odoo CRM and Sales</h3>
+                                    <p>Odoo CRM helps businesses manage leads, customers, sales opportunities, and follow-ups.
+                                        The Sales app can be used to create quotations, sales orders, invoices, and manage the sales process.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>Lead management</span>
+                                        <span>Quotations</span>
+                                        <span>Sales orders</span>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">warehouse</span>
+                                        </div>
+                                        <span>MOD_02</span>
+                                    </div>
+                                    <h3>Odoo Inventory</h3>
+                                    <p>Odoo Inventory helps businesses manage products, stock, warehouses, purchases, and deliveries.
+                                        See what products you have, where they are stored, and when more stock is needed.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>Warehouses</span>
+                                        <span>Barcode scanning</span>
+                                        <span>Stock tracking</span>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">factory</span>
+                                        </div>
+                                        <span>MOD_03</span>
+                                    </div>
+                                    <h3>Odoo Manufacturing</h3>
+                                    <p>Odoo Manufacturing helps companies manage production and manufacturing processes.
+                                        Create bills of materials, plan production, manage work orders, and track manufacturing activities.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>BOM</span>
+                                        <span>Work orders</span>
+                                        <span>Quality checks</span>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">account_balance</span>
+                                        </div>
+                                        <span>MOD_04</span>
+                                    </div>
+                                    <h3>Odoo Accounting and Finance</h3>
+                                    <p>Odoo Accounting helps businesses manage invoices, payments, taxes, bank transactions, and financial reports.
+                                        It can connect accounting with sales, purchases, inventory, and other parts of the business.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>Invoicing</span>
+                                        <span>Payments</span>
+                                        <span>Financial reports</span>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">shopping_cart</span>
+                                        </div>
+                                        <span>MOD_05</span>
+                                    </div>
+                                    <h3>Odoo eCommerce and Website</h3>
+                                    <p>Odoo eCommerce helps businesses create and manage an online store.
+                                        The store can connect with Odoo products, inventory, sales orders, customers, and payments.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>Online store</span>
+                                        <span>Product catalog</span>
+                                        <span>Payments</span>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">groups</span>
+                                        </div>
+                                        <span>MOD_06</span>
+                                    </div>
+                                    <h3>Odoo HR and Employees</h3>
+                                    <p>Odoo HR apps help businesses manage employee information and common HR activities
+                                        such as recruitment, time off, attendance, expenses, and appraisals.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>Employee records</span>
+                                        <span>Recruitment</span>
+                                        <span>Time off</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         5. HOW ODOO WORKS
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--light">
+                        <div class="dics-container">
+                            <div class="dics-kb-engineering">
+                                <div class="dics-kb-engineering__copy">
+                                    <span class="dics-kb-eyebrow">HOW ODOO WORKS</span>
+                                    <h2>How Does Odoo Work?</h2>
+                                    <p>
+                                        Odoo is built using technologies such as Python and PostgreSQL.
+                                        You do not need to understand the technical side to use Odoo, but the technology behind Odoo makes it possible to add apps, customize business processes, and connect Odoo with other software.
+                                    </p>
+
+                                    <div class="dics-kb-pillars">
+                                        <article>
+                                            <span>01</span>
+                                            <div>
+                                                <h3>Python</h3>
+                                                <p>Odoo is built mainly with Python.
+                                                    Python is used for Odoo's business logic and server-side features.
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <span>02</span>
+                                            <div>
+                                                <h3>PostgreSQL</h3>
+                                                <p>Odoo uses PostgreSQL to store business information —
+                                                    customers, products, sales orders, invoices, inventory, employees, and more.
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <span>03</span>
+                                            <div>
+                                                <h3>Customization</h3>
+                                                <p>Odoo can be customized to match specific business requirements.
+                                                    Add custom fields, workflows, reports, modules, and integrations without changing the main Odoo code directly.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="dics-kb-terminal">
+                                    <div class="dics-kb-terminal__head">
+                                        <div>
+                                            <i/>
+                                            <i/>
+                                            <i/>
+                                        </div>
+                                        <span>ODOO // HOW IT WORKS</span>
+                                    </div>
+                                    <div class="dics-kb-terminal__body">
+                                        <div>
+                                            <span>01</span>
+                                            <b>Python</b>
+                                            <em>Business Logic</em>
+                                        </div>
+                                        <div>
+                                            <span>02</span>
+                                            <b>PostgreSQL</b>
+                                            <em>Stores Your Data</em>
+                                        </div>
+                                        <div>
+                                            <span>03</span>
+                                            <b>Web Interface</b>
+                                            <em>Browser-Based Apps</em>
+                                        </div>
+                                        <div>
+                                            <span>04</span>
+                                            <b>REST / RPC</b>
+                                            <em>Connect Other Software</em>
+                                        </div>
+                                        <div>
+                                            <span>05</span>
+                                            <b>Modules</b>
+                                            <em>Add Apps as You Grow</em>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-terminal__footer">
+                                        <span>PLATFORM STATUS</span>
+                                        <strong>FLEXIBLE</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         6. WHY DATAINTEGER
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--dark">
+                        <div class="dics-container">
+                            <div class="dics-kb-section-head dics-kb-section-head--center">
+                                <span class="dics-kb-eyebrow dics-kb-eyebrow--light">WHY DATAINTEGER</span>
+                                <h2>Why Choose DataInteger for Odoo?</h2>
+                                <p>
+                                    Odoo gives you the software. The right implementation makes sure it actually works for your business.
+                                    At DataInteger, we focus on understanding how your business works before making changes to Odoo.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-why-grid">
+                                <article>
+                                    <span class="material-symbols-outlined">account_tree</span>
+                                    <h3>Business-Focused Odoo Implementation</h3>
+                                    <p>We first understand your processes, approvals, data, and business requirements.
+                                        Then we decide what should use standard Odoo features and what needs customization.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">code</span>
+                                    <h3>Odoo Custom Development</h3>
+                                    <p>When standard Odoo features are not enough, we can build custom Odoo modules and features for your business.
+                                        Our goal is to keep custom development organized, maintainable, and easier to update.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">api</span>
+                                    <h3>Odoo Integration</h3>
+                                    <p>We can connect Odoo with eCommerce platforms, payment systems, logistics software, marketplaces, messaging platforms, and other external applications to reduce manual work.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         7. CTA
+                    ====================================================== -->
+                    <section class="dics-kb-cta">
+                        <div class="dics-container">
+                            <div class="dics-kb-cta-card">
+                                <div>
+                                    <span class="dics-kb-eyebrow">READY TO EXPLORE ODOO?</span>
+                                    <h2>Build Odoo Around Your Business</h2>
+                                    <p>
+                                        Every business works differently.
+                                        Talk to our Odoo consultants about Odoo implementation, Odoo migration, Odoo customization, Odoo development, Odoo integrations, and ongoing Odoo support.
+                                    </p>
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                        Talk to an Odoo Expert
+                                        <span class="dics-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

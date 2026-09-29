@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_odoo_vs_microsoft_dynamics"
+              name="DataInteger — Odoo vs Microsoft Dynamics 365"
+              key="dics_theme.dics_odoo_vs_microsoft_dynamics"
+              website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Odoo vs Microsoft Dynamics 365: A Detailed ERP Comparison — DataInteger</t>
+            <t t-set="meta_description">Odoo vs Microsoft Dynamics 365 comparison covering ERP architecture, finance, CRM, sales, inventory, manufacturing, supply chain, customization, Microsoft ecosystem, pricing, implementation and total cost of ownership.</t>
+
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main class="dics-main">
+
+                    <!-- HERO -->
+                    <section class="dics-kb-hero h-auto">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container dics-kb-hero__inner">
+                            <div class="dics-kb-badge-row">
+                                <div class="dics-kb-badge dics-kb-badge--red"><span class="material-symbols-outlined">compare_arrows</span><span>HEAD-TO-HEAD ERP COMPARISON</span></div>
+                                <span class="dics-kb-mono">• ARCHITECTURAL REVIEW</span>
+                            </div>
+                            <div class="dics-kb-hero-copy">
+                                <h1>Odoo vs Microsoft Dynamics 365:<br/><span>Which ERP Architecture Fits Your Business?</span></h1>
+                                <div class="dics-kb-lead">
+                                    <p class="text-secondary mb-0">Odoo and Microsoft Dynamics 365 can both become the operational core of a business, but they approach the ERP landscape differently. Odoo delivers a broad integrated application suite, while Dynamics 365 is a family of connected business applications covering finance, supply chain, sales, customer service, commerce and more.</p>
+                                    <p class="text-secondary mb-0">This guide compares the platforms across finance, CRM, inventory, manufacturing, supply chain, eCommerce, customization, integrations, Microsoft ecosystem fit, licensing, implementation and long-term ownership.</p>
+                                </div>
+                                <div class="dics-kb-byline"><div><span class="material-symbols-outlined">engineering</span><span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span></div><span>•</span><div><span class="material-symbols-outlined">schedule</span><span>13 Min Read</span></div><span>•</span><div><span class="material-symbols-outlined dics-kb-icon-green">verified</span><span class="dics-kb-byline__strong">Business + Technical Comparison</span></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- AT A GLANCE -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">AT A GLANCE</span>
+                                <h2 class="h2 fw-bold mb-2">Two ERP Ecosystems, Different Architecture Choices</h2>
+                                <p class="text-secondary mb-0">The comparison becomes clearer when you look beyond individual modules and examine how finance, operations, CRM, data, integrations and business applications fit together.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card dics-kb-compare-card--good card h-100 border shadow-sm rounded-3 p-4">
+                                        <div class="dics-kb-card-corner"/>
+                                        <div class="dics-kb-card-head">
+                                            <div class="dics-kb-card-title">
+                                                <div class="dics-kb-square-icon dics-kb-square-icon--red-solid"><span class="material-symbols-outlined">hub</span></div>
+                                                <div><h3 class="h5 fw-bold mb-2">Odoo</h3><span>Integrated business application suite</span></div>
+                                            </div>
+                                            <em>MODULAR ERP</em>
+                                        </div>
+                                        <p class="text-secondary mb-0">Odoo brings CRM, Sales, Accounting, Inventory, Manufacturing, Purchase, Website, eCommerce, Project, Helpdesk, HR and other applications into one ERP ecosystem.</p>
+                                        <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                            <li><span class="material-symbols-outlined">check_circle</span><span>Broad suite with finance, operations, CRM and commerce</span></li>
+                                            <li><span class="material-symbols-outlined">check_circle</span><span>Native manufacturing, inventory and website/eCommerce applications</span></li>
+                                            <li><span class="material-symbols-outlined">check_circle</span><span>Studio, custom modules, APIs and open-source development path</span></li>
+                                            <li><span class="material-symbols-outlined">check_circle</span><span>Public Standard and Custom subscription plans</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card dics-kb-compare-card--bad card h-100 border shadow-sm rounded-3 p-4">
+                                        <div class="dics-kb-card-corner"/>
+                                        <div class="dics-kb-card-head">
+                                            <div class="dics-kb-card-title">
+                                                <div class="dics-kb-square-icon dics-kb-square-icon--red"><span class="material-symbols-outlined">business_center</span></div>
+                                                <div><h3 class="h5 fw-bold mb-2">Microsoft Dynamics 365</h3><span>Connected business application portfolio</span></div>
+                                            </div>
+                                            <em>MICROSOFT ECOSYSTEM</em>
+                                        </div>
+                                        <p class="text-secondary mb-0">Dynamics 365 is a family of applications including Business Central, Finance, Supply Chain Management, Sales, Customer Service, Commerce, Project Operations and other specialized products.</p>
+                                        <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                            <li><span class="material-symbols-outlined">info</span><span>Business Central targets integrated finance, sales and operations</span></li>
+                                            <li><span class="material-symbols-outlined">info</span><span>Finance and Supply Chain Management support larger and more complex operating models</span></li>
+                                            <li><span class="material-symbols-outlined">info</span><span>Deep integration with Microsoft 365, Power Platform, Azure and Copilot</span></li>
+                                            <li><span class="material-symbols-outlined">info</span><span>Application-by-application licensing can shape the final solution architecture</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- IMPORTANT TERMINOLOGY -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">IMPORTANT TERMINOLOGY</span>
+                                <h2 class="h2 fw-bold mb-2">“Microsoft Dynamics 365” Is a Family, Not One ERP Product</h2>
+                                <p class="text-secondary mb-0">This matters when comparing products. Business Central and Dynamics 365 Finance + Supply Chain Management address different organizational profiles and complexity levels.</p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Business Central</h3><p class="text-secondary mb-0">Business Central connects finance, sales, service and operations in a single business management solution. Microsoft currently lists Essentials and Premium plans, with Premium adding service management and manufacturing capabilities.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">Finance + Supply Chain Management</h3><p class="text-secondary mb-0">Dynamics 365 Finance focuses on financial management and global financial operations, while Supply Chain Management addresses planning, procurement, warehouse, manufacturing and fulfillment scenarios.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Customer Applications</h3><p class="text-secondary mb-0">Dynamics 365 also includes Sales, Customer Service, Customer Insights, Commerce, Field Service and other applications. An enterprise architecture may combine several Dynamics applications rather than selecting one monolithic product.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- COMPARISON MATRIX -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CORE COMPARISON</span>
+                                <h2 class="h2 fw-bold mb-2">Odoo vs Microsoft Dynamics 365 Across the ERP Stack</h2>
+                                <p class="text-secondary mb-0">Use this matrix as a first-pass map. The exact Dynamics capability depends on which Dynamics 365 applications are included in the proposed architecture.</p>
+                            </div>
+                            <div class="table-responsive border rounded-3 bg-white shadow-sm overflow-hidden">
+                                <table class="table table-bordered table-hover align-middle mb-0">
+                                    <thead class="table-dark"><tr><th class="p-3 text-nowrap">Area</th><th class="p-3">Odoo</th><th class="p-3">Microsoft Dynamics 365</th></tr></thead>
+                                    <tbody>
+                                        <tr><td class="p-3"><strong>Product model</strong></td><td class="p-3">Integrated modular ERP suite</td><td class="p-3">Family of connected business applications</td></tr>
+                                        <tr><td class="p-3"><strong>Finance</strong></td><td class="p-3">Native Accounting and financial applications</td><td class="p-3">Business Central Finance or Dynamics 365 Finance depending on scale and requirements</td></tr>
+                                        <tr><td class="p-3"><strong>CRM</strong></td><td class="p-3">Native CRM connected to Sales and ERP</td><td class="p-3">Dynamics 365 Sales and related customer applications</td></tr>
+                                        <tr><td class="p-3"><strong>Inventory</strong></td><td class="p-3">Native Inventory, warehouse, barcode and replenishment workflows</td><td class="p-3">Business Central or Supply Chain Management depending on operating complexity</td></tr>
+                                        <tr><td class="p-3"><strong>Manufacturing</strong></td><td class="p-3">Native MRP, BOMs, work centers, quality and maintenance</td><td class="p-3">Business Central Premium or Supply Chain Management manufacturing capabilities</td></tr>
+                                        <tr><td class="p-3"><strong>Supply chain</strong></td><td class="p-3">Purchase, Inventory, MRP and logistics applications</td><td class="p-3">Dedicated Supply Chain Management for advanced planning, procurement, warehouse and fulfillment</td></tr>
+                                        <tr><td class="p-3"><strong>eCommerce</strong></td><td class="p-3">Native Website and eCommerce applications</td><td class="p-3">Dynamics 365 Commerce for digital and retail commerce scenarios</td></tr>
+                                        <tr><td class="p-3"><strong>Customization</strong></td><td class="p-3">Studio, Python, XML, JavaScript, ORM and APIs</td><td class="p-3">Power Platform, extensions, AL for Business Central, X++ for Finance/Supply Chain, APIs and Azure services</td></tr>
+                                        <tr><td class="p-3"><strong>Microsoft ecosystem</strong></td><td class="p-3">Can integrate with Microsoft services and external systems</td><td class="p-3">Native alignment with Microsoft 365, Power Platform, Azure, Teams and Microsoft data/AI services</td></tr>
+                                        <tr><td class="p-3"><strong>Pricing model</strong></td><td class="p-3">Public Standard and Custom plans bundle all in-house apps</td><td class="p-3">Application and license dependent; Business Central has public Essentials and Premium pricing while broader Dynamics architectures can combine multiple licenses</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FINANCE -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">FINANCE</span>
+                                <h2 class="h2 fw-bold mb-2">Finance: One Application or a Specialized Financial Architecture</h2>
+                                <p class="text-secondary mb-0">Finance should be evaluated using legal entities, currencies, tax, consolidation, revenue, assets, budgeting and month-end scenarios rather than screenshots.</p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Odoo Accounting</h3><p class="text-secondary mb-0">Accounting is part of the same application suite as Sales, Purchase, Inventory, Manufacturing and other operational modules. This allows operational transactions to flow into accounting without requiring a separate ERP product family.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">Business Central Finance</h3><p class="text-secondary mb-0">Business Central combines finance with sales and operations for organizations looking for an integrated business-management system. Microsoft positions it for small and midsize businesses and provides Essentials and Premium licensing.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Dynamics 365 Finance</h3><p class="text-secondary mb-0">Dynamics 365 Finance is a dedicated financial-management application designed for more complex financial operating models, including global financial operations, planning, forecasting and automation.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CRM -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CRM + SALES</span>
+                                <h2 class="h2 fw-bold mb-2">Customer Management and Sales Operations</h2>
+                                <p class="text-secondary mb-0">Both ecosystems cover sales processes, but Dynamics 365 separates CRM applications more explicitly from its ERP applications.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6"><div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4"><h3 class="h5 fw-bold mb-2">Odoo</h3><p class="text-secondary mb-0">CRM, Sales, Marketing, Helpdesk, Field Service and other customer-facing applications operate within the same ERP environment as accounting, inventory and manufacturing. This can reduce the boundary between front-office and back-office records.</p></div></div>
+                                <div class="col-md-6"><div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4"><h3 class="h5 fw-bold mb-2">Dynamics 365</h3><p class="text-secondary mb-0">Dynamics 365 Sales provides sales-force automation, forecasting, dashboards and AI-assisted capabilities. Customer Service, Customer Insights and other applications extend the customer platform while remaining connected to the broader Microsoft ecosystem.</p></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- INVENTORY MANUFACTURING -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">OPERATIONS</span>
+                                <h2 class="h2 fw-bold mb-2">Inventory, Manufacturing and Supply Chain</h2>
+                                <p class="text-secondary mb-0">This is one of the most important areas for distributors and manufacturers because the ERP must execute physical operations, not only record them.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-4"><div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4"><h3 class="h5 fw-bold mb-2">Odoo</h3><p class="text-secondary mb-0">Inventory, Purchase, Manufacturing, Quality, Maintenance and PLM work together as native applications. Warehousing, replenishment, barcode, traceability and production workflows share the same ERP environment.</p></div></div>
+                                <div class="col-md-4"><div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4"><h3 class="h5 fw-bold mb-2">Business Central</h3><p class="text-secondary mb-0">Business Central provides finance, sales and operations, with Premium adding manufacturing and service management. Microsoft also provides partner apps for industry-specific extensions.</p></div></div>
+                                <div class="col-md-4"><div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4"><h3 class="h5 fw-bold mb-2">Supply Chain Management</h3><p class="text-secondary mb-0">Dynamics 365 Supply Chain Management is designed for advanced supply-chain scenarios including planning, procurement, shop-floor management, order management, warehouse management and asset management.</p></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- MICROSOFT ECOSYSTEM -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">ECOSYSTEM</span>
+                                <h2 class="h2 fw-bold mb-2">The Microsoft Stack Can Be a Major Architecture Factor</h2>
+                                <p class="text-secondary mb-0">For organizations already standardized on Microsoft technologies, the surrounding ecosystem can be as important as the ERP application itself.</p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Microsoft 365</h3><p class="text-secondary mb-0">Dynamics 365 is designed to work alongside Microsoft productivity and collaboration products such as Outlook, Excel, Teams and related Microsoft services.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">Power Platform</h3><p class="text-secondary mb-0">Power Apps, Power Automate, Power BI and related services provide a low-code and analytics layer around Dynamics 365 and other business systems.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Azure + Data + AI</h3><p class="text-secondary mb-0">Azure services, Microsoft data technologies and Copilot capabilities can extend Dynamics architectures for integration, analytics, automation and AI-driven workflows.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CUSTOMIZATION -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">DEVELOPMENT</span>
+                                <h2 class="h2 fw-bold mb-2">Customization: Different Languages, Different Governance Models</h2>
+                                <p class="text-secondary mb-0">Both platforms are extensible. The practical question is which development ecosystem your team can build, secure, test and maintain over time.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Odoo development path</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Python ORM and custom modules</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>XML views and QWeb templates</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>OWL and JavaScript front-end development</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Studio and external API capabilities</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Dynamics 365 development path</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li><span class="material-symbols-outlined">info</span><span>AL extensions for Business Central</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>X++ and extension architecture for Finance and Supply Chain Management</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Power Platform for low-code applications and automation</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Azure, APIs, Dataverse and integration services</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dics-kb-note mt-4 p-3 border border-warning rounded-3 bg-warning-subtle d-flex align-items-start gap-2"><span class="material-symbols-outlined">warning</span><p><strong>Important:</strong> Custom code is part of the ERP's long-term operating cost. Evaluate upgrade impact, testing, security, developer availability, documentation and ownership before approving customizations.</p></div>
+                        </div>
+                    </section>
+
+                    <!-- PRICING -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">PRICING + TCO</span>
+                                <h2 class="h2 fw-bold mb-2">Compare the Complete Solution, Not Just the License</h2>
+                                <p class="text-secondary mb-0">Odoo and Dynamics 365 have different commercial structures, so a useful comparison requires a common three-year cost model.</p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Odoo</h3><p class="text-secondary mb-0">Odoo currently publishes Standard and Custom plans. Its public pricing page lists all in-house apps under a single subscription for those plans, while Custom adds options such as Odoo Studio, multi-company, external API access and additional deployment choices.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">Business Central</h3><p class="text-secondary mb-0">Microsoft currently publishes Business Central Essentials and Premium pricing. In India, the official page lists ₹6,655 per user/month for Essentials and ₹9,150 per user/month for Premium, paid yearly, before applicable GST. Premium adds service management and manufacturing.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Full Dynamics Architecture</h3><p class="text-secondary mb-0">If the solution uses Finance, Supply Chain Management, Sales, Customer Service, Commerce, Power Platform or other products, model each required license and add-on. Implementation, integrations, data migration and partner services belong in the same TCO model.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- INTEGRATIONS -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">INTEGRATIONS</span>
+                                <h2 class="h2 fw-bold mb-2">API and Integration Architecture</h2>
+                                <p class="text-secondary mb-0">The integration strategy should define which system owns each master record and how data moves between applications.</p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Odoo</h3><p class="text-secondary mb-0">Odoo's Custom plan includes external API access, and its developer ecosystem supports integrations through APIs, modules and custom services. Typical connections include payment gateways, marketplaces, banks, logistics providers and BI systems.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">Dynamics 365</h3><p class="text-secondary mb-0">Dynamics 365 integrates with Microsoft services, Dataverse, Power Platform, Azure and external systems through APIs and integration services. Business Central also has a partner app ecosystem for specialized extensions.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Architecture Questions</h3><p class="text-secondary mb-0">Ask where customers, products, prices, orders, inventory, invoices and financial truth live. Then define synchronization frequency, error handling, retry logic, monitoring, security and ownership.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- IMPLEMENTATION -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head dics-kb-section-head--center mb-4 text-center">
+                                <span class="dics-kb-eyebrow">IMPLEMENTATION FRAMEWORK</span>
+                                <h2 class="h2 fw-bold mb-2">How to Compare Odoo and Dynamics 365 Properly</h2>
+                                <p class="text-secondary mb-0">Six stages turn an ERP feature comparison into an architecture decision.</p>
+                            </div>
+                            <div class="dics-detail-process d-grid gap-0 border-top">
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number">01</span><div><h3 class="h5 fw-bold mb-2">Map the Business</h3><p class="text-secondary mb-0">Document finance, sales, purchasing, inventory, manufacturing, service, commerce, projects and reporting workflows before comparing configuration screens.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number">02</span><div><h3 class="h5 fw-bold mb-2">Choose the Dynamics Scope</h3><p class="text-secondary mb-0">If evaluating Microsoft, first determine whether Business Central is the relevant comparison or whether Finance, Supply Chain Management and additional Dynamics applications are required.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number">03</span><div><h3 class="h5 fw-bold mb-2">Define System Ownership</h3><p class="text-secondary mb-0">Decide where customers, products, inventory, orders, accounting, analytics and documents should be mastered. This is especially important in multi-application Dynamics architectures.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number">04</span><div><h3 class="h5 fw-bold mb-2">Run Real Scenarios</h3><p class="text-secondary mb-0">Demonstrate order-to-cash, procure-to-pay, warehouse operations, manufacturing, month-end close, service and reporting using realistic business data.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number">05</span><div><h3 class="h5 fw-bold mb-2">Calculate Three-Year TCO</h3><p class="text-secondary mb-0">Combine licenses, apps, add-ons, implementation, development, integrations, migration, training, support and internal administration.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number">06</span><div><h3 class="h5 fw-bold mb-2">Validate the Future State</h3><p class="text-secondary mb-0">Test expected users, entities, locations, products, transaction volume, integrations, reporting and automation requirements several years beyond go-live.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SCENARIOS -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">BUSINESS SCENARIOS</span>
+                                <h2 class="h2 fw-bold mb-2">The Comparison Changes With Your Operating Model</h2>
+                                <p class="text-secondary mb-0">The relevant Dynamics product and the right ERP architecture depend heavily on organizational complexity.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-4"><div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4"><h3 class="h5 fw-bold mb-2">Growing Integrated Business</h3><p class="text-secondary mb-0">If you need CRM, sales, accounting, inventory, manufacturing and eCommerce connected in one broad application suite, evaluate Odoo's integrated architecture against your complete workflow.</p></div></div>
+                                <div class="col-md-4"><div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4"><h3 class="h5 fw-bold mb-2">Microsoft-Centered Organization</h3><p class="text-secondary mb-0">If Microsoft 365, Power Platform, Azure, Power BI and Teams already form the technology foundation, evaluate how deeply Dynamics can fit into the existing identity, data and automation architecture.</p></div></div>
+                                <div class="col-md-4"><div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4"><h3 class="h5 fw-bold mb-2">Complex Enterprise Operations</h3><p class="text-secondary mb-0">If global finance, advanced supply chain, complex manufacturing, multiple legal entities and specialized business processes dominate the project, evaluate the dedicated Dynamics 365 Finance and Supply Chain Management applications alongside Odoo's enterprise capabilities.</p></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- MIGRATION -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">MIGRATION</span>
+                                <h2 class="h2 fw-bold mb-2">Moving Between Odoo and Microsoft Dynamics 365</h2>
+                                <p class="text-secondary mb-0">Migration is a process redesign and data-governance exercise, not simply an export and import.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Dynamics 365 → Odoo</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Map customers, vendors, products, accounts, inventory and opening balances</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Document Business Central or Finance/Supply Chain customizations and extensions</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Identify processes that can be rebuilt using native Odoo applications</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Retest integrations, financial balances and operational reports before go-live</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Odoo → Dynamics 365</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li><span class="material-symbols-outlined">info</span><span>Separate master data, open transactions and historical records</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Map Odoo companies, accounts, products, locations and inventory structures</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Choose between Business Central and the larger Finance/Supply Chain architecture</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Rebuild integrations through Dataverse, Power Platform, Azure or partner solutions as required</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- DECISION FRAMEWORK -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">DECISION FRAMEWORK</span>
+                                <h2 class="h2 fw-bold mb-2">Which Platform Characteristics Match Your Requirements?</h2>
+                                <p class="text-secondary mb-0">There is no universal winner. The useful decision is the architecture that fits your processes, people, technology stack and growth plans.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Evaluate Odoo closely when:</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>You want a broad ERP suite with CRM, finance, inventory, manufacturing and eCommerce in one application ecosystem.</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>You value an open-source development model and extensive module-level customization.</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>You want a public bundled subscription model for the in-house application suite.</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Your implementation team is comfortable with Python, XML, JavaScript and Odoo's framework.</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Evaluate Dynamics 365 closely when:</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li><span class="material-symbols-outlined">info</span><span>Your organization already depends heavily on Microsoft 365, Azure, Power Platform or Dataverse.</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>You need to select among Business Central, Finance, Supply Chain, Sales, Service and other specialized applications.</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Advanced supply chain, global finance, manufacturing or enterprise governance are major requirements.</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Your development and IT teams already work with Microsoft's application and cloud ecosystem.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FAQ -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4"><span class="dics-kb-eyebrow">FAQ</span><h2 class="h2 fw-bold mb-2">Odoo vs Microsoft Dynamics 365: Common Questions</h2></div>
+                            <div class="accordion d-grid gap-3" id="odooDynamicsFaq">
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#dynamicsFaq1" aria-expanded="false" aria-controls="dynamicsFaq1">Is Dynamics 365 one ERP product?</button></h3><div id="dynamicsFaq1" class="accordion-collapse collapse" data-bs-parent="#odooDynamicsFaq"><div class="accordion-body border-top px-4 py-3 text-secondary">No. Dynamics 365 is a family of business applications. Business Central is one integrated business-management product, while Finance, Supply Chain Management, Sales, Customer Service, Commerce and other applications address additional scenarios.</div></div></div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#dynamicsFaq2" aria-expanded="false" aria-controls="dynamicsFaq2">Which Dynamics product should be compared with Odoo?</button></h3><div id="dynamicsFaq2" class="accordion-collapse collapse" data-bs-parent="#odooDynamicsFaq"><div class="accordion-body border-top px-4 py-3 text-secondary">For many small and midsize business scenarios, Business Central is the closest starting point. For more complex financial and supply-chain requirements, the relevant comparison may be Odoo against Dynamics 365 Finance and Supply Chain Management, potentially with other Dynamics applications.</div></div></div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#dynamicsFaq3" aria-expanded="false" aria-controls="dynamicsFaq3">Does Odoo have manufacturing?</button></h3><div id="dynamicsFaq3" class="accordion-collapse collapse" data-bs-parent="#odooDynamicsFaq"><div class="accordion-body border-top px-4 py-3 text-secondary">Yes. Odoo provides native manufacturing applications covering MRP, bills of materials, work centers, production and related quality, maintenance and PLM workflows.</div></div></div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#dynamicsFaq4" aria-expanded="false" aria-controls="dynamicsFaq4">Does Dynamics 365 support manufacturing?</button></h3><div id="dynamicsFaq4" class="accordion-collapse collapse" data-bs-parent="#odooDynamicsFaq"><div class="accordion-body border-top px-4 py-3 text-secondary">Yes. Business Central Premium includes manufacturing capabilities, while Dynamics 365 Supply Chain Management provides broader manufacturing and shop-floor capabilities for more complex supply-chain scenarios.</div></div></div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#dynamicsFaq5" aria-expanded="false" aria-controls="dynamicsFaq5">Which integrates better with Microsoft 365?</button></h3><div id="dynamicsFaq5" class="accordion-collapse collapse" data-bs-parent="#odooDynamicsFaq"><div class="accordion-body border-top px-4 py-3 text-secondary">Dynamics 365 is designed as part of the Microsoft ecosystem and connects with Microsoft 365, Power Platform, Azure and related services. Odoo can also integrate with Microsoft and other external services, but it does not originate from the same vendor ecosystem.</div></div></div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#dynamicsFaq6" aria-expanded="false" aria-controls="dynamicsFaq6">Which is cheaper?</button></h3><div id="dynamicsFaq6" class="accordion-collapse collapse" data-bs-parent="#odooDynamicsFaq"><div class="accordion-body border-top px-4 py-3 text-secondary">Total cost depends on the complete solution. Odoo publishes bundled Standard and Custom plans, while Dynamics 365 pricing depends on the specific application mix. Implementation, customization, integrations, data migration, training and support should all be included in a three-year TCO model.</div></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FINAL TAKEAWAY -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head dics-kb-section-head--center mb-4 text-center">
+                                <span class="dics-kb-eyebrow">FINAL TAKEAWAY</span>
+                                <h2 class="h2 fw-bold mb-2">Compare the Architecture, Not Just the Feature List</h2>
+                                <p class="text-secondary mb-0">Odoo and Microsoft Dynamics 365 can both support serious business operations. The meaningful decision comes from the relationship between your ERP processes, technology ecosystem, customization strategy and expected growth.</p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">If Simplicity and Suite Breadth Matter</h3><p class="text-secondary mb-0">Evaluate how Odoo's integrated application model can connect CRM, finance, inventory, manufacturing, commerce and services in one ERP environment.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">If the Microsoft Ecosystem Matters</h3><p class="text-secondary mb-0">Evaluate Dynamics 365 alongside Microsoft 365, Power Platform, Azure, Dataverse, Copilot and your existing IT governance.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">If Operations Are Complex</h3><p class="text-secondary mb-0">Compare real finance, supply-chain, manufacturing, multi-company, reporting and integration scenarios against the exact Dynamics product architecture being proposed.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <section class="dics-kb-section dics-kb-section--gray text-center py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <span class="dics-kb-eyebrow">NEXT STEP</span>
+                            <h2 class="h1 mt-2">Design the ERP architecture around your real business processes.</h2>
+                            <p class="mx-auto text-secondary" style="max-width:720px;">DataInteger can map your finance, CRM, inventory, manufacturing, supply chain, eCommerce, integrations and reporting requirements before you commit to Odoo, Dynamics 365, or a connected architecture.</p>
+                            <a href="/contact" class="dics-btn dics-btn-primary mt-4">Talk to an ERP architect <span class="material-symbols-outlined">arrow_forward</span></a>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

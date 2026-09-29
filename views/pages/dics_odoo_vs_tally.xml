@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <template id="dics_odoo_vs_tally" name="DataInteger — Odoo vs TallyPrime" key="dics_theme.dics_odoo_vs_tally" website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Odoo vs TallyPrime: Simple ERP &amp; Accounting Comparison — DataInteger</t>
+            <t t-set="meta_description">Compare Odoo vs TallyPrime for accounting, GST, inventory, manufacturing, CRM, eCommerce, payroll, customization, integrations, pricing and business needs in India.</t>
+
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main class="dics-main">
+
+                    <section class="dics-kb-hero h-auto py-5 bg-white border-bottom">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container dics-kb-hero__inner px-3 px-sm-4 container">
+                            <div class="dics-kb-badge-row">
+                                <div class="dics-kb-badge dics-kb-badge--red"><span class="material-symbols-outlined">compare_arrows</span><span>INDIA ERP COMPARISON</span></div>
+                                <span class="dics-kb-mono">• ACCOUNTING + ERP GUIDE</span>
+                            </div>
+                            <div class="dics-kb-hero-copy">
+                                <h1 class="h1 mt-2">Odoo vs TallyPrime:<br/><span>Which One Is Right for Your Business?</span></h1>
+                                <div class="dics-kb-lead">
+                                    <p>Odoo and TallyPrime both handle accounting, invoices and inventory. Odoo is a full ERP with many business apps, while TallyPrime is mainly focused on accounting, GST, inventory and business management.</p>
+                                    <p>This guide compares Odoo and TallyPrime for accounting, GST, inventory, manufacturing, CRM, sales, eCommerce, payroll, customization, integrations, pricing and future business needs.</p>
+                                </div>
+                                <div class="dics-kb-byline d-flex flex-wrap align-items-center gap-2"><div><span class="material-symbols-outlined">engineering</span><span class="dics-kb-byline__strong d-flex flex-wrap align-items-center gap-2">Written by DataInteger ERP Architects</span></div><span>•</span><div><span class="material-symbols-outlined">schedule</span><span>13 Min Read</span></div><span>•</span><div><span class="material-symbols-outlined dics-kb-icon-green">verified</span><span class="dics-kb-byline__strong d-flex flex-wrap align-items-center gap-2">Business Comparison</span></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">AT A GLANCE</span>
+                                <h2 class="h2 fw-bold mb-2">Two Popular Platforms, Different Business Needs</h2>
+                                <p class="text-secondary mb-0">The main difference is how each platform handles accounting, daily work, business apps and customization.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6 d-flex">
+                                    <div class="dics-kb-compare-card dics-kb-compare-card--good h-100 border rounded-3 shadow-sm p-4 card">
+                                        <div class="dics-kb-card-corner"/>
+                                        <div class="dics-kb-card-head">
+                                            <div class="dics-kb-card-title">
+                                                <div class="dics-kb-square-icon dics-kb-square-icon--red-solid"><span class="material-symbols-outlined">hub</span></div>
+                                                <div><h3 class="h5 fw-bold mb-2">Odoo</h3><span>Full business management platform</span></div>
+                                            </div>
+                                            <em>FULL ERP</em>
+                                        </div>
+                                        <p>Odoo brings Accounting, CRM, Sales, Purchase, Inventory, Manufacturing, Website, eCommerce, POS, HR, Project and Helpdesk into one ERP system.</p>
+                                        <ul class="dics-kb-list dics-kb-list--good mb-0 list-unstyled d-grid gap-2">
+                                            <li><span class="material-symbols-outlined">check_circle</span><span>Many business apps in one ERP system</span></li>
+                                            <li><span class="material-symbols-outlined">check_circle</span><span>Built-in CRM, Sales, Inventory, Manufacturing and eCommerce apps</span></li>
+                                            <li><span class="material-symbols-outlined">check_circle</span><span>Studio, APIs and custom development options</span></li>
+                                            <li><span class="material-symbols-outlined">check_circle</span><span>Standard and Custom plans</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex">
+                                    <div class="dics-kb-compare-card dics-kb-compare-card--bad h-100 border rounded-3 shadow-sm p-4 card">
+                                        <div class="dics-kb-card-corner"/>
+                                        <div class="dics-kb-card-head">
+                                            <div class="dics-kb-card-title">
+                                                <div class="dics-kb-square-icon dics-kb-square-icon--red"><span class="material-symbols-outlined">account_balance</span></div>
+                                                <div><h3 class="h5 fw-bold mb-2">TallyPrime</h3><span>Accounting and business management software</span></div>
+                                            </div>
+                                            <em>ACCOUNTING + GST</em>
+                                        </div>
+                                        <p>TallyPrime combines accounting, inventory, invoicing, banking, GST, payroll and business reporting, with multi-user and connected service options.</p>
+                                        <ul class="dics-kb-list dics-kb-list--bad mb-0 list-unstyled d-grid gap-2">
+                                            <li><span class="material-symbols-outlined">info</span><span>Strong accounting and financial reporting</span></li>
+                                            <li><span class="material-symbols-outlined">info</span><span>GST and Indian compliance features</span></li>
+                                            <li><span class="material-symbols-outlined">info</span><span>Inventory, godowns, batches, billing and daily business work</span></li>
+                                            <li><span class="material-symbols-outlined">info</span><span>Silver and Gold license options</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CORE DIFFERENCE</span>
+                                <h2 class="h2 fw-bold mb-2">Full ERP vs Accounting-Focused Business Software</h2>
+                                <p class="text-secondary mb-0">Both products do more than bookkeeping. The key question is how much you need from CRM, sales, online selling, operations and business automation.</p>
+                            </div>
+                            <div class="dics-kb-pillars gap-3 d-grid">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">How Odoo Works</h3><p>Odoo connects different apps. A quotation can become a sales order, delivery, invoice and accounting entry. Customer and product data can be shared across apps.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">How TallyPrime Works</h3><p>TallyPrime focuses on business transactions and uses them for accounting, inventory, banking, payroll and compliance reports.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">What to Check</h3><p>If you mainly need accounting, invoices, inventory and GST, test those areas carefully. If you need a complete company-wide ERP, also check the wider apps and future needs.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">COMPARISON MATRIX</span>
+                                <h2 class="h2 fw-bold mb-2">Odoo vs TallyPrime: Feature Comparison</h2>
+                                <p class="text-secondary mb-0">Use this table for a quick comparison. Your final choice depends on your business process, users, integrations and reports.</p>
+                            </div>
+                            <div class="table-responsive border rounded-3 bg-white shadow-sm overflow-hidden">
+                                <table class="table align-middle mb-0 table-bordered table-hover">
+                                    <thead><tr class="table-dark"><th class="text-nowrap p-3">Area</th><th class="text-nowrap p-3">Odoo</th><th class="text-nowrap p-3">TallyPrime</th></tr></thead>
+                                    <tbody>
+                                        <tr><td class="align-middle p-3"><strong>Product model</strong></td><td class="align-middle p-3">Integrated ERP suite</td><td class="align-middle p-3">Accounting and business software with inventory, payroll and compliance</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>Accounting</strong></td><td class="align-middle p-3">Accounting connected with Sales, Purchase, Inventory and other apps</td><td class="align-middle p-3">Accounting, ledgers, cost centres, bill-wise accounting and financial reports</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>GST</strong></td><td class="align-middle p-3">Indian setup supports GST reports, e-invoicing and e-way bill workflows</td><td class="align-middle p-3">GST setup, invoices, returns and connected GST services</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>Inventory</strong></td><td class="align-middle p-3">Warehouses, routes, stock replenishment, barcode, lots/serial numbers and stock valuation</td><td class="align-middle p-3">Godowns, batches, stock groups, units, valuation, orders and deliveries</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>Manufacturing</strong></td><td class="align-middle p-3">Manufacturing, BOMs, work centers, quality, maintenance and PLM</td><td class="align-middle p-3">Manufacturing, BOMs, raw material, WIP, finished goods and job work</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>CRM</strong></td><td class="align-middle p-3">Built-in CRM and sales pipeline connected with Sales and marketing apps</td><td class="align-middle p-3">Customer and business reporting with integration and customization options</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>eCommerce</strong></td><td class="align-middle p-3">Built-in Website and eCommerce apps</td><td class="align-middle p-3">Can connect with eCommerce and other systems through integrations</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>Payroll</strong></td><td class="align-middle p-3">HR and payroll apps are available in Odoo</td><td class="align-middle p-3">Payroll with employee records, attendance, salary structures and statutory reports</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>Customization</strong></td><td class="align-middle p-3">Studio, Python, XML, JavaScript, ORM and APIs</td><td class="align-middle p-3">Configurable features, reports, integrations and customization options</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>Deployment</strong></td><td class="align-middle p-3">Odoo Online, Odoo.sh or on-premise with the Custom plan</td><td class="align-middle p-3">Desktop/on-premise licensing with cloud access and connected services</td></tr>
+                                        <tr><td class="align-middle p-3"><strong>Commercial model</strong></td><td class="align-middle p-3">Per-user subscription for Standard or Custom plans</td><td class="align-middle p-3">Silver/Gold license options, with extra TSS, cloud and add-on costs</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">ACCOUNTING + GST</span>
+                                <h2 class="h2 fw-bold mb-2">Accounting and GST Comparison in India</h2>
+                                <p class="text-secondary mb-0">For Indian businesses, check the full finance process, including GST, tax reports, receivables, payables, bank reconciliation, audit records, month-end closing and reports.</p>
+                            </div>
+                            <div class="dics-kb-pillars gap-3 d-grid">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Odoo Accounting</h3><p>Odoo's Indian setup includes Indian Accounting, e-invoicing, e-way bill and Indian accounting reports. Accounting connects with Sales, Purchase and Inventory.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">TallyPrime Accounting</h3><p>TallyPrime is built around accounting transactions, financial reports, bill-wise accounting, cost centres, banking and compliance.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Validation Scenario</h3><p>Test a full finance cycle: purchase invoice, sales invoice, GST, payment, receipt, bank reconciliation, credit note, debit note, GST returns, month-end closing and P&amp;L.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">INVENTORY</span>
+                                <h2 class="h2 fw-bold mb-2">Inventory and Warehouse Management</h2>
+                                <p class="text-secondary mb-0">Both platforms support inventory. Test them using the way your business receives, stores, moves and sells stock.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6 d-flex"><div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card"><h3 class="h5 fw-bold mb-2">Odoo</h3><p>Odoo Inventory supports warehouses, locations, routes, replenishment, barcodes, lots, serial numbers and stock valuation. It also connects with Purchase, Sales and Manufacturing.</p></div></div>
+                                <div class="col-md-6 d-flex"><div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card"><h3 class="h5 fw-bold mb-2">TallyPrime</h3><p>TallyPrime supports stock groups, categories, multiple godowns, batches, units, stock valuation, orders, deliveries and inventory-linked accounting.</p></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">MANUFACTURING</span>
+                                <h2 class="h2 fw-bold mb-2">Manufacturing Comparison</h2>
+                                <p class="text-secondary mb-0">Manufacturers should test BOMs, production orders, material use, WIP, finished goods, job work, costing, quality and reports using real data.</p>
+                            </div>
+                            <div class="dics-kb-pillars gap-3 d-grid">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Odoo MRP</h3><p>Odoo has a dedicated Manufacturing app with BOMs, work centers and production workflows. It connects with Inventory, Quality, Maintenance and PLM.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">TallyPrime Manufacturing</h3><p>TallyPrime supports multi-level BOMs, raw materials, WIP, finished goods, multiple locations, production entries and job work.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Production Test</h3><p>Test a real production process from raw-material receipt to BOM, production, wastage, WIP, finished goods, stock valuation and profit. Check how many steps are still manual.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CRM + SALES</span>
+                                <h2 class="h2 fw-bold mb-2">CRM and Sales</h2>
+                                <p class="text-secondary mb-0">The two platforms can be quite different for CRM and sales because Odoo has dedicated CRM and Sales apps.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6 d-flex">
+                                    <div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card">
+                                        <h3 class="h5 fw-bold mb-2">Odoo</h3>
+                                        <p>Odoo CRM manages leads, opportunities, activities and pipelines. Sales handles quotations, orders, pricing and customer transactions. Marketing and Helpdesk can also connect.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex">
+                                    <div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card">
+                                        <h3 class="h5 fw-bold mb-2">TallyPrime</h3>
+                                        <p>TallyPrime focuses on transactions and business management. If you need a full lead-to-opportunity-to-order process, check the required integration or customization.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">ECOMMERCE + WEBSITE</span>
+                                <h2 class="h2 fw-bold mb-2">eCommerce and Website</h2>
+                                <p class="text-secondary mb-0">If you sell online, your ERP needs to keep products, customers, prices, orders, payments, delivery and accounting connected.</p>
+                            </div>
+                            <div class="dics-kb-pillars gap-3 d-grid">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Odoo</h3><p>Odoo has built-in Website and eCommerce apps. Product, inventory, sales, payment and accounting can work in the same system.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">TallyPrime</h3><p>TallyPrime can connect with eCommerce and other systems, but you may need extra tools or integrations for the online store and customer journey.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Integration Test</h3><p>Test a real online order from checkout to payment, stock, delivery, invoice, GST, return and refund. Count the systems and manual work needed.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">PAYROLL + HR</span>
+                                <h2 class="h2 fw-bold mb-2">Payroll and HR Comparison</h2>
+                                <p class="text-secondary mb-0">Check payroll using attendance, salary, deductions, statutory reports, employee records, approvals and accounting.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6 d-flex"><div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card"><h3 class="h5 fw-bold mb-2">Odoo</h3><p>Odoo has HR and payroll apps that can connect employee work with the rest of the ERP.</p></div></div>
+                                <div class="col-md-6 d-flex"><div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card"><h3 class="h5 fw-bold mb-2">TallyPrime</h3><p>TallyPrime payroll supports employee records, salary structures, attendance or production types, payslips and reports for PF, ESI, professional tax, gratuity and income tax.</p></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CUSTOMIZATION</span>
+                                <h2 class="h2 fw-bold mb-2">Customization and Development</h2>
+                                <p class="text-secondary mb-0">Both platforms can be customized. The important question is how easily your team can build, test, update and support custom work.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6 d-flex flex-column">
+                                    <h3 class="h5 fw-bold mb-3">Odoo customization options</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good mb-0 list-unstyled d-grid gap-2">
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Python ORM and custom modules</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>XML views and QWeb templates</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>JavaScript/OWL front-end development</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Studio and external API options with the Custom plan</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 d-flex flex-column">
+                                    <h3 class="h5 fw-bold mb-3">TallyPrime customization options</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad mb-0 list-unstyled d-grid gap-2">
+                                        <li><span class="material-symbols-outlined">info</span><span>Company settings and accounting/inventory options</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Custom reports, dashboards and invoice formats</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Integrations with banking, eCommerce and other systems</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Partner and extension options for business needs</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dics-kb-note mt-4 border rounded-3 p-3 border-warning bg-warning-subtle d-flex align-items-start gap-2"><span class="material-symbols-outlined">warning</span><p><strong>Important:</strong> Custom work adds to the long-term ERP cost. Plan for testing, security, upgrades, integrations and support before starting custom development.</p></div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">PRICING + TCO</span>
+                                <h2 class="h2 fw-bold mb-2">Compare Pricing and Total Cost</h2>
+                                <p class="text-secondary mb-0">Odoo and TallyPrime have different pricing models. Compare at least three years of license, implementation, support, infrastructure, integration and upgrade costs.</p>
+                            </div>
+                            <div class="dics-kb-pillars gap-3 d-grid">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Odoo</h3><p>Odoo uses per-user subscriptions. Standard and Custom plans have different features and deployment options. Check Odoo's current pricing before planning your budget.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">TallyPrime</h3><p>TallyPrime offers Silver and Gold license options, as well as rental plans. TSS, cloud access and other services may cost extra. Check TallyPrime's current pricing before buying.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Build the TCO</h3><p>Include users, locations, implementation, data migration, integrations, customization, training, support, cloud access, backups and future upgrades. Compare the total cost, not only the license price.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">DEPLOYMENT</span>
+                                <h2 class="h2 fw-bold mb-2">Cloud and Local Deployment</h2>
+                                <p class="text-secondary mb-0">Where the software runs affects access, backups, security, integrations and IT work.</p>
+                            </div>
+                            <div class="dics-kb-pillars gap-3 d-grid">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Odoo</h3><p>Odoo's Custom plan supports Odoo Online, Odoo.sh and on-premise deployment. The right option depends on your customization and IT needs.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">TallyPrime</h3><p>TallyPrime is commonly installed on business computers, with multi-user and cloud-access options available.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Operational Responsibility</h3><p>Decide who will manage backups, security, updates, integrations, monitoring and business continuity.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head dics-kb-section-head--center mb-4 text-center">
+                                <span class="dics-kb-eyebrow">IMPLEMENTATION FRAMEWORK</span>
+                                <h2 class="h2 fw-bold mb-2">How to Compare Odoo and TallyPrime</h2>
+                                <p class="text-secondary mb-0">Use these six steps to compare both platforms for your business.</p>
+                            </div>
+                            <div class="dics-detail-process d-grid gap-0 border-top">
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">1. Map Finance</h3><p>List your ledgers, GST, receivables, payables, banking, reconciliation, tax reports and month-end reports.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">2. Map Operations</h3><p>List your quotations, orders, purchases, inventory, warehouses, manufacturing, job work, returns and deliveries.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">3. Define Future Needs</h3><p>Decide if you need CRM, eCommerce, project management, Helpdesk, field service or more automation.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number flex-shrink-0">04</span><div><h3 class="h5 fw-bold mb-2">4. Test Real Scenarios</h3><p>Test sales, purchasing, GST, bank reconciliation, warehouse work, manufacturing and month-end closing with real business examples.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number flex-shrink-0">05</span><div><h3 class="h5 fw-bold mb-2">5. Calculate 3-Year Cost</h3><p>Add license, implementation, migration, integrations, custom work, training, support, infrastructure and recurring costs.</p></div></article>
+                                <article class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3"><span class="dics-detail-process-number flex-shrink-0">06</span><div><h3 class="h5 fw-bold mb-2">6. Check Future Growth</h3><p>Check future users, companies, branches, products, transaction volume, integrations, reports and automation needs.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">BUSINESS SCENARIOS</span>
+                                <h2 class="h2 fw-bold mb-2">Compare Based on Your Business</h2>
+                                <p class="text-secondary mb-0">Start with your actual business needs, then check which platform supports them with fewer extra tools and manual steps.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-4 d-flex"><div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card"><h3 class="h5 fw-bold mb-2">Accounting-Focused Business</h3><p>If you mainly need accounting, GST, invoices, banking, inventory and reports, compare both platforms using real accounting work.</p></div></div>
+                                <div class="col-md-4 d-flex"><div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card"><h3 class="h5 fw-bold mb-2">Growing Distribution Business</h3><p>If you have multiple warehouses, sales teams, purchasing, stock replenishment, CRM and online sales, compare the full business process.</p></div></div>
+                                <div class="col-md-4 d-flex"><div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4 card"><h3 class="h5 fw-bold mb-2">Manufacturing and Growth</h3><p>If you plan to grow manufacturing, quality, maintenance, CRM, eCommerce, HR or multiple companies, compare the long-term ERP needs.</p></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">MIGRATION</span>
+                                <h2 class="h2 fw-bold mb-2">TallyPrime to Odoo Migration</h2>
+                                <p class="text-secondary mb-0">Moving from TallyPrime to Odoo is more than importing data. Decide which records, master data and business processes should move to Odoo.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6 d-flex flex-column">
+                                    <h3 class="h5 fw-bold mb-3">Data to Check</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good mb-0 list-unstyled d-grid gap-2">
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Companies, branches, ledgers, customers and vendors</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Products, units, opening stock and stock valuation</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>Opening balances, receivables and payables</span></li>
+                                        <li><span class="material-symbols-outlined">check_circle</span><span>GST setup, old reports and required audit records</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 d-flex flex-column">
+                                    <h3 class="h5 fw-bold mb-3">Processes to Review</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad mb-0 list-unstyled d-grid gap-2">
+                                        <li><span class="material-symbols-outlined">info</span><span>Sales-to-invoice and purchase-to-payment</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Warehouse, stock replenishment and manufacturing</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>CRM, approvals, automation and customer service</span></li>
+                                        <li><span class="material-symbols-outlined">info</span><span>Integrations with banks, marketplaces, logistics and other apps</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">DECISION FRAMEWORK</span>
+                                <h2 class="h2 fw-bold mb-2">Questions to Ask Before Choosing</h2>
+                                <p class="text-secondary mb-0">Do not compare only by feature count. Check both platforms against your real business needs.</p>
+                            </div>
+                            <div class="dics-kb-pillars gap-3 d-grid">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">Finance</h3><p>Can it handle your GST, reconciliation, reports, audit and month-end work without too much manual work?</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">Operations</h3><p>Can sales, purchasing, inventory, manufacturing and delivery teams work in the same system?</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">Growth</h3><p>Can it support more companies, branches, products, channels, users, automation and integrations as you grow?</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">04</span><div><h3 class="h5 fw-bold mb-2">Technology</h3><p>Can your team and implementation partner manage deployment, customization, APIs, security, upgrades and backups?</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head mb-4"><span class="dics-kb-eyebrow">FAQ</span><h2 class="h2 fw-bold mb-2">Odoo vs TallyPrime: FAQs</h2></div>
+                            <div class="accordion d-grid gap-3" id="odooTallyFaq"><div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#tallyFaq1" aria-expanded="false" aria-controls="tallyFaq1"><span class="me-2">Q1</span>Is Odoo accounting software like TallyPrime?</button></h3><div id="tallyFaq1" class="accordion-collapse collapse" data-bs-parent="#odooTallyFaq"><div class="accordion-body border-top px-4 py-3 text-secondary"><p>Odoo includes accounting, but it is a full ERP. Accounting connects with CRM, Sales, Purchase, Inventory, Manufacturing, Website, eCommerce, HR and Project.</p></div></div></div><div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#tallyFaq2" aria-expanded="false" aria-controls="tallyFaq2"><span class="me-2">Q2</span>Does TallyPrime support GST?</button></h3><div id="tallyFaq2" class="accordion-collapse collapse" data-bs-parent="#odooTallyFaq"><div class="accordion-body border-top px-4 py-3 text-secondary"><p>Yes. TallyPrime supports GST setup, GST invoices and GST workflows, including e-invoice and e-way bill features.</p></div></div></div><div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#tallyFaq3" aria-expanded="false" aria-controls="tallyFaq3"><span class="me-2">Q3</span>Does Odoo support Indian GST and e-invoicing?</button></h3><div id="tallyFaq3" class="accordion-collapse collapse" data-bs-parent="#odooTallyFaq"><div class="accordion-body border-top px-4 py-3 text-secondary"><p>Yes. Odoo's Indian setup supports Indian accounting, e-invoicing, e-way bill and Indian accounting reports.</p></div></div></div><div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#tallyFaq4" aria-expanded="false" aria-controls="tallyFaq4"><span class="me-2">Q4</span>Does TallyPrime support inventory and manufacturing?</button></h3><div id="tallyFaq4" class="accordion-collapse collapse" data-bs-parent="#odooTallyFaq"><div class="accordion-body border-top px-4 py-3 text-secondary"><p>Yes. TallyPrime supports inventory, multiple godowns, batches, stock valuation, manufacturing, BOMs, raw materials, WIP and finished goods.</p></div></div></div><div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#tallyFaq5" aria-expanded="false" aria-controls="tallyFaq5"><span class="me-2">Q5</span>Does Odoo have CRM and eCommerce?</button></h3><div id="tallyFaq5" class="accordion-collapse collapse" data-bs-parent="#odooTallyFaq"><div class="accordion-body border-top px-4 py-3 text-secondary"><p>Yes. Odoo has built-in CRM, Sales, Website and eCommerce apps, along with accounting and other business apps.</p></div></div></div><div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#tallyFaq6" aria-expanded="false" aria-controls="tallyFaq6"><span class="me-2">Q6</span>Which is cheaper, Odoo or TallyPrime?</button></h3><div id="tallyFaq6" class="accordion-collapse collapse" data-bs-parent="#odooTallyFaq"><div class="accordion-body border-top px-4 py-3 text-secondary"><p>It depends on users, companies, implementation, integrations and ERP scope. Odoo uses per-user subscriptions, while TallyPrime has license and rental options. Compare the 3-year total cost for the same business needs.</p></div></div></div><div class="accordion-item border rounded-3 shadow-sm overflow-hidden"><h3 class="accordion-header mb-0"><button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#tallyFaq7" aria-expanded="false" aria-controls="tallyFaq7"><span class="me-2">Q7</span>Can a business migrate from TallyPrime to Odoo?</button></h3><div id="tallyFaq7" class="accordion-collapse collapse" data-bs-parent="#odooTallyFaq"><div class="accordion-body border-top px-4 py-3 text-secondary"><p>Yes. Migration can include master data, opening balances, stock, receivables, payables and historical records. Test the migration before moving to production.</p></div></div></div></div></div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <div class="dics-kb-section-head dics-kb-section-head--center mb-4 text-center">
+                                <span class="dics-kb-eyebrow">FINAL TAKEAWAY</span>
+                                <h2 class="h2 fw-bold mb-2">Choose the ERP That Fits Your Business Needs</h2>
+                                <p class="text-secondary mb-0">Odoo and TallyPrime can both support Indian businesses. The right comparison is based on what your business needs today and what you may need as you grow.</p>
+                            </div>
+                            <div class="dics-kb-pillars gap-3 d-grid">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">01</span><div><h3 class="h5 fw-bold mb-2">If Accounting and GST Are the Main Need</h3><p>Test both platforms with your real accounting, GST, banking, reporting and audit work.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">02</span><div><h3 class="h5 fw-bold mb-2">If You Need a Full ERP</h3><p>Check Odoo's CRM, Sales, Inventory, Manufacturing, eCommerce, HR, Project and service apps against the processes you want in one system.</p></div></article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3"><span class="flex-shrink-0">03</span><div><h3 class="h5 fw-bold mb-2">If You Are Planning Migration</h3><p>Create a data plan, process plan, integration list and 3-year cost estimate before deciding. The goal is a smooth business process after go-live.</p></div></article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray text-center py-5 bg-light border-bottom">
+                        <div class="dics-container px-3 px-sm-4 container">
+                            <span class="dics-kb-eyebrow">NEXT STEP</span>
+                            <h2 class="h1 mt-2">Understand your business needs before you choose an ERP.</h2>
+                            <p class="mx-auto" style="max-width:720px;">DataInteger can review your accounting, GST, inventory, manufacturing, CRM, eCommerce, payroll, integrations and reporting needs, then help plan your Odoo or TallyPrime implementation or migration.</p>
+                            <a href="/contact" class="dics-btn dics-btn-primary mt-4 d-inline-flex align-items-center gap-2">Talk to an ERP expert <span class="material-symbols-outlined">arrow_forward</span></a>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

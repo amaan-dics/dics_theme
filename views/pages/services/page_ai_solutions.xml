@@ -5,7 +5,7 @@
             <t t-set="additional_title">AI &amp; Intelligence Services | DataInteger</t>
 
             <div id="wrap" class="dics-home">
-                <main class="dics-main">
+                <main class="dics-main" id="ai-serrvices">
 
                     <!-- HERO -->
                     <section class="dics-hero">

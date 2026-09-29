@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_odoo_migration"
+              name="DataInteger — Odoo Migration Guide"
+              key="dics_theme.dics_odoo_migration"
+              website_id="dics_theme.dics_website">
+
+        <t t-call="website.layout">
+            <t t-set="additional_title">
+                Odoo Migration Guide: How to Upgrade Your Odoo Version Safely | DataInteger
+            </t>
+            <t t-set="meta_description">
+                Learn what Odoo migration is, why businesses upgrade Odoo, how the Odoo migration process works, and how
+                to move from Odoo 14, 15, 16, or 17 to a newer version safely.
+            </t>
+
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main class="dics-main">
+
+
+                    <!-- =====================================================
+                         2. HERO
+                    ====================================================== -->
+                    <section class="dics-kb-hero">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container dics-kb-hero__inner">
+
+                            <div class="dics-kb-badge-row">
+                                <div class="dics-kb-badge dics-kb-badge--red">
+                                    <span class="material-symbols-outlined">upgrade</span>
+                                    <span>ODOO MIGRATION GUIDE</span>
+                                </div>
+                                <span class="dics-kb-mono">• SIMPLE EXPLANATION</span>
+                                <div class="dics-kb-validation">
+                                    <span class="material-symbols-outlined">verified</span>
+                                    <span>UPDATED FOR ODOO 18</span>
+                                </div>
+                            </div>
+
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>
+                                        Odoo Migration:
+                                        <br class="dics-kb-desktop-break"/>
+                                        <span>Upgrade Your Odoo Version</span>
+                                        Without Losing Your Data.
+                                    </h1>
+
+                                    <div class="dics-kb-lead">
+                                        <p>
+                                            Odoo migration means moving your existing Odoo system from an older version
+                                            to a newer version.
+                                            Your business data, customers, products, invoices, orders, inventory, custom
+                                            modules, and settings can all be moved to the new Odoo version.
+                                        </p>
+                                        <p>
+                                            A proper Odoo migration lets you use the latest Odoo features while keeping
+                                            the data and processes your business already uses.
+                                            This guide explains what Odoo migration is, why businesses upgrade Odoo, how
+                                            the migration process works, common problems, and how DataInteger handles
+                                            Odoo migrations.
+                                        </p>
+                                        <p>
+                                            Upgrading your system ensures your business stays competitive by leveraging
+                                            enhanced security protocols, faster performance speeds, and a more intuitive
+                                            user interface. It eliminates the technical debt accumulated from outdated
+                                            customizations and opens the door to third-party integrations that only
+                                            support recent versions. Ultimately, a seamless migration minimizes
+                                            operational downtime, helps your team work more efficiently, and provides a
+                                            scalable foundation for your company's future growth.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-kb-byline">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger Migration Team
+                                            </span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>12 Min Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">check_circle
+                                            </span>
+                                            <span class="dics-kb-byline__strong">Updated for Odoo 18</span>
+                                        </div>
+                                        <span class="dics-kb-audience">Business Owners to Technical Teams</span>
+                                    </div>
+                                </div>
+
+                                <!-- Migration status panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">ODOO MIGRATION AT A GLANCE
+                                        </span>
+                                    </div>
+
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">VERSION SUPPORT</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>Odoo 18</strong>
+                                            <span>LTS ACTIVE</span>
+                                        </div>
+                                        <p>
+                                            DataInteger can help businesses migrate from older Odoo versions to newer
+                                            versions.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-kb-telemetry__stack">
+                                        <div>
+                                            <span class="dics-kb-mono">Odoo 18</span>
+                                            <span class="dics-kb-status dics-kb-status--green">LTS SUPPORTED</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Odoo 17</span>
+                                            <span class="dics-kb-status dics-kb-status--green">SUPPORTED</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Odoo 16</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">MAINTENANCE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Odoo 15 &amp; older</span>
+                                            <span class="dics-kb-status dics-kb-status--red">UPGRADE RECOMMENDED</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="dics-kb-telemetry__footer">
+                                        <span class="dics-kb-mono">DataInteger handles migrations from any version
+                                        </span>
+                                    </div>
+                                </aside>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         3. TABLE OF CONTENTS
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--surface">
+                        <div class="dics-container">
+                            <div class="dics-mg-toc">
+                                <div class="dics-mg-toc__label">
+                                    <span class="material-symbols-outlined">format_list_bulleted</span>
+                                    <span>In This Guide</span>
+                                </div>
+                                <ol class="dics-mg-toc__list">
+                                    <li>
+                                        <a href="#what-is-migration">What is Odoo Migration?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#why-migrate">Why Should You Upgrade Odoo?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#versions">Odoo Version History</a>
+                                    </li>
+                                    <li>
+                                        <a href="#process">How the Odoo Migration Process Works</a>
+                                    </li>
+                                    <li>
+                                        <a href="#custom-modules">What Happens to Custom Odoo Modules?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#risks">Common Odoo Migration Problems</a>
+                                    </li>
+                                    <li>
+                                        <a href="#timeline">How Long Does Odoo Migration Take?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#datainteger">How DataInteger Handles Odoo Migration</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         4. SECTION — WHAT IS ODOO MIGRATION
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--light" id="what-is-migration">
+                        <div class="dics-container">
+                            <div class="dics-kb-article">
+
+                                <div class="dics-kb-article__head">
+                                    <span class="dics-kb-eyebrow">SECTION 01</span>
+                                    <h2>What is Odoo Migration?</h2>
+                                </div>
+
+                                <div class="dics-kb-article__body">
+                                    <p>
+                                        Odoo migration means moving your Odoo system from an older version to a newer
+                                        version.
+                                        This can include customer data, product data, invoices, sales orders, purchase
+                                        orders, inventory, employees, accounting data, custom modules, Odoo settings,
+                                        and third-party integrations.
+                                    </p>
+                                    <p>
+                                        Odoo migration is different from installing Odoo from scratch.
+                                        With a new Odoo installation, you start with a new database.
+                                        With an Odoo migration, you keep your existing business data and move it to the
+                                        new version.
+                                        The goal is simple: when your team starts using the new Odoo version, they
+                                        should still have access to the business data and processes they were using
+                                        before.
+                                    </p>
+
+                                    <div class="dics-mg-callout">
+                                        <span class="material-symbols-outlined">lightbulb</span>
+                                        <div>
+                                            <strong>Odoo Update vs Odoo Migration</strong>
+                                            <p>
+                                                These terms can be confusing.
+                                                A small update happens within the same Odoo version.
+                                                For example: Odoo 17.0.1 → Odoo 17.0.2.
+                                                An Odoo migration is a move from one major version to another.
+                                                For example: Odoo 16 → Odoo 17 or Odoo 17 → Odoo 18.
+                                                Major Odoo upgrades can require changes to the database, custom modules,
+                                                and integrations.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Odoo releases a new major version roughly every year.
+                                        Each new version can change the database, the way apps work, and the tools used
+                                        to build custom modules.
+                                        That is why custom modules and settings from an older version need to be checked
+                                        and updated for the new version.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         5. SECTION — WHY MIGRATE
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--surface" id="why-migrate">
+                        <div class="dics-container">
+                            <div class="dics-kb-article">
+
+                                <div class="dics-kb-article__head">
+                                    <span class="dics-kb-eyebrow">SECTION 02</span>
+                                    <h2>Why Should Businesses Upgrade Odoo?</h2>
+                                </div>
+
+                                <div class="dics-kb-article__body">
+                                    <p>
+                                        Staying on an old Odoo version may seem easier because your team already knows
+                                        the system.
+                                        But older versions can create problems over time.
+                                        Here are some common reasons businesses upgrade Odoo.
+                                    </p>
+
+                                    <div class="dics-mg-reasons">
+                                        <div class="dics-mg-reason">
+                                            <div class="dics-mg-reason__icon">
+                                                <span class="material-symbols-outlined">security</span>
+                                            </div>
+                                            <div class="dics-mg-reason__text">
+                                                <h3>Security Updates</h3>
+                                                <p>
+                                                    Older Odoo versions eventually stop receiving security updates.
+                                                    Using an unsupported version can increase security risks for your
+                                                    business data.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dics-mg-reason">
+                                            <div class="dics-mg-reason__icon">
+                                                <span class="material-symbols-outlined">new_releases</span>
+                                            </div>
+                                            <div class="dics-mg-reason__text">
+                                                <h3>New Odoo Features</h3>
+                                                <p>
+                                                    New Odoo versions add new features and improve existing ones.
+                                                    These can include improvements to accounting, manufacturing,
+                                                    reporting, website, inventory, sales, user interface, and
+                                                    automation.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dics-mg-reason">
+                                            <div class="dics-mg-reason__icon">
+                                                <span class="material-symbols-outlined">extension_off</span>
+                                            </div>
+                                            <div class="dics-mg-reason__text">
+                                                <h3>Support for Odoo Apps</h3>
+                                                <p>
+                                                    Third-party Odoo apps and modules may stop supporting older Odoo
+                                                    versions.
+                                                    Upgrading helps you continue using newer apps and features.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dics-mg-reason">
+                                            <div class="dics-mg-reason__icon">
+                                                <span class="material-symbols-outlined">groups</span>
+                                            </div>
+                                            <div class="dics-mg-reason__text">
+                                                <h3>Finding Odoo Developers</h3>
+                                                <p>
+                                                    Most Odoo developers work with newer versions.
+                                                    Finding developers for very old Odoo versions can become harder and
+                                                    more expensive.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dics-mg-reason">
+                                            <div class="dics-mg-reason__icon">
+                                                <span class="material-symbols-outlined">integration_instructions</span>
+                                            </div>
+                                            <div class="dics-mg-reason__text">
+                                                <h3>Third-Party Integrations</h3>
+                                                <p>
+                                                    Payment systems, shipping services, marketplaces, and other software
+                                                    also change over time.
+                                                    An old Odoo version may eventually have problems working with newer
+                                                    systems.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        It is better to plan your migration before you have a serious problem.
+                                        Starting early gives your team enough time to check the system, fix problems,
+                                        test everything, and plan the final upgrade.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         6. SECTION — VERSION HISTORY
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--light" id="versions">
+                        <div class="dics-container">
+                            <div class="dics-kb-article">
+
+                                <div class="dics-kb-article__head">
+                                    <span class="dics-kb-eyebrow">SECTION 03</span>
+                                    <h2>Odoo Version History</h2>
+                                </div>
+
+                                <div class="dics-kb-article__body">
+                                    <p>
+                                        Each major Odoo version brings new features and changes.
+                                    </p>
+
+                                    <div class="dics-mg-versions">
+
+                                        <div class="dics-mg-version">
+                                            <div class="dics-mg-version__tag">
+                                                <span class="dics-kb-mono">Odoo 14</span>
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--eol">End of
+                                                    Life
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-version__body">
+                                                <p>
+                                                    Released in 2020.
+                                                    Odoo 14 introduced improvements to areas such as accounting,
+                                                    spreadsheets, Discuss, Sign, and Website.
+                                                    Odoo 14 is now an older version and businesses using it should plan
+                                                    their upgrade.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-version">
+                                            <div class="dics-mg-version__tag">
+                                                <span class="dics-kb-mono">Odoo 15</span>
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--eol">End of
+                                                    Life
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-version__body">
+                                                <p>
+                                                    Released in 2021.
+                                                    Odoo 15 brought major changes to the web interface and reporting.
+                                                    Businesses with custom Odoo modules may need to update their custom
+                                                    code when moving from Odoo 15 to a newer version.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-version">
+                                            <div class="dics-mg-version__tag">
+                                                <span class="dics-kb-mono">Odoo 16</span>
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--maintenance">
+                                                    Maintenance
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-version__body">
+                                                <p>
+                                                    Released in 2022.
+                                                    Odoo 16 improved the user interface and added improvements to areas
+                                                    such as manufacturing, shop floor, email marketing, and website.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-version">
+                                            <div class="dics-mg-version__tag">
+                                                <span class="dics-kb-mono">Odoo 17</span>
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--active">
+                                                    Supported
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-version__body">
+                                                <p>
+                                                    Released in 2023.
+                                                    Odoo 17 added improvements to several Odoo apps, including
+                                                    accounting, field service, subscriptions, IoT, and studio.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-version">
+                                            <div class="dics-mg-version__tag">
+                                                <span class="dics-kb-mono">Odoo 18</span>
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--lts">LTS —
+                                                    Current
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-version__body">
+                                                <p>
+                                                    Released in 2024.
+                                                    Odoo 18 added new features and improvements across many areas of the
+                                                    platform, including manufacturing, accounting, communication,
+                                                    database performance, and AI-assisted features.
+                                                    Businesses planning a major Odoo upgrade can consider Odoo 18 as a
+                                                    migration target.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="dics-mg-callout dics-mg-callout--note">
+                                        <span class="material-symbols-outlined">info</span>
+                                        <div>
+                                            <strong>Can You Move Directly From Odoo 14 to Odoo 18?</strong>
+                                            <p>
+                                                Yes, an Odoo migration can move across multiple major versions.
+                                                For example: Odoo 14 → Odoo 18.
+                                                However, the migration still needs to deal with the changes made between
+                                                each Odoo version.
+                                                Your database and custom modules need to be checked and updated for the
+                                                new version.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         7. SECTION — MIGRATION PROCESS
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--surface" id="process">
+                        <div class="dics-container">
+                            <div class="dics-kb-section-head">
+                                <span class="dics-kb-eyebrow">SECTION 04</span>
+                                <h2>Odoo Migration Process: Step by Step</h2>
+                                <p>
+                                    A good Odoo migration should be planned and tested before the new version goes live.
+                                    Here is the basic process.
+                                </p>
+                            </div>
+
+                            <div class="dics-kb-pillars">
+                                <article>
+                                    <span>01</span>
+                                    <div>
+                                        <h3>Check Your Current Odoo System</h3>
+                                        <p>
+                                            First, we check your current Odoo version, database, installed Odoo apps,
+                                            custom modules, business data, third-party integrations, and amount of data.
+                                            This helps us understand what needs to be changed.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <span>02</span>
+                                    <div>
+                                        <h3>Check Custom Modules</h3>
+                                        <p>
+                                            Custom Odoo modules need special attention during migration.
+                                            We check each module to see what needs to be changed, what can stay the
+                                            same, what needs to be rewritten, and whether the new Odoo version already
+                                            has the same feature.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <span>03</span>
+                                    <div>
+                                        <h3>Move and Update the Data</h3>
+                                        <p>
+                                            The database needs to be changed so it works with the new Odoo version.
+                                            This may include changing old fields, data formats, and other database
+                                            information.
+                                            The data is also checked after the migration.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <span>04</span>
+                                    <div>
+                                        <h3>Test Everything</h3>
+                                        <p>
+                                            The migrated Odoo system is placed on a test server.
+                                            Your team can then check real business data and processes before the new
+                                            version goes live.
+                                            We test sales, purchases, accounting, inventory, manufacturing, reports,
+                                            custom modules, and integrations.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <span>05</span>
+                                    <div>
+                                        <h3>Move to the New Odoo Version</h3>
+                                        <p>
+                                            Once testing is complete, the final migration is done.
+                                            This is normally planned during a time when the business is less busy, such
+                                            as a weekend.
+                                            A backup and rollback plan should also be ready before the migration starts.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article>
+                                    <span>06</span>
+                                    <div>
+                                        <h3>Support After Migration</h3>
+                                        <p>
+                                            After the new Odoo version goes live, some small issues may appear when
+                                            employees start using the system.
+                                            The migration team should monitor the system and fix these issues during the
+                                            first few weeks.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         8. SECTION — CUSTOM MODULES
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--light" id="custom-modules">
+                        <div class="dics-container">
+
+                            <div class="dics-kb-engineering">
+                                <div class="dics-kb-engineering__copy">
+                                    <span class="dics-kb-eyebrow">SECTION 05</span>
+                                    <h2>What Happens to Custom Odoo Modules?</h2>
+                                    <p>
+                                        Custom Odoo modules are often one of the biggest parts of an Odoo migration.
+                                        Custom modules are features that were built specifically for your business
+                                        because the standard Odoo apps did not provide what you needed.
+                                    </p>
+                                    <p>
+                                        When you move to a new Odoo version, these modules need to be checked.
+                                        Some may only need small changes.
+                                        Others may need to be rewritten.
+                                        Sometimes, the new Odoo version already includes a feature that replaces an old
+                                        custom module.
+                                    </p>
+                                    <p>
+                                        Odoo changes from one version to another.
+                                        These changes can affect Python code, database structure, screens and views,
+                                        Odoo APIs, JavaScript, and security rules.
+                                        Because of this, custom modules built for an older version may not work
+                                        correctly on the new version.
+                                    </p>
+
+                                    <div class="dics-mg-callout">
+                                        <span class="material-symbols-outlined">tips_and_updates</span>
+                                        <div>
+                                            <strong>Odoo Migration Is Also a Good Time to Clean Up Custom Code</strong>
+                                            <p>
+                                                Migration gives businesses a chance to review old custom modules.
+                                                We can remove unnecessary code, replace old workarounds, and improve
+                                                modules that have become difficult to maintain.
+                                                This can make the new Odoo system easier to manage and upgrade in the
+                                                future.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dics-kb-terminal">
+                                    <div class="dics-kb-terminal__head">
+                                        <div>
+                                            <i/>
+                                            <i/>
+                                            <i/>
+                                        </div>
+                                        <span>MIGRATION // MODULE REVIEW</span>
+                                    </div>
+                                    <div class="dics-kb-terminal__body">
+                                        <div>
+                                            <span>01</span>
+                                            <b>Python models</b>
+                                            <em>Code review</em>
+                                        </div>
+                                        <div>
+                                            <span>02</span>
+                                            <b>Screens &amp; views</b>
+                                            <em>Interface updates</em>
+                                        </div>
+                                        <div>
+                                            <span>03</span>
+                                            <b>Database data</b>
+                                            <em>Data checks</em>
+                                        </div>
+                                        <div>
+                                            <span>04</span>
+                                            <b>Security rules</b>
+                                            <em>Access updates</em>
+                                        </div>
+                                        <div>
+                                            <span>05</span>
+                                            <b>Third-party apps</b>
+                                            <em>Compatibility check</em>
+                                        </div>
+                                        <div>
+                                            <span>06</span>
+                                            <b>Testing</b>
+                                            <em>Full system test</em>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-terminal__footer">
+                                        <span>MODULE STATUS</span>
+                                        <strong>AUDIT REQUIRED</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         9. SECTION — RISKS
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--surface" id="risks">
+                        <div class="dics-container">
+                            <div class="dics-kb-article">
+
+                                <div class="dics-kb-article__head">
+                                    <span class="dics-kb-eyebrow">SECTION 06</span>
+                                    <h2>Common Odoo Migration Problems</h2>
+                                </div>
+
+                                <div class="dics-kb-article__body">
+                                    <p>
+                                        Odoo migration can become difficult when important steps are skipped.
+                                        Here are some common problems.
+                                    </p>
+
+                                    <div class="dics-mg-risks">
+                                        <div class="dics-mg-risk">
+                                            <div class="dics-mg-risk__num">01</div>
+                                            <div class="dics-mg-risk__content">
+                                                <h3>Not Checking All Odoo Modules</h3>
+                                                <p>
+                                                    If you do not check every installed module before migration,
+                                                    problems can appear later.
+                                                </p>
+                                                <div class="dics-mg-risk__avoid">
+                                                    <span class="material-symbols-outlined">check</span>
+                                                    <span>Create a complete list of standard and custom modules and
+                                                        check each one before starting.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-risk">
+                                            <div class="dics-mg-risk__num">02</div>
+                                            <div class="dics-mg-risk__content">
+                                                <h3>Not Testing Enough</h3>
+                                                <p>
+                                                    A migration may look successful but still have problems with data,
+                                                    reports, or business processes.
+                                                </p>
+                                                <div class="dics-mg-risk__avoid">
+                                                    <span class="material-symbols-outlined">check</span>
+                                                    <span>Test the new Odoo version with real business data before going
+                                                        live.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-risk">
+                                            <div class="dics-mg-risk__num">03</div>
+                                            <div class="dics-mg-risk__content">
+                                                <h3>No Backup or Rollback Plan</h3>
+                                                <p>
+                                                    If something goes wrong during the final migration, you need a way
+                                                    to return to the old system.
+                                                </p>
+                                                <div class="dics-mg-risk__avoid">
+                                                    <span class="material-symbols-outlined">check</span>
+                                                    <span>Have a clear backup and rollback plan before starting the
+                                                        production migration.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-risk">
+                                            <div class="dics-mg-risk__num">04</div>
+                                            <div class="dics-mg-risk__content">
+                                                <h3>Moving Bad Data to the New System</h3>
+                                                <p>
+                                                    Old databases can contain duplicate, outdated, or incorrect data.
+                                                    Moving this data to the new Odoo version does not fix the problem.
+                                                </p>
+                                                <div class="dics-mg-risk__avoid">
+                                                    <span class="material-symbols-outlined">check</span>
+                                                    <span>Review and clean important data before migration.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         10. SECTION — TIMELINE
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--light" id="timeline">
+                        <div class="dics-container">
+                            <div class="dics-kb-article">
+
+                                <div class="dics-kb-article__head">
+                                    <span class="dics-kb-eyebrow">SECTION 07</span>
+                                    <h2>How Long Does Odoo Migration Take?</h2>
+                                </div>
+
+                                <div class="dics-kb-article__body">
+                                    <p>
+                                        There is no single timeline for every Odoo migration.
+                                        The time depends on your Odoo version, database size, custom modules,
+                                        integrations, and how much testing is needed.
+                                    </p>
+
+                                    <div class="dics-mg-timeline">
+                                        <div class="dics-mg-timeline__row">
+                                            <div class="dics-mg-timeline__label">
+                                                <strong>Small Odoo System</strong>
+                                                <span>Standard Odoo with little customization and less than 50,000
+                                                    records
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-timeline__bar">
+                                                <div class="dics-mg-timeline__fill" style="width: 25%;"/>
+                                                <span>4 – 6 weeks</span>
+                                            </div>
+                                        </div>
+                                        <div class="dics-mg-timeline__row">
+                                            <div class="dics-mg-timeline__label">
+                                                <strong>Medium Odoo System</strong>
+                                                <span>Some custom modules, a few integrations, and 50,000–500,000
+                                                    records
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-timeline__bar">
+                                                <div class="dics-mg-timeline__fill" style="width: 50%;"/>
+                                                <span>6 – 12 weeks</span>
+                                            </div>
+                                        </div>
+                                        <div class="dics-mg-timeline__row">
+                                            <div class="dics-mg-timeline__label">
+                                                <strong>Large or Complex Odoo System</strong>
+                                                <span>Many custom modules, several integrations, and a large amount of
+                                                    data
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-timeline__bar">
+                                                <div class="dics-mg-timeline__fill" style="width: 80%;"/>
+                                                <span>3 – 6 months</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        The biggest factors are the number of custom modules, complexity of custom code,
+                                        amount of business data, number of integrations, data quality, and time
+                                        available for testing.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         11. SECTION — DATAINTEGER
+                    ====================================================== -->
+                    <section class="dics-kb-section dics-kb-section--dark" id="datainteger">
+                        <div class="dics-container">
+                            <div class="dics-kb-section-head dics-kb-section-head--center">
+                                <span class="dics-kb-eyebrow dics-kb-eyebrow--light">SECTION 08</span>
+                                <h2>How DataInteger Handles Odoo Migration</h2>
+                                <p>
+                                    DataInteger helps businesses move from older Odoo versions to newer versions.
+                                    Our migration process focuses on checking the system carefully, testing the new
+                                    version, and reducing problems during the final upgrade.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-why-grid">
+                                <article>
+                                    <span class="material-symbols-outlined">manage_search</span>
+                                    <h3>Module-by-Module Check</h3>
+                                    <p>
+                                        We check your installed Odoo modules before starting the migration.
+                                        You get a clear idea of what needs to be changed.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">code</span>
+                                    <h3>Update Custom Modules</h3>
+                                    <p>
+                                        If your custom modules need changes, we update them for the new Odoo version.
+                                        We focus on keeping the code clean and easier to maintain.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">verified_user</span>
+                                    <h3>Test Before Going Live</h3>
+                                    <p>
+                                        We create a test version of your Odoo system using your business data.
+                                        Your team can test the system before the final migration.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">swap_horiz</span>
+                                    <h3>Backup and Rollback Plan</h3>
+                                    <p>
+                                        We prepare a clear plan in case something goes wrong during the final migration.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">support_agent</span>
+                                    <h3>Support After Migration</h3>
+                                    <p>
+                                        We continue to support your team after the new Odoo version goes live and help
+                                        fix issues that appear during normal use.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">history_edu</span>
+                                    <h3>Odoo Migration for Indian Businesses</h3>
+                                    <p>
+                                        For businesses in India, we also understand requirements related to GST, TDS,
+                                        e-invoicing, accounting, and Indian tax requirements.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         12. CTA
+                    ====================================================== -->
+                    <section class="dics-kb-cta">
+                        <div class="dics-container">
+                            <div class="dics-kb-cta-card">
+                                <div>
+                                    <span class="dics-kb-eyebrow">READY TO UPGRADE YOUR ODOO?</span>
+                                    <h2>Plan Your Odoo Migration With DataInteger</h2>
+                                    <p>
+                                        Are you using Odoo 14, 15, 16, or 17?
+                                        We can check your current Odoo system, explain what needs to change, and help
+                                        you plan the migration.
+                                        We can help with Odoo migration, Odoo version upgrade, Odoo 18 migration, custom
+                                        module migration, Odoo database migration, Odoo customization, Odoo
+                                        integrations, and Odoo testing.
+                                    </p>
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                        Start Your Odoo Migration
+                                        <span class="dics-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

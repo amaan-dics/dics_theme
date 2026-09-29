@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_glossary"
+              name="DataInteger — Odoo Glossary"
+              key="dics_theme.dics_glossary"
+              website_id="dics_theme.dics_website">
+
+        <t t-call="website.layout">
+
+            <t t-set="additional_title">
+                Odoo &amp; ERP Glossary — DataInteger
+            </t>
+
+            <t t-set="meta_description">
+                A complete reference dictionary of Odoo technical terminology, ORM concepts, framework acronyms, and ERP business processes.
+            </t>
+
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main id="odoo-glossary" class="dics-main">
+
+                    <!-- =====================================================
+                         HERO + SEARCH
+                    ====================================================== -->
+                    <section class="dics-kb-hero py-5">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="container">
+
+                            <div class="dics-kb-hero-copy text-center mx-auto" style="max-width: 800px;">
+                                <span class="dics-kb-eyebrow">HELP &amp; KNOWLEDGE BASE</span>
+                                <h1 class="display-4 fw-bold mt-2">Odoo &amp; ERP Glossary</h1>
+                                <p class="lead mt-3 mb-0">
+                                    Key terminology, technical definitions, and core
+                                    architectural concepts across Odoo ERP development
+                                    and implementations.
+                                </p>
+                            </div>
+
+                            <!-- Search with dropdown -->
+                            <div class="dics-glossary-search-wrap mx-auto mt-4">
+                                <div class="dics-glossary-search-bar">
+                                    <span class="material-symbols-outlined">search</span>
+                                    <input type="text"
+                                           id="glossarySearchInput"
+                                           autocomplete="off"
+                                           placeholder="Search Odoo terms, ORM concepts, models, XML, automation..."/>
+                                    <span class="dics-glossary-kbd">Ctrl + K</span>
+                                </div>
+                                <!-- Dropdown -->
+                                <div class="dics-glossary-dropdown" id="glossaryDropdown">
+                                    <ul class="dics-glossary-dropdown__list" id="glossaryDropdownList"/>
+                                    <div class="dics-glossary-dropdown__footer">
+                                        <span>↑↓ navigate</span>
+                                        <span>↵ jump</span>
+                                    </div>
+                                </div>
+                                <!-- Category filters -->
+                                <div class="dics-glossary-filters mt-3">
+                                    <span class="dics-glossary-filters__label">Filter:</span>
+                                    <button type="button" class="dics-glossary-filter-btn is-active" data-filter="all">All</button>
+                                    <button type="button" class="dics-glossary-filter-btn" data-filter="orm">ORM &amp; Database</button>
+                                    <button type="button" class="dics-glossary-filter-btn" data-filter="frontend">OWL &amp; Frontend</button>
+                                    <button type="button" class="dics-glossary-filter-btn" data-filter="manufacturing">Manufacturing &amp; Logistics</button>
+                                    <button type="button" class="dics-glossary-filter-btn" data-filter="automation">Automation</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         QUICK STATS
+                    ====================================================== -->
+                    <section class="dics-glossary-stats glossary-list">
+                        <div class="container">
+                            <div class="dics-glossary-stat">
+                                <span class="material-symbols-outlined">memory</span>
+                                <div><strong>Odoo 18.0</strong><small>COMPATIBLE SPEC</small></div>
+                            </div>
+                            <div class="dics-glossary-stat">
+                                <span class="material-symbols-outlined">code</span>
+                                <div><strong>PEP-8 / OWL 2</strong><small>STANDARDIZED AST</small></div>
+                            </div>
+                            <div class="dics-glossary-stat">
+                                <span class="material-symbols-outlined">database</span>
+                                <div><strong>PostgreSQL 16</strong><small>RELATIONAL ENGINE</small></div>
+                            </div>
+                            <div class="dics-glossary-stat">
+                                <span class="material-symbols-outlined">security</span>
+                                <div><strong>ir.model.access</strong><small>ACL &amp; RECORD RULES</small></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         ALPHABET NAVIGATION
+                    ====================================================== -->
+                    <section class="glossary-list">
+                        <div class="dics-glossary-nav">
+                            <div class="container">
+                                <div class="dics-glossary-nav__label">
+                                    <span class="material-symbols-outlined">sort_by_alpha</span>
+                                    Jump to letter
+                                </div>
+                                <div class="dics-glossary-nav__letters">
+                                    <a href="#letter-A" class="dics-kb-alpha-btn">A</a>
+                                    <a href="#letter-B" class="dics-kb-alpha-btn">B</a>
+                                    <a href="#letter-C" class="dics-kb-alpha-btn">C</a>
+                                    <a href="#letter-D" class="dics-kb-alpha-btn">D</a>
+                                    <a href="#letter-F" class="dics-kb-alpha-btn">F</a>
+                                    <a href="#letter-I" class="dics-kb-alpha-btn">I</a>
+                                    <a href="#letter-M" class="dics-kb-alpha-btn">M</a>
+                                    <a href="#letter-O" class="dics-kb-alpha-btn">O</a>
+                                    <a href="#letter-Q" class="dics-kb-alpha-btn">Q</a>
+                                    <a href="#letter-S" class="dics-kb-alpha-btn">S</a>
+                                </div>
+                                <div class="dics-glossary-nav__count"><strong>14</strong> Core Terms</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         GLOSSARY CONTENT
+                    ====================================================== -->
+                    <section class="dics-kb-section glossary-list dics-kb-section--light" id="glossary-list">
+                        <div class="container">
+                            <div class="dics-capabilities">
+
+                                <!-- ── A ── -->
+                                <div class="dics-glossary-group mb-5" id="letter-A">
+                                    <div class="dics-glossary-letter-head">
+                                        <h2>A</h2>
+                                        <small>2 Definitions</small>
+                                    </div>
+                                    <div class="row g-3">
+
+                                        <div class="col-12 col-md-6">
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="framework ui">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Action</h3></div>
+                                                    <div class="dics-capability-meta"><small>ir.actions.* • Window / Server / Report</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            An operation triggered by a menu click, button, or system event in Odoo.
+                                                            Types include Window Actions (<code>ir.actions.act_window</code>),
+                                                            Server Actions (<code>ir.actions.server</code>), and
+                                                            Report Actions (<code>ir.actions.report</code>).
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Framework</span>
+                                                            <span>UI</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="automation backend">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Automated Action</h3></div>
+                                                    <div class="dics-capability-meta"><small>base.automation • Trigger Rules</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            Configurable event triggers executed on record creation, updates, or timed
+                                                            intervals to automate emails, field updates, or custom Python scripts
+                                                            without writing custom modules.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Automation</span>
+                                                            <span>Backend</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- ── B ── -->
+                                <div class="dics-glossary-group mb-5" id="letter-B">
+                                    <div class="dics-glossary-letter-head">
+                                        <h2>B</h2>
+                                        <small>2 Definitions</small>
+                                    </div>
+                                    <div class="row g-3">
+
+                                        <div class="col-12 col-md-6">
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="manufacturing">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Bill of Materials (BOM)</h3></div>
+                                                    <div class="dics-capability-meta"><small>mrp.bom • Manufacturing</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            A structural list of raw materials, components, assemblies, and
+                                                            sub-assemblies required to manufacture a finished product in Odoo MRP.
+                                                            Includes routing and work center capacity logic.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>MRP</span>
+                                                            <span>Inventory</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="manufacturing logistics">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Batch Transfer</h3></div>
+                                                    <div class="dics-capability-meta"><small>stock.picking.batch • Logistics</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            Grouping multiple inventory transfers into a single operation to optimize
+                                                            warehouse picking and shipping routes, reducing travel overhead and
+                                                            staging latency.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Stock</span>
+                                                            <span>Warehouse</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- ── C ── -->
+                                <div class="dics-glossary-group mb-5" id="letter-C">
+                                    <div class="dics-glossary-letter-head">
+                                        <h2>C</h2>
+                                        <small>2 Definitions</small>
+                                    </div>
+                                    <div class="row g-3">
+
+                                        <div class="col-12 col-md-6">
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="automation backend">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Cron Job (Scheduled Action)</h3></div>
+                                                    <div class="dics-capability-meta"><small>ir.cron • Scheduled Execution</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            Automated backend tasks executed at recurring intervals, such as
+                                                            hourly inventory syncs, automated invoice reminders, nightly cache
+                                                            clearing, or EDI queues.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Backend</span>
+                                                            <span>Scheduler</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="development architecture">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Custom Module</h3></div>
+                                                    <div class="dics-capability-meta"><small>Addon • Models &amp; Views</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            An independent directory package containing Python models, XML views,
+                                                            controllers, and SCSS assets extending or modifying Odoo functionality
+                                                            without touching core files.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Development</span>
+                                                            <span>Architecture</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- ── ARCHITECTURAL CALLOUT ── -->
+                                <div class="dics-capability mb-5">
+                                    <div class="dics-capability-inner p-4">
+                                        <div class="d-flex align-items-start gap-3">
+                                            <span class="material-symbols-outlined">lightbulb</span>
+                                            <div>
+                                                <small class="text-muted fw-semibold">ARCHITECTURAL NOTE // ODOO 18 EXTENSION</small>
+                                                <h3 class="h5 mt-2">
+                                                    Classic Polymorphism: <code>_inherit</code> vs. <code>_inherits</code>
+                                                </h3>
+                                                <p class="mb-0">
+                                                    Use <code>_inherit</code> for in-place extension or classical Python subtyping.
+                                                    Reserve <code>_inherits</code> for delegation inheritance when you need
+                                                    polymorphic composition without duplicating underlying tables.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ── D + F ── -->
+                                <div class="row g-4 mb-5">
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="dics-glossary-group" id="letter-D">
+                                            <div class="dics-glossary-letter-head">
+                                                <h2>D</h2>
+                                                <small>1 Definition</small>
+                                            </div>
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="orm database">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Domain</h3></div>
+                                                    <div class="dics-capability-meta"><small>ORM Expression Filter</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            A list of criteria tuples evaluated by Odoo ORM to filter database
+                                                            records (e.g. <code>[('state', '=', 'sale'), ('amount_total', '&gt;', 1000)]</code>).
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>ORM</span>
+                                                            <span>Database</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="dics-glossary-group" id="letter-F">
+                                            <div class="dics-glossary-letter-head">
+                                                <h2>F</h2>
+                                                <small>1 Definition</small>
+                                            </div>
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="manufacturing logistics">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>FEFO / FIFO</h3></div>
+                                                    <div class="dics-capability-meta"><small>Removal Strategy</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            Inventory valuation and removal strategies. FEFO dispatches items
+                                                            approaching expiration dates first, while FIFO processes older
+                                                            receipt timestamps.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Inventory</span>
+                                                            <span>Valuation</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- ── I + M ── -->
+                                <div class="row g-4 mb-5">
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="dics-glossary-group" id="letter-I">
+                                            <div class="dics-glossary-letter-head">
+                                                <h2>I</h2>
+                                                <small>1 Definition</small>
+                                            </div>
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="orm python">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Inheritance ('_inherit')</h3></div>
+                                                    <div class="dics-capability-meta"><small>Extension Mechanism</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            Odoo's primary OOP pattern for extending existing models
+                                                            (<code>_inherit = 'sale.order'</code>) or prototyping new business
+                                                            entities based on base structures (<code>_inherits</code>).
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>ORM</span>
+                                                            <span>Python</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="dics-glossary-group" id="letter-M">
+                                            <div class="dics-glossary-letter-head">
+                                                <h2>M</h2>
+                                                <small>1 Definition</small>
+                                            </div>
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="development config">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Manifest ('__manifest__.py')</h3></div>
+                                                    <div class="dics-capability-meta"><small>Module Declaration File</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            The descriptor Python dictionary defining an Odoo module's metadata,
+                                                            dependencies, data files, XML views, security groups, assets bundles,
+                                                            and licensing criteria.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Development</span>
+                                                            <span>Config</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- ── O ── -->
+                                <div class="dics-glossary-group mb-5" id="letter-O">
+                                    <div class="dics-glossary-letter-head">
+                                        <h2>O</h2>
+                                        <small>2 Definitions</small>
+                                    </div>
+                                    <div class="row g-3">
+
+                                        <div class="col-12 col-md-6">
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="orm database">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Odoo ORM</h3></div>
+                                                    <div class="dics-capability-meta"><small>Object-Relational Mapping</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            The core data abstraction layer bridging Python objects to PostgreSQL
+                                                            database tables, managing queries, complex join generation, security
+                                                            restrictions, and in-memory record caching.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Core</span>
+                                                            <span>Database</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                        <div class="col-12 col-md-6">
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="frontend javascript">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>OWL (Odoo Web Library)</h3></div>
+                                                    <div class="dics-capability-meta"><small>Modern JS UI Framework</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            A fast, reactive, declarative UI component framework built specifically
+                                                            by Odoo for constructing client action views, field widgets, POS
+                                                            interfaces, and modern reactive dashboards.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Frontend</span>
+                                                            <span>JavaScript</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- ── Q + S ── -->
+                                <div class="row g-4">
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="dics-glossary-group" id="letter-Q">
+                                            <div class="dics-glossary-letter-head">
+                                                <h2>Q</h2>
+                                                <small>1 Definition</small>
+                                            </div>
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="frontend xml templating">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>QWeb</h3></div>
+                                                    <div class="dics-capability-meta"><small>XML Templating Engine</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            Odoo's primary XML-based templating engine used to render website pages,
+                                                            PDF reports, dynamic HTML email templates, and backend UI nodes with
+                                                            conditional logic (<code>t-if</code>, <code>t-foreach</code>).
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Templating</span>
+                                                            <span>XML</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="dics-glossary-group" id="letter-S">
+                                            <div class="dics-glossary-letter-head">
+                                                <h2>S</h2>
+                                                <small>1 Definition</small>
+                                            </div>
+                                            <article class="card dics-glossary-card h-100 shadow" data-category="accounting records">
+                                                <div class="dics-glossary-card-row">
+                                                    <div class="dics-capability-name"><h3>Sequence ('ir.sequence')</h3></div>
+                                                    <div class="dics-capability-meta"><small>Auto Numbering</small></div>
+                                                </div>
+                                                <div class="dics-capability-content">
+                                                    <div class="dics-capability-inner">
+                                                        <p>
+                                                            A built-in counter generator creating unique sequential references
+                                                            for invoices, sales orders, stock pickings, and journal entries,
+                                                            for example <code>INV/2026/001</code>.
+                                                        </p>
+                                                        <div class="dics-tags">
+                                                            <span>Accounting</span>
+                                                            <span>Records</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         CTA
+                    ====================================================== -->
+                    <section class="dics-kb-section py-5" id="consultation">
+                        <div class="container">
+                            <div class="dics-capability p-4 p-md-5 shadow">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-lg-8">
+                                        <span class="dics-kb-eyebrow">ENTERPRISE TECHNICAL ADVISORY</span>
+                                        <h2 class="h3 mt-2">
+                                            Need Custom Odoo Development or an Architecture Review?
+                                        </h2>
+                                        <p class="mb-0">
+                                            Our senior Odoo architects resolve performance bottlenecks,
+                                            design clean custom addons, and engineer scalable enterprise migrations.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 text-lg-end">
+                                        <a href="/contact" class="dics-btn dics-btn-primary">
+                                            Schedule Technical Audit
+                                            <span class="material-symbols-outlined align-middle ms-1">arrow_forward</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+
+        </t>
+
+    </template>
+</odoo>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<template id="dics_whats_new_in_odoo_19"
+              name="DataInteger — What's New in Odoo 19"
+              key="dics_theme.dics_whats_new_in_odoo_19"
+              website_id="dics_theme.dics_website">
+
+        <t t-call="website.layout">
+            <t t-set="additional_title">
+                What's New in Odoo 19: Complete Features, AI &amp; ERP Highlights — DataInteger
+            </t>
+            <t t-set="meta_description">
+                Explore what's new in Odoo 19. Discover native AI automation, mobile bank reconciliation, ESG carbon
+                tracking, WhatsApp Business integration, and smart manufacturing upgrades.
+            </t>
+
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main class="dics-main">
+
+
+                    <!-- =====================================================
+                         2. HERO SECTION
+                    ====================================================== -->
+                    <section class="dics-kb-hero">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container dics-kb-hero__inner">
+
+
+
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>
+                                        What's New in Odoo 19?
+                                        <br class="dics-kb-desktop-break"/>
+                                        <span>AI-Driven ERP Performance,</span>
+                                        Smarter Operations &amp; Global Compliance.
+                                    </h1>
+
+                                    <div class="dics-kb-lead">
+                                        <p>
+                                            Odoo 19 represents a major evolution in open-source enterprise resource
+                                            planning.
+                                            Introducing deeply embedded native AI, cross-module document automation,
+                                            natural language reporting, and extended global e-invoicing, Odoo 19
+                                            eliminates administrative operational friction.
+                                        </p>
+                                        <p>
+                                            From mobile-first bank reconciliation and native WhatsApp Business
+                                            integration to a dedicated ESG Carbon Footprint module, discover how the
+                                            latest release transforms speed, user experience, and business intelligence.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-kb-byline">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger ERP Solutions
+                                                Team
+                                            </span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>10 Min In-Depth Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">check_circle
+                                            </span>
+                                            <span class="dics-kb-byline__strong">Updated for Odoo 19</span>
+                                        </div>
+                                        <span class="dics-kb-audience">CXOs to System Architects</span>
+                                    </div>
+                                </div>
+
+                                <!-- Architectural telemetry panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">OD_19_BENCHMARK</span>
+                                    </div>
+
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">PLATFORM EFFICIENCY</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>+45% Faster</strong>
+                                            <span>NATIVE AI OCR</span>
+                                        </div>
+                                        <p>
+                                            Out-of-the-box machine learning models automatically extract data from
+                                            vendor bills, receipts, purchase orders, and customer documents into
+                                            structured transactions.
+                                        </p>
+                                    </div>
+
+                                    <div class="dics-kb-telemetry__grid">
+                                        <div>
+                                            <span class="dics-kb-mono">AI ENGINE</span>
+                                            <strong>LLM + OCR</strong>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">FRONTEND</span>
+                                            <strong>OWL Refreshed</strong>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">COMPLIANCE</span>
+                                            <strong>ESG / PEPPOL</strong>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">CHANNELS</span>
+                                            <strong>WhatsApp Native</strong>
+                                        </div>
+                                    </div>
+
+                                    <a href="/contact" class="dics-kb-dark-btn">
+                                        <span>Plan Your Odoo 19 Upgrade</span>
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                    </a>
+                                </aside>
+                            </div>
+
+                            <!-- KPI row -->
+                            <div class="dics-kb-kpis">
+                                <article class="dics-kb-kpi">
+                                    <div class="dics-kb-kpi__icon">
+                                        <span class="material-symbols-outlined">psychology</span>
+                                    </div>
+                                    <div>
+                                        <strong>Ask Odoo AI</strong>
+                                        <span>NATURAL LANGUAGE QUERYING</span>
+                                        <p>Query company database records using plain English prompts.</p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-kpi">
+                                    <div class="dics-kb-kpi__icon">
+                                        <span class="material-symbols-outlined">account_balance</span>
+                                    </div>
+                                    <div>
+                                        <strong>Mobile Reconciliation</strong>
+                                        <span>REVAMPED FINANCE ENGINE</span>
+                                        <p>Reconcile transactions seamlessly on desktop or mobile devices.</p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-kpi">
+                                    <div class="dics-kb-kpi__icon">
+                                        <span class="material-symbols-outlined">chat</span>
+                                    </div>
+                                    <div>
+                                        <strong>WhatsApp Business</strong>
+                                        <span>NATIVE MESSAGING CORE</span>
+                                        <p>Send quotes, delivery alerts, and invoices via native integration.</p>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-kpi">
+                                    <div class="dics-kb-kpi__icon">
+                                        <span class="material-symbols-outlined">eco</span>
+                                    </div>
+                                    <div>
+                                        <strong>ESG Module</strong>
+                                        <span>CARBON FOOTPRINT TRACKING</span>
+                                        <p>Calculate emissions and meet corporate sustainability reporting rules.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Modernized Table of Contents Section -->
+                    <section class="dics-kb-section dics-kb-section--light" style="padding: 2.5rem 0;">
+                        <div class="dics-container">
+                            <nav class="dics-mg-toc">
+                                <div class="dics-mg-toc__header">
+                                    <div class="dics-mg-toc__badge">
+                                        <span class="material-symbols-outlined">format_list_bulleted</span>
+                                        <span>TABLE OF CONTENTS</span>
+                                    </div>
+                                    <span class="dics-mg-toc__subtitle">Select a section to jump directly</span>
+                                </div>
+
+                                <div class="dics-mg-toc__grid">
+                                    <a href="#ai-intelligence" class="dics-mg-toc__card">
+                                        <span class="dics-mg-toc__num">01</span>
+                                        <span class="dics-mg-toc__title">Embedded AI &amp; "Ask Odoo" Analytics</span>
+                                        <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                    </a>
+
+                                    <a href="#financials-accounting" class="dics-mg-toc__card">
+                                        <span class="dics-mg-toc__num">02</span>
+                                        <span class="dics-mg-toc__title">Revamped Finance, Bank Sync &amp; E-Invoicing
+                                        </span>
+                                        <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                    </a>
+
+                                    <a href="#sales-commerce" class="dics-mg-toc__card">
+                                        <span class="dics-mg-toc__num">03</span>
+                                        <span class="dics-mg-toc__title">Native WhatsApp, POS &amp; eCommerce Upgrades
+                                        </span>
+                                        <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                    </a>
+
+                                    <a href="#mrp-inventory" class="dics-mg-toc__card">
+                                        <span class="dics-mg-toc__num">04</span>
+                                        <span class="dics-mg-toc__title">Smart Manufacturing, BoM &amp; Barcode
+                                            Shopfloor
+                                        </span>
+                                        <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                    </a>
+
+                                    <a href="#hr-esg" class="dics-mg-toc__card">
+                                        <span class="dics-mg-toc__num">05</span>
+                                        <span class="dics-mg-toc__title">HR Time-Off Flexibility &amp; New ESG Carbon
+                                            Module
+                                        </span>
+                                        <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                    </a>
+
+                                    <a href="#framework-performance" class="dics-mg-toc__card">
+                                        <span class="dics-mg-toc__num">06</span>
+                                        <span class="dics-mg-toc__title">Technical Architecture &amp; UI Speed
+                                            Improvements
+                                        </span>
+                                        <span class="material-symbols-outlined dics-mg-toc__arrow">arrow_forward</span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         4. FEATURE SECTION: AI & ASK ODOO
+                    ====================================================== -->
+                    <section id="ai-intelligence" class="dics-kb-section">
+                        <div class="dics-container">
+                            <div class="dics-kb-article">
+                                <div class="dics-kb-article__head">
+                                    <span class="dics-kb-eyebrow">GAME-CHANGING INNOVATION</span>
+                                    <h2>1. Embedded AI Intelligence &amp; "Ask Odoo" Natural Language Reporting</h2>
+                                </div>
+                                <div class="dics-kb-article__body">
+                                    <p>
+                                        Odoo 19 replaces isolated third-party AI integrations with a unified,
+                                        platform-wide Artificial Intelligence engine. Rather than relying on rigid
+                                        custom code, business users can now leverage natural language prompts to execute
+                                        tasks, generate fields, and extract operational insights directly within the
+                                        database.
+                                    </p>
+
+                                    <div class="dics-mg-callout dics-mg-callout--note">
+                                        <span class="material-symbols-outlined">lightbulb</span>
+                                        <div>
+                                            <strong>Key Feature: "Ask Odoo" Conversational Analytics</strong>
+                                            <p>
+                                                Managers and executives no longer need complex pivot table knowledge to
+                                                extract reporting metrics. With <em>Ask Odoo</em>, you can ask queries
+                                                like <em>"What were our top 5 revenue-generating products in Europe last
+                                                quarter?"
+                                            </em> and receive tabulated data, charts, and underlying record breakdowns
+                                                instantly.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        Key AI enhancements introduced in Odoo 19 include:
+                                    </p>
+                                    <ul class="dics-kb-list dics-kb-list--good" style="margin-bottom: 1.5rem;">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <strong>AI Server Actions &amp; Prompts:</strong>
+                                            Trigger workflow changes, auto-assign CRM leads, or format follow-up
+                                            activities using natural language rules in Odoo Studio.
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <strong>AI Computed Fields:</strong>
+                                            Automatically synthesize product descriptions, summarize customer email
+                                            chatter threads, or predict deal probabilities based on historical data.
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <strong>Unified OCR Pipeline:</strong>
+                                            A single deep-learning document engine handles vendor bills, expense
+                                            receipts, purchase orders, and customer contracts under one automated
+                                            learning pipeline.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         5. FEATURE SECTION: FINANCIALS & E-INVOICING
+                    ====================================================== -->
+                    <section id="financials-accounting" class="dics-kb-section dics-kb-section--gray">
+                        <div class="dics-container">
+                            <div class="dics-kb-section-head dics-kb-section-head--center">
+                                <span class="dics-kb-eyebrow">FINANCIAL AUTOMATION</span>
+                                <h2>2. Revamped Accounting, Mobile Bank Reconciliation &amp; E-Invoicing</h2>
+                                <p>
+                                    Odoo 19 elevates global compliance, treasury operations, and bookkeeping speed with
+                                    a modernized accounting framework tailored for multinational enterprises.
+                                </p>
+                            </div>
+
+                            <div class="dics-kb-module-grid">
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">smartphone</span>
+                                        </div>
+                                        <span>ACC_01</span>
+                                    </div>
+                                    <h3>Mobile Bank Reconciliation</h3>
+                                    <p>A completely overhauled reconciliation UI optimized for smartphones and tablets,
+                                        featuring intelligent automated transaction matching and single-tap approvals.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>Mobile First</span>
+                                        <span>Smart Matching</span>
+                                        <span>Keyboard Shortcuts</span>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">receipt</span>
+                                        </div>
+                                        <span>ACC_02</span>
+                                    </div>
+                                    <h3>Tax Timelines &amp; Validation</h3>
+                                    <p>Track global tax filing deadlines in a unified calendar. Automated validation
+                                        checks catch ledger inconsistencies before filing tax returns.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>Tax Compliance</span>
+                                        <span>Audit Trail</span>
+                                        <span>Error Alerts</span>
+                                    </div>
+                                </article>
+
+                                <article class="dics-kb-module-card">
+                                    <div class="dics-kb-module-card__top">
+                                        <div class="dics-kb-square-icon">
+                                            <span class="material-symbols-outlined">public</span>
+                                        </div>
+                                        <span>ACC_03</span>
+                                    </div>
+                                    <h3>Global E-Invoicing Expansion</h3>
+                                    <p>Native compliance with PEPPOL (Europe), Saudi ZATCA Phase 2, India GST
+                                        e-invoicing updates, France PPF readiness, Brazil (NFe), and Mexico CFDI
+                                        formats.
+                                    </p>
+                                    <div class="dics-kb-tags">
+                                        <span>PEPPOL</span>
+                                        <span>GST</span>
+                                        <span>Global Localization</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         6. FEATURE SECTION: SALES, COMMERCE & WHATSAPP
+                    ====================================================== -->
+                    <section id="sales-commerce" class="dics-kb-section">
+                        <div class="dics-container">
+                            <div class="dics-kb-engineering">
+                                <div class="dics-kb-engineering__copy">
+                                    <span class="dics-kb-eyebrow">COMMERCIAL INTEGRATION</span>
+                                    <h2>3. Native WhatsApp Business, POS &amp; Omnichannel Commerce</h2>
+                                    <p>
+                                        Odoo 19 brings direct omnichannel communication into core workflows. Third-party
+                                        messaging plugins are no longer necessary—WhatsApp is now deeply integrated
+                                        across sales, fulfillment, and customer support.
+                                    </p>
+
+                                    <div class="dics-kb-pillars">
+                                        <article>
+                                            <span>01</span>
+                                            <div>
+                                                <h3>Native WhatsApp Business Connector</h3>
+                                                <p>Dispatch quotations, automated payment links, order delivery
+                                                    tracking, and customer support updates directly via WhatsApp.
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <span>02</span>
+                                            <div>
+                                                <h3>Redesigned Point of Sale (POS) Kiosk</h3>
+                                                <p>A fresh self-service kiosk layout featuring quick item counters,
+                                                    multi-terminal sync, fast customer checkouts, and integrated payment
+                                                    terminals.
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <span>03</span>
+                                            <div>
+                                                <h3>eCommerce &amp; Builder Enhancements</h3>
+                                                <p>Dynamic product badges, customizable shop layouts, mobile checkout
+                                                    optimization, and interactive quote builder views.
+                                                </p>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <div class="dics-kb-terminal">
+                                    <div class="dics-kb-terminal__head">
+                                        <div>
+                                            <i/>
+                                            <i/>
+                                            <i/>
+                                        </div>
+                                        <span>ODOO 19 // WHATSAPP PIPELINE</span>
+                                    </div>
+                                    <div class="dics-kb-terminal__body">
+                                        <div>
+                                            <span>01</span>
+                                            <b>Sales Order</b>
+                                            <em>Trigger Event</em>
+                                        </div>
+                                        <div>
+                                            <span>02</span>
+                                            <b>WhatsApp API</b>
+                                            <em>Native Payload Dispatch</em>
+                                        </div>
+                                        <div>
+                                            <span>03</span>
+                                            <b>Payment Link</b>
+                                            <em>Stripe / Bank Integration</em>
+                                        </div>
+                                        <div>
+                                            <span>04</span>
+                                            <b>Chatter Sync</b>
+                                            <em>Logged on Customer Record</em>
+                                        </div>
+                                        <div>
+                                            <span>05</span>
+                                            <b>Status Callback</b>
+                                            <em>Real-time Read Receipts</em>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-terminal__footer">
+                                        <span>CHANNEL CONNECTOR</span>
+                                        <strong>ACTIVE &amp; NATIVE</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         7. FEATURE SECTION: MANUFACTURING & LOGISTICS
+                    ====================================================== -->
+                    <section id="mrp-inventory" class="dics-kb-section dics-kb-section--light">
+                        <div class="dics-container">
+                            <div class="dics-kb-article">
+                                <div class="dics-kb-article__head">
+                                    <span class="dics-kb-eyebrow">SUPPLY CHAIN PRECISION</span>
+                                    <h2>4. Smart Manufacturing, Single UoM Model &amp; Barcode Shop Floor</h2>
+                                </div>
+                                <div class="dics-kb-article__body">
+                                    <p>
+                                        For manufacturing and distribution businesses, Odoo 19 delivers crucial
+                                        architecture updates that streamline warehouse operations, inventory tracking,
+                                        and shop floor management.
+                                    </p>
+
+                                    <div class="dics-mg-callout">
+                                        <span class="material-symbols-outlined">precision_manufacturing</span>
+                                        <div>
+                                            <strong>Simplified Model: Unified UoM &amp; Packaging</strong>
+                                            <p>
+                                                Odoo 19 merges separate Unit of Measure (UoM) categories and packaging
+                                                models into a single, unified data model. This eliminates complex
+                                                conversions and seamlessly supports purchasing in bulk boxes while
+                                                selling in individual units or packs.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <ul class="dics-kb-list dics-kb-list--good">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <strong>Manufacturing Order Gantt Scheduling:</strong>
+                                            Drag-and-drop production scheduling with work center capacity controls and
+                                            real-time deadline adjustments.
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <strong>Modernized Shop Floor App:</strong>
+                                            Barcode command scanning for instant component consumption, routing
+                                            reassignment on the fly, and multi-lot generation.
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <strong>Barcode App Inspections:</strong>
+                                            View and edit lot or serial number details directly within the Barcode
+                                            interface, with clear guided pick/pack/ship workflows.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         8. FEATURE SECTION: HR & ESG
+                    ====================================================== -->
+                    <section id="hr-esg" class="dics-kb-section dics-kb-section--gray">
+                        <div class="dics-container">
+                            <div class="dics-kb-section-head dics-kb-section-head--split">
+                                <div>
+                                    <span class="dics-kb-eyebrow">PEOPLE &amp; SUSTAINABILITY</span>
+                                    <h2>5. HR Time-Off Upgrades &amp; The New ESG Carbon Footprint App</h2>
+                                    <p>
+                                        Modern workforce management meets corporate responsibility in Odoo 19 with
+                                        flexible HR scheduling tools and native environmental impact tracking.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="dics-kb-compare-grid">
+                                <article class="dics-kb-compare-card dics-kb-compare-card--good">
+                                    <div class="dics-kb-card-corner"/>
+                                    <div class="dics-kb-card-head">
+                                        <div class="dics-kb-card-title">
+                                            <div class="dics-kb-square-icon dics-kb-square-icon--red-solid">
+                                                <span class="material-symbols-outlined">eco</span>
+                                            </div>
+                                            <div>
+                                                <h3>New ESG Carbon Footprint Module</h3>
+                                                <span>CORPORATE SUSTAINABILITY • COMPLIANCE</span>
+                                            </div>
+                                        </div>
+                                        <em>NEW MODULE</em>
+                                    </div>
+
+                                    <p>
+                                        Designed to help businesses comply with European CSRD regulations and
+                                        international sustainability frameworks, the new ESG module calculates Scope 1,
+                                        2, and 3 carbon emissions directly from purchasing, logistics, travel, and
+                                        facility data.
+                                    </p>
+
+                                    <ul class="dics-kb-list dics-kb-list--good">
+                                        <li><span class="material-symbols-outlined">check_circle</span>Automatic CO₂
+                                            calculation on vendor bills &amp; logistics moves.
+                                        </li>
+                                        <li><span class="material-symbols-outlined">check_circle</span>Sustainability
+                                            audit reporting for stakeholders and government agencies.
+                                        </li>
+                                        <li><span class="material-symbols-outlined">check_circle</span>Energy and
+                                            emissions dashboard embedded into corporate financial views.
+                                        </li>
+                                    </ul>
+
+                                    <footer>
+                                        <span>MODULE: ODOO 19 ESG CORE</span>
+                                        <strong>STATUS: FULLY NATIVE</strong>
+                                    </footer>
+                                </article>
+
+                                <article class="dics-kb-compare-card dics-kb-compare-card--good">
+                                    <div class="dics-kb-card-corner"/>
+                                    <div class="dics-kb-card-head">
+                                        <div class="dics-kb-card-title">
+                                            <div class="dics-kb-square-icon dics-kb-square-icon--red">
+                                                <span class="material-symbols-outlined">badge</span>
+                                            </div>
+                                            <div>
+                                                <h3>HR &amp; Time-Off Optimizations</h3>
+                                                <span>FLEXIBLE WORKFORCE • SKILL TRACKING</span>
+                                            </div>
+                                        </div>
+                                        <em>HR UPGRADE</em>
+                                    </div>
+
+                                    <p>
+                                        Manage modern hybrid and flexible schedules with precision. Odoo 19 enables
+                                        accurate duration-based overtime tracking, fractional time-off requests, and
+                                        skill-gap appraisal mapping.
+                                    </p>
+
+                                    <ul class="dics-kb-list dics-kb-list--good">
+                                        <li><span class="material-symbols-outlined">check_circle</span>Request
+                                            fractional time off (e.g., 1.5 days or specific hour blocks).
+                                        </li>
+                                        <li><span class="material-symbols-outlined">check_circle</span>Duration-based
+                                            overtime tracking with automated payout multipliers.
+                                        </li>
+                                        <li><span class="material-symbols-outlined">check_circle</span>Bulk appraisal
+                                            creation and goal template assignments.
+                                        </li>
+                                    </ul>
+
+                                    <footer>
+                                        <span>MODULE: HR, PAYROLL &amp; APPRAISALS</span>
+                                        <strong>STATUS: ENHANCED WORKFLOWS</strong>
+                                    </footer>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         9. FEATURE SECTION: TECHNICAL & FRAMEWORK
+                    ====================================================== -->
+                    <section id="framework-performance" class="dics-kb-section dics-kb-section--dark">
+                        <div class="dics-container">
+                            <div class="dics-kb-section-head dics-kb-section-head--center">
+                                <span class="dics-kb-eyebrow dics-kb-eyebrow--light">ENGINEERING ARCHITECTURE</span>
+                                <h2>6. Refreshed OWL Frontend, Mobile Parity &amp; Developer Tools</h2>
+                                <p>
+                                    Under the hood, Odoo 19 refines frontend rendering speed, reduces boilerplate code,
+                                    and delivers true desktop-mobile feature parity.
+                                </p>
+                            </div>
+
+                            <div class="dics-detail-why-grid">
+                                <article>
+                                    <span class="material-symbols-outlined">bolt</span>
+                                    <h3>Snappier OWL Frontend</h3>
+                                    <p>ListView, Kanban, and Form views load significantly faster. Enhanced caching
+                                        mechanisms keep browser interaction smooth even on heavy records.
+                                    </p>
+                                </article>
+
+                                <article>
+                                    <span class="material-symbols-outlined">phone_iphone</span>
+                                    <h3>True Mobile App Parity</h3>
+                                    <p>Full mobile touch support, pull-to-refresh actions, smart action menus with
+                                        ellipses, and multi-select list controls for field workers.
+                                    </p>
+                                </article>
+
+                                <article>
+                                    <span class="material-symbols-outlined">code_blocks</span>
+                                    <h3>Reduced Boilerplate Code</h3>
+                                    <p>Developers benefit from simplified model inheritance, advanced debugging tools,
+                                        lighter audit trails, and expanded REST/RPC endpoints.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =====================================================
+                         10. CALL TO ACTION
+                    ====================================================== -->
+                    <section class="dics-kb-cta">
+                        <div class="dics-container">
+                            <div class="dics-kb-cta-card">
+                                <div>
+                                    <span class="dics-kb-eyebrow">READY TO UPGRADE TO ODOO 19?</span>
+                                    <h2>Transform Your Enterprise Architecture with Odoo 19</h2>
+                                    <p>
+                                        Partner with DataInteger core architects to audit your existing database,
+                                        migrate custom modules seamlessly, and implement Odoo 19 without operational
+                                        downtime.
+                                    </p>
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                        Schedule Your Odoo 19 Migration Consultation
+                                        <span class="dics-arrow">→</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

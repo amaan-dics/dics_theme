@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_faqs"
+              name="DataInteger — Frequently Asked Questions"
+              key="dics_theme.dics_faqs"
+              website_id="dics_theme.dics_website">
+
+        <t t-call="website.layout">
+            <t t-set="additional_title">
+                Frequently Asked Questions — DataInteger
+            </t>
+            <t t-set="meta_description">
+                Find answers to common questions about DataInteger's Odoo ERP services, custom module development, version migrations, AI integrations, and ongoing support.
+            </t>
+
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main class="dics-main">
+
+                    <!-- PAGE HERO -->
+                    <section class="dics-kb-hero" style="padding: 4rem 0 2.5rem;">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container">
+                            <div class="dics-kb-hero-copy" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                                <span class="dics-kb-eyebrow">HELP &amp; KNOWLEDGE BASE</span>
+                                <h1>Frequently Asked Questions</h1>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FAQS ACCORDION SECTION -->
+                    <section class="dics-kb-section dics-kb-section--light" id="faq-accordion">
+                        <div class="dics-container">
+
+                            <div id="capabilities-container" class="dics-capabilities">
+
+                                <!-- FAQ ITEM 01 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>01</span>
+                                            <h3>What industries does DataInteger specialize in for Odoo implementation?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>Healthcare • Construction • Manufacturing • Retail</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                We specialize in complex operational industries including Healthcare, Construction, Software &amp; SaaS, E-commerce &amp; Retail, Professional &amp; Financial Services, and Discrete Manufacturing. Our engineering team configures Odoo to support specialized needs like FEFO batch tracking, BOQ-linked job costing, cross-channel inventory synchronization, and demand-driven MRP.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>FEFO Batching</span>
+                                                <span>Job Costing</span>
+                                                <span>Demand MRP</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 02 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>02</span>
+                                            <h3>Should we choose Odoo Community or Odoo Enterprise edition?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>Community vs Enterprise • TCO Evaluation</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Odoo Enterprise offers advanced modules (Accounting, Barcode, Subscriptions, Mobile App, Studio) out of the box with official vendor support. Odoo Community provides a reliable open-source foundation for core ERP functionality. During initial discovery, we evaluate your functional requirements and total cost of ownership to recommend the optimal architecture.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Open Source</span>
+                                                <span>Enterprise Features</span>
+                                                <span>TCO Analysis</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 03 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>03</span>
+                                            <h3>How long does a typical Odoo implementation take?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>Implementation Timeline • Deployment Roadmap</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Standard implementations with out-of-the-box business workflows take 4 to 8 weeks. Enterprise deployments requiring multi-company setups, custom module development, and third-party integrations typically run 3 to 6 months.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>4-8 Weeks Standard</span>
+                                                <span>Multi-Company</span>
+                                                <span>Production Cutover</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 04 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>04</span>
+                                            <h3>How do you ensure custom modules remain upgradeable?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>ORM Guidelines • Clean Python APIs</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                We strictly adhere to official Odoo ORM development guidelines, utilizing standard model inheritance, modular view extensions, and clean Python APIs. We avoid direct core modifications or unsafe SQL queries, isolating custom business logic in independent custom modules that can be ported seamlessly.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Model Inheritance</span>
+                                                <span>Odoo ORM</span>
+                                                <span>Upgrade Safe</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 05 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>05</span>
+                                            <h3>Can DataInteger build custom website themes and portal interfaces?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>OWL Framework • QWeb • SCSS Styling</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Yes. We build custom responsive frontend views, portal card layouts, and dashboard UI components using Odoo's modern JavaScript framework (OWL), SCSS styling, and clean QWeb XML layout architecture.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Custom OWL</span>
+                                                <span>QWeb Views</span>
+                                                <span>Portal UI</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 06 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>06</span>
+                                            <h3>Do we own the source code for custom modules developed for our system?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>IP Ownership • Code Delivery</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Yes. All custom module source code written specifically for your business is delivered upon completion, fully documented, and owned by your organization.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Source Code Ownership</span>
+                                                <span>Full Rights</span>
+                                                <span>Documentation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 07 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>07</span>
+                                            <h3>Can we upgrade directly from older versions to Odoo 18 or 19?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>Schema Migration • Deprecated API Refactoring</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                Yes. Our database migration pipelines transform legacy database schemas and refactor module code directly to current versions (Odoo 18/19), systematically resolving intermediate API breaking changes and JavaScript widget-to-OWL framework conversions.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Schema Transformation</span>
+                                                <span>API Refactoring</span>
+                                                <span>OWL Conversion</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 08 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>08</span>
+                                            <h3>How is downtime and data loss prevented during migration?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>Staging Verification • UAT • Rollback Strategy</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                All migrations are run and tested against full staging environment snapshots first. User Acceptance Testing (UAT) and post-migration data integrity checksums are completed before production cutover, which takes place during scheduled off-peak cutover windows with a validated rollback procedure.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Staging Snapshots</span>
+                                                <span>Data Checksums</span>
+                                                <span>Off-Peak Cutover</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 09 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>09</span>
+                                            <h3>Which third-party platforms can Odoo integrate with?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>REST / Webhooks • WhatsApp • Payments • Shipping</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                We build bidirectional REST/RPC integrations connecting Odoo to Meta WhatsApp Business API, payment gateways (Stripe, Razorpay), marketplaces (Amazon, Flipkart), courier/shipping services, and external legacy software tools.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Meta WhatsApp API</span>
+                                                <span>Stripe / Razorpay</span>
+                                                <span>Marketplace Sync</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 10 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>10</span>
+                                            <h3>How can AI capabilities be embedded into our Odoo instance?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>LLMs • Document Parsing • Intelligent Workflows</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                We integrate Large Language Models (LLMs) and OCR automation into Odoo for tasks such as automated vendor bill parsing, natural language database reporting, intelligent lead routing, and dynamic customer support responses.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Vendor Bill OCR</span>
+                                                <span>LLM Integrations</span>
+                                                <span>Smart Routing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ ITEM 11 -->
+                                <div class="dics-capability">
+                                    <div class="dics-capability-row">
+                                        <div class="dics-capability-name">
+                                            <span>11</span>
+                                            <h3>What post-implementation support and SLA options are available?</h3>
+                                        </div>
+                                        <div class="dics-capability-meta">
+                                            <small>Managed Services • SLAs • User Training</small>
+                                            <b>+</b>
+                                        </div>
+                                    </div>
+                                    <div class="dics-capability-content is-collapsed">
+                                        <div class="dics-capability-inner">
+                                            <p>
+                                                We offer flexible Managed Services contracts and SLA-backed support plans covering ongoing maintenance, server performance optimization, security patch installation, and continuous feature enhancement alongside role-based user training.
+                                            </p>
+                                            <div class="dics-tags">
+                                                <span>Guaranteed SLAs</span>
+                                                <span>Server Health Audits</span>
+                                                <span>User Workshops</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>
