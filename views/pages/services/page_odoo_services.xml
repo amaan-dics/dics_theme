@@ -994,46 +994,46 @@
                         </section>
 
 
-                        <!-- CTA -->
-                        <section class="dics-detail-cta">
+                            <!-- CTA -->
+                            <section class="dics-detail-cta">
 
-                            <div class="dics-container">
+                                <div class="dics-container">
 
-                                <div class="dics-detail-cta-card">
+                                    <div class="dics-detail-cta-card">
 
-                                    <div class="dics-detail-cta-glow"></div>
+                                        <div class="dics-detail-cta-glow"></div>
 
-                                    <div class="dics-detail-cta-content">
+                                        <div class="dics-detail-cta-content">
 
-                                        <span class="dics-detail-eyebrow">
-                                            Start the conversation
-                                        </span>
-
-                                        <h2>
-                                            Ready to unify your operations?
-                                        </h2>
-
-                                        <p>
-                                            Book a free technical consultation and we'll map
-                                            out exactly what an Odoo implementation would look
-                                            like for your business.
-                                        </p>
-
-                                        <a href="/contact"
-                                           class="dics-btn dics-btn-primary">
-                                            Book a Consultation
-                                            <span class="material-symbols-outlined">
-                                                arrow_forward
+                                            <span class="dics-detail-eyebrow">
+                                                Start the conversation
                                             </span>
-                                        </a>
+
+                                            <h2>
+                                                Ready to unify your operations?
+                                            </h2>
+
+                                            <p>
+                                                Book a free technical consultation and we'll map
+                                                out exactly what an Odoo implementation would look
+                                                like for your business.
+                                            </p>
+
+                                            <a href="/contact"
+                                               class="dics-btn dics-btn-primary">
+                                                Book a Consultation
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward
+                                                </span>
+                                            </a>
+
+                                        </div>
 
                                     </div>
 
                                 </div>
 
-                            </div>
-
-                        </section>
+                            </section>
 
                     </div>
 

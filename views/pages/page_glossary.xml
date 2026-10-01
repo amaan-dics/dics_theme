@@ -18,9 +18,9 @@
             <div id="wrap" class="dics-home dics-knowledge-page">
                 <main id="odoo-glossary" class="dics-main">
 
-                    <!-- =====================================================
-                         HERO + SEARCH
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-hero py-5">
                         <div class="dics-kb-dot-grid"/>
                         <div class="container">
@@ -67,9 +67,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         QUICK STATS
-                    ====================================================== -->
+
+
+
                     <section class="dics-glossary-stats glossary-list">
                         <div class="container">
                             <div class="dics-glossary-stat">
@@ -91,9 +91,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         ALPHABET NAVIGATION
-                    ====================================================== -->
+
+
+
                     <section class="glossary-list">
                         <div class="dics-glossary-nav">
                             <div class="container">
@@ -118,9 +118,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         GLOSSARY CONTENT
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-section glossary-list dics-kb-section--light" id="glossary-list">
                         <div class="container">
                             <div class="dics-capabilities">
@@ -552,9 +552,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         CTA
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-section py-5" id="consultation">
                         <div class="container">
                             <div class="dics-capability p-4 p-md-5 shadow">

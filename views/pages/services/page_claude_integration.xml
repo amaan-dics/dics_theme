@@ -5,88 +5,82 @@
         <t t-call="website.layout">
 
             <div id="wrap" class="dics-claude-page">
-
-                <!-- ═══════════════════════════════════════════
-                     HERO
-                ═══════════════════════════════════════════ -->
                 <section class="dics-cl-hero">
-    <div class="dics-cl-hero__bg-glow"/>
-    <div class="dics-cl-hero__grid-dots"/>
+                    <div class="dics-cl-hero__bg-glow"/>
+                    <div class="dics-cl-hero__grid-dots"/>
 
-    <div class="dics-container">
-        <div class="dics-cl-hero__inner dics-cl-hero__inner--split">
+                    <div class="dics-container">
+                        <div class="dics-cl-hero__inner dics-cl-hero__inner--split">
 
-            <!-- Left: Hero content -->
-            <div class="dics-cl-hero__content">
+                            <!-- Left: Hero content -->
+                            <div class="dics-cl-hero__content">
 
-                <div class="dics-cl-hero__badge">
-                    <span class="dics-cl-hero__badge-dot"/>
-                    <span>Powered by Anthropic Claude · Production Live</span>
-                </div>
+                                <div class="dics-cl-hero__badge">
+                                    <span class="dics-cl-hero__badge-dot"/>
+                                    <span>Powered by Anthropic Claude · Production Live</span>
+                                </div>
 
-                <h1 class="dics-cl-hero__headline">
-                    We didn't just integrate Claude.
-                    <br/>
-                    <span>We let it run the business.</span>
-                </h1>
+                                <h1 class="dics-cl-hero__headline">
+                                    We didn't just integrate Claude.
+                                    <br/>
+                                    <span>We let it run the business.</span>
+                                </h1>
 
-                <p class="dics-cl-hero__sub">
-                    DataInteger has achieved full end-to-end ERP automation by
-                    embedding Anthropic's Claude directly into Odoo's business logic —
-                    reading records, making decisions, drafting documents, and
-                    executing multi-step workflows without a human touching a keyboard.
-                    This is not a chatbot. This is operational intelligence.
-                </p>
+                                <p class="dics-cl-hero__sub">
+                                    DataInteger has achieved full end-to-end ERP automation by
+                                    embedding Anthropic's Claude directly into Odoo's business logic —
+                                    reading records, making decisions, drafting documents, and
+                                    executing multi-step workflows without a human touching a keyboard.
+                                    This is not a chatbot. This is operational intelligence.
+                                </p>
 
-                <div class="dics-cl-hero__actions">
-                    <a href="/contact" class="dics-cl-btn dics-cl-btn--primary">
-                        See It In Action
-                        <span class="material-symbols-outlined">arrow_forward</span>
-                    </a>
+                                <div class="dics-cl-hero__actions">
+                                    <a href="/contact" class="dics-cl-btn dics-cl-btn--primary">
+                                        See It In Action
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+                                    </a>
 
-                    <a href="/services" class="dics-cl-btn dics-cl-btn--ghost">
-                        View All Services
-                    </a>
-                </div>
+                                    <a href="/services" class="dics-cl-btn dics-cl-btn--ghost">
+                                        View All Services
+                                    </a>
+                                </div>
 
-            </div>
+                            </div>
 
-            <!-- Right: Proof -->
-            <div class="dics-cl-proof">
-                <div class="dics-cl-proof__item">
-                    <strong>100%</strong>
-                    <span>Automated Workflows</span>
-                </div>
+                            <!-- Right: Proof -->
+                            <div class="dics-cl-proof">
+                                <div class="dics-cl-proof__item">
+                                    <strong>100%</strong>
+                                    <span>Automated Workflows</span>
+                                </div>
 
-                <div class="dics-cl-proof__divider"/>
+                                <div class="dics-cl-proof__divider"/>
 
-                <div class="dics-cl-proof__item">
-                    <strong>0</strong>
-                    <span>Manual Re-entries</span>
-                </div>
+                                <div class="dics-cl-proof__item">
+                                    <strong>0</strong>
+                                    <span>Manual Re-entries</span>
+                                </div>
 
-                <div class="dics-cl-proof__divider"/>
+                                <div class="dics-cl-proof__divider"/>
 
-                <div class="dics-cl-proof__item">
-                    <strong>Claude 3.5</strong>
-                    <span>Anthropic · Production</span>
-                </div>
+                                <div class="dics-cl-proof__item">
+                                    <strong>Claude 3.5</strong>
+                                    <span>Anthropic · Production</span>
+                                </div>
 
-                <div class="dics-cl-proof__divider"/>
+                                <div class="dics-cl-proof__divider"/>
 
-                <div class="dics-cl-proof__item">
-                    <strong>Odoo 18</strong>
-                    <span>Native Integration</span>
-                </div>
-            </div>
+                                <div class="dics-cl-proof__item">
+                                    <strong>Odoo 18</strong>
+                                    <span>Native Integration</span>
+                                </div>
+                            </div>
 
-        </div>
-    </div>
-</section>
+                        </div>
+                    </div>
+                </section>
 
-                <!-- ═══════════════════════════════════════════
-                     WHAT WE ACTUALLY BUILT
-                ═══════════════════════════════════════════ -->
+
                 <section class="dics-cl-section dics-cl-section--light">
                     <div class="dics-container">
                         <div class="dics-cl-section-head dics-cl-section-head--center">
@@ -206,9 +200,7 @@
                     </div>
                 </section>
 
-                <!-- ═══════════════════════════════════════════
-                     AUTOMATION CAPABILITIES
-                ═══════════════════════════════════════════ -->
+
                 <section class="dics-cl-section">
                     <div class="dics-container">
                         <div class="dics-cl-section-head">
@@ -304,9 +296,7 @@
                     </div>
                 </section>
 
-                <!-- ═══════════════════════════════════════════
-                     STAT STRIP
-                ═══════════════════════════════════════════ -->
+
                 <section class="dics-cl-stats">
                     <div class="dics-container">
                         <div class="dics-cl-stats__grid">
@@ -330,9 +320,7 @@
                     </div>
                 </section>
 
-                <!-- ═══════════════════════════════════════════
-                     HOW WE BUILT IT
-                ═══════════════════════════════════════════ -->
+
                 <section class="dics-cl-section dics-cl-section--light">
                     <div class="dics-container">
                         <div class="dics-cl-section-head text-center mx-auto">
@@ -593,9 +581,7 @@
                     </div>
                 </section>
 
-                <!-- ═══════════════════════════════════════════
-                     WHY THIS MATTERS
-                ═══════════════════════════════════════════ -->
+
                 <section class="dics-cl-section dics-cl-section--dark">
                     <div class="dics-container">
                         <div class="dics-cl-section-head dics-cl-section-head--center">
@@ -629,14 +615,12 @@
                     </div>
                 </section>
 
-                <!-- ═══════════════════════════════════════════
-                     CTA
-                ═══════════════════════════════════════════ -->
+
                 <section class="dics-cl-cta-section">
                     <div class="dics-container">
                         <div class="dics-cl-cta-card">
                             <div class="dics-cl-cta-card__glow"/>
-                            <div class="dics-cl-cta-card__content">
+                            <div class="dics-cl-cta-card__content m-0">
                                 <span class="dics-cl-eyebrow">Work With Us</span>
                                 <h2>Ready to stop operating your ERP manually?</h2>
                                 <p>

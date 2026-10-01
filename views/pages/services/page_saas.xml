@@ -1,51 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <template id="dics_saas" name="Datainteger Consultancy Services SaaS Products" key="dics_theme.dics_saas"
+              website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
+            <t t-set="additional_title">SaaS Products — DataInteger</t>
 
-  <template id="dics_saas" name="Datainteger Consultancy Services SaaS Products" key="dics_theme.dics_saas" website_id="dics_theme.dics_website">
-    <t t-call="website.layout">
+            <div id="wrap" class="dics-home">
+                <main class="dics-main">
 
+                    <!-- HERO -->
+                    <section class="dics-hero" id="top-saas">
+                        <div class="dics-hero-grid services-hero-grid dics-container">
+                            <div class="dics-hero-copy">
+                                <div class="dics-eyebrow-pill">
+                                    <span class="dics-status-dot"/>
+                                    <span>SaaS Products</span>
+                                </div>
+                                <h1>
+                                    From idea to
+                                    <span class="dics-red">recurring revenue.</span>
+                                </h1>
+                                <p class="dics-hero-lead">
+                                    We help founders and enterprises design, build, and launch Software as a Service
+                                    products. We handle the complex infrastructure so you can focus on product-market fit.
+                                </p>
+                                <div class="dics-actions">
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                        <span>Book a Free Consultation</span>
+                                        <span class="dics-arrow">→</span>
+                                    </a>
+                                    <a href="#capabilities" class="dics-btn dics-btn-secondary">
+                                        <span>See Capabilities</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-      <t t-set="hero_anchor_id">top-saas</t>
-      <t t-set="svc_eyebrow">SaaS Products</t>
-      <t t-set="svc_title_main">From idea to</t>
-      <t t-set="svc_title_accent">recurring revenue.</t>
-      <t t-set="svc_subtitle">We help founders and enterprises design, build, and launch Software as a Service products. We handle the complex infrastructure so you can focus on product-market fit.</t>
+                    <!-- CAPABILITIES -->
+                    <section class="dics-section dics-section-light" id="capabilities">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Capabilities</span>
+                                <h2>Everything a real SaaS launch needs</h2>
+                                <p class="dics-section-lead">
+                                    Infrastructure that's ready to scale before you actually need it to.
+                                </p>
+                            </div>
 
-      <t t-set="capabilities_heading">Everything a real SaaS launch needs</t>
-      <t t-set="capabilities_subheading">Infrastructure that's ready to scale before you actually need it to.</t>
-      <t t-set="capabilities" t-value="[
-        {'icon': 'cloud', 'title': 'Multi-Tenant Architecture', 'description': 'Built to serve many customers securely from one system, from day one, not bolted on after growth forces it.'},
-        {'icon': 'code2', 'title': 'Subscription Billing Integration', 'description': 'Plans, trials, upgrades, and invoicing wired up correctly, so revenue doesn\'t leak through billing edge cases.'},
-        {'icon': 'layout-dashboard', 'title': 'Admin &amp; Customer Dashboards', 'description': 'Interfaces for your team and your customers that make the product usable, not just functional.'},
-        {'icon': 'line-chart', 'title': 'Usage Analytics &amp; Metrics', 'description': 'Visibility into activation, retention, and usage patterns so you know what\'s actually working.'},
-        {'icon': 'brain-circuit', 'title': 'Security &amp; Compliance', 'description': 'Authentication, data isolation, and compliance handled properly from the start, not retrofitted under pressure.'},
-        {'icon': 'smartphone', 'title': 'Onboarding &amp; Activation Flows', 'description': 'First-run experiences designed to get new users to their first real value, fast.'},
-      ]"/>
+                            <div class="dics-detail-capability-grid">
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">cloud</span>
+                                    </div>
+                                    <h3>Multi-Tenant Architecture</h3>
+                                    <p>Built to serve many customers securely from one system, from day one, not bolted on after growth forces it.</p>
+                                </article>
 
-      <t t-set="process_steps" t-value="[
-        {'title': 'Product Strategy &amp; MVP Scoping', 'description': 'Cutting the idea down to the smallest version that actually tests product-market fit.'},
-        {'title': 'Architecture &amp; Build', 'description': 'Building on infrastructure that won\'t need a rewrite the moment you get real traction.'},
-        {'title': 'Beta Launch &amp; Iteration', 'description': 'Getting the product in front of real users early, and shipping fast based on what they actually do.'},
-        {'title': 'Scale &amp; Growth Support', 'description': 'Staying on as a technical partner as usage, features, and infrastructure needs grow.'},
-      ]"/>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">receipt_long</span>
+                                    </div>
+                                    <h3>Subscription Billing Integration</h3>
+                                    <p>Plans, trials, upgrades, and invoicing wired up correctly, so revenue doesn't leak through billing edge cases.</p>
+                                </article>
 
-      <t t-set="tags_eyebrow">Stack We Use</t>
-      <t t-set="tags_heading">Our typical SaaS stack</t>
-      <t t-set="tags" t-value="['Stripe', 'AWS', 'PostgreSQL', 'Next.js', 'Node.js', 'Docker', 'Auth0', 'Redis']"/>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">dashboard</span>
+                                    </div>
+                                    <h3>Admin &amp; Customer Dashboards</h3>
+                                    <p>Interfaces for your team and your customers that make the product usable, not just functional.</p>
+                                </article>
 
-      <t t-set="why_heading">A technical co-founder, on demand</t>
-      <t t-set="why_cards" t-value="[
-        {'icon': 'cloud', 'title': 'Built for Scale from Day One', 'description': 'Architecture decisions made upfront so growth doesn\'t force a costly rebuild later.'},
-        {'icon': 'brain-circuit', 'title': 'Founder-Friendly Process', 'description': 'We work at startup speed and communicate in plain terms, not enterprise process for its own sake.'},
-        {'icon': 'layout-dashboard', 'title': 'Infrastructure You Won\'t Outgrow', 'description': 'Systems designed to handle your next stage of growth, not just your current one.'},
-      ]"/>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">insights</span>
+                                    </div>
+                                    <h3>Usage Analytics &amp; Metrics</h3>
+                                    <p>Visibility into activation, retention, and usage patterns so you know what's actually working.</p>
+                                </article>
 
-      <t t-set="cta_title">Have an idea? Let's ship it.</t>
-      <t t-set="cta_text">Book a free consultation and we'll help scope what an MVP would actually take to build.</t>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">security</span>
+                                    </div>
+                                    <h3>Security &amp; Compliance</h3>
+                                    <p>Authentication, data isolation, and compliance handled properly from the start, not retrofitted under pressure.</p>
+                                </article>
 
-      <div id="wrap" class="dics-website-page">
-        <t t-call="dics_theme.dics_service_detail_body"/>
-      </div>
-    </t>
-  </template>
+                                <article class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon">
+                                        <span class="material-symbols-outlined">rocket_launch</span>
+                                    </div>
+                                    <h3>Onboarding &amp; Activation Flows</h3>
+                                    <p>First-run experiences designed to get new users to their first real value, fast.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- PROCESS -->
+                    <section class="dics-section">
+                        <div class="dics-container">
+                            <div class="dics-section-heading">
+                                <div>
+                                    <span class="dics-eyebrow">Our Process</span>
+                                    <h2>How we take a SaaS product to launch.</h2>
+                                </div>
+                                <p>Smallest testable version first. Scale second.</p>
+                            </div>
+
+                            <div class="dics-process-grid">
+                                <article class="dics-process-card">
+                                    <strong>01</strong>
+                                    <h3>Product Strategy &amp; MVP Scoping</h3>
+                                    <p>Cutting the idea down to the smallest version that actually tests product-market fit.</p>
+                                </article>
+                                <article class="dics-process-card">
+                                    <strong>02</strong>
+                                    <h3>Architecture &amp; Build</h3>
+                                    <p>Building on infrastructure that won't need a rewrite the moment you get real traction.</p>
+                                </article>
+                                <article class="dics-process-card">
+                                    <strong>03</strong>
+                                    <h3>Beta Launch &amp; Iteration</h3>
+                                    <p>Getting the product in front of real users early, and shipping fast based on what they actually do.</p>
+                                </article>
+                                <article class="dics-process-card">
+                                    <strong>04</strong>
+                                    <h3>Scale &amp; Growth Support</h3>
+                                    <p>Staying on as a technical partner as usage, features, and infrastructure needs grow.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- STACK -->
+                    <section class="dics-section dics-section-surface">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading">
+                                <span class="dics-eyebrow">Stack We Use</span>
+                                <h2>Our typical SaaS stack</h2>
+                            </div>
+
+                            <div class="dics-proof" style="justify-content: center;">
+                                <span><b>✓</b> Stripe</span>
+                                <span><b>✓</b> AWS</span>
+                                <span><b>✓</b> PostgreSQL</span>
+                                <span><b>✓</b> Next.js</span>
+                                <span><b>✓</b> Node.js</span>
+                                <span><b>✓</b> Docker</span>
+                                <span><b>✓</b> Auth0</span>
+                                <span><b>✓</b> Redis</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- WHY -->
+                    <section class="dics-detail-section dics-detail-section--dark">
+                        <div class="dics-container">
+                            <div class="dics-detail-section-head dics-detail-section-head--center">
+                                <span class="dics-eyebrow">Why DataInteger</span>
+                                <h2>A technical co-founder, on demand</h2>
+                            </div>
+
+                            <div class="dics-detail-why-grid">
+                                <article>
+                                    <span class="material-symbols-outlined">cloud</span>
+                                    <h3>Built for Scale from Day One</h3>
+                                    <p>Architecture decisions made upfront so growth doesn't force a costly rebuild later.</p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">handshake</span>
+                                    <h3>Founder-Friendly Process</h3>
+                                    <p>We work at startup speed and communicate in plain terms, not enterprise process for its own sake.</p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">trending_up</span>
+                                    <h3>Infrastructure You Won't Outgrow</h3>
+                                    <p>Systems designed to handle your next stage of growth, not just your current one.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CONTACT -->
+                    <section class="dics-detail-cta">
+                        <div class="dics-container">
+
+                                <div class="dics-detail-cta-card">
+
+                                    <div class="dics-detail-cta-glow"></div>
+                                  <div class="dics-detail-cta-content">
+                                <span class="dics-detail-eyebrow">
+                                            Start the conversation
+                                        </span>
+
+                                        <h2>
+                                            Ready to unify your operations?
+                                        </h2>
+
+                                        <p>
+                                            Book a free technical consultation and we'll map
+                                            out exactly what an Odoo implementation would look
+                                            like for your business.
+                                        </p>
+
+                                        <a href="/contact"
+                                           class="dics-btn dics-btn-primary">
+                                            Book a Consultation
+                                            <span class="material-symbols-outlined">
+                                                arrow_forward
+                                            </span>
+                                        </a>
+                                  </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
 </odoo>

@@ -18,9 +18,9 @@
                     <div id="wrap" class="dics-home">
                         <main class="dics-main">
 
-                            <!-- ═══════════════════════════════════════
-                                 HERO
-                            ═══════════════════════════════════════ -->
+
+
+
                             <section class="dics-hero">
                                 <div class="dics-hero-grid dics-container">
                                     <div class="dics-hero-copy">
@@ -125,9 +125,9 @@
                                 </div>
                             </section>
 
-                            <!-- ═══════════════════════════════════════
-                                 CHANNELS
-                            ═══════════════════════════════════════ -->
+
+
+
                             <section class="dics-section dics-section-light" id="channels">
                                 <div class="dics-container">
                                     <div class="dics-centered-heading">
@@ -180,9 +180,9 @@
                                 </div>
                             </section>
 
-                            <!-- ═══════════════════════════════════════
-                                 DEEP CAPABILITIES
-                            ═══════════════════════════════════════ -->
+
+
+
                             <section class="dics-section">
                                 <div class="dics-container">
                                     <div class="dics-centered-heading">
@@ -279,9 +279,9 @@
                                 </div>
                             </section>
 
-                            <!-- ═══════════════════════════════════════
-                                 WORKFLOW / PIPELINE
-                            ═══════════════════════════════════════ -->
+
+
+
                             <section class="dics-section dics-section-surface">
                                 <div class="dics-container">
                                     <div class="dics-centered-heading">
@@ -350,9 +350,9 @@
                                 </div>
                             </section>
 
-                            <!-- ═══════════════════════════════════════
-                                 PROCESS
-                            ═══════════════════════════════════════ -->
+
+
+
                             <section class="dics-section dics-section-light">
                                 <div class="dics-container">
                                     <div class="dics-section-heading">
@@ -363,7 +363,7 @@
                                         <p>Strategy before spend. Measurement before scale.</p>
                                     </div>
 
-                                    <div class="dics-process-grid">
+                                    <div class="dics-process-grid dics-row">
                                         <article class="dics-process-card">
                                             <strong>01</strong>
                                             <h3>Audit &amp; Strategy</h3>
@@ -404,9 +404,9 @@
                                 </div>
                             </section>
 
-                            <!-- ═══════════════════════════════════════
-                                 WHY DATAINTEGER
-                            ═══════════════════════════════════════ -->
+
+
+
                             <section class="dics-detail-section dics-detail-section--dark">
                                 <div class="dics-container">
                                     <div class="dics-detail-section-head dics-detail-section-head--center">
@@ -446,9 +446,9 @@
                                 </div>
                             </section>
 
-                            <!-- ═══════════════════════════════════════
-                                 FAQ
-                            ═══════════════════════════════════════ -->
+
+
+
                             <section class="dics-section dics-section-light">
                                 <div class="dics-container">
                                     <div class="dics-centered-heading">

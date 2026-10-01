@@ -18,9 +18,9 @@
                 <main class="dics-main">
 
 
-                    <!-- =====================================================
-                         2. HERO SECTION
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-hero">
                         <div class="dics-kb-dot-grid"/>
                         <div class="dics-container dics-kb-hero__inner">
@@ -233,9 +233,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         4. FEATURE SECTION: AI & ASK ODOO
-                    ====================================================== -->
+
+
+
                     <section id="ai-intelligence" class="dics-kb-section">
                         <div class="dics-container">
                             <div class="dics-kb-article">
@@ -296,9 +296,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         5. FEATURE SECTION: FINANCIALS & E-INVOICING
-                    ====================================================== -->
+
+
+
                     <section id="financials-accounting" class="dics-kb-section dics-kb-section--gray">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -369,9 +369,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         6. FEATURE SECTION: SALES, COMMERCE & WHATSAPP
-                    ====================================================== -->
+
+
+
                     <section id="sales-commerce" class="dics-kb-section">
                         <div class="dics-container">
                             <div class="dics-kb-engineering">
@@ -461,9 +461,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         7. FEATURE SECTION: MANUFACTURING & LOGISTICS
-                    ====================================================== -->
+
+
+
                     <section id="mrp-inventory" class="dics-kb-section dics-kb-section--light">
                         <div class="dics-container">
                             <div class="dics-kb-article">
@@ -516,9 +516,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         8. FEATURE SECTION: HR & ESG
-                    ====================================================== -->
+
+
+
                     <section id="hr-esg" class="dics-kb-section dics-kb-section--gray">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--split">
@@ -615,9 +615,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         9. FEATURE SECTION: TECHNICAL & FRAMEWORK
-                    ====================================================== -->
+
+
+
                     <section id="framework-performance" class="dics-kb-section dics-kb-section--dark">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -657,9 +657,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         10. CALL TO ACTION
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-cta">
                         <div class="dics-container">
                             <div class="dics-kb-cta-card">

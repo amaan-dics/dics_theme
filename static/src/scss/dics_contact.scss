@@ -630,7 +630,7 @@ body:has(.oe_login_form) {
         .dics-hero-image__img {
             max-width: 100%;
             max-height: 280px;
-
+            order: -2;
         }
 
         .dics-hero-metrics-grid .col-6 {
@@ -648,12 +648,7 @@ body:has(.oe_login_form) {
         order: -2;
         }
 
-        // Stack metrics to single column on very small screens
-        .dics-hero-metrics-grid .col-6 {
-            width: 100%;
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
+
     }
 }
 // ─────────────────────────────────────────────────────────

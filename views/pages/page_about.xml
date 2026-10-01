@@ -248,7 +248,7 @@
                                     <div class="dics-detail-card-icon">
                                         <span class="material-symbols-outlined">workspace_premium</span>
                                     </div>
-                                    <h3>Official Odoo Partner</h3>
+                                    <h3>Odoo Expertise</h3>
                                     <p>Deep, hands-on experience across Odoo 16, 17, 18 and the latest versions. We
                                         don't just implement — we engineer for longevity.
                                     </p>
@@ -477,7 +477,7 @@
                                         custom modules actually do — then rewrite, not just port — so the
                                         new version is cleaner than the one you left behind.
                                     </p>
-                                    <a href="/services" class="dics-btn dics-btn-primary">
+                                    <a href="/services" class="dics-btn dics-btn-primary dics-btn-red">
                                         Talk to us about Odoo migration
                                         <span class="material-symbols-outlined">arrow_forward</span>
                                     </a>

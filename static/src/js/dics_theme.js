@@ -209,9 +209,7 @@ publicWidget.registry.DicsTheme = publicWidget.Widget.extend({
                 applyFilters();
             });
         });
-        // =====================================================
-// HERO CAPABILITY CARD CAROUSEL
-// =====================================================
+        // Hero capability card carousel
 const heroVisual = this.el.querySelector(".dics-hero-visual");
 
 if (heroVisual) {

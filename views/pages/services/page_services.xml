@@ -43,9 +43,9 @@
         </field>
     </record>
 
-    <!-- ================================================================
-         Services page template
-    ================================================================ -->
+
+
+
     <record id="dics_services" model="ir.ui.view">
         <field name="name">DataInteger Services</field>
         <field name="type">qweb</field>
@@ -239,7 +239,7 @@
                             </div>
                         </section>
 
-<!--                        <t t-call="dics_theme.dics_footer"/>-->
+
 
                     </div>
 

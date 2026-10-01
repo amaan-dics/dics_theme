@@ -538,7 +538,7 @@
                                                 </div>
                                                 <div class="dics-mega-divider"></div>
                                                 <div class="dics-mega-grid">
-                                                    <a class="dics-mega-item" href="/services/web-mobile-apps">
+                                                    <a class="dics-mega-item" href="/services/web-mobile">
                                                         <span class="material-symbols-outlined dics-mega-item-icon">
                                                             web
                                                         </span>
@@ -547,7 +547,7 @@
                                                             SSR
                                                         </div>
                                                     </a>
-                                                    <a class="dics-mega-item" href="/services/web-mobile-apps">
+                                                    <a class="dics-mega-item" href="/services/web-mobile">
                                                         <span class="material-symbols-outlined dics-mega-item-icon">
                                                             smartphone
                                                         </span>
@@ -556,7 +556,7 @@
                                                             Cross-platform
                                                         </div>
                                                     </a>
-                                                    <a class="dics-mega-item" href="/services/web-mobile-apps">
+                                                    <a class="dics-mega-item" href="/services/web-mobile">
                                                         <span class="material-symbols-outlined dics-mega-item-icon">
                                                             code
                                                         </span>
@@ -573,7 +573,7 @@
                                                         <div class="dics-mega-item-desc">Native Odoo companion apps
                                                         </div>
                                                     </a>
-                                                    <a class="dics-mega-item" href="/services/web-mobile-apps">
+                                                    <a class="dics-mega-item" href="/services/web-mobile">
                                                         <span class="material-symbols-outlined dics-mega-item-icon">
                                                             install_mobile
                                                         </span>
@@ -809,7 +809,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/services/web-mobile-apps"
+                                            <a href="/services/web-mobile"
                                                class="dics-mobile-services-item dics-mobile-link">
                                                 <span class="material-symbols-outlined">language</span>
                                                 Web &amp; Mobile
@@ -1023,8 +1023,6 @@
                                 DataInteger Consultancy Services LLP. All rights reserved.
                             </span>
                             <div class="dics-footer-meta">
-                                <span class="dics-footer-iso">ISO-Ready</span>
-                                <span>Odoo Partner</span>
                                 <span>Ahmedabad, India</span>
                             </div>
                         </div>

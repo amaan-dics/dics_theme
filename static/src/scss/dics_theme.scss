@@ -16,7 +16,7 @@ p, a,  button, input, textarea, select {
     #trust .dics-stat-grid,
     #about .dics-philosophy,
     #architecture .dics-module-grid,
-    #process .dics-process-grid,
+    #process .dics-process-grid, .dics-process-grid,
     #industries .dics-industry-grid,
     #case-studies .dics-case-grid,
     #insights .dics-insights-grid {
@@ -25,6 +25,7 @@ p, a,  button, input, textarea, select {
         margin-left: auto;
     }
 }
+
 
 @media (max-width: 1199px) {
     #home .dics-hero-grid {
@@ -37,11 +38,12 @@ p, a,  button, input, textarea, select {
         gap: 48px;
     }
 
-    #architecture .dics-module-grid,
-    #process .dics-process-grid {
+    #architecture .dics-module-grid,.dics-process-grid,
+    #process .dics-process-grid,  {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+
 
 @media (max-width: 991px) {
     #home .dics-hero-grid,
@@ -62,7 +64,7 @@ p, a,  button, input, textarea, select {
 
     #trust .dics-stat-grid,
     #architecture .dics-module-grid,
-    #process .dics-process-grid,
+    #process .dics-process-grid, .dics-process-grid
     #industries .dics-industry-grid,
     #case-studies .dics-case-grid,
     #insights .dics-insights-grid {
@@ -526,9 +528,6 @@ section#capabilities{
     margin-left: auto;
     margin-right: auto;
 }
-// .dics-container, .container{
-//     max-width: 1199px !important;
-// }
 
 // ------------------------------------------------------------
 // SCROLL PROGRESS
@@ -554,24 +553,6 @@ section#capabilities{
     transition: width 0.05s linear;
 
 
-//     &::after {
-//
-//         content: "";
-//
-//         position: absolute;
-//
-//         right: 0;
-//         top: 50%;
-//
-//         width: 6px;
-//         height: 6px;
-//
-//         border-radius: 50%;
-//
-//         transform: translateY(-50%);
-//
-//         background: #ff5555;
-//     }
 }
 
 
@@ -1361,6 +1342,8 @@ section#capabilities{
 }
 
 
+
+
 @media(max-width:992px){
     .dics-stat-grid{
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2002,6 +1985,13 @@ section#capabilities{
     gap: 8px;
 }
 
+@media(min-width: 768px) and (max-width: 862px){
+    .dics-pipeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+    }
+
+
 .dics-pipeline-card {
 
     min-height: 210px;
@@ -2149,18 +2139,18 @@ section#capabilities{
         color: #ff6a70;
     }
 }
-/* =========================================================
-   PIPELINE MOBILE CAROUSEL
-   ========================================================= */
+
+
+
 
 .dics-pipeline-nav {
     display: none;
 }
 
 
-/* ---------------------------------------------------------
-   Mobile
-   --------------------------------------------------------- */
+
+
+
 
 @media (max-width: 767px) {
 
@@ -2206,9 +2196,9 @@ section#capabilities{
     }
 
 
-    /* ---------------------------------------------
-       Navigation
-       --------------------------------------------- */
+    
+
+
 
     .dics-pipeline-nav {
         display: flex;
@@ -2275,9 +2265,9 @@ section#capabilities{
     }
 
 
-    /* ---------------------------------------------
-       Counter
-       --------------------------------------------- */
+
+
+
 
     .dics-pipeline-nav__progress {
         display: flex;
@@ -2300,9 +2290,9 @@ section#capabilities{
 }
 
 
-/* ---------------------------------------------------------
-   Small phones
-   --------------------------------------------------------- */
+
+
+
 
 @media (max-width: 420px) {
 
@@ -2335,17 +2325,19 @@ section#about {
 .dics-process-grid {
 
     display: grid;
-
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-
     gap: 16px;
 }
+
+@media(min-width: 1280px){
+    .dics-process-grid{
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+    }
 
 @media(max-width:768px){
     grid-template-columns: 1fr !important;
 }
 
-// .dics-process-card {
 
 .dics-process-card {
 
@@ -2530,7 +2522,6 @@ section#about {
             border-color: #adadad !important;
         footer {
             background: darken($dics-surface-low, 6%);   // or use a fixed color
-            // background: #e8eaec;   // alternative if you prefer a fixed value
         }
     }
 
@@ -3153,7 +3144,7 @@ section#about {
     #process .dics-process-grid,
     #industries .dics-industry-grid,
     #case-studies .dics-case-grid,
-    #insights .dics-insights-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    #insights .dics-insights-grid.dics-process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     #capabilities .dics-section-heading,
     #capabilities .dics-capability-row { align-items: flex-start; flex-direction: column; gap: 14px; }
     #capabilities .dics-capability-meta { justify-content: space-between; width: 100%; }
@@ -3261,7 +3252,6 @@ section#about {
     margin-bottom: 3rem;
 
     h2 {
-//         font-family: "Plus Jakarta Sans", "Inter", sans-serif;
         font-size: clamp(1.75rem, 3vw, 2.5rem);
         font-weight: 700;
         color: $dics-primary;
@@ -3283,9 +3273,9 @@ section#about {
     }
 }
 
-/* ============================================================
-   WHY DATAINTEGER – Dark Glass Cards
-   ============================================================ */
+
+
+
    @media (min-width: 899px) and (max-width: 1023px) {
    .dics-detail-why-grid{
     grid-template-columns: repeat(2, 1fr);
@@ -3293,9 +3283,7 @@ section#about {
    }
 .dics-detail-why-grid {
     position: relative;
-    background-color: #000000;
-//     padding: 5rem 24px;
-//     overflow: hidden;
+    background-color: transparent;
 
 
 
@@ -3410,9 +3398,9 @@ section#about {
   );
 }
 
-/* ============================================================
-   SHIPPED SYSTEMS CARDS (About page)
-   ============================================================ */
+
+
+
 .dics-shipped-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -3567,7 +3555,6 @@ section#about {
     }
 
     h2 {
-//         font-family: "Plus Jakarta Sans", "Inter", sans-serif;
         font-size: clamp(1.9rem, 3.5vw, 2.75rem);
         font-weight: 700;
         color: #fff;
@@ -3649,7 +3636,12 @@ section#about {
     position: relative;
     z-index: 2;
 }
-
+form.oe_reset_password_form, .oe_website_login_container.o_user_switch,.oe_login_form{
+    margin-top: 200px !important;
+}
+.oe_website_login_container:has(.o_user_switch){
+    margin-top: 200px !important;
+}
 .oe_login_form,
 .oe_reset_password_form, .o_user_switch {
     position: relative;
@@ -3897,7 +3889,6 @@ body:has(.oe_login_form) {
         font-size: 1.5rem;
         font-weight: 900;
         color: #0f172a;
-//         font-family: "Plus Jakarta Sans", sans-serif;
         line-height: 1;
         margin-bottom: 4px;
     }
@@ -4376,7 +4367,17 @@ body:has(.oe_login_form) {
         span:last-child { font-weight: 700; color: #334155; }
     }
 }
-
+@media (max-width: 680px) {
+        .dics-process-grid{
+            grid-template-columns: 1fr;
+        gap: 2.5rem;
+            }
+    }
+@media (min-width: 681px) and (max-width: 769px){
+    .dics-process-grid,  {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    }
 // ── Process steps ─────────────────────────────────────────────
 .dics-ind-process {
     display: grid;
@@ -4461,7 +4462,6 @@ body:has(.oe_login_form) {
         font-size: 2.25rem;
         font-weight: 900;
         color: #bb0112;
-//         font-family: "JetBrains Mono", monospace;
         line-height: 1;
         flex-shrink: 0;
         margin-top: 2px;
@@ -4701,7 +4701,6 @@ body:has(.oe_login_form) {
             font-size: 3rem;
             font-weight: 900;
             color: #ffffff;
-//             font-family: "Plus Jakarta Sans", sans-serif;
             letter-spacing: -0.03em;
             line-height: 1;
         }
@@ -4722,7 +4721,6 @@ body:has(.oe_login_form) {
         margin-top: auto;
         border-top: 1px solid #1e293b;
         font-size: 0.65rem;
-//         font-family: "JetBrains Mono", monospace;
         color: #64748b;
 
         span:last-child { color: #4ade80; }
@@ -4965,6 +4963,12 @@ body:has(.oe_login_form) {
         }
     }
 }
+
+@media(max-width: 768px){
+    #salesforce-odoo-migration,{
+        border-bottom: none !important;
+    }
+}
 #odoo-services-grid {
     .dics-odoo-services-list {
         margin-top: 64px;
@@ -5064,9 +5068,9 @@ body:has(.oe_login_form) {
         }
     }
 
-/* =========================================================
-   ABOUT PAGE — STAT CARD GLOSSY HOVER
-   ========================================================= */
+
+
+
 
 .dics-stat-hover {
     position: relative;
@@ -5236,4 +5240,22 @@ body:has(.oe_login_form) {
 .accordion-button:hover,
 .accordion-button:not(.collapsed) {
     color: #bb0112;
+}
+@media(min-width:767px){
+
+.dics-container:has(.dics-kb-cta-card),.dics-container:has(.dics-cl-cta-card), {
+  max-width: 60%;
+}
+.dics-container:has(.dics-detail-cta-card),.dics-container:has(.dics-cl-cta-card) {
+  max-width: 60%;
+  .dics-detail-cta-content{
+      margin: 0 !important;
+      }
+  .dics-detail-cta-card,.dics-cl-cta-card{
+      text-align: left !important;
+      }
+  .dics-cl-cta-card__actions{
+      justify-content: left;
+      }
+}
 }

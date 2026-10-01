@@ -11,16 +11,12 @@
             </t>
             <t t-set="meta_description">
                 Learn what Odoo migration is, why businesses upgrade Odoo, how the Odoo migration process works, and how
-                to move from Odoo 14, 15, 16, or 17 to a newer version safely.
+                to move from Odoo 16, 17, 18, or 19 to a newer version safely.
             </t>
 
             <div id="wrap" class="dics-home dics-knowledge-page">
                 <main class="dics-main">
 
-
-                    <!-- =====================================================
-                         2. HERO
-                    ====================================================== -->
                     <section class="dics-kb-hero">
                         <div class="dics-kb-dot-grid"/>
                         <div class="dics-container dics-kb-hero__inner">
@@ -33,7 +29,7 @@
                                 <span class="dics-kb-mono">• SIMPLE EXPLANATION</span>
                                 <div class="dics-kb-validation">
                                     <span class="material-symbols-outlined">verified</span>
-                                    <span>UPDATED FOR ODOO 18</span>
+                                    <span>UPDATED FOR ODOO 20</span>
                                 </div>
                             </div>
 
@@ -86,7 +82,7 @@
                                         <div>
                                             <span class="material-symbols-outlined dics-kb-icon-green">check_circle
                                             </span>
-                                            <span class="dics-kb-byline__strong">Updated for Odoo 18</span>
+                                            <span class="dics-kb-byline__strong">Updated for Odoo 20</span>
                                         </div>
                                         <span class="dics-kb-audience">Business Owners to Technical Teams</span>
                                     </div>
@@ -107,7 +103,7 @@
                                     <div class="dics-kb-telemetry__metric">
                                         <span class="dics-kb-mono">VERSION SUPPORT</span>
                                         <div class="dics-kb-telemetry__metric-row">
-                                            <strong>Odoo 18</strong>
+                                            <strong>Odoo 20</strong>
                                             <span>LTS ACTIVE</span>
                                         </div>
                                         <p>
@@ -118,19 +114,19 @@
 
                                     <div class="dics-kb-telemetry__stack">
                                         <div>
-                                            <span class="dics-kb-mono">Odoo 18</span>
+                                            <span class="dics-kb-mono">Odoo 20</span>
                                             <span class="dics-kb-status dics-kb-status--green">LTS SUPPORTED</span>
                                         </div>
                                         <div>
-                                            <span class="dics-kb-mono">Odoo 17</span>
+                                            <span class="dics-kb-mono">Odoo 19</span>
                                             <span class="dics-kb-status dics-kb-status--green">SUPPORTED</span>
                                         </div>
                                         <div>
-                                            <span class="dics-kb-mono">Odoo 16</span>
+                                            <span class="dics-kb-mono">Odoo 18</span>
                                             <span class="dics-kb-status dics-kb-status--yellow">MAINTENANCE</span>
                                         </div>
                                         <div>
-                                            <span class="dics-kb-mono">Odoo 15 &amp; older</span>
+                                            <span class="dics-kb-mono">Odoo 17 &amp; older</span>
                                             <span class="dics-kb-status dics-kb-status--red">UPGRADE RECOMMENDED</span>
                                         </div>
                                     </div>
@@ -145,9 +141,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         3. TABLE OF CONTENTS
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--surface">
                         <div class="dics-container">
                             <div class="dics-mg-toc">
@@ -185,9 +178,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         4. SECTION — WHAT IS ODOO MIGRATION
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--light" id="what-is-migration">
                         <div class="dics-container">
                             <div class="dics-kb-article">
@@ -222,9 +212,9 @@
                                             <p>
                                                 These terms can be confusing.
                                                 A small update happens within the same Odoo version.
-                                                For example: Odoo 17.0.1 → Odoo 17.0.2.
+                                                For example: Odoo 19.0.1 → Odoo 19.0.2.
                                                 An Odoo migration is a move from one major version to another.
-                                                For example: Odoo 16 → Odoo 17 or Odoo 17 → Odoo 18.
+                                                For example: Odoo 18 → Odoo 19 or Odoo 19 → Odoo 20.
                                                 Major Odoo upgrades can require changes to the database, custom modules,
                                                 and integrations.
                                             </p>
@@ -244,9 +234,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         5. SECTION — WHY MIGRATE
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--surface" id="why-migrate">
                         <div class="dics-container">
                             <div class="dics-kb-article">
@@ -344,9 +331,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         6. SECTION — VERSION HISTORY
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--light" id="versions">
                         <div class="dics-container">
                             <div class="dics-kb-article">
@@ -365,44 +349,9 @@
 
                                         <div class="dics-mg-version">
                                             <div class="dics-mg-version__tag">
-                                                <span class="dics-kb-mono">Odoo 14</span>
-                                                <span class="dics-mg-version__badge dics-mg-version__badge--eol">End of
-                                                    Life
-                                                </span>
-                                            </div>
-                                            <div class="dics-mg-version__body">
-                                                <p>
-                                                    Released in 2020.
-                                                    Odoo 14 introduced improvements to areas such as accounting,
-                                                    spreadsheets, Discuss, Sign, and Website.
-                                                    Odoo 14 is now an older version and businesses using it should plan
-                                                    their upgrade.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="dics-mg-version">
-                                            <div class="dics-mg-version__tag">
-                                                <span class="dics-kb-mono">Odoo 15</span>
-                                                <span class="dics-mg-version__badge dics-mg-version__badge--eol">End of
-                                                    Life
-                                                </span>
-                                            </div>
-                                            <div class="dics-mg-version__body">
-                                                <p>
-                                                    Released in 2021.
-                                                    Odoo 15 brought major changes to the web interface and reporting.
-                                                    Businesses with custom Odoo modules may need to update their custom
-                                                    code when moving from Odoo 15 to a newer version.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="dics-mg-version">
-                                            <div class="dics-mg-version__tag">
                                                 <span class="dics-kb-mono">Odoo 16</span>
-                                                <span class="dics-mg-version__badge dics-mg-version__badge--maintenance">
-                                                    Maintenance
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--eol">End of
+                                                    Life
                                                 </span>
                                             </div>
                                             <div class="dics-mg-version__body">
@@ -410,6 +359,8 @@
                                                     Released in 2022.
                                                     Odoo 16 improved the user interface and added improvements to areas
                                                     such as manufacturing, shop floor, email marketing, and website.
+                                                    Odoo 16 is now an older version and businesses using it should plan
+                                                    their upgrade.
                                                 </p>
                                             </div>
                                         </div>
@@ -417,8 +368,8 @@
                                         <div class="dics-mg-version">
                                             <div class="dics-mg-version__tag">
                                                 <span class="dics-kb-mono">Odoo 17</span>
-                                                <span class="dics-mg-version__badge dics-mg-version__badge--active">
-                                                    Supported
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--eol">End of
+                                                    Life
                                                 </span>
                                             </div>
                                             <div class="dics-mg-version__body">
@@ -426,6 +377,8 @@
                                                     Released in 2023.
                                                     Odoo 17 added improvements to several Odoo apps, including
                                                     accounting, field service, subscriptions, IoT, and studio.
+                                                    Businesses with custom Odoo modules may need to update their custom
+                                                    code when moving from Odoo 17 to a newer version.
                                                 </p>
                                             </div>
                                         </div>
@@ -433,8 +386,8 @@
                                         <div class="dics-mg-version">
                                             <div class="dics-mg-version__tag">
                                                 <span class="dics-kb-mono">Odoo 18</span>
-                                                <span class="dics-mg-version__badge dics-mg-version__badge--lts">LTS —
-                                                    Current
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--maintenance">
+                                                    Maintenance
                                                 </span>
                                             </div>
                                             <div class="dics-mg-version__body">
@@ -443,7 +396,39 @@
                                                     Odoo 18 added new features and improvements across many areas of the
                                                     platform, including manufacturing, accounting, communication,
                                                     database performance, and AI-assisted features.
-                                                    Businesses planning a major Odoo upgrade can consider Odoo 18 as a
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-version">
+                                            <div class="dics-mg-version__tag">
+                                                <span class="dics-kb-mono">Odoo 19</span>
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--active">
+                                                    Supported
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-version__body">
+                                                <p>
+                                                    Released in 2025.
+                                                    Odoo 19 introduced AI agents throughout the platform, over 50 industry-specific
+                                                    packages, ESG reporting, and an enhanced user interface with compact Kanban views.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-mg-version">
+                                            <div class="dics-mg-version__tag">
+                                                <span class="dics-kb-mono">Odoo 20</span>
+                                                <span class="dics-mg-version__badge dics-mg-version__badge--lts">LTS —
+                                                    Current
+                                                </span>
+                                            </div>
+                                            <div class="dics-mg-version__body">
+                                                <p>
+                                                    Released in 2026.
+                                                    Odoo 20 adds plain language AI agents that build automations, create records, and run on schedules.
+                                                    It also includes updates to bank reconciliation, offline mode, and introduces an MCP connector.
+                                                    Businesses planning a major Odoo upgrade can consider Odoo 20 as a
                                                     migration target.
                                                 </p>
                                             </div>
@@ -454,10 +439,10 @@
                                     <div class="dics-mg-callout dics-mg-callout--note">
                                         <span class="material-symbols-outlined">info</span>
                                         <div>
-                                            <strong>Can You Move Directly From Odoo 14 to Odoo 18?</strong>
+                                            <strong>Can You Move Directly From Odoo 16 to Odoo 20?</strong>
                                             <p>
                                                 Yes, an Odoo migration can move across multiple major versions.
-                                                For example: Odoo 14 → Odoo 18.
+                                                For example: Odoo 16 → Odoo 20.
                                                 However, the migration still needs to deal with the changes made between
                                                 each Odoo version.
                                                 Your database and custom modules need to be checked and updated for the
@@ -470,9 +455,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         7. SECTION — MIGRATION PROCESS
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--surface" id="process">
                         <div class="dics-container">
                             <div class="dics-kb-section-head">
@@ -561,9 +543,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         8. SECTION — CUSTOM MODULES
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--light" id="custom-modules">
                         <div class="dics-container">
 
@@ -657,9 +636,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         9. SECTION — RISKS
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--surface" id="risks">
                         <div class="dics-container">
                             <div class="dics-kb-article">
@@ -748,9 +724,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         10. SECTION — TIMELINE
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--light" id="timeline">
                         <div class="dics-container">
                             <div class="dics-kb-article">
@@ -816,9 +789,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         11. SECTION — DATAINTEGER
-                    ====================================================== -->
                     <section class="dics-kb-section dics-kb-section--dark" id="datainteger">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -883,9 +853,6 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         12. CTA
-                    ====================================================== -->
                     <section class="dics-kb-cta">
                         <div class="dics-container">
                             <div class="dics-kb-cta-card">
@@ -893,14 +860,14 @@
                                     <span class="dics-kb-eyebrow">READY TO UPGRADE YOUR ODOO?</span>
                                     <h2>Plan Your Odoo Migration With DataInteger</h2>
                                     <p>
-                                        Are you using Odoo 14, 15, 16, or 17?
+                                        Are you using Odoo 16, 17, 18, or 19?
                                         We can check your current Odoo system, explain what needs to change, and help
                                         you plan the migration.
-                                        We can help with Odoo migration, Odoo version upgrade, Odoo 18 migration, custom
+                                        We can help with Odoo migration, Odoo version upgrade, Odoo 20 migration, custom
                                         module migration, Odoo database migration, Odoo customization, Odoo
                                         integrations, and Odoo testing.
                                     </p>
-                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                    <a href="/contact" class="dics-btn dics-btn-primary dics-btn-red">
                                         Start Your Odoo Migration
                                         <span class="dics-arrow">→</span>
                                     </a>

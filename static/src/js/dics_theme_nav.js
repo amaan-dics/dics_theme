@@ -89,14 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 (function initDicsNav() {
 
-    // ─────────────────────────────────────────────────────────
-    // Styles — hamburger + top dropdown + accordion
-    // ─────────────────────────────────────────────────────────
-
-
-    // ─────────────────────────────────────────────────────────
     // Main run function
-    // ─────────────────────────────────────────────────────────
     const run = () => {
 
 
@@ -156,7 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (e.key === "Escape") closeMenu();
             });
 
-            // ── Services accordion ───────────────────────────
             // ── Mobile accordions ─────────────────────────────────
             const mobileAccordions = menu.querySelectorAll(".dics-mobile-services");
 
@@ -410,9 +402,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 return window.matchMedia("(max-width: 767px)").matches;
             };
 
-            /*
-             * Update buttons + counter
-             */
             const updateNavigation = () => {
 
                 currentNumber.textContent = String(
@@ -454,17 +443,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateNavigation();
             };
 
-            /*
-             * Previous
-             */
             previousButton.addEventListener("click", (event) => {
                 event.preventDefault();
                 goToCard(currentIndex - 1);
             });
 
-            /*
-             * Next
-             */
             nextButton.addEventListener("click", (event) => {
                 event.preventDefault();
                 goToCard(currentIndex + 1);
@@ -541,9 +524,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             });
 
-            /*
-             * Initial state
-             */
             updateNavigation();
 
             if (isMobile()) {

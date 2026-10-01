@@ -20,7 +20,7 @@
               website_id="dics_theme.dics_website">
 
         <t t-call="website.layout">
-            <!--            <t t-set="no_footer" t-value="True"/>-->
+
 
             <t t-set="additional_title">
                 DataInteger Consultancy Services LLP
@@ -33,9 +33,9 @@
 
                 <main class="dics-main">
 
-                    <!-- =====================================================
-                         HERO
-                    ====================================================== -->
+
+
+
                     <section id="home" class="dics-hero">
 
                         <div class="dics-hero-grid services-hero-grid dics-container">
@@ -194,9 +194,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         TRUST
-                    ====================================================== -->
+
+
+
                     <section id="trust" class="dics-section dics-section-light">
 
                         <div class="dics-container">
@@ -259,9 +259,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         ABOUT / PHILOSOPHY
-                    ====================================================== -->
+
+
+
                     <section id="about" class="dics-section dics-section-surface">
 
                         <div class="dics-container dics-philosophy">
@@ -331,9 +331,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         CAPABILITIES
-                    ====================================================== -->
+
+
+
                     <section id="capabilities" class="dics-section dics-section-light">
 
                         <div class="dics-container">
@@ -613,9 +613,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         ARCHITECTURE
-                    ====================================================== -->
+
+
+
                     <section id="architecture" class="dics-section dics-section-surface">
 
                         <div class="dics-container">
@@ -707,9 +707,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         WORKFLOW
-                    ====================================================== -->
+
+
+
                     <section id="workflow" class="dics-workflow">
 
                         <div class="dics-container">
@@ -815,9 +815,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         PROCESS
-                    ====================================================== -->
+
+
+
                     <section id="process" class="dics-section dics-section-light">
 
                         <div class="dics-container">
@@ -890,9 +890,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         INDUSTRIES
-                    ====================================================== -->
+
+
+
                     <section id="industries" class="dics-section dics-section-surface">
 
                         <div class="dics-container">
@@ -1000,9 +1000,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         CASE STUDIES
-                    ====================================================== -->
+
+
+
                     <section id="case-studies" class="dics-section dics-section-light">
 
                         <div class="dics-container">
@@ -1109,9 +1109,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         INSIGHTS
-                    ====================================================== -->
+
+
+
                     <section id="insights" class="dics-section dics-section-surface">
 
                         <div class="dics-container">
@@ -1169,9 +1169,9 @@
                     </section>
 
 
-                    <!-- =====================================================
-                         FAQ
-                    ====================================================== -->
+
+
+
                     <section id="faq" class="dics-section dics-section-light">
 
                         <div class="dics-container dics-faq-container">
@@ -1252,9 +1252,9 @@
         </t>
 
     </template>
-    <!--    <record id="dics_home" model="ir.ui.view">-->
-    <!--    <field name="website_id" ref="dics_theme.dics_website"/>-->
-    <!--</record>-->
+
+
+
 
 
 </odoo>

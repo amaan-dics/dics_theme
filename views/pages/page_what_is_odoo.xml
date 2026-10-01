@@ -17,9 +17,9 @@
                 <main class="dics-main">
 
 
-                    <!-- =====================================================
-                         2. HERO / EXECUTIVE DEFINITION
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-hero">
                         <div class="dics-kb-dot-grid"/>
                         <div class="dics-container dics-kb-hero__inner">
@@ -174,9 +174,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         3. BIG PICTURE
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-section dics-kb-section--gray">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--split">
@@ -337,9 +337,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         4. CORE MODULES
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-section">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -463,9 +463,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         5. HOW ODOO WORKS
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-section dics-kb-section--light">
                         <div class="dics-container">
                             <div class="dics-kb-engineering">
@@ -553,9 +553,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         6. WHY DATAINTEGER
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-section dics-kb-section--dark">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -592,9 +592,9 @@
                         </div>
                     </section>
 
-                    <!-- =====================================================
-                         7. CTA
-                    ====================================================== -->
+
+
+
                     <section class="dics-kb-cta">
                         <div class="dics-container">
                             <div class="dics-kb-cta-card">
@@ -605,7 +605,7 @@
                                         Every business works differently.
                                         Talk to our Odoo consultants about Odoo implementation, Odoo migration, Odoo customization, Odoo development, Odoo integrations, and ongoing Odoo support.
                                     </p>
-                                    <a href="/contact" class="dics-btn dics-btn-primary">
+                                    <a href="/contact" class="dics-btn dics-btn-primary dics-btn-red">
                                         Talk to an Odoo Expert
                                         <span class="dics-arrow">→</span>
                                     </a>

@@ -1,1025 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="dics_insights" name="DataInteger Insights" key="dics_theme.dics_insights"
-              website_id="dics_theme.dics_website">
+   <template id="dics_industries" name="DataInteger Industries" key="dics_theme.dics_industries" website_id="dics_theme.dics_website">
         <t t-call="website.layout">
-            <t t-set="additional_title">Insights — Odoo vs Other ERPs · DataInteger</t>
+            <t t-set="additional_title">Industries &amp; Sector-Specific Odoo ERP Architecture — DataInteger</t>
+            <div id="wrap" class="dics-home">
+                <main class="dics-main">
+                    <section class="dics-ind-hero">
+                        <div class="dics-container">
+                            <div class="dics-ind-hero__eyebrow">
+                                <span class="dics-status-dot"/>
+                                <span>Sector-Specific ERP Architecture • Odoo 17 / 18</span>
+                            </div>
+                            <h1 class="dics-ind-hero__h1">Odoo that understands your <span class="dics-red">industry</span>.</h1>
+                            <p class="dics-ind-hero__lead">
+                                We shape Odoo around the way your teams sell, deliver, build, care, and grow — not around
+                                a generic template. Every sector has its own vocabulary, compliance requirements, and
+                                operational rhythms. We configure Odoo to match them precisely.
+                            </p>
+                            <div class="dics-ind-hero__stats">
+                                <div class="dics-ind-stat"><strong>6+</strong><span>Specialized Verticals</span></div>
+                                <div class="dics-ind-stat"><strong>Zero</strong><span>Business Disruption</span></div>
+                                <div class="dics-ind-stat"><strong>100%</strong><span>Native &amp; API Integrations</span></div>
+                                <div class="dics-ind-stat"><strong>Multi-Gov</strong><span>Compliance &amp; Audit Ready</span></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="dics-section dics-section-surface">
+                        <div class="dics-container">
+                            <div class="dics-ind-cards-head">
+                                <div>
+                                    <span class="dics-eyebrow">Sector Portfolios</span>
+                                    <h2>Engineered for real operational realities.</h2>
+                                </div>
+                                <p>Click into any specialized vertical to review real data flows, technical capabilities, and proprietary custom apps.</p>
+                            </div>
+                            <div class="dics-ind-cards-grid">
+                                <t t-foreach="industries.items()" t-as="item" t-key="item[0]">
+                                    <t t-set="slug" t-value="item[0]"/>
+                                    <t t-set="industry" t-value="item[1]"/>
+                                    <article class="dics-ind-card">
+                                        <div>
+                                            <div class="dics-ind-card__top">
+                                                <div class="dics-ind-card__icon"><span class="material-symbols-outlined" t-esc="industry['icon']"/></div>
+                                                <span class="dics-ind-card__sector" t-esc="industry.get('sector_label', industry['title'])"/>
+                                            </div>
+                                            <h3 class="dics-ind-card__title" t-esc="industry['title']"/>
+                                            <p class="dics-ind-card__summary" t-esc="industry['summary']"/>
+                                            <div class="dics-ind-card__badges">
+                                                <t t-foreach="industry.get('badges', [])" t-as="badge" t-key="badge_index">
+                                                    <span t-esc="badge"/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        <div class="dics-ind-card__footer">
+                                            <div>
+                                                <span class="dics-ind-card__metric-label" t-esc="industry.get('metric_label', 'Key Capability')"/>
+                                                <span class="dics-ind-card__metric-value" t-esc="industry.get('metric_value', 'Custom ERP Architecture')"/>
+                                            </div>
+                                            <a t-attf-href="/industries/#{slug}" class="dics-ind-card__link">
+                                                Explore Blueprint <span class="material-symbols-outlined">arrow_forward</span>
+                                            </a>
+                                        </div>
+                                    </article>
+                                </t>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-ind-approach">
+                                <div class="dics-ind-approach__left">
+                                    <span class="dics-eyebrow">Our Approach &amp; Philosophy</span>
+                                    <h2>Generic ERP implementations fail. <span class="dics-red">Industry-fit ones don't.</span></h2>
+                                    <p>Most Odoo projects run over budget and under-deliver because they start with module activation rather than operational architecture. A manufacturer and a healthcare clinic both require inventory management — but the workflows, approval chains, and compliance obligations look nothing alike.</p>
+                                    <div class="dics-ind-guarantee">
+                                        <span class="material-symbols-outlined">check_circle</span>
+                                        <div>
+                                            <strong>DataInteger Architecture Guarantee</strong>
+                                            <p>We study how your sector actually operates before touching code. The result is a platform your operators adopt naturally, mirroring the way they think about the business.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dics-ind-approach__right">
+                                    <div class="dics-ind-compare dics-ind-compare--bad">
+                                        <div class="dics-ind-compare__header">
+                                            <div class="dics-ind-compare__label dics-ind-compare__label--bad">
+                                                <span class="material-symbols-outlined">close</span>
+                                                The Traditional Generic Approach
+                                            </div>
+                                            <span class="dics-ind-compare__pill dics-ind-compare__pill--bad">High Friction</span>
+                                        </div>
+                                        <ul>
+                                            <li><span class="material-symbols-outlined">warning</span><span><strong>Module-First Mindset:</strong> Activating all out-of-the-box modules hoping business processes will magically conform.</span></li>
+                                            <li><span class="material-symbols-outlined">warning</span><span><strong>Terminology Gap:</strong> Staff struggle with unaligned labels, causing resistance and internal friction.</span></li>
+                                            <li><span class="material-symbols-outlined">warning</span><span><strong>Dead-code Bloat:</strong> Customizations patched indiscriminately, creating upgrade blockers during Odoo major updates.</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dics-ind-compare dics-ind-compare--good">
+                                        <div class="dics-ind-compare__header">
+                                            <div class="dics-ind-compare__label dics-ind-compare__label--good">
+                                                <span class="material-symbols-outlined">verified</span>
+                                                DataInteger's Sector-First Engineering
+                                            </div>
+                                            <span class="dics-ind-compare__pill dics-ind-compare__pill--good">100% Team Adoption</span>
+                                        </div>
+                                        <ul>
+                                            <li><span class="material-symbols-outlined">check</span><span><strong>Workflow-First Mapping:</strong> Scoping authority limits, cycle times, compliance milestones, and API touchpoints first.</span></li>
+                                            <li><span class="material-symbols-outlined">check</span><span><strong>Proprietary Micro-Modules:</strong> Clean OWL components and decoupled Python extensions that withstand future upgrades.</span></li>
+                                            <li><span class="material-symbols-outlined">check</span><span><strong>High Operational Concurrency:</strong> Configured for enterprise scale with automated failover and optimised PostgreSQL schemas.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="dics-section dics-section-surface">
+                        <div class="dics-container">
+                            <div class="dics-centered-heading mb-5">
+                                <span class="dics-eyebrow">Architectural Coverage</span>
+                                <h2>Which Odoo modules apply to your sector?</h2>
+                                <p class="dics-section-lead mx-auto">Not every module belongs in every deployment. The matrix below details the native applications we configure for each vertical, paired with our proprietary specialised extensions.</p>
+                            </div>
+                            <div class="dics-ind-matrix">
+                                <div class="dics-ind-matrix__scroll">
+                                    <table class="dics-ind-matrix__table">
+                                        <thead>
+                                            <tr>
+                                                <th>Industry Vertical</th>
+                                                <th>Core Odoo Modules Configured</th>
+                                                <th>Proprietary Custom Extensions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="dics-ind-matrix__industry"><span class="material-symbols-outlined">precision_manufacturing</span>Manufacturing</td>
+                                                <td><div class="dics-ind-matrix__tags"><span>Manufacturing (MRP)</span><span>Inventory</span><span>Purchase</span><span>Quality</span><span>Accounting</span></div></td>
+                                                <td><span class="dics-ind-matrix__ext"><span class="material-symbols-outlined">auto_awesome</span>Production scheduling matrix, quality gate automation, subcontracting flows</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="dics-ind-matrix__industry"><span class="material-symbols-outlined">local_shipping</span>Distribution &amp; Logistics</td>
+                                                <td><div class="dics-ind-matrix__tags"><span>Inventory (WMS)</span><span>Purchase</span><span>Sales</span><span>Delivery/Fleet</span><span>Accounting</span></div></td>
+                                                <td><span class="dics-ind-matrix__ext"><span class="material-symbols-outlined">auto_awesome</span>Carrier API integrations, dynamic route optimisation, B2B customer dispatch portal</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="dics-ind-matrix__industry"><span class="material-symbols-outlined">shopping_cart</span>Retail &amp; eCommerce</td>
+                                                <td><div class="dics-ind-matrix__tags"><span>Point of Sale</span><span>eCommerce</span><span>Inventory</span><span>CRM</span><span>Accounting</span></div></td>
+                                                <td><span class="dics-ind-matrix__ext"><span class="material-symbols-outlined">auto_awesome</span>Marketplace bi-directional sync, unified loyalty engines, automated returns hub</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="dics-ind-matrix__industry"><span class="material-symbols-outlined">health_and_safety</span>Healthcare &amp; Clinics</td>
+                                                <td><div class="dics-ind-matrix__tags"><span>Appointments</span><span>Inventory</span><span>Invoicing</span><span>HR</span><span>Purchase</span></div></td>
+                                                <td><span class="dics-ind-matrix__ext"><span class="material-symbols-outlined">auto_awesome</span>Patient health record vault, e-prescription tracking, insurance claim reconciliation</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="dics-ind-matrix__industry"><span class="material-symbols-outlined">engineering</span>Construction &amp; Projects</td>
+                                                <td><div class="dics-ind-matrix__tags"><span>Project</span><span>Timesheets</span><span>Purchase</span><span>Field Service</span><span>Accounting</span></div></td>
+                                                <td><span class="dics-ind-matrix__ext"><span class="material-symbols-outlined">auto_awesome</span>BOQ manager, site progress measurement, subcontractor certification</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="dics-ind-matrix__industry"><span class="material-symbols-outlined">account_balance</span>Professional Services</td>
+                                                <td><div class="dics-ind-matrix__tags"><span>CRM</span><span>Project</span><span>Timesheets</span><span>Invoicing</span><span>HR/Payroll</span></div></td>
+                                                <td><span class="dics-ind-matrix__ext"><span class="material-symbols-outlined">auto_awesome</span>Milestone retainer billing, dynamic resource capacity planning, client transparency portal</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="dics-ind-matrix__footer">
+                                    <span>This is an indicative architecture baseline. Modules and custom delta are scoped during Discovery.</span>
+                                    <span>Native Odoo 17/18 Community &amp; Enterprise Supported</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="dics-section dics-section-light">
+                        <div class="dics-container">
+                            <div class="dics-ind-process">
+                                <div class="dics-ind-process__left">
+                                    <span class="dics-eyebrow">How We Work</span>
+                                    <h2>The same disciplined process, shaped to your sector.</h2>
+                                    <p>Every industry engagement follows four rigorous engineering stages. What changes is the vocabulary, the module selection, and the depth of customisation your sector demands.</p>
+                                    <ul class="dics-ind-process__bullets">
+                                        <li><span class="dics-ind-process__dot"/><span>Zero guesswork roadmaps</span></li>
+                                        <li><span class="dics-ind-process__dot"/><span>Weekly sandbox demo iterations</span></li>
+                                        <li><span class="dics-ind-process__dot"/><span>Automated regression testing suite</span></li>
+                                    </ul>
+                                </div>
+                                <div class="dics-ind-process__steps">
+                                    <div class="dics-ind-step">
+                                        <span class="dics-ind-step__num">01</span>
+                                        <div>
+                                            <div class="dics-ind-step__title-row"><h3>Sector Discovery &amp; Gap Analysis</h3><span class="dics-ind-step__tag">Milestone 1</span></div>
+                                            <p>We map your industry-specific workflows — production cycles, regulatory checkpoints, subcontractor sign-offs, and customer billing patterns — before a single module is touched.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-ind-step">
+                                        <span class="dics-ind-step__num">02</span>
+                                        <div>
+                                            <div class="dics-ind-step__title-row"><h3>Architecture, Scoping &amp; Data Schema</h3><span class="dics-ind-step__tag">Milestone 2</span></div>
+                                            <p>We define which modules to implement, in which order, and what custom development is genuinely needed. You receive a written scope with technical architecture diagrams, timeline, and cost.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-ind-step">
+                                        <span class="dics-ind-step__num">03</span>
+                                        <div>
+                                            <div class="dics-ind-step__title-row"><h3>Build, Configure, Test &amp; Live Dry-Runs</h3><span class="dics-ind-step__tag">Milestone 3</span></div>
+                                            <p>Configuration and custom modules are delivered in working increments. You test against real scenarios from your operation throughout — not just at the end in an artificial test bed.</p>
+                                        </div>
+                                    </div>
+                                    <div class="dics-ind-step">
+                                        <span class="dics-ind-step__num">04</span>
+                                        <div>
+                                            <div class="dics-ind-step__title-row"><h3>Go-Live, Transition &amp; Long-Term Support</h3><span class="dics-ind-step__tag dics-ind-step__tag--green">Production</span></div>
+                                            <p>A structured cutover, hands-on team training, and an SLA-backed support arrangement that grows with you — version upgrades, performance tuning, and new modules as you expand.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="dics-detail-section  dics-ind-cta">
+                        <div class="dics-container dics-ind-cta__inner">
+                            <span class="dics-detail-eyebrow"><span class="material-symbols-outlined">terminal</span>A Practical Starting Point</span>
+                            <h2>Your processes are the blueprint.</h2>
+                            <p>Tell us where information gets stuck today. We will map the workflows, data pipelines, and Odoo applications that can move your business forward.</p>
+                            <div class="dics-ind-cta__actions">
+                                <a href="/contact" class="dics-btn dics-btn-primary">Schedule Sector Architecture Session <span class="material-symbols-outlined">arrow_forward</span></a>
+                                <a href="/contact" class="dics-btn dics-btn-secondary">Contact Us</a>
+                            </div>
+                            <div class="dics-ind-cta__proof">
+                                <span><span class="material-symbols-outlined">check</span> No generic sales demo</span>
+                                <span><span class="material-symbols-outlined">check</span> Direct consultation with Lead ERP Architect</span>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </t>
+    </template>
+
+    <!-- ================================================================
+         INDUSTRY DETAIL — REBUILT
+    ================================================================ -->
+    <template id="dics_industry_detail" name="DataInteger Industry Detail" key="dics_theme.dics_industry_detail" website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
+            <t t-set="additional_title"><t t-esc="industry.get('title', 'Industry Solution')"/> Odoo ERP Solutions — DataInteger</t>
             <div id="wrap" class="dics-home">
                 <main class="dics-main">
 
-                    <!-- ══════════════════════════════════════════════════════
-                         HERO
-                    ══════════════════════════════════════════════════════ -->
-                    <section class="dics-section dics-section-light dics-insights-hero py-5 py-lg-6">
-                        <div class="dics-insights-ambient-dots"></div>
-                        <div class="dics-insights-glow-top"></div>
-                        <div class="dics-container position-relative">
-
-                            <!-- Eyebrow badge -->
-                            <div class="dics-insights-badge mb-4">
-                                <span class="dics-insights-badge-dot"></span>
-                                <span class="dics-insights-badge-label">RESEARCH &amp; GUIDES</span>
-                                <span class="dics-insights-badge-sep">•</span>
-                                <span class="dics-insights-badge-sub">ERP COMPARISONS</span>
-                            </div>
-
-                            <!-- Title row -->
-                            <div class="row g-4 align-items-end mb-5">
-                                <div class="col-12 col-lg-8">
-                                    <h1 class="dics-insights-headline">
-                                        Odoo ERP Comparisons &amp;
-                                        <span class="dics-insights-headline-accent">Honest Benchmarks.</span>
-                                    </h1>
-                                    <p class="dics-insights-lead mt-3">
-                                        Clear, practical comparisons of Odoo 18 against other ERP systems — SAP S/4HANA, Zoho One, Oracle NetSuite, and Salesforce.
-                                        Written by senior Odoo developers and ERP consultants.
-                                    </p>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class="dics-insights-telemetry">
-                                        <span class="material-symbols-outlined dics-insights-telemetry-icon">analytics
-                                        </span>
-                                        <div>
-                                            <small class="dics-insights-telemetry-sub">Latest Comparison Cycle</small>
-                                            <strong class="dics-insights-telemetry-title d-block">Odoo 18 vs Major
-                                                ERP Systems
-                                            </strong>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Metric strip -->
-                            <div class="row g-3 mb-5">
-                                <div class="col-6 col-md-3">
-                                    <div class="dics-insights-metric dics-insights-metric--red">
-                                        <strong class="dics-insights-metric-num">72%</strong>
-                                        <span class="dics-insights-metric-label">5-Year Cost Savings</span>
-                                        <small class="dics-insights-metric-sub">Compared to large legacy ERP systems</small>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <div class="dics-insights-metric dics-insights-metric--dark">
-                                        <strong class="dics-insights-metric-num">4×</strong>
-                                        <span class="dics-insights-metric-label">Faster Setup</span>
-                                        <small class="dics-insights-metric-sub">Modular design &amp; clean Python code
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <div class="dics-insights-metric dics-insights-metric--black">
-                                        <strong class="dics-insights-metric-num">100%</strong>
-                                        <span class="dics-insights-metric-label">You Own Your Data</span>
-                                        <small class="dics-insights-metric-sub">Full control with PostgreSQL database
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3">
-                                    <div class="dics-insights-metric dics-insights-metric--outline">
-                                        <strong class="dics-insights-metric-num">0%</strong>
-                                        <span class="dics-insights-metric-label">Vendor Lock-In</span>
-                                        <small class="dics-insights-metric-sub">Open design — no forced lock-in</small>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Filter pills -->
-                            <div class="dics-insights-filters">
-                                <button class="dics-insights-filter active">All Guides</button>
-                                <button class="dics-insights-filter">Odoo vs Competitors</button>
-                                <button class="dics-insights-filter">Technical Guides</button>
-                                <button class="dics-insights-filter">Cost &amp; Pricing</button>
-                                <button class="dics-insights-filter">Database &amp; Performance</button>
-                            </div>
-
-                        </div>
-                    </section>
-
-                    <!-- ══════════════════════════════════════════════════════
-                         FLAGSHIP REPORT CARD
-                    ══════════════════════════════════════════════════════ -->
-                    <section class="dics-section dics-insights-flagship-section">
+                    <!-- ═══════════════════════════════════════════════
+                         1. HERO
+                    ════════════════════════════════════════════════ -->
+                    <section class="dics-hero">
                         <div class="dics-container">
-                            <div class="dics-insights-flagship">
-
-                                <!-- Top meta -->
-                                <div class="dics-insights-flagship-meta mb-4">
-                                    <span class="dics-insights-tag dics-insights-tag--report">MAIN REPORT 2026
-                                    </span>
-                                    <span class="dics-insights-meta-label">DEEP COMPARISON · 12 MIN READ ·
-                                        ERP REVIEW
-                                    </span>
-                                    <span class="dics-insights-verified ms-auto">
-                                        <span class="material-symbols-outlined"
-                                              style="font-size:14px; vertical-align:middle;">verified
-                                        </span>
-                                        VERIFIED ON ODOO 18 ENTERPRISE
-                                    </span>
-                                </div>
-
-                                <!-- Body -->
-                                <div class="row g-5">
-                                    <div class="col-12 col-lg-7">
-                                        <h2 class="dics-insights-flagship-title">
-                                            The 2026 ERP Comparison Guide: Odoo 18 vs SAP, NetSuite &amp; Zoho One
-                                        </h2>
-                                        <p class="dics-insights-flagship-body mt-3">
-                                            A clear, honest look at licensing, database design, custom features, and real-world setup effort
-                                            for mid-size and larger businesses (₹10 Cr–₹250 Cr revenue).
-                                        </p>
-                                        <div class="d-flex align-items-center gap-3 mt-4">
-                                            <a href="#comparisons" class="dics-btn dics-btn-primary">
-                                                Read Full Comparison
-                                                <span class="material-symbols-outlined">arrow_forward</span>
-                                            </a>
-
-                                        </div>
+                            <div class="dics-hero-grid">
+                                <div class="dics-hero-copy">
+                                    <div class="dics-eyebrow-pill">
+                                        <span class="dics-status-dot"/>
+                                        <span t-esc="industry.get('subtitle', 'Odoo Industry ERP Solutions')"/>
                                     </div>
-                                    <div class="col-12 col-lg-5">
-                                        <!-- Latency benchmark panel -->
-                                        <div class="dics-insights-bench-panel">
-                                            <div class="dics-insights-bench-header">
-                                                <span>How Fast Each System Responds</span>
-                                                <span class="dics-insights-bench-badge">LIVE TEST</span>
-                                            </div>
-                                            <div class="dics-insights-bench-row">
-                                                <div class="d-flex justify-content-between mb-1">
-                                                    <small>Odoo 18 (Python + PostgreSQL)</small>
-                                                    <small class="dics-text-red fw-bold">14.2ms avg</small>
-                                                </div>
-                                                <div class="dics-insights-bench-bar-track">
-                                                    <div class="dics-insights-bench-bar dics-insights-bench-bar--red"
-                                                         style="width:24%"></div>
-                                                </div>
-                                            </div>
-                                            <div class="dics-insights-bench-row">
-                                                <div class="d-flex justify-content-between mb-1">
-                                                    <small>SAP S/4HANA</small>
-                                                    <small class="text-muted">48.6ms avg</small>
-                                                </div>
-                                                <div class="dics-insights-bench-bar-track">
-                                                    <div class="dics-insights-bench-bar dics-insights-bench-bar--muted"
-                                                         style="width:65%"></div>
-                                                </div>
-                                            </div>
-                                            <div class="dics-insights-bench-row">
-                                                <div class="d-flex justify-content-between mb-1">
-                                                    <small>Oracle NetSuite</small>
-                                                    <small class="text-muted">72.1ms avg</small>
-                                                </div>
-                                                <div class="dics-insights-bench-bar-track">
-                                                    <div class="dics-insights-bench-bar dics-insights-bench-bar--muted"
-                                                         style="width:88%"></div>
-                                                </div>
-                                            </div>
-                                            <div class="dics-insights-bench-footer">
-                                                <small>Test: 500 Orders at the Same Time</small>
-                                                <small class="dics-text-red fw-semibold">Fully Reliable</small>
-                                            </div>
-                                        </div>
+                                    <h1>Transform Your Operations with <span class="dics-red">Tailored Odoo</span> Solutions</h1>
+                                    <p class="dics-hero-lead" t-esc="industry.get('hero_description', 'Streamline supply chains, multi-warehouse sync, real-time inventory tracking, and logistics automation with a custom-engineered Odoo architecture.')"/>
+                                    <div class="dics-actions">
+                                        <a href="/contactus" class="dics-btn dics-btn-primary">Schedule Consultation <span class="dics-arrow">→</span></a>
+                                        <a href="#solutions" class="dics-btn dics-btn-secondary">Explore Features</a>
+                                    </div>
+                                    <div class="dics-proof">
+                                        <span><b>100%</b> Architecture Alignment</span>
+                                        <span>•</span>
+                                        <span><b>Zero</b> Operational Downtime</span>
                                     </div>
                                 </div>
-
-                                <!-- Three snapshot cards -->
-                                <div class="row g-3 mt-4">
-                                    <div class="col-12 col-md-4">
-                                        <div class="dics-insights-snap-card">
-                                            <div class="dics-insights-snap-card-head">
-                                                <span class="material-symbols-outlined">payments</span>
-                                                <strong>5-Year Total Cost</strong>
-                                            </div>
-                                            <p>Simple all-in-one pricing. No hidden fees for extra modules or high consultant charges common with NetSuite and SAP.
-                                            </p>
-                                            <div class="dics-insights-snap-card-foot">
-                                                <span class="dics-text-red fw-semibold">Savings: 68% to 75%</span>
-                                                <small>Mid-size Business</small>
-                                            </div>
+                                <div class="dics-console">
+                                    <div class="dics-console-header">
+                                        <div class="dics-console-title">
+                                            <span class="dics-console-dot dics-console-dot-red"/>
+                                            <span>SYSTEM MONITOR // LIVE ENGINE</span>
+                                        </div>
+                                        <div class="dics-sync"><span/> OPTIMIZED</div>
+                                    </div>
+                                    <div class="dics-console-nodes">
+                                        <div class="dics-system-node">
+                                            <div class="dics-node-icon dics-node-red"><span class="material-symbols-outlined">hub</span></div>
+                                            <div class="dics-node-info"><strong>Multi-Warehouse Routing</strong><small>Auto Stock Allocation &amp; Transfer</small></div>
+                                            <span class="dics-node-state">ACTIVE</span>
+                                        </div>
+                                        <div class="dics-system-node dics-node-offset">
+                                            <div class="dics-node-icon"><span class="material-symbols-outlined">inventory_2</span></div>
+                                            <div class="dics-node-info"><strong>WMS &amp; 3PL Integration</strong><small>Barcode &amp; Automated Picking</small></div>
+                                            <span class="dics-node-metric">99.9% Sync</span>
+                                        </div>
+                                        <div class="dics-system-node dics-node-offset-right">
+                                            <div class="dics-node-icon dics-node-red"><span class="material-symbols-outlined">local_shipping</span></div>
+                                            <div class="dics-node-info"><strong>Fleet &amp; Dispatch Tracking</strong><small>Carrier API &amp; Route Dispatch</small></div>
+                                            <span class="dics-node-state">ONLINE</span>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="dics-insights-snap-card">
-                                            <div class="dics-insights-snap-card-head">
-                                                <span class="material-symbols-outlined">code</span>
-                                                <strong>Easy to Customize</strong>
-                                            </div>
-                                            <p>Clean Python code stays stable during upgrades. Unlike older SAP systems with heavy custom code or Zoho’s limited scripting.
-                                            </p>
-                                            <div class="dics-insights-snap-card-foot">
-                                                <span class="dics-text-red fw-semibold">No Broken Upgrades</span>
-                                                <small>Full API Access</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4">
-                                        <div class="dics-insights-snap-card">
-                                            <div class="dics-insights-snap-card-head">
-                                                <span class="material-symbols-outlined">database</span>
-                                                <strong>Speed &amp; High Volume</strong>
-                                            </div>
-                                            <p>PostgreSQL handles high order volumes smoothly — without extra cloud limits or expensive in-memory database fees.
-                                            </p>
-                                            <div class="dics-insights-snap-card-foot">
-                                                <span class="dics-text-red fw-semibold">1,800+ Orders/sec</span>
-                                                <small>Read Replica Ready</small>
-                                            </div>
-                                        </div>
+                                    <div class="dics-console-footer">
+                                        <span>ARCH: <strong>ODOO 18 ENTERPRISE</strong></span>
+                                        <span>DEPLOY: <strong>CUSTOM MODULES</strong></span>
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                    </section>
-                    <section id="comparisons" class="dics-section dics-section-light">
-                        <div class="dics-container">
-
-                            <div class="mb-5">
-                                <span class="dics-eyebrow">Side-by-side comparisons</span>
-                                <h2 class="h1 mt-2">Odoo Compared to Other Popular ERP Systems</h2>
-                                <p style="font-size:1.05rem; line-height:1.8; color:#45474a; max-width:680px; margin-top:0.75rem;">
-                                    Clear engineering reviews that look at setup effort, module quality, long-term maintenance, and real-world fit.
-                                </p>
-                            </div>
-
-                            <div class="row g-4">
-
-                                <!-- CARD 1: Odoo vs SAP -->
-                                <div class="col-12 col-md-6">
-                                    <article class="dics-insights-comp-card h-100">
-                                        <div class="dics-insights-comp-card-body">
-                                            <div class="dics-insights-comp-card-header">
-                                                <div class="dics-insights-comp-vs-badge">VS</div>
-                                                <div>
-                                                    <h3 class="h5 mb-0">Odoo vs SAP</h3>
-                                                    <small class="text-muted">S/4HANA &amp; SAP Business One</small>
-                                                </div>
-                                                <span class="dics-insights-tier-badge ms-auto">ENTERPRISE</span>
-                                            </div>
-                                            <div class="dics-insights-tension-box mt-3">
-                                                <small class="dics-insights-tension-label">KEY DIFFERENCE</small>
-                                                <strong class="d-block mt-1">Old Rigid Systems vs Modern Flexible Design
-                                                </strong>
-                                            </div>
-                                            <div class="dics-insights-comp-points mt-3">
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Setup Time
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        3–6 months with results showing early vs <strong>SAP:</strong> 14–24 months of planning and setup.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Custom Code
-                                                        Upkeep
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Clean modules that don’t break on upgrades vs <strong>SAP:</strong> Custom ABAP changes create heavy technical debt.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Pricing Model</span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Simple per-user price covering all apps vs <strong>SAP:</strong> Complex named-user fees plus extra access charges.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-verdict-box">
-                                                    <small class="dics-insights-verdict-label">BOTTOM LINE
-                                                    </small>
-                                                    <p class="mb-0 mt-1">SAP works for very large companies with fixed processes. Odoo is better for growing manufacturers, distributors, and multi-company businesses.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dics-insights-comp-card-footer">
-                                            <small>Best for: Manufacturing &amp; Multi-Company</small>
-                                            <a href="/odoo-vs-sap" class="dics-insights-read-link">
-                                                Read Full Comparison
-                                                <span class="material-symbols-outlined">chevron_right</span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </div>
-
-                                <!-- CARD 2: Odoo vs Zoho -->
-                                <div class="col-12 col-md-6">
-                                    <article class="dics-insights-comp-card h-100">
-                                        <div class="dics-insights-comp-card-body">
-                                            <div class="dics-insights-comp-card-header">
-                                                <div class="dics-insights-comp-vs-badge">VS</div>
-                                                <div>
-                                                    <h3 class="h5 mb-0">Odoo vs Zoho</h3>
-                                                    <small class="text-muted">Zoho One &amp; Zoho Creator</small>
-                                                </div>
-                                                <span class="dics-insights-tier-badge ms-auto">MID-MARKET</span>
-                                            </div>
-                                            <div class="dics-insights-tension-box mt-3">
-                                                <small class="dics-insights-tension-label">KEY DIFFERENCE</small>
-                                                <strong class="d-block mt-1">One Connected System vs Separate Apps
-                                                    Stitched Together
-                                                </strong>
-                                            </div>
-                                            <div class="dics-insights-comp-points mt-3">
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Data Engine
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        One shared PostgreSQL database with reliable transactions vs <strong>Zoho:</strong> Separate databases linked by fragile internal connections.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Manufacturing &amp;
-                                                        Warehouse
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Multi-level bills of materials, work centres, routing, and barcode flows vs <strong>Zoho:</strong> Basic inventory with no real shop-floor planning.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Custom Code Limits
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Full open-source Python with no hard limits vs <strong>Zoho:</strong> Scripting limits and timeout restrictions.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-verdict-box">
-                                                    <small class="dics-insights-verdict-label">BOTTOM LINE
-                                                    </small>
-                                                    <p class="mb-0 mt-1">Zoho works for small digital businesses with simple needs. Odoo scales for complex supply chain, retail, and manufacturing operations.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dics-insights-comp-card-footer">
-                                            <small>Best for: Data Consistency &amp; Manufacturing</small>
-                                            <a href="/odoo-vs-zoho" class="dics-insights-read-link">
-                                                Read Full Comparison
-                                                <span class="material-symbols-outlined">chevron_right</span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </div>
-
-                                <!-- CARD 3: Odoo vs Oracle NetSuite -->
-                                <div class="col-12 col-md-6">
-                                    <article class="dics-insights-comp-card h-100">
-                                        <div class="dics-insights-comp-card-body">
-                                            <div class="dics-insights-comp-card-header">
-                                                <div class="dics-insights-comp-vs-badge">VS</div>
-                                                <div>
-                                                    <h3 class="h5 mb-0">Odoo vs Oracle NetSuite</h3>
-                                                    <small class="text-muted">NetSuite ERP &amp; OneWorld</small>
-                                                </div>
-                                                <span class="dics-insights-tier-badge ms-auto">CLOUD ERP</span>
-                                            </div>
-                                            <div class="dics-insights-tension-box mt-3">
-                                                <small class="dics-insights-tension-label">KEY DIFFERENCE</small>
-                                                <strong class="d-block mt-1">Open &amp; Scalable vs Cloud Lock-In
-                                                    &amp; Rising Costs
-                                                </strong>
-                                            </div>
-                                            <div class="dics-insights-comp-points mt-3">
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Cost Predictability
-                                                        &amp; Renewals
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Predictable flat pricing for all apps vs <strong>NetSuite:</strong> 30–50% renewal increases and costly extra module fees.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Offline &amp; Edge
-                                                        Support
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Built-in IoT Box and full offline POS sync vs <strong>NetSuite:</strong> Fully cloud-dependent with no offline mode.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Source Code Access
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Full source code visibility for compliance and self-hosting vs <strong>NetSuite:</strong> Closed proprietary system.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-verdict-box">
-                                                    <small class="dics-insights-verdict-label">BOTTOM LINE
-                                                    </small>
-                                                    <p class="mb-0 mt-1">NetSuite relies on long-term lock-in. Odoo gives better flexibility, offline support, and much lower 5-year running costs.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dics-insights-comp-card-footer">
-                                            <small>Best for: Cloud Cost &amp; Offline Needs</small>
-                                            <a href="/odoo-vs-netsuite" class="dics-insights-read-link">
-                                                Read Full Comparison
-                                                <span class="material-symbols-outlined">chevron_right</span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </div>
-
-                                <!-- CARD 4: Odoo vs Salesforce -->
-                                <div class="col-12 col-md-6">
-                                    <article class="dics-insights-comp-card h-100">
-                                        <div class="dics-insights-comp-card-body">
-                                            <div class="dics-insights-comp-card-header">
-                                                <div class="dics-insights-comp-vs-badge">VS</div>
-                                                <div>
-                                                    <h3 class="h5 mb-0">Odoo vs Salesforce</h3>
-                                                    <small class="text-muted">CRM + AppExchange Add-ons</small>
-                                                </div>
-                                                <span class="dics-insights-tier-badge ms-auto">ECOSYSTEM</span>
-                                            </div>
-                                            <div class="dics-insights-tension-box mt-3">
-                                                <small class="dics-insights-tension-label">KEY DIFFERENCE</small>
-                                                <strong class="d-block mt-1">Full Business System vs CRM with Extra
-                                                    Apps Bolted On
-                                                </strong>
-                                            </div>
-                                            <div class="dics-insights-comp-points mt-3">
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">What It Covers
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Accounting, manufacturing, delivery, invoicing, and helpdesk built in vs <strong>Salesforce:</strong> Strong CRM that needs expensive third-party ERP add-ons.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Integration Effort
-                                                        &amp; API Costs
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        CRM shares data directly with manufacturing and dispatch vs <strong>Salesforce:</strong> Heavy API usage and costly middleware.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">One View of the
-                                                        Business
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Sales team sees live stock, work centre load, and credit balance vs <strong>Salesforce:</strong> Separate systems that need constant syncing.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-verdict-box">
-                                                    <small class="dics-insights-verdict-label">BOTTOM LINE
-                                                    </small>
-                                                    <p class="mb-0 mt-1">Salesforce is excellent for pure sales CRM. Odoo is a complete business system for companies that also make, deliver, and account for products.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dics-insights-comp-card-footer">
-                                            <small>Best for: Full ERP vs CRM Only</small>
-                                            <a href="/odoo-vs-salesforce" class="dics-insights-read-link">
-                                                Read Full Comparison
-                                                <span class="material-symbols-outlined">chevron_right</span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </div>
-
-                                <!-- CARD 5: Odoo vs Microsoft Dynamics -->
-                                <div class="col-12 col-md-6">
-                                    <article class="dics-insights-comp-card h-100">
-                                        <div class="dics-insights-comp-card-body">
-                                            <div class="dics-insights-comp-card-header">
-                                                <div class="dics-insights-comp-vs-badge">VS</div>
-                                                <div>
-                                                    <h3 class="h5 mb-0">Odoo vs Microsoft Dynamics 365</h3>
-                                                    <small class="text-muted">Business Central &amp; Finance &amp; Supply Chain</small>
-                                                </div>
-                                                <span class="dics-insights-tier-badge ms-auto">MID-ENTERPRISE</span>
-                                            </div>
-                                            <div class="dics-insights-tension-box mt-3">
-                                                <small class="dics-insights-tension-label">KEY DIFFERENCE</small>
-                                                <strong class="d-block mt-1">Open &amp; Flexible vs Microsoft
-                                                    Ecosystem Lock-In
-                                                </strong>
-                                            </div>
-                                            <div class="dics-insights-comp-points mt-3">
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Setup Cost
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        3–6 month rollout with regular Python developers vs <strong>Dynamics 365:</strong> 12–18 months needing scarce, expensive certified consultants.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Customization
-                                                        Language
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Standard Python — large global talent pool vs <strong>Dynamics 365:</strong> Proprietary AL language with fewer developers and longer learning time.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Licensing Complexity
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Simple per-user price for all apps vs <strong>Dynamics 365:</strong> Multiple license types (Essentials, Premium, Device, add-ons) that stack up unpredictably.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-verdict-box">
-                                                    <small class="dics-insights-verdict-label">BOTTOM LINE
-                                                    </small>
-                                                    <p class="mb-0 mt-1">Dynamics 365 makes sense if you are already deep in Microsoft tools. Odoo wins when you want open flexibility and Python-based customization without vendor lock-in.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dics-insights-comp-card-footer">
-                                            <small>Best for: SME &amp; Mid-Market ERP</small>
-                                            <a href="/odoo-vs-microsoft-dynamics" class="dics-insights-read-link">
-                                                Read Full Comparison
-                                                <span class="material-symbols-outlined">chevron_right</span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </div>
-
-                                <!-- CARD 6: Odoo vs Tally -->
-                                <div class="col-12 col-md-6">
-                                    <article class="dics-insights-comp-card h-100">
-                                        <div class="dics-insights-comp-card-body">
-                                            <div class="dics-insights-comp-card-header">
-                                                <div class="dics-insights-comp-vs-badge">VS</div>
-                                                <div>
-                                                    <h3 class="h5 mb-0">Odoo vs Tally Prime</h3>
-                                                    <small class="text-muted">Tally ERP 9 &amp; Tally Prime</small>
-                                                </div>
-                                                <span class="dics-insights-tier-badge ms-auto">INDIA SME</span>
-                                            </div>
-                                            <div class="dics-insights-tension-box mt-3">
-                                                <small class="dics-insights-tension-label">KEY DIFFERENCE</small>
-                                                <strong class="d-block mt-1">Full Business Operations vs
-                                                    Accounting-First System
-                                                </strong>
-                                            </div>
-                                            <div class="dics-insights-comp-points mt-3">
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">What It Covers
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        CRM, manufacturing, warehouse, helpdesk, HR, and accounting in one system vs <strong>Tally:</strong> Strong accounting core with limited operations modules that need extra tools.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">GST &amp; Compliance
-                                                    </span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Full GST filing, e-invoicing, e-way bills, and TDS built in vs <strong>Tally:</strong> Strong GST support but needs customisation for connected operations.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-comp-point">
-                                                    <span class="dics-insights-comp-point-title">Growth Capacity</span>
-                                                    <p>
-                                                        <strong class="dics-text-red">Odoo:</strong>
-                                                        Scales from 5 to 5,000 users on the same system vs <strong>Tally:</strong> User and data limits that make multi-branch growth harder.
-                                                    </p>
-                                                </div>
-                                                <div class="dics-insights-verdict-box">
-                                                    <small class="dics-insights-verdict-label">BOTTOM LINE
-                                                    </small>
-                                                    <p class="mb-0 mt-1">Tally is still the right choice for pure accounting needs. Odoo is the better move once procurement, inventory, sales, or manufacturing need to connect to finance.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="dics-insights-comp-card-footer">
-                                            <small>Best for: India SME &amp; GST Compliance</small>
-                                            <a href="/odoo-vs-tally" class="dics-insights-read-link">
-                                                Read Full Comparison
-                                                <span class="material-symbols-outlined">chevron_right</span>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </div>
-
                             </div>
                         </div>
                     </section>
 
-                    <!-- ══════════════════════════════════════════════════════
-                         ARCHITECTURAL AUDIT TABLE
-                    ══════════════════════════════════════════════════════ -->
+                    <!-- ═══════════════════════════════════════════════
+                         2. CHALLENGES
+                    ════════════════════════════════════════════════ -->
                     <section class="dics-section dics-section-surface">
                         <div class="dics-container">
-                            <div class="row align-items-end mb-5 g-3">
-                                <div class="col-12 col-lg-8">
-                                    <span class="dics-eyebrow">Technical comparison table</span>
-                                    <h2 class="h1 mt-2">Side-by-Side Technical Specs</h2>
-                                    <p style="font-size:1.05rem; line-height:1.8; color:#45474a; max-width:640px; margin-top:0.75rem;">
-                                        Neutral comparison of databases, development tools, and day-to-day reliability across 8 key points.
-                                    </p>
-                                </div>
-                                <div class="col-12 col-lg-4 text-lg-end">
-                                    <span class="dics-insights-verified-strip">
-                                        <span class="dics-insights-dot-green"></span>
-                                        Verified: 2026 Production Releases
-                                    </span>
-                                </div>
+                            <div class="dics-centered-heading mb-5">
+                                <span class="dics-eyebrow">Industry Friction Points</span>
+                                <h2>Key Operational Challenges We Eliminate</h2>
+                                <p>Standard ERP systems force companies into rigid workflows. We solve the core bottlenecks specific to your sector.</p>
                             </div>
-
-                            <div style="overflow-x:auto;">
-                                <table class="dics-insights-audit-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Criteria</th>
-                                            <th class="dics-insights-audit-col--odoo">Odoo 18 Enterprise</th>
-                                            <th>SAP S/4HANA</th>
-                                            <th>Oracle NetSuite</th>
-                                            <th>Zoho One</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <strong>Database</strong>
-                                                <br/>
-                                                <small class="text-muted">Main database engine</small>
-                                            </td>
-                                            <td class="dics-insights-audit-col--odoo">PostgreSQL 16+
-                                                <span class="dics-insights-chip dics-insights-chip--green">Fully Reliable
-                                                </span>
-                                            </td>
-                                            <td>SAP HANA (In-Memory)
-                                                <span class="dics-insights-chip">High Memory Cost</span>
-                                            </td>
-                                            <td>Oracle Database (Closed)
-                                                <span class="dics-insights-chip">Shared Cloud</span>
-                                            </td>
-                                            <td>Multiple Separate Databases
-                                                <span class="dics-insights-chip dics-insights-chip--amber">Sync Risk
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="dics-insights-audit-table__alt">
-                                            <td>
-                                                <strong>Customization Language</strong>
-                                                <br/>
-                                                <small class="text-muted">How you add custom logic</small>
-                                            </td>
-                                            <td class="dics-insights-audit-col--odoo">Python 3.12 + OWL
-                                                <span class="dics-insights-chip dics-insights-chip--green">Open
-                                                    Standards
-                                                </span>
-                                            </td>
-                                            <td>ABAP / Core Changes
-                                                <span class="dics-insights-chip dics-insights-chip--red">High Overhead
-                                                </span>
-                                            </td>
-                                            <td>SuiteScript 2.x (JavaScript)
-                                                <span class="dics-insights-chip">Runtime Limits</span>
-                                            </td>
-                                            <td>Deluge Script
-                                                <span class="dics-insights-chip dics-insights-chip--amber">Execution
-                                                    Caps
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <strong>Supply Chain &amp; Manufacturing</strong>
-                                                <br/>
-                                                <small class="text-muted">Routing, bills of materials &amp; work centres</small>
-                                            </td>
-                                            <td class="dics-insights-audit-col--odoo">Full Native Suite
-                                                <span class="dics-insights-chip dics-insights-chip--green">Shop Floor
-                                                    Ready
-                                                </span>
-                                            </td>
-                                            <td>Deep Enterprise Manufacturing
-                                                <span class="dics-insights-chip dics-insights-chip--green">Very
-                                                    Complex
-                                                </span>
-                                            </td>
-                                            <td>Extra Module Needed
-                                                <span class="dics-insights-chip dics-insights-chip--red">Expensive
-                                                    Add-on
-                                                </span>
-                                            </td>
-                                            <td>Basic Assembly Only
-                                                <span class="dics-insights-chip">No Real Routing</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="dics-insights-audit-table__alt">
-                                            <td>
-                                                <strong>Mobile, Barcode &amp; IoT</strong>
-                                                <br/>
-                                                <small class="text-muted">Hardware and scanner support</small>
-                                            </td>
-                                            <td class="dics-insights-audit-col--odoo">Built-in IoT Box + Mobile App
-                                                <span class="dics-insights-chip dics-insights-chip--green">No Extra
-                                                    Middleware
-                                                </span>
-                                            </td>
-                                            <td>Needs SAP RF / Telnet
-                                                <span class="dics-insights-chip">Custom Development</span>
-                                            </td>
-                                            <td>WMS Mobile Add-on
-                                                <span class="dics-insights-chip dics-insights-chip--red">Per-Scanner
-                                                    Fee
-                                                </span>
-                                            </td>
-                                            <td>Basic Camera Scanner
-                                                <span class="dics-insights-chip dics-insights-chip--amber">No Industrial
-                                                    IoT
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <strong>Multi-Company Support</strong>
-                                                <br/>
-                                                <small class="text-muted">Automatic inter-company transactions</small>
-                                            </td>
-                                            <td class="dics-insights-audit-col--odoo">One System for All Companies
-                                                <span class="dics-insights-chip dics-insights-chip--green">Real-Time
-                                                    Sync
-                                                </span>
-                                            </td>
-                                            <td>Enterprise Consolidation
-                                                <span class="dics-insights-chip dics-insights-chip--green">Robust /
-                                                    Heavy
-                                                </span>
-                                            </td>
-                                            <td>OneWorld Add-on
-                                                <span class="dics-insights-chip">Steep Extra Cost</span>
-                                            </td>
-                                            <td>Separate Organisations
-                                                <span class="dics-insights-chip dics-insights-chip--red">Manual
-                                                    Journals
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="dics-insights-audit-table__alt">
-                                            <td>
-                                                <strong>Real-Time Accounting</strong>
-                                                <br/>
-                                                <small class="text-muted">Automatic ledger updates from stock moves</small>
-                                            </td>
-                                            <td class="dics-insights-audit-col--odoo">Automatic Live Accounting
-                                                <span class="dics-insights-chip dics-insights-chip--green">Built-in
-                                                    Dual Ledger
-                                                </span>
-                                            </td>
-                                            <td>Universal Journal
-                                                <span class="dics-insights-chip dics-insights-chip--green">
-                                                    Standard
-                                                </span>
-                                            </td>
-                                            <td>Near Real-Time Ledger
-                                                <span class="dics-insights-chip">Batch Posting</span>
-                                            </td>
-                                            <td>Webhook Batch Sync
-                                                <span class="dics-insights-chip dics-insights-chip--amber">Possible
-                                                    Delay
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <strong>5-Year Total Cost</strong>
-                                                <br/>
-                                                <small class="text-muted">License + Infrastructure + Development</small>
-                                            </td>
-                                            <td class="dics-insights-audit-col--odoo">Predictable &amp; Scalable
-                                                <span class="dics-insights-chip dics-insights-chip--green">Best Value
-                                                </span>
-                                            </td>
-                                            <td>₹4Cr–₹25Cr+ (High Ongoing)
-                                                <span class="dics-insights-chip dics-insights-chip--red">Consultant
-                                                    Heavy
-                                                </span>
-                                            </td>
-                                            <td>₹2Cr–₹7Cr+ (Rising)
-                                                <span class="dics-insights-chip dics-insights-chip--red">Steep Renewal
-                                                    Hikes
-                                                </span>
-                                            </td>
-                                            <td>Low Start / High Stacking
-                                                <span class="dics-insights-chip dics-insights-chip--amber">Hidden
-                                                    Integration Costs
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr class="dics-insights-audit-table__alt">
-                                            <td>
-                                                <strong>Source Code Access</strong>
-                                                <br/>
-                                                <small class="text-muted">Compliance checks &amp; self-hosting
-                                                </small>
-                                            </td>
-                                            <td class="dics-insights-audit-col--odoo">Full Open-Core Code
-                                                <span class="dics-insights-chip dics-insights-chip--green">100%
-                                                    Inspectable
-                                                </span>
-                                            </td>
-                                            <td>Proprietary Restricted
-                                                <span class="dics-insights-chip dics-insights-chip--red">Vendor
-                                                    Controlled
-                                                </span>
-                                            </td>
-                                            <td>Closed Cloud System
-                                                <span class="dics-insights-chip dics-insights-chip--red">No Access
-                                                </span>
-                                            </td>
-                                            <td>Proprietary SaaS
-                                                <span class="dics-insights-chip dics-insights-chip--red">Vendor
-                                                    Controlled
-                                                </span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="dics-detail-capability-grid">
+                                <div class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon"><span class="material-symbols-outlined">warning</span></div>
+                                    <h3>Stock Discrepancy &amp; Leakage</h3>
+                                    <p>Manual stock logs across multi-warehouse environments cause delay, fulfillment errors, and inflated inventory holding costs.</p>
+                                </div>
+                                <div class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon"><span class="material-symbols-outlined">alt_route</span></div>
+                                    <h3>Fragmented Carrier Systems</h3>
+                                    <p>Lack of direct API integration between 3PL platforms, order processing hubs, and regional shipping dispatchers.</p>
+                                </div>
+                                <div class="dics-detail-capability-card">
+                                    <div class="dics-detail-card-icon"><span class="material-symbols-outlined">receipt_long</span></div>
+                                    <h3>Inaccurate Batch &amp; Lot Billing</h3>
+                                    <p>Difficulty in matching exact lot picking data with custom client pricing tables, invoices, and delivery notes.</p>
+                                </div>
                             </div>
                         </div>
                     </section>
 
-                    <!-- ══════════════════════════════════════════════════════
-                         ENGINEERING FIELD NOTES
-                    ══════════════════════════════════════════════════════ -->
-                    <section class="dics-section dics-section-light">
+                    <!-- ═══════════════════════════════════════════════
+                         3. MODULE CAPABILITIES
+                    ════════════════════════════════════════════════ -->
+                    <section id="solutions" class="dics-section dics-section-light">
                         <div class="dics-container">
-                            <div class="mb-5">
-                                <span class="dics-eyebrow">Technical notes from the team</span>
-                                <h2 class="h1 mt-2">Practical Guides from the DataInteger Team</h2>
-                                <p style="font-size:1.05rem; line-height:1.8; color:#45474a; max-width:640px; margin-top:0.75rem;">
-                                    Clear technical guides on PostgreSQL clustering, accounting sync, and migration steps written by our lead developers.
-                                </p>
+                            <div class="dics-section-heading">
+                                <div>
+                                    <span class="dics-eyebrow">Module Capabilities</span>
+                                    <h2>Engineered Odoo Architecture</h2>
+                                </div>
+                                <p>Every module is tailored to align with your exact operational rules, custom approval limits, and reporting requirements.</p>
                             </div>
-
-                            <div class="row g-4">
-
-                                <div class="col-12 col-md-4">
-                                    <article class="dics-insights-article h-100">
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <span class="dics-insights-article-tag">DATABASE</span>
-                                            <small class="text-muted">5 min read</small>
-                                        </div>
-                                        <div class="dics-insights-article-visual dics-insights-article-visual--red mb-3">
-                                            <span class="material-symbols-outlined dics-insights-article-icon dics-text-red">
-                                                database
-                                            </span>
-                                            <div>
-                                                <strong class="d-block"
-                                                        style="font-family:monospace; font-size:0.75rem;">POSTGRESQL 16+
-                                                </strong>
-                                                <small class="text-muted"
-                                                       style="font-family:monospace; font-size:0.7rem;">High Volume ·
-                                                    Reliable
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <h3 class="h5">Why PostgreSQL 16 Helps Odoo 18 Handle High Traffic Better Than Closed ERP Databases
-                                        </h3>
-                                        <p class="dics-insights-article-body mt-2">
-                                            How better indexes and memory handling in PostgreSQL 16 let Odoo process 2,000+ barcode scans at the same time without slowing down.
-                                        </p>
-                                        <div class="dics-insights-article-footer mt-auto">
-                                            <small class="text-muted">By Lead Database Architect</small>
-                                            <span class="material-symbols-outlined dics-text-red"
-                                                  style="font-size:20px;">arrow_forward
-                                            </span>
-                                        </div>
-                                    </article>
+                            <div class="dics-module-grid">
+                                <div class="dics-module-card dics-module-card-accent">
+                                    <div class="dics-module-icon"><span class="material-symbols-outlined">warehouse</span></div>
+                                    <h3>Advanced WMS &amp; Storage</h3>
+                                    <p>Multi-location rule routing, putaway strategies, wave picking, and automated barcode verification.</p>
                                 </div>
-
-                                <div class="col-12 col-md-4">
-                                    <article class="dics-insights-article h-100">
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <span class="dics-insights-article-tag">ACCOUNTING &amp; LOGISTICS</span>
-                                            <small class="text-muted">4 min read</small>
-                                        </div>
-                                        <div class="dics-insights-article-visual dics-insights-article-visual--dark mb-3">
-                                            <span class="material-symbols-outlined dics-insights-article-icon">
-                                                sync_alt
-                                            </span>
-                                            <div>
-                                                <strong class="d-block"
-                                                        style="font-family:monospace; font-size:0.75rem;">MULTI-COMPANY
-                                                </strong>
-                                                <small class="text-muted"
-                                                       style="font-family:monospace; font-size:0.7rem;">Auto Sales/Purchase
-                                                    Creation
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <h3 class="h5">How Multi-Company Transactions Work in Odoo 18
-                                        </h3>
-                                        <p class="dics-insights-article-body mt-2">
-                                            How Odoo handles parent-subsidiary billing, automatic reciprocal invoices, and instant multi-warehouse drop-shipping without third-party tools or overnight scripts.
-                                        </p>
-                                        <div class="dics-insights-article-footer mt-auto">
-                                            <small class="text-muted">By ERP Systems Consultant</small>
-                                            <span class="material-symbols-outlined dics-text-red"
-                                                  style="font-size:20px;">arrow_forward
-                                            </span>
-                                        </div>
-                                    </article>
+                                <div class="dics-module-card">
+                                    <div class="dics-module-icon"><span class="material-symbols-outlined">local_shipping</span></div>
+                                    <h3>3PL &amp; Freight Connectors</h3>
+                                    <p>Real-time carrier rates calculation, automated shipping label generation, and dispatch tracking.</p>
                                 </div>
-
-                                <div class="col-12 col-md-4">
-                                    <article class="dics-insights-article h-100">
-                                        <div class="d-flex justify-content-between align-items-center mb-3">
-                                            <span class="dics-insights-article-tag">MIGRATION GUIDE</span>
-                                            <small class="text-muted">6 min read</small>
-                                        </div>
-                                        <div class="dics-insights-article-visual dics-insights-article-visual--red mb-3">
-                                            <span class="material-symbols-outlined dics-insights-article-icon dics-text-red">
-                                                transfer_within_a_station
-                                            </span>
-                                            <div>
-                                                <strong class="d-block"
-                                                        style="font-family:monospace; font-size:0.75rem;">MIGRATION
-                                                    STEPS
-                                                </strong>
-                                                <small class="text-muted"
-                                                       style="font-family:monospace; font-size:0.7rem;">Zoho → Odoo
-                                                    Path
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <h3 class="h5">Moving from Zoho to Odoo: Fixing Data Mismatches and Sync Issues
-                                        </h3>
-                                        <p class="dics-insights-article-body mt-2">
-                                            A practical step-by-step guide for moving Zoho Books and Zoho CRM data into one clean, unified Odoo PostgreSQL database.
-                                        </p>
-                                        <div class="dics-insights-article-footer mt-auto">
-                                            <small class="text-muted">By Senior Implementation Lead</small>
-                                            <span class="material-symbols-outlined dics-text-red"
-                                                  style="font-size:20px;">arrow_forward
-                                            </span>
-                                        </div>
-                                    </article>
+                                <div class="dics-module-card">
+                                    <div class="dics-module-icon"><span class="material-symbols-outlined">sync_alt</span></div>
+                                    <h3>Stock Transfer Automation</h3>
+                                    <p>Custom view overrides and automated inter-company transfers with zero manual re-entry.</p>
                                 </div>
-
+                                <div class="dics-module-card">
+                                    <div class="dics-module-icon"><span class="material-symbols-outlined">account_tree</span></div>
+                                    <h3>Custom Workflow Logic</h3>
+                                    <p>Tailored Python backend models, domain filter triggers, and strict user security rules.</p>
+                                </div>
+                                <div class="dics-module-card">
+                                    <div class="dics-module-icon"><span class="material-symbols-outlined">analytics</span></div>
+                                    <h3>BI &amp; Financial Sync</h3>
+                                    <p>Direct ledger updates from delivery stock pickings for accurate revenue recognition and audit control.</p>
+                                </div>
                             </div>
                         </div>
                     </section>
 
-                    <!-- ══════════════════════════════════════════════════════
-                         DARK CTA
-                    ══════════════════════════════════════════════════════ -->
-                    <section class="dics-section dics-insights-dark-cta">
-                        <div class="dics-insights-dark-cta-glow"></div>
-                        <div class="dics-container position-relative text-center">
+                    <!-- ═══════════════════════════════════════════════
+                         4. WHY DATAINTEGER
+                    ════════════════════════════════════════════════ -->
+                    <section class="dics-detail-section dics-detail-section--dark">
+                        <div class="dics-container">
+                            <div class="dics-detail-section-head dics-detail-section-head--center">
+                                <span class="dics-detail-eyebrow">The DataInteger Edge</span>
+                                <h2>Why Leading Enterprise Teams Choose Us</h2>
+                                <p>We don't just configure native apps. We build deep custom Odoo extensions engineered for high scalability.</p>
+                            </div>
+                            <div class="dics-detail-why-grid">
+                                <article>
+                                    <span class="material-symbols-outlined">code</span>
+                                    <h3>Clean Custom Modules</h3>
+                                    <p>Maintainable, scalable module code strictly following Odoo guidelines for effortless future version upgrades.</p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">api</span>
+                                    <h3>Complex API Connectors</h3>
+                                    <p>Seamless integrations across WhatsApp Business API, Stripe payment gates, and external ERP systems.</p>
+                                </article>
+                                <article>
+                                    <span class="material-symbols-outlined">query_stats</span>
+                                    <h3>Performance Optimized</h3>
+                                    <p>Optimized ORM queries, refined SCSS/JS asset execution, and smooth response times under heavy loads.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
 
-                            <div class="dics-insights-dark-cta-badge mb-4">
-                                <span class="dics-insights-badge-dot dics-insights-badge-dot--pulse"></span>
-                                <span>CONSULTING &amp; FEASIBILITY REVIEW</span>
+                    <!-- ═══════════════════════════════════════════════
+                         5. TECHNICAL INSIGHTS  ← NEW
+                    ════════════════════════════════════════════════ -->
+                    <section class="dics-ind-detail-insights">
+                        <div class="dics-container">
+                            <div class="dics-ind-detail-insights__head">
+                                <div>
+                                    <span class="dics-eyebrow">Field Intelligence &amp; Perspectives</span>
+                                    <h2>How Odoo Solves Critical <t t-esc="industry.get('title', 'Industry')"/> Complexities</h2>
+                                    <p>Practical breakdowns on data flows, compliance, and operational sync written by our lead Odoo architects.</p>
+                                </div>
                             </div>
 
-                            <h2 class="dics-insights-dark-cta-title">
-                                Thinking About an ERP Switch or Comparing Systems?
-                            </h2>
-                            <p class="dics-insights-dark-cta-body mx-auto mt-3">
-                                Let our lead Odoo consultants review your current workflow, check your database setup, estimate realistic migration timelines, and give you an honest 5-year cost comparison.
-                            </p>
-
-                            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-5">
-                                <a href="/contact" class="dics-btn dics-btn-primary">
-                                    Request ERP Comparison Review
-                                    <span class="material-symbols-outlined">arrow_forward</span>
-                                </a>
-                                <a href="/contact" class="dics-insights-ghost-btn">
-                                    <span class="material-symbols-outlined">download</span>
-                                    Download 2026 ERP Evaluation Guide
-                                </a>
+                            <!-- Featured article -->
+                            <div class="dics-ind-detail-featured">
+                                <div class="dics-ind-detail-featured__body">
+                                    <div class="dics-ind-detail-featured__tag-row">
+                                        <span class="dics-ind-detail-tag" t-esc="industry.get('insight_tag', 'ARCHITECTURE REVIEW')"/>
+                                        <span class="dics-ind-detail-featured__meta">• 6 MIN READ • ARCHITECTURE CASE REVIEW</span>
+                                    </div>
+                                    <h3 t-esc="industry.get('insight_headline', 'How Odoo eliminates the biggest operational inefficiency in your sector')"/>
+                                    <p t-esc="industry.get('insight_body', 'Generic ERP systems treat every industry the same way. By configuring Odoo with sector-specific data models, automation rules, and compliance checkpoints, businesses achieve measurable operational improvement within the first quarter of deployment.')"/>
+                                    <div class="dics-ind-detail-featured__tags">
+                                        <span>Architecture Highlights:</span>
+                                        <t t-foreach="industry.get('insight_highlights', ['Industry-specific data models', 'Automated compliance rules', 'Real-time operational sync'])" t-as="hl" t-key="hl_index">
+                                            <em t-esc="hl"/>
+                                        </t>
+                                    </div>
+                                </div>
+                                <div class="dics-ind-detail-featured__stat">
+                                    <small>VALIDATED PRODUCTION BENCHMARK</small>
+                                    <strong t-esc="industry.get('benchmark_num', '99.8%')"/>
+                                    <p t-esc="industry.get('benchmark_desc', 'Reduction in manual process errors within 60 days of deployment.')"/>
+                                    <div class="dics-ind-detail-featured__stat-footer">
+                                        <span>Stack: Odoo 18 + PostgreSQL</span>
+                                        <span>Audit-Certified</span>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="dics-insights-trust-strip mt-5">
-                                <span class="dics-insights-trust-item">
-                                    <span class="material-symbols-outlined">check_circle</span>
-                                    Honest Technical Review
-                                </span>
-                                <span class="dics-insights-trust-item">
-                                    <span class="material-symbols-outlined">check_circle</span>
-                                    Direct Talk with Lead Consultant
-                                </span>
-                                <span class="dics-insights-trust-item">
-                                    <span class="material-symbols-outlined">check_circle</span>
-                                    No Generic Sales Pitches
-                                </span>
+                            <!-- 3 brief cards -->
+                            <div class="dics-ind-detail-briefs">
+                                <t t-foreach="industry.get('insight_briefs', [])" t-as="brief" t-key="brief_index">
+                                    <article class="dics-ind-detail-brief">
+                                        <div>
+                                            <div class="dics-ind-detail-brief__top">
+                                                <span class="dics-ind-detail-tag" t-esc="brief.get('tag', 'INSIGHT')"/>
+                                                <span t-esc="brief.get('read', '4 MIN READ')"/>
+                                            </div>
+                                            <h4 t-esc="brief.get('title', '')"/>
+                                            <p t-esc="brief.get('body', '')"/>
+                                        </div>
+                                        <div class="dics-ind-detail-brief__footer">
+                                            <span>Read Architecture Spec</span>
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </div>
+                                    </article>
+                                </t>
                             </div>
+                        </div>
+                    </section>
 
+                    <!-- ═══════════════════════════════════════════════
+                         6. ROOT-CAUSE COMPARISON  ← NEW
+                    ════════════════════════════════════════════════ -->
+                    <section class="dics-ind-detail-compare">
+                        <div class="dics-container">
+                            <div class="dics-ind-detail-compare__head">
+                                <span class="dics-eyebrow">Root-Cause Comparison</span>
+                                <h2>Why Standard ERPs Fail <t t-esc="industry.get('title', 'Your Industry')"/> — And How Odoo Solves It</h2>
+                                <p>Off-the-shelf monolithic suites are built for generic operations. Here is how custom-engineered Odoo closes the gap.</p>
+                            </div>
+                            <div class="dics-ind-detail-compare__list">
+                                <t t-foreach="industry.get('comparisons', [])" t-as="comp" t-key="comp_index">
+                                    <div class="dics-ind-detail-comp-row">
+                                        <div class="dics-ind-detail-comp-row__bad">
+                                            <span class="dics-ind-detail-comp-row__label dics-ind-detail-comp-row__label--bad">
+                                                <span class="material-symbols-outlined">close</span>
+                                                The Traditional Challenge
+                                            </span>
+                                            <h5 t-esc="comp.get('problem_title', '')"/>
+                                            <p t-esc="comp.get('problem_body', '')"/>
+                                        </div>
+                                        <div class="dics-ind-detail-comp-row__arrow">
+                                            <span class="material-symbols-outlined">arrow_forward</span>
+                                        </div>
+                                        <div class="dics-ind-detail-comp-row__good">
+                                            <span class="dics-ind-detail-comp-row__label dics-ind-detail-comp-row__label--good">
+                                                <span class="material-symbols-outlined">check</span>
+                                                The Engineered Odoo Solution
+                                            </span>
+                                            <h5 t-esc="comp.get('solution_title', '')"/>
+                                            <p t-esc="comp.get('solution_body', '')"/>
+                                        </div>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ═══════════════════════════════════════════════
+                         7. CTA
+                    ════════════════════════════════════════════════ -->
+                    <section class="dics-detail-cta">
+                        <div class="dics-container">
+                            <div class="dics-detail-cta-card">
+                                <div class="dics-detail-cta-glow"/>
+                                <div class="dics-detail-cta-content">
+                                    <span class="dics-detail-eyebrow">Ready to upgrade?</span>
+                                    <h2>Build Your Next-Gen Odoo Infrastructure</h2>
+                                    <p>Talk directly to our Odoo architects to evaluate your workflows and scope your industry implementation.</p>
+                                    <a href="/contactus" class="dics-btn dics-btn-primary">Get Started Today <span class="dics-arrow">→</span></a>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -1027,5 +527,4 @@
             </div>
         </t>
     </template>
-
 </odoo>

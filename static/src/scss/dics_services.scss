@@ -463,7 +463,6 @@ $dics-bg: #0000;
     position: relative;
 
     @media (max-width: 991px) {
-//         display: none;
             order: -1;
     }
 }
@@ -865,14 +864,12 @@ $dics-bg: #0000;
     transform: scale(1.08) rotate(-4deg);
 }
 
-/* ============================================================
-   WHY DATAINTEGER – Dark Glass Cards
-   ============================================================ */
+
+
+
 .dics-detail-why-grid {
     position: relative;
-    background-color: #000000;
-//     padding: 5rem 24px;
-//     overflow: hidden;
+
 
 
 
@@ -987,9 +984,9 @@ $dics-bg: #0000;
   );
 }
 
-/* ============================================================
-   SHIPPED SYSTEMS CARDS (About page)
-   ============================================================ */
+
+
+
 .dics-shipped-grid {
     display: grid;
     grid-template-columns: 1fr;

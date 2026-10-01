@@ -7,25 +7,28 @@
             <div id="wrap" class="dics-home">
                 <main class="dics-main">
 
-                    <!-- ══════════════════════════════════════════════════════
-                         HERO
-                    ══════════════════════════════════════════════════════ -->
+
+
+
                     <section class="dics-section dics-section-light dics-insights-hero py-5 py-lg-6">
                         <div class="dics-insights-ambient-dots"></div>
                         <div class="dics-insights-glow-top"></div>
                         <div class="dics-container position-relative">
 
-                            <!-- Eyebrow badge -->
-                            <div class="dics-insights-badge mb-4">
-                                <span class="dics-insights-badge-dot"></span>
-                                <span class="dics-insights-badge-label">RESEARCH &amp; EDITORIAL PERSPECTIVES</span>
-                                <span class="dics-insights-badge-sep">•</span>
-                                <span class="dics-insights-badge-sub">ARCHITECTURAL BENCHMARKS</span>
-                            </div>
 
-                            <!-- Title row -->
-                            <div class="row g-4 align-items-end mb-5">
-                                <div class="col-12 col-lg-8">
+
+                                                        <!-- Title row -->
+                            <div class="row g-4 align-items-center mb-5">
+                                <div class="col-12 col-lg-7">
+
+                                    <!-- Eyebrow badge -->
+                                    <div class="dics-insights-badge mb-4">
+                                        <span class="dics-insights-badge-dot"></span>
+                                        <span class="dics-insights-badge-label">RESEARCH &amp; EDITORIAL PERSPECTIVES</span>
+                                        <span class="dics-insights-badge-sep">•</span>
+                                        <span class="dics-insights-badge-sub">ARCHITECTURAL BENCHMARKS</span>
+                                    </div>
+
                                     <h1 class="dics-insights-headline">
                                         Enterprise ERP Intelligence &amp;
                                         <span class="dics-insights-headline-accent">Competitive Benchmarks.</span>
@@ -37,16 +40,63 @@
                                         Written by senior ERP architects and systems engineers.
                                     </p>
                                 </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class="dics-insights-telemetry">
-                                        <span class="material-symbols-outlined dics-insights-telemetry-icon">analytics
-                                        </span>
-                                        <div>
-                                            <small class="dics-insights-telemetry-sub">Q2 Benchmark Cycle</small>
-                                            <strong class="dics-insights-telemetry-title d-block">Odoo 18.0 vs Tier-1/2
-                                                Stacks
-                                            </strong>
+
+                                <div class="col-12 col-lg-5">
+                                    <!-- Benchmark telemetry card -->
+                                    <div class="dics-insights-bench">
+                                        <div class="dics-insights-bench__top">
+                                            <span class="dics-insights-bench__live">
+                                                <i class="dics-insights-bench__dot"></i>
+                                                LIVE ARCHITECTURAL TELEMETRY
+                                            </span>
+                                            <span class="dics-insights-bench__tag">AWS c7g.4xlarge</span>
                                         </div>
+
+                                        <div class="dics-insights-bench__head">
+                                            <strong class="dics-insights-bench__title">Benchmark: Concurrency &amp; Transaction Throughput</strong>
+                                            <span class="dics-insights-bench__sub">10,000 Simulated Concurrent Users • 50:50 Read/Write Ratio</span>
+                                        </div>
+
+                                        <div class="dics-insights-bench__row dics-insights-bench__row--lead">
+                                            <div class="dics-insights-bench__row-top">
+                                                <span class="dics-insights-bench__name">
+                                                    Odoo 18 Enterprise
+                                                    <em class="dics-insights-bench__badge">LEADING</em>
+                                                </span>
+                                                <span class="dics-insights-bench__value">
+                                                    <strong class="dics-insights-bench__num dics-insights-bench__num--red">4,820 req/s</strong>
+                                                    <small>• 34ms P99</small>
+                                                </span>
+                                            </div>
+                                            <div class="dics-insights-bench__bar dics-insights-bench__bar--red"><span style="width: 98%;"></span></div>
+                                            <div class="dics-insights-bench__row-foot">
+                                                <span class="dics-insights-bench__note">Efficiency Index: 98.4/100</span>
+                                                <strong class="dics-insights-bench__gain">+100% vs. Legacy Tier-1</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="dics-insights-bench__row">
+                                            <div class="dics-insights-bench__row-top">
+                                                <span class="dics-insights-bench__name">SAP S/4HANA Cloud</span>
+                                                <span class="dics-insights-bench__value">
+                                                    <strong class="dics-insights-bench__num">2,410 req/s</strong>
+                                                    <small>• 118ms P99</small>
+                                                </span>
+                                            </div>
+                                            <div class="dics-insights-bench__bar"><span style="width: 50%;"></span></div>
+                                        </div>
+
+                                        <div class="dics-insights-bench__row">
+                                            <div class="dics-insights-bench__row-top">
+                                                <span class="dics-insights-bench__name">Oracle NetSuite</span>
+                                                <span class="dics-insights-bench__value">
+                                                    <strong class="dics-insights-bench__num">1,890 req/s</strong>
+                                                    <small>• 165ms P99</small>
+                                                </span>
+                                            </div>
+                                            <div class="dics-insights-bench__bar dics-insights-bench__bar--light"><span style="width: 39%;"></span></div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -98,9 +148,9 @@
                         </div>
                     </section>
 
-                    <!-- ══════════════════════════════════════════════════════
-                         FLAGSHIP REPORT CARD
-                    ══════════════════════════════════════════════════════ -->
+
+
+
                     <section class="dics-section dics-insights-flagship-section">
                         <div class="dics-container">
                             <div class="dics-insights-flagship">
@@ -239,9 +289,9 @@
                             </div>
                         </div>
                     </section>
-                    <!-- ══════════════════════════════════════════════════════
-     HEAD-TO-HEAD BREAKDOWNS
-══════════════════════════════════════════════════════ -->
+
+
+
 <section id="comparisons" class="dics-section dics-section-light">
     <div class="dics-container">
 
@@ -776,9 +826,9 @@
     </div>
 </section>
 
-                    <!-- ══════════════════════════════════════════════════════
-                         ARCHITECTURAL AUDIT TABLE
-                    ══════════════════════════════════════════════════════ -->
+
+
+
                     <section class="dics-section dics-section-surface">
                         <div class="dics-container">
                             <div class="row align-items-end mb-5 g-3">
@@ -1014,9 +1064,9 @@
                         </div>
                     </section>
 
-                    <!-- ══════════════════════════════════════════════════════
-                         ENGINEERING FIELD NOTES
-                    ══════════════════════════════════════════════════════ -->
+
+
+
                     <section class="dics-section dics-section-light">
                         <div class="dics-container">
                             <div class="mb-5">
@@ -1144,55 +1194,54 @@
                         </div>
                     </section>
 
-                    <!-- ══════════════════════════════════════════════════════
-                         DARK CTA
-                    ══════════════════════════════════════════════════════ -->
-                    <section class="dics-section dics-insights-dark-cta">
-                        <div class="dics-insights-dark-cta-glow"></div>
-                        <div class="dics-container position-relative text-center">
 
-                            <div class="dics-insights-dark-cta-badge mb-4">
-                                <span class="dics-insights-badge-dot dics-insights-badge-dot--pulse"></span>
-                                <span>CONSULTING &amp; FEASIBILITY ANALYSIS</span>
-                            </div>
 
-                            <h2 class="dics-insights-dark-cta-title">
-                                Considering an ERP Migration or Comparing Architectures?
-                            </h2>
-                            <p class="dics-insights-dark-cta-body mx-auto mt-3">
-                                Let our lead ERP architects audit your existing business workflow, evaluate your
-                                database schema, estimate realistic migration timelines, and build an honest
-                                5-year TCO financial comparison.
-                            </p>
 
-                            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-5">
-                                <a href="/contact" class="dics-btn dics-btn-primary">
-                                    Request ERP Comparative Audit
-                                    <span class="material-symbols-outlined">arrow_forward</span>
-                                </a>
-                                <a href="/contact" class="dics-insights-ghost-btn">
-                                    <span class="material-symbols-outlined">download</span>
-                                    Download 2026 ERP Evaluation Guide
-                                </a>
-                            </div>
 
-                            <div class="dics-insights-trust-strip mt-5">
-                                <span class="dics-insights-trust-item">
-                                    <span class="material-symbols-outlined">check_circle</span>
-                                    Unbiased Technical Scoping
-                                </span>
-                                <span class="dics-insights-trust-item">
-                                    <span class="material-symbols-outlined">check_circle</span>
-                                    Direct Consultation with Lead Architect
-                                </span>
-                                <span class="dics-insights-trust-item">
-                                    <span class="material-symbols-outlined">check_circle</span>
-                                    No Generic Sales Pitches
-                                </span>
+                    <!-- CTA -->
+                        <section class="dics-detail-cta">
+
+```
+                        <div class="dics-container">
+
+                            <div class="dics-detail-cta-card">
+
+                                <div class="dics-detail-cta-glow"></div>
+
+                                <div class="dics-detail-cta-content">
+
+                                    <span class="dics-detail-eyebrow">
+                                        Let's build something better
+                                    </span>
+
+                                    <h2>
+                                        Ready to transform your business with Odoo?
+                                    </h2>
+
+                                    <p>
+                                        Connect with our Odoo experts to discuss your
+                                        business processes, integration needs, and
+                                        automation goals. We'll help you identify the
+                                        right Odoo solutions for your organization.
+                                    </p>
+
+                                    <a href="/contact"
+                                       class="dics-btn dics-btn-primary">
+                                        Talk to an Odoo Expert
+                                        <span class="material-symbols-outlined">
+                                            arrow_forward
+                                        </span>
+                                    </a>
+
+                                </div>
+
                             </div>
 
                         </div>
+
                     </section>
+```
+
 
                 </main>
             </div>

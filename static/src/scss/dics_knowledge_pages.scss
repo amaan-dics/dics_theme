@@ -1620,12 +1620,6 @@
     }
 }
 .dics-mg-toc {
-  background: #ffffff;
-  border: 1px solid #eaebf0;
-  border-radius: 16px;
-  padding: 1.75rem 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-
   &__header {
     display: flex;
     align-items: center;
@@ -2120,3 +2114,238 @@
 #odoo-glossary section.dics-kb-hero{
     height: auto !important;
     }
+
+// What's New in Odoo 20 page only
+.dics-kb-odoo-20 {
+    .dics-container {
+        max-width: 1199px;
+    }
+
+    .dics-kb-article {
+        max-width: 100%;
+    }
+}
+// Benchmark telemetry card in the Insights hero
+.dics-insights-hero .dics-insights-bench {
+    --bench-red: #bb0112;
+    --bench-green: #12a05c;
+    --bench-text: #0f172a;
+    --bench-muted: #6b7280;
+    --bench-border: #e5e7eb;
+    --bench-mono: "JetBrains Mono", "Courier New", monospace;
+
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem;
+    border: 1px solid var(--bench-border);
+    border-radius: 1.25rem;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, .08);
+    color: var(--bench-text);
+    font-size: .75rem;
+    line-height: 1.4;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--bench-red), #111827);
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .75rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--bench-border);
+    }
+
+    &__live {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        font-family: var(--bench-mono);
+        font-size: .6875rem;
+        font-weight: 700;
+        letter-spacing: .06em;
+    }
+
+    &__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--bench-green);
+        box-shadow: 0 0 0 3px rgba(18, 160, 92, .18);
+    }
+
+    &__tag {
+        padding: .25rem .5rem;
+        border: 1px solid var(--bench-border);
+        border-radius: .35rem;
+        background: #f3f4f6;
+        color: var(--bench-muted);
+        font-family: var(--bench-mono);
+        font-size: .625rem;
+        white-space: nowrap;
+    }
+
+    &__head {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        margin: 1rem 0 .85rem;
+    }
+
+    &__title {
+        font-size: .75rem;
+        font-weight: 700;
+    }
+
+    &__sub {
+        color: var(--bench-muted);
+        font-family: var(--bench-mono);
+        font-size: .6875rem;
+    }
+
+    &__row {
+        margin-bottom: .75rem;
+        padding: .8rem .9rem;
+        border: 1px solid var(--bench-border);
+        border-radius: .75rem;
+        background: #fff;
+    }
+
+    &__row--lead {
+        border-color: rgba(187, 1, 18, .25);
+        background: #fff5f6;
+    }
+
+    &__row-top,
+    &__row-foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: .25rem .5rem;
+    }
+
+    &__name {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        font-weight: 700;
+    }
+
+    &__badge {
+        padding: .15rem .4rem;
+        border-radius: .25rem;
+        background: var(--bench-red);
+        color: #fff;
+        font-family: var(--bench-mono);
+        font-size: .5625rem;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: .04em;
+    }
+
+    &__value {
+        font-family: var(--bench-mono);
+        white-space: nowrap;
+    }
+
+    &__num {
+        font-weight: 700;
+    }
+
+    &__num--red {
+        color: var(--bench-red);
+    }
+
+    &__value small {
+        color: #9ca3af;
+        font-size: .6875rem;
+    }
+
+    &__bar {
+        height: 8px;
+        margin: .6rem 0 .45rem;
+        border-radius: 999px;
+        background: #eceff3;
+        overflow: hidden;
+
+        span {
+            display: block;
+            height: 100%;
+            border-radius: inherit;
+            background: #9ca3af;
+        }
+    }
+
+    &__bar--red span {
+        background: var(--bench-red);
+    }
+
+    &__bar--light span {
+        background: #cbd0d8;
+    }
+
+    &__note {
+        color: var(--bench-muted);
+        font-size: .6875rem;
+    }
+
+    &__gain {
+        color: var(--bench-green);
+        font-size: .6875rem;
+        font-weight: 700;
+    }
+
+    &__stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: .5rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--bench-border);
+    }
+
+    &__stat {
+        padding: .6rem .4rem;
+        border: 1px solid var(--bench-border);
+        border-radius: .5rem;
+        background: #f8f9fa;
+        font-family: var(--bench-mono);
+        text-align: center;
+    }
+
+    &__stat-label {
+        display: block;
+        color: var(--bench-muted);
+        font-size: .5625rem;
+        letter-spacing: .06em;
+    }
+
+    &__stat-value {
+        display: block;
+        margin-top: .15rem;
+        font-size: .6875rem;
+        font-weight: 700;
+    }
+
+    &__link {
+        display: block;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--bench-border);
+        color: var(--bench-red);
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

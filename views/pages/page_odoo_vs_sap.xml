@@ -17,9 +17,9 @@
 
 
 
-                <!-- =====================================================
-                     HERO
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-hero h-auto">
                     <div class="dics-kb-dot-grid"/>
                     <div class="dics-container dics-kb-hero__inner">
@@ -64,9 +64,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     QUICK VERDICT
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
                         <div class="dics-kb-section-head mb-4">
@@ -156,9 +156,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     KEY DIFFERENCES
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-section py-5 bg-white border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
                         <div class="dics-kb-section-head mb-4">
@@ -210,9 +210,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FEATURE DEPTH
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
                         <div class="dics-kb-section-head mb-4">
@@ -267,9 +267,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     TCO SNAPSHOT
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-section py-5 bg-white border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
                         <div class="dics-kb-section-head mb-4">
@@ -374,9 +374,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FINAL RECOMMENDATION
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-section dics-kb-section--dark">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -407,9 +407,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     CTA
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-cta">
                     <div class="dics-container container px-3 px-sm-4">
                         <div class="dics-kb-cta-card border rounded-3 shadow-sm p-4 bg-white">

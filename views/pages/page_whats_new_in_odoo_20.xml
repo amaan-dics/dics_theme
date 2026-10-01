@@ -13,13 +13,13 @@
             Learn what's new in Odoo 20, including AI, offline mode, eCommerce, inventory, manufacturing, project management, and the new JSON-2 API.
         </t>
 
-        <div id="wrap" class="dics-home dics-knowledge-page">
+        <div id="wrap" class="dics-home dics-knowledge-page dics-kb-odoo-20">
             <main class="dics-main">
 
 
-                <!-- =====================================================
-                     HERO SECTION
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-hero">
                     <div class="dics-kb-dot-grid"/>
                     <div class="dics-container dics-kb-hero__inner">
@@ -163,9 +163,9 @@
                 </section>
 
 
-                <!-- =====================================================
-                     RELEASE CONTEXT
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-section dics-kb-section--light" style="padding: 1.5rem 0;">
                     <div class="dics-container">
                         <div class="dics-mg-callout dics-mg-callout--note">
@@ -251,9 +251,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FEATURE SECTION: AI & CONVERSATIONAL
-                ====================================================== -->
+
+
+
                 <section id="ai-conversational" class="dics-kb-section">
                     <div class="dics-container">
                         <div class="dics-kb-article">
@@ -304,9 +304,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FEATURE SECTION: OFFLINE MODE
-                ====================================================== -->
+
+
+
                 <section id="offline-mode" class="dics-kb-section dics-kb-section--gray">
                     <div class="dics-container">
                         <div class="dics-kb-engineering">
@@ -390,9 +390,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FEATURE SECTION: WEBSITE & ECOMMERCE
-                ====================================================== -->
+
+
+
                 <section id="ecommerce-website" class="dics-kb-section">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -462,9 +462,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FEATURE SECTION: INVENTORY, MFG & FIELD SERVICE
-                ====================================================== -->
+
+
+
                 <section id="inventory-manufacturing" class="dics-kb-section dics-kb-section--light">
                     <div class="dics-container">
                         <div class="dics-kb-article">
@@ -526,9 +526,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FEATURE SECTION: TECHNICAL PLATFORM
-                ====================================================== -->
+
+
+
                 <section id="technical-platform" class="dics-kb-section dics-kb-section--dark">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -651,9 +651,9 @@
                 </section>
 
 
-                <!-- =====================================================
-                     FEATURE SECTION: ROLE-BASED GUIDE
-                ====================================================== -->
+
+
+
                 <section id="role-based-guide" class="dics-kb-section">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -740,13 +740,50 @@
                                     <span>Integrations</span>
                                 </div>
                             </article>
+                                                        <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">campaign</span>
+                                    </div>
+                                    <span>ROLE_05</span>
+                                </div>
+                                <h3>For Sales and Marketing Teams</h3>
+                                <p>
+                                    Sales and marketing teams can use AI to assign CRM leads, create follow-up activities, and update records in plain language.
+                                    Better CRM and marketing information also helps them understand customers and sales opportunities.
+                                </p>
+                                <div class="dics-kb-tags">
+                                    <span>AI for CRM</span>
+                                    <span>Marketing</span>
+                                    <span>Opportunities</span>
+                                </div>
+                            </article>
+
+                            <article class="dics-kb-module-card">
+                                <div class="dics-kb-module-card__top">
+                                    <div class="dics-kb-square-icon">
+                                        <span class="material-symbols-outlined">warehouse</span>
+                                    </div>
+                                    <span>ROLE_06</span>
+                                </div>
+                                <h3>For Warehouse and Field Teams</h3>
+                                <p>
+                                    Warehouse and field service teams can benefit from better stock reordering, warehouse labels, and CMR transport documents.
+                                    Offline mode also helps them keep working when the internet connection is not available.
+                                </p>
+                                <div class="dics-kb-tags">
+                                    <span>Inventory</span>
+                                    <span>Field service</span>
+                                    <span>Offline mode</span>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FEATURE SECTION: PRACTICAL BUSINESS EXAMPLES
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-section dics-kb-section--gray">
                     <div class="dics-container">
                         <div class="dics-kb-article">
@@ -822,9 +859,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     FEATURE SECTION: UPGRADE CHECKLIST
-                ====================================================== -->
+
+
+
                 <section id="upgrade-checklist" class="dics-detail-section dics-detail-section--soft">
 
                     <div class="dics-container">
@@ -957,9 +994,9 @@
 
                 </section>
 
-                <!-- =====================================================
-                     FEATURE SECTION: BIGGER PICTURE
-                ====================================================== -->
+
+
+
                 <section id="bigger-picture" class="dics-kb-section dics-kb-section--dark">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -1003,6 +1040,21 @@
                                     Project reports, CRM information, marketing data, and other reports help businesses understand what is happening.
                                 </p>
                             </article>
+                                                        <article>
+                                <span class="material-symbols-outlined">wifi_off</span>
+                                <h3>Offline Work</h3>
+                                <p>
+                                    Users can keep working without an internet connection and sync their changes when the connection returns.
+                                </p>
+                            </article>
+
+                            <article>
+                                <span class="material-symbols-outlined">api</span>
+                                <h3>Technical Platform</h3>
+                                <p>
+                                    Python 3.12, PostgreSQL 15, and the JSON-2 API are important technical changes that businesses need to plan for.
+                                </p>
+                            </article>
                         </div>
 
 
@@ -1010,9 +1062,9 @@
                 </section>
 
 
-                <!-- =====================================================
-                     QUICK REFERENCE
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-section dics-kb-section--gray">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -1061,9 +1113,9 @@
                     </div>
                 </section>
 
-                <!-- =====================================================
-                     CALL TO ACTION
-                ====================================================== -->
+
+
+
                 <section class="dics-kb-cta">
                     <div class="dics-container">
                         <div class="dics-kb-cta-card">
@@ -1075,7 +1127,7 @@
                                     DataInteger can help you check your current Odoo system, update custom modules, review integrations, test your business processes, and plan the migration.
                                     We can help with Odoo 20 migration, Odoo version upgrades, Odoo custom module upgrades, Odoo API migration, Odoo integrations, Odoo testing, and Odoo customization.
                                 </p>
-                                <a href="/contact" class="dics-btn dics-btn-primary">
+                                <a href="/contact" class="dics-btn dics-btn-primary dics-btn-red">
                                     Talk to Our Odoo Experts
                                     <span class="dics-arrow">→</span>
                                 </a>

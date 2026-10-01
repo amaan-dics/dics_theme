@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-
-  <!-- Shared body for every individual service deep-dive page (Odoo & ERP,
-       AI Solutions, Web & Mobile, Custom Software, Digital Marketing, SaaS).
-       Callers t-set the variables below, then t-call this template inside
-       their own website.layout wrapper. Keeping this in one place means
-       every service page renders with identical structure/styling, and a
-       future design tweak only needs to happen once instead of six times.
-
-       Required variables the caller must t-set before calling this:
-         hero_anchor_id, svc_eyebrow, svc_title_main, svc_title_accent,
-         svc_subtitle, capabilities_heading, capabilities_subheading,
-         capabilities (list of {icon, title, description}),
-         process_steps (list of {title, description}),
-         tags_eyebrow, tags_heading, tags (list of strings, or empty to skip),
-         why_heading, why_cards (list of {icon, title, description}),
-         cta_title, cta_text -->
   <template id="dics_service_detail_body" name="Datainteger Consultancy Services Service Detail Body">
 
     <!-- ─── HERO ─── -->

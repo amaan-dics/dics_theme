@@ -92,7 +92,14 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     overflow: hidden;
     padding: 2rem 0 6rem;
     background: $cl-bg;
+
+    @media (max-width: 991px) { padding-bottom: 4.5rem; }
+    @media (max-width: 575px) { padding: 1.5rem 0 3rem; }
 }
+    .dics-cl-hero{
+        margin-top: 5rem !important;
+    }
+
 
 .dics-cl-hero__bg-glow {
     position: absolute;
@@ -101,6 +108,11 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     background: radial-gradient(circle, rgba($cl-accent, 0.12), transparent 68%);
     border-radius: 50%;
     pointer-events: none;
+
+    @media (max-width: 767px) {
+        top: -80px; right: -100px;
+        width: 420px; height: 420px;
+    }
 }
 
 .dics-cl-hero__grid-dots {
@@ -119,12 +131,15 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     margin: 0 auto;
 }
 
-.dics-cl-hero__inner--split {
-    display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.65fr);
-    align-items: center;
-    gap: 72px;
+@media(min-width:1023px){
+    .dics-cl-hero__inner--split {
+        display: grid;
+        grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+        align-items: center;
+        gap: clamp(2rem, 4.5vw, 4.5rem);
+    }
 }
+
 .dics-cl-hero__content {
     min-width: 0;
     max-width: 760px;
@@ -142,10 +157,18 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     font-weight: 600;
     color: $cl-text;
     margin-bottom: 2rem;
+
+    @media (max-width: 575px) {
+        font-size: 0.72rem;
+        line-height: 1.35;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .dics-cl-hero__badge-dot {
     width: 8px; height: 8px;
+    flex-shrink: 0;
     border-radius: 50%;
     background: $cl-accent;
     animation: cl-pulse 2.5s ease-in-out infinite;
@@ -158,13 +181,18 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
 
 .dics-cl-hero__headline {
     font-family: "Plus Jakarta Sans", "Inter", sans-serif;
-    font-size: clamp(2.6rem, 5.5vw, 4rem);
+    font-size: clamp(2.1rem, 5.5vw, 4rem);
     font-weight: 700;
     line-height: 1.06;
     color: $cl-dark;
     margin: 0 0 1.5rem;
 
     span { color: $cl-accent; }
+
+    @media (max-width: 575px) {
+        line-height: 1.12;
+        margin-bottom: 1.15rem;
+    }
 }
 
 .dics-cl-hero__sub {
@@ -173,6 +201,12 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     line-height: 1.78;
     max-width: 680px;
     margin-bottom: 2.5rem;
+
+    @media (max-width: 575px) {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
 }
 
 .dics-cl-hero__actions {
@@ -181,6 +215,15 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     gap: 1rem;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+
+    @media (max-width: 1022px) { margin-bottom: 0; }
+
+    @media (max-width: 575px) {
+        flex-direction: column;
+        align-items: stretch;
+
+        .dics-cl-btn { justify-content: center; }
+    }
 }
 
 // Proof strip
@@ -198,6 +241,20 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     background: $cl-surface;
     border: 1px solid $cl-outline;
     border-radius: 1rem;
+
+    // Stacked layouts: 2 x 2 grid
+    @media (max-width: 1022px) {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: none;
+        margin: 2.5rem 0 0;
+        padding: 0.25rem 1.25rem;
+    }
+
+    // Tablet: 4 across
+    @media (min-width: 576px) and (max-width: 1022px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
 .dics-cl-proof__item {
@@ -221,6 +278,33 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
         text-transform: uppercase;
         letter-spacing: 0.05em;
     }
+
+    // 2 x 2: divider lines between cells (dividers are hidden here)
+    @media (max-width: 1022px) {
+        padding-right: 0.75rem;
+
+        &:nth-child(n+5) { border-top: 1px solid $cl-outline; }
+
+        &:nth-child(3),
+        &:nth-child(7) {
+            padding-left: 1.25rem;
+            border-left: 1px solid $cl-outline;
+        }
+    }
+
+    // 4 across
+    @media (min-width: 576px) and (max-width: 1022px) {
+        padding: 0.25rem 1.25rem;
+
+        &:nth-child(n+5) { border-top: 0; }
+        &:nth-child(n+3) { border-left: 1px solid $cl-outline; }
+        &:first-child { padding-left: 0; }
+    }
+
+    @media (max-width: 575px) {
+        strong { font-size: 1.1rem; }
+        span { font-size: 0.68rem; letter-spacing: 0.04em; }
+    }
 }
 
 .dics-cl-proof__divider {
@@ -228,6 +312,8 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     height: 1px;
     background: $cl-outline;
     flex-shrink: 0;
+
+    @media (max-width: 1022px) { display: none; }
 }
 
 // ── SHARED SECTION SHELL ──────────────────────────────────────
@@ -525,9 +611,9 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
     }
 }
 
-/* =========================================================
-   ARCHITECTURE DIAGRAM
-   ========================================================= */
+
+
+
 
 .dics-cl-arch {
     position: relative;
@@ -756,6 +842,21 @@ $cl-outline:      rgba(61, 52, 48, 0.12);
 .dics-cl-arch__stage--tool .dics-cl-arch__card-icon {
     background: #292929;
     color: #fff;
+}
+
+/* Claude-style glossy border on the other light cards ---- */
+
+.dics-cl-arch__stage:not(.dics-cl-arch__stage--claude):not(.dics-cl-arch__stage--tool) .dics-cl-arch__card {
+    border-color: rgba(214, 69, 69, .28);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 247, 245, .98),
+            rgba(255, 255, 255, .96)
+        );
+    box-shadow:
+        0 18px 45px rgba(180, 70, 55, .09),
+        inset 0 1px 0 rgba(255, 255, 255, .95);
 }
 
 .dics-cl-arch__stage--tool .dics-cl-arch__card-title {
