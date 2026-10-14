@@ -1,43 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
-  <template id="dics_contact_thank_you" name="Datainteger Consultancy Services Contact Thank You" key="dics_theme.dics_contact_thank_you" website_id="dics_theme.dics_website">
-    <t t-call="website.layout">
-      
+    <template id="dics_contact_thank_you" name="Datainteger Consultancy Services Contact Thank You"
+              key="dics_theme.dics_contact_thank_you" website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
 
 
-      <div id="wrap" class="dics-website-page">
+            <div id="wrap" class="dics-website-page">
 
-        <section class="dics-services-hero" id="top-thank-you" style="min-height: 70vh; display: flex; align-items: center;">
-          <div class="dics-services-hero__glow"></div>
-          <div class="dics-services-hero__dotgrid"></div>
-          <div class="container">
-            <div class="dics-section-head dics-section-head--centered mx-auto" style="margin: 0 auto !important; height: 100vh !important;">
-              <div class="odoo-capability-card__icon" style="margin: 0 auto 2rem; width: 4.5rem; height: 4.5rem;">
-                <t t-call="dics_theme.dics_icon"><t t-set="icon">check-circle</t></t>
-              </div>
-              <span class="hero-badge">
-                <span class="hero-badge__dot"></span>
-                Message Received
-              </span>
-              <h1>
-                Thanks for reaching
-                <span class="dics-accent">out to us.</span>
-              </h1>
-              <p>Your message is in. Someone from our team will get back to you within one business day.</p>
-              <div class="hero-actions" style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="/" class="btn btn-primary dics-magnetic-button">
-                  Back to Home <t t-call="dics_theme.dics_icon"><t t-set="icon">arrow-right</t></t>
-                </a>
-                <a href="/services" class="btn btn-outline dics-magnetic-button">
-                  Explore Our Services
-                </a>
-              </div>
+                <section class="dics-services-hero" id="top-thank-you"
+                         style="min-height: 70vh; display: flex; align-items: center;">
+                    <div class="dics-services-hero__glow"></div>
+                    <div class="dics-services-hero__dotgrid"></div>
+                    <div class="container">
+                        <div class="dics-section-head dics-section-head--centered mx-auto"
+                             style="margin: 0 auto !important; height: 100vh !important;">
+                            <div class="odoo-capability-card__icon"
+                                 style="margin: 0 auto 2rem; width: 4.5rem; height: 4.5rem;">
+                                <span class="fa fa-check-circle fa-3x" aria-hidden="true"></span>
+                            </div>
+                            <span class="hero-badge">
+                                <span class="hero-badge__dot"></span>
+                                Message Received
+                            </span>
+                            <h1>
+                                Thanks for reaching
+                                <span class="dics-accent">out to us.</span>
+                            </h1>
+                            <p>Your message is in. Someone from our team will get back to you within one business day.
+                            </p>
+                            <div class="hero-actions"
+                                 style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                                <a href="/" class="btn btn-primary dics-magnetic-button">
+                                    Back to Home
+                                    <span class="fa fa-arrow-right" aria-hidden="true"></span>
+                                </a>
+                                <a href="/services" class="btn btn-outline dics-magnetic-button">
+                                    Explore Our Services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-          </div>
-        </section>
-
-      </div>
-    </t>
-  </template>
+        </t>
+    </template>
 </odoo>

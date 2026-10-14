@@ -13,14 +13,8 @@
                     <t t-set="additional_title">
                         Digital Marketing — DataInteger
                     </t>
-
-
                     <div id="wrap" class="dics-home">
                         <main class="dics-main">
-
-
-
-
                             <section class="dics-hero">
                                 <div class="dics-hero-grid dics-container">
                                     <div class="dics-hero-copy">

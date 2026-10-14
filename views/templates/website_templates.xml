@@ -21,6 +21,21 @@
         </field>
     </record>
 
+    <record id="dics_login_logo" model="ir.ui.view">
+        <field name="name">DataInteger: login logo</field>
+        <field name="type">qweb</field>
+        <field name="inherit_id" ref="web.login"/>
+        <field name="website_id" ref="dics_theme.dics_website"/>
+        <field name="arch" type="xml">
+            <xpath expr="//label[@for='login']" position="before">
+                <div class="text-center mb-3">
+                    <img src="/dics_theme/static/src/images/DataIntegerLoginLogo.png" alt="DataInteger"
+                         class="img-fluid" style="max-width: 220px; height: auto;"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
     <!-- 2. HEADER: hide native + inject custom sibling -->
     <record id="dics_theme_header" model="ir.ui.view">
         <field name="name">DataInteger: custom header</field>
@@ -907,132 +922,105 @@
     </record>
 
 
-    <!-- 4. FOOTER: hide native + inject custom via website.layout -->
-    <record id="dics_theme_footer" model="ir.ui.view">
-        <field name="name">DataInteger: custom footer</field>
-        <field name="type">qweb</field>
-        <field name="key">dics_theme.dics_theme_footer</field>
-        <field name="inherit_id" ref="website.layout"/>
-        <field name="website_id" ref="dics_theme.dics_website"/>
-        <field name="arch" type="xml">
+        <!-- 4. FOOTER: hide native + inject custom via website.layout -->
+        <record id="dics_theme_footer" model="ir.ui.view">
+            <field name="name">DataInteger: custom footer</field>
+            <field name="type">qweb</field>
+            <field name="key">dics_theme.dics_theme_footer</field>
+            <field name="inherit_id" ref="website.layout"/>
+            <field name="website_id" ref="dics_theme.dics_website"/>
+            <field name="arch" type="xml">
 
-            <!-- Hide native footer — keep in DOM for Odoo core JS compatibility -->
-            <xpath expr="//div[@id='footer']" position="attributes">
-                <attribute name="style">display:none !important;</attribute>
-            </xpath>
+                <!-- Hide native footer — keep in DOM for Odoo core JS compatibility -->
+                <xpath expr="//div[@id='footer']" position="attributes">
+                    <attribute name="style">display:none !important;</attribute>
+                </xpath>
 
-            <!-- Inject custom footer inside wrapwrap, after the native footer -->
-            <xpath expr="//div[@id='footer']" position="after">
-                <footer class="dics-footer">
-                    <div class="dics-container">
-                        <div class="dics-footer-top">
+                <!-- Inject custom footer inside wrapwrap, after the native footer -->
+                <xpath expr="//div[@id='footer']" position="after">
+                    <footer class="dics-footer">
+                        <div class="dics-container">
+                            <div class="dics-footer-top">
 
-                            <div class="dics-footer-brand">
-                                <div class="dics-header-wordmark" style="margin-bottom:12px;">
-                                    <span class="dics-header-name" style="font-size:20px;">DataInteger</span>
-                                    <span class="dics-header-sub">Consultancy Services LLP</span>
+                                <div class="dics-footer-brand">
+                                    <img src="/dics_theme/static/src/images/DataIntegerLoginLogo.png" alt="DataInteger"
+                                         class="img-fluid" style="max-width: 220px; height: auto; margin-bottom: 12px;"/>
+                                    <p class="dics-footer-tagline">
+                                        Engineering intelligent business systems
+                                        with Odoo ERP, automation, and custom software.
+                                    </p>
+                                    <address class="dics-footer-address">
+                                        Ahmedabad, Gujarat, India
+                                        <br/>
+                                        <a href="mailto:contact@datainteger.com">contact@datainteger.com</a>
+                                    </address>
                                 </div>
-                                <p class="dics-footer-tagline">
-                                    Engineering intelligent business systems
-                                    with Odoo ERP, automation, and custom software.
-                                </p>
-                                <address class="dics-footer-address">
-                                    Ahmedabad, Gujarat, India
-                                    <br/>
-                                    <a href="mailto:contact@datainteger.com">contact@datainteger.com</a>
-                                </address>
+
+                                <div class="dics-footer-links">
+    <div>
+        <p class="dics-footer-col-title">Services</p>
+        <ul>
+            <li><a href="/services/odoo-erp">Odoo ERP</a></li>
+            <li><a href="/services/ai-solutions">AI Solutions</a></li>
+            <li><a href="/services/web-mobile">Web &amp; Mobile Development</a></li>
+            <li><a href="/services/custom-software">Custom Software</a></li>
+            <li><a href="/services/saas">SaaS Development</a></li>
+            <li><a href="/services/digital-marketing">Digital Marketing</a></li>
+        </ul>
+    </div>
+    <div>
+        <p class="dics-footer-col-title">Industries</p>
+        <ul>
+            <li><a href="/industries/manufacturing">Manufacturing</a></li>
+            <li><a href="/industries/healthcare">Healthcare</a></li>
+            <li><a href="/industries/construction">Construction</a></li>
+            <li><a href="/industries/ecommerce">E-commerce &amp; Retail</a></li>
+            <li><a href="/industries/finance">Finance &amp; Professional Services</a></li>
+            <li><a href="/industries/software">Software &amp; Technology</a></li>
+        </ul>
+    </div>
+    <div>
+        <p class="dics-footer-col-title">Company</p>
+        <ul>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/#case-studies">Case Studies</a></li>
+            <li><a href="/insights">Insights</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/contactus">Contact</a></li>
+        </ul>
+    </div>
+    <div>
+        <p class="dics-footer-col-title">Technology</p>
+        <ul>
+            <li><a href="/whats-new-in-odoo-20">Odoo 20</a></li>
+            <li><a href="/odoo-migration">Odoo Migration</a></li>
+            <li><a href="/services/whatsapp-integration">WhatsApp Integration</a></li>
+            <li><a href="/services/claude-integration">Claude Integration</a></li>
+            <li><a href="/odoo-vs-sap">Odoo vs SAP</a></li>
+            <li><a href="/glossary">Odoo Glossary</a></li>
+        </ul>
+    </div>
+</div>
+
                             </div>
 
-                            <div class="dics-footer-links">
-                                <div>
-                                    <p class="dics-footer-col-title">Services</p>
-                                    <ul>
-                                        <li>
-                                            <a href="/services">Odoo Development</a>
-                                        </li>
-                                        <li>
-                                            <a href="/services">ERP Implementation</a>
-                                        </li>
-                                        <li>
-                                            <a href="/services">System Integration</a>
-                                        </li>
-                                        <li>
-                                            <a href="/services">Custom Software</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <p class="dics-footer-col-title">Solutions</p>
-                                    <ul>
-                                        <li>
-                                            <a href="/#architecture">Manufacturing</a>
-                                        </li>
-                                        <li>
-                                            <a href="/#architecture">Distribution</a>
-                                        </li>
-                                        <li>
-                                            <a href="/#architecture">Finance &amp; Accounting</a>
-                                        </li>
-                                        <li>
-                                            <a href="/#architecture">eCommerce</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <p class="dics-footer-col-title">Company</p>
-                                    <ul>
-                                        <li>
-                                            <a href="/about">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="/#case-studies">Case Studies</a>
-                                        </li>
-                                        <li>
-                                            <a href="/insights">Insights</a>
-                                        </li>
-                                        <li>
-                                            <a href="/contact">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <p class="dics-footer-col-title">Technology</p>
-                                    <ul>
-                                        <li>
-                                            <a href="/services">Odoo 17 / 18</a>
-                                        </li>
-                                        <li>
-                                            <a href="/services">Python / PostgreSQL</a>
-                                        </li>
-                                        <li>
-                                            <a href="/services">REST &amp; XML-RPC</a>
-                                        </li>
-                                        <li>
-                                            <a href="/services">OWL Components</a>
-                                        </li>
-                                    </ul>
+                            <div class="dics-footer-bottom">
+                                <span>
+                                    ©
+                                    <t t-esc="datetime.date.today().year"/>
+                                    DataInteger Consultancy Services LLP. All rights reserved.
+                                </span>
+                                <div class="dics-footer-meta">
+                                    <span>Ahmedabad, India</span>
                                 </div>
                             </div>
 
                         </div>
+                    </footer>
+                </xpath>
 
-                        <div class="dics-footer-bottom">
-                            <span>
-                                ©
-                                <t t-esc="datetime.date.today().year"/>
-                                DataInteger Consultancy Services LLP. All rights reserved.
-                            </span>
-                            <div class="dics-footer-meta">
-                                <span>Ahmedabad, India</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </footer>
-            </xpath>
-
-        </field>
-    </record>
+            </field>
+        </record>
     <record id="dics_theme_favicon" model="ir.ui.view">
         <field name="name">DataInteger: favicon</field>
         <field name="type">qweb</field>

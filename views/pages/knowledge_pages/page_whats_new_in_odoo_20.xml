@@ -16,10 +16,6 @@
         <div id="wrap" class="dics-home dics-knowledge-page dics-kb-odoo-20">
             <main class="dics-main">
 
-
-
-
-
                 <section class="dics-kb-hero">
                     <div class="dics-kb-dot-grid"/>
                     <div class="dics-container dics-kb-hero__inner">
@@ -162,10 +158,6 @@
                     </div>
                 </section>
 
-
-
-
-
                 <section class="dics-kb-section dics-kb-section--light" style="padding: 1.5rem 0;">
                     <div class="dics-container">
                         <div class="dics-mg-callout dics-mg-callout--note">
@@ -251,9 +243,6 @@
                     </div>
                 </section>
 
-
-
-
                 <section id="ai-conversational" class="dics-kb-section">
                     <div class="dics-container">
                         <div class="dics-kb-article">
@@ -303,9 +292,6 @@
                         </div>
                     </div>
                 </section>
-
-
-
 
                 <section id="offline-mode" class="dics-kb-section dics-kb-section--gray">
                     <div class="dics-container">
@@ -390,9 +376,6 @@
                     </div>
                 </section>
 
-
-
-
                 <section id="ecommerce-website" class="dics-kb-section">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -462,9 +445,6 @@
                     </div>
                 </section>
 
-
-
-
                 <section id="inventory-manufacturing" class="dics-kb-section dics-kb-section--light">
                     <div class="dics-container">
                         <div class="dics-kb-article">
@@ -525,9 +505,6 @@
                         </div>
                     </div>
                 </section>
-
-
-
 
                 <section id="technical-platform" class="dics-kb-section dics-kb-section--dark">
                     <div class="dics-container">
@@ -649,10 +626,6 @@
                         </div>
                     </div>
                 </section>
-
-
-
-
 
                 <section id="role-based-guide" class="dics-kb-section">
                     <div class="dics-container">
@@ -781,9 +754,6 @@
                     </div>
                 </section>
 
-
-
-
                 <section class="dics-kb-section dics-kb-section--gray">
                     <div class="dics-container">
                         <div class="dics-kb-article">
@@ -858,9 +828,6 @@
                         </div>
                     </div>
                 </section>
-
-
-
 
                 <section id="upgrade-checklist" class="dics-detail-section dics-detail-section--soft">
 
@@ -994,9 +961,6 @@
 
                 </section>
 
-
-
-
                 <section id="bigger-picture" class="dics-kb-section dics-kb-section--dark">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -1061,10 +1025,6 @@
                     </div>
                 </section>
 
-
-
-
-
                 <section class="dics-kb-section dics-kb-section--gray">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -1112,9 +1072,6 @@
                         </div>
                     </div>
                 </section>
-
-
-
 
                 <section class="dics-kb-cta">
                     <div class="dics-container">

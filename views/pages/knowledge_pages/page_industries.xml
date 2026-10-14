@@ -238,9 +238,6 @@
         </t>
     </template>
 
-    <!-- ================================================================
-         INDUSTRY DETAIL — REBUILT
-    ================================================================ -->
     <template id="dics_industry_detail" name="DataInteger Industry Detail" key="dics_theme.dics_industry_detail" website_id="dics_theme.dics_website">
         <t t-call="website.layout">
             <t t-set="additional_title"><t t-esc="industry.get('title', 'Industry Solution')"/> Odoo ERP Solutions — DataInteger</t>
@@ -258,8 +255,8 @@
                                         <span class="dics-status-dot"/>
                                         <span t-esc="industry.get('subtitle', 'Odoo Industry ERP Solutions')"/>
                                     </div>
-                                    <h1>Transform Your Operations with <span class="dics-red">Tailored Odoo</span> Solutions</h1>
-                                    <p class="dics-hero-lead" t-esc="industry.get('hero_description', 'Streamline supply chains, multi-warehouse sync, real-time inventory tracking, and logistics automation with a custom-engineered Odoo architecture.')"/>
+                                    <h1>Tailored Odoo Solutions for <span class="dics-red" t-esc="industry['title']"/></h1>
+                                    <p class="dics-hero-lead" t-esc="industry.get('lead', industry.get('hero_description', ''))"/>
                                     <div class="dics-actions">
                                         <a href="/contactus" class="dics-btn dics-btn-primary">Schedule Consultation <span class="dics-arrow">→</span></a>
                                         <a href="#solutions" class="dics-btn dics-btn-secondary">Explore Features</a>
@@ -279,21 +276,13 @@
                                         <div class="dics-sync"><span/> OPTIMIZED</div>
                                     </div>
                                     <div class="dics-console-nodes">
-                                        <div class="dics-system-node">
-                                            <div class="dics-node-icon dics-node-red"><span class="material-symbols-outlined">hub</span></div>
-                                            <div class="dics-node-info"><strong>Multi-Warehouse Routing</strong><small>Auto Stock Allocation &amp; Transfer</small></div>
-                                            <span class="dics-node-state">ACTIVE</span>
-                                        </div>
-                                        <div class="dics-system-node dics-node-offset">
-                                            <div class="dics-node-icon"><span class="material-symbols-outlined">inventory_2</span></div>
-                                            <div class="dics-node-info"><strong>WMS &amp; 3PL Integration</strong><small>Barcode &amp; Automated Picking</small></div>
-                                            <span class="dics-node-metric">99.9% Sync</span>
-                                        </div>
-                                        <div class="dics-system-node dics-node-offset-right">
-                                            <div class="dics-node-icon dics-node-red"><span class="material-symbols-outlined">local_shipping</span></div>
-                                            <div class="dics-node-info"><strong>Fleet &amp; Dispatch Tracking</strong><small>Carrier API &amp; Route Dispatch</small></div>
-                                            <span class="dics-node-state">ONLINE</span>
-                                        </div>
+                                        <t t-foreach="industry.get('console_nodes', [])" t-as="node" t-key="node_index">
+                                            <div t-att-class="['dics-system-node', 'dics-system-node dics-node-offset', 'dics-system-node dics-node-offset-right'][node_index % 3]">
+                                                <div t-att-class="'dics-node-icon dics-node-red' if node_index != 1 else 'dics-node-icon'"><span class="material-symbols-outlined" t-esc="node['icon']"/></div>
+                                                <div class="dics-node-info"><strong t-esc="node['title']"/><small t-esc="node['sub']"/></div>
+                                                <span t-att-class="'dics-node-metric' if node_index == 1 else 'dics-node-state'" t-esc="node['tag']"/>
+                                            </div>
+                                        </t>
                                     </div>
                                     <div class="dics-console-footer">
                                         <span>ARCH: <strong>ODOO 18 ENTERPRISE</strong></span>
@@ -315,21 +304,13 @@
                                 <p>Standard ERP systems force companies into rigid workflows. We solve the core bottlenecks specific to your sector.</p>
                             </div>
                             <div class="dics-detail-capability-grid">
-                                <div class="dics-detail-capability-card">
-                                    <div class="dics-detail-card-icon"><span class="material-symbols-outlined">warning</span></div>
-                                    <h3>Stock Discrepancy &amp; Leakage</h3>
-                                    <p>Manual stock logs across multi-warehouse environments cause delay, fulfillment errors, and inflated inventory holding costs.</p>
-                                </div>
-                                <div class="dics-detail-capability-card">
-                                    <div class="dics-detail-card-icon"><span class="material-symbols-outlined">alt_route</span></div>
-                                    <h3>Fragmented Carrier Systems</h3>
-                                    <p>Lack of direct API integration between 3PL platforms, order processing hubs, and regional shipping dispatchers.</p>
-                                </div>
-                                <div class="dics-detail-capability-card">
-                                    <div class="dics-detail-card-icon"><span class="material-symbols-outlined">receipt_long</span></div>
-                                    <h3>Inaccurate Batch &amp; Lot Billing</h3>
-                                    <p>Difficulty in matching exact lot picking data with custom client pricing tables, invoices, and delivery notes.</p>
-                                </div>
+                                <t t-foreach="industry.get('challenge_cards', [])" t-as="card" t-key="card_index">
+                                    <div class="dics-detail-capability-card">
+                                        <div class="dics-detail-card-icon"><span class="material-symbols-outlined" t-esc="card['icon']"/></div>
+                                        <h3 t-esc="card['title']"/>
+                                        <p t-esc="card['body']"/>
+                                    </div>
+                                </t>
                             </div>
                         </div>
                     </section>
@@ -347,31 +328,13 @@
                                 <p>Every module is tailored to align with your exact operational rules, custom approval limits, and reporting requirements.</p>
                             </div>
                             <div class="dics-module-grid">
-                                <div class="dics-module-card dics-module-card-accent">
-                                    <div class="dics-module-icon"><span class="material-symbols-outlined">warehouse</span></div>
-                                    <h3>Advanced WMS &amp; Storage</h3>
-                                    <p>Multi-location rule routing, putaway strategies, wave picking, and automated barcode verification.</p>
-                                </div>
-                                <div class="dics-module-card">
-                                    <div class="dics-module-icon"><span class="material-symbols-outlined">local_shipping</span></div>
-                                    <h3>3PL &amp; Freight Connectors</h3>
-                                    <p>Real-time carrier rates calculation, automated shipping label generation, and dispatch tracking.</p>
-                                </div>
-                                <div class="dics-module-card">
-                                    <div class="dics-module-icon"><span class="material-symbols-outlined">sync_alt</span></div>
-                                    <h3>Stock Transfer Automation</h3>
-                                    <p>Custom view overrides and automated inter-company transfers with zero manual re-entry.</p>
-                                </div>
-                                <div class="dics-module-card">
-                                    <div class="dics-module-icon"><span class="material-symbols-outlined">account_tree</span></div>
-                                    <h3>Custom Workflow Logic</h3>
-                                    <p>Tailored Python backend models, domain filter triggers, and strict user security rules.</p>
-                                </div>
-                                <div class="dics-module-card">
-                                    <div class="dics-module-icon"><span class="material-symbols-outlined">analytics</span></div>
-                                    <h3>BI &amp; Financial Sync</h3>
-                                    <p>Direct ledger updates from delivery stock pickings for accurate revenue recognition and audit control.</p>
-                                </div>
+                                <t t-foreach="industry.get('module_cards', [])" t-as="mod" t-key="mod_index">
+                                    <div t-att-class="'dics-module-card dics-module-card-accent' if mod_index == 0 else 'dics-module-card'">
+                                        <div class="dics-module-icon"><span class="material-symbols-outlined" t-esc="mod['icon']"/></div>
+                                        <h3 t-esc="mod['title']"/>
+                                        <p t-esc="mod['body']"/>
+                                    </div>
+                                </t>
                             </div>
                         </div>
                     </section>

@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_odoo_vs_salesforce" name="DataInteger — Odoo vs Salesforce"
+              key="dics_theme.dics_odoo_vs_salesforce" website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Odoo vs Salesforce: A Detailed CRM and ERP Comparison — DataInteger</t>
+            <t t-set="meta_description">Odoo vs Salesforce comparison covering CRM, sales, accounting, inventory,
+                manufacturing, eCommerce, customization, integrations, pricing, implementation, and total cost of
+                ownership.
+            </t>
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main class="dics-main">
+
+                    <section class="dics-kb-hero h-auto">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container dics-kb-hero__inner">
+                            <div class="dics-kb-badge-row">
+                                <div class="dics-kb-badge dics-kb-badge--red">
+                                    <span class="material-symbols-outlined">compare_arrows</span>
+                                    <span>HEAD-TO-HEAD CRM + ERP COMPARISON</span>
+                                </div>
+                                <span class="dics-kb-mono">• ARCHITECTURAL REVIEW</span>
+                            </div>
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>Odoo vs Salesforce:<br/><span>Which Business Platform Fits Your Growth Model?</span></h1>
+                                    <div class="dics-kb-lead">
+                                        <p>Odoo and Salesforce both help companies manage customers, sales, automation, and business processes. Their centers of gravity are different: Odoo is a broad integrated business suite, while Salesforce is centered on CRM and extends through sales, service, marketing, commerce, data, analytics, and AI products.</p>
+                                        <p>This guide compares the platforms across customer operations, ERP depth, finance, inventory, manufacturing, customization, integrations, pricing, implementation, and long-term architecture.</p>
+                                    </div>
+                                    <div class="dics-kb-byline">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>12 Min Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">verified</span>
+                                            <span class="dics-kb-byline__strong">Business + Technical Comparison</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- At-a-glance panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">ODOO VS SALESFORCE AT A GLANCE</span>
+                                    </div>
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">PLATFORM MODEL</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>Suite vs CRM-first</strong>
+                                            <span>TWO APPROACHES</span>
+                                        </div>
+                                        <p>Odoo starts as one integrated suite. Salesforce starts from the customer record and extends outward.</p>
+                                    </div>
+                                    <div class="dics-kb-telemetry__stack">
+                                        <div>
+                                            <span class="dics-kb-mono">CRM &amp; sales depth</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">SALESFORCE-NATIVE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Finance, stock &amp; MRP</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-NATIVE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">One database, one login</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-NATIVE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Customization &amp; apps</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">BOTH EXTENSIBLE</span>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-telemetry__footer">
+                                        <span class="dics-kb-mono">Full breakdown below</span>
+                                    </div>
+                                </aside>
+                            </div>
+                            <div class="dics-stat-grid" style="margin-top: 3.5rem;">
+                                <article class="dics-stat-card">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="material-symbols-outlined text-danger">business_center</span>
+                                        <h3>CRM + ERP</h3>
+                                    </div>
+                                    <p>Compare customer management with accounting, inventory, sales and other business needs.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="material-symbols-outlined text-danger">compare_arrows</span>
+                                        <h3>Odoo vs Salesforce</h3>
+                                    </div>
+                                    <p>See the key differences in CRM, ERP, sales, finance, operations and integrations.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="material-symbols-outlined text-danger">account_balance</span>
+                                        <h3>Cost &amp; Pricing</h3>
+                                    </div>
+                                    <p>Understand pricing, implementation, integrations and total cost before you choose.</p>
+                                </article>
+                                <article class="dics-stat-card">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="material-symbols-outlined text-danger">architecture</span>
+                                        <h3>Business Fit</h3>
+                                    </div>
+                                    <p>Learn which platform model fits CRM-focused, ERP-focused and hybrid businesses.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">AT A GLANCE</span>
+                                <h2 class="h2 fw-bold mb-2">Odoo and Salesforce Start From Different Centers of
+                                    Gravity
+                                </h2>
+                                <p class="text-secondary mb-0">The two platforms overlap in CRM and sales, but their
+                                    broader operating models are different. That difference matters when customer data
+                                    must connect to finance, inventory, manufacturing, commerce, and other back-office
+                                    processes.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card dics-kb-compare-card--good card h-100 border shadow-sm rounded-3 p-4">
+                                        <div class="dics-kb-card-corner"/>
+                                        <div class="dics-kb-card-head">
+                                            <div class="dics-kb-card-title">
+                                                <div class="dics-kb-square-icon dics-kb-square-icon--red-solid">
+                                                    <span class="material-symbols-outlined">hub</span>
+                                                </div>
+                                                <div>
+                                                    <h3 class="h5 fw-bold mb-2">Odoo</h3>
+                                                    <span>Integrated business application suite</span>
+                                                </div>
+                                            </div>
+                                            <em>ERP + CRM MODEL</em>
+                                        </div>
+                                        <p>Odoo combines CRM and Sales with Accounting, Inventory, Manufacturing,
+                                            eCommerce, Website, Project, Helpdesk, Marketing, HR and other applications
+                                            on the same business platform.
+                                        </p>
+                                        <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>CRM, Sales, Accounting, Inventory and Manufacturing in one suite
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>Native Website and eCommerce applications</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>Studio, custom modules, APIs and open-source development path
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>Public plans that bundle all in-house apps in Standard and
+                                                    Custom
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card dics-kb-compare-card--bad card h-100 border shadow-sm rounded-3 p-4">
+                                        <div class="dics-kb-card-corner"/>
+                                        <div class="dics-kb-card-head">
+                                            <div class="dics-kb-card-title">
+                                                <div class="dics-kb-square-icon dics-kb-square-icon--red">
+                                                    <span class="material-symbols-outlined">groups</span>
+                                                </div>
+                                                <div>
+                                                    <h3 class="h5 fw-bold mb-2">Salesforce</h3>
+                                                    <span>CRM-centered customer platform</span>
+                                                </div>
+                                            </div>
+                                            <em>CRM-FIRST MODEL</em>
+                                        </div>
+                                        <p>Salesforce centers on CRM and expands through Sales Cloud, Service Cloud,
+                                            Marketing Cloud, Commerce Cloud, Data Cloud, Tableau, Slack, Agentforce and
+                                            industry solutions.
+                                        </p>
+                                        <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                            <li>
+                                                <span class="material-symbols-outlined">info</span>
+                                                <span>Deep sales, service and customer engagement capabilities</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">info</span>
+                                                <span>Extensive automation, analytics, data and AI ecosystem</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">info</span>
+                                                <span>Large partner and AppExchange ecosystem</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">info</span>
+                                                <span>Product and add-on pricing can vary by required capabilities
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">ARCHITECTURAL DIFFERENCES</span>
+                                <h2 class="h2 fw-bold mb-2">CRM Depth vs Full Business Operations</h2>
+                                <p class="text-secondary mb-0">The most important comparison is not which platform has
+                                    more features. It is which platform is designed around the business processes you
+                                    need to connect.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">ERP + CRM vs CRM + Platform Ecosystem</h3>
+                                        <p>Odoo's application portfolio includes both front-office and back-office
+                                            operations. Salesforce is fundamentally a CRM platform that expands through
+                                            dedicated clouds, platform services and industry products. If accounting,
+                                            stock and production are central to the project, this architectural
+                                            distinction deserves early attention.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Customer Data vs Transactional Operations</h3>
+                                        <p>Salesforce is designed around customer relationships, opportunities, service
+                                            interactions, marketing journeys and revenue processes. Odoo connects those
+                                            customer workflows directly with operational transactions such as
+                                            purchasing, stock movements, manufacturing and accounting.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Customization Model</h3>
+                                        <p>Odoo provides Studio plus Python, XML, JavaScript, ORM and custom modules.
+                                            Salesforce provides platform customization and development through Flow,
+                                            Apex, Lightning technologies, APIs and AppExchange solutions.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">04</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Best Comparison Unit</h3>
+                                        <p>Do not compare one Odoo CRM screen against one Salesforce screen. Compare
+                                            complete processes: lead-to-cash, customer-to-service, quote-to-delivery,
+                                            opportunity-to-invoice and website-order-to-fulfillment.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CORE COMPARISON</span>
+                                <h2 class="h2 fw-bold mb-2">Odoo vs Salesforce Across the Business Stack</h2>
+                                <p>A feature matrix is useful only when it is followed by workflow testing. Use this as
+                                    the first-pass map.
+                                </p>
+                            </div>
+                            <div class="table-responsive border rounded-3 bg-white shadow-sm">
+                                <table class="table table-bordered table-hover align-middle mb-0">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th class="p-3 text-nowrap">Area</th>
+                                            <th class="p-3">Odoo</th>
+                                            <th class="p-3">Salesforce</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>Primary model</strong>
+                                            </td>
+                                            <td class="p-3">Integrated ERP and business application suite</td>
+                                            <td class="p-3">CRM-centered customer platform and ecosystem</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>CRM</strong>
+                                            </td>
+                                            <td class="p-3">Native CRM integrated with Sales and back office</td>
+                                            <td class="p-3">Core strength across Sales Cloud and related products</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>Sales</strong>
+                                            </td>
+                                            <td class="p-3">CRM, quotations, orders, invoicing and fulfillment
+                                                connections
+                                            </td>
+                                            <td class="p-3">Pipeline, forecasting, quoting and sales automation</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>Accounting</strong>
+                                            </td>
+                                            <td class="p-3">Native accounting and financial applications</td>
+                                            <td class="p-3">Usually addressed through Salesforce products, integrations
+                                                and ecosystem solutions rather than the same type of native ERP
+                                                accounting suite
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>Inventory</strong>
+                                            </td>
+                                            <td class="p-3">Native Inventory and warehouse operations</td>
+                                            <td class="p-3">Customer and commerce workflows can connect to operational
+                                                systems; industry solutions extend the platform
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>Manufacturing</strong>
+                                            </td>
+                                            <td class="p-3">Native MRP, BOMs, work centers, quality and maintenance</td>
+                                            <td class="p-3">Agentforce Manufacturing / Manufacturing Cloud provides
+                                                manufacturing CRM and value-chain capabilities
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>eCommerce</strong>
+                                            </td>
+                                            <td class="p-3">Native Website and eCommerce apps</td>
+                                            <td class="p-3">Commerce Cloud for B2C and B2B commerce</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>Service</strong>
+                                            </td>
+                                            <td class="p-3">Native Helpdesk and Field Service</td>
+                                            <td class="p-3">Service Cloud is a major product area</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>Customization</strong>
+                                            </td>
+                                            <td class="p-3">Studio, Python, XML, JavaScript, ORM, APIs</td>
+                                            <td class="p-3">Flow, Apex, Lightning, APIs, AppExchange and platform
+                                                tools
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3">
+                                                <strong>Pricing model</strong>
+                                            </td>
+                                            <td class="p-3">Standard and Custom plans bundle all in-house apps</td>
+                                            <td class="p-3">Multiple products and editions with per-user and add-on
+                                                pricing depending on the required stack
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CRM + SALES</span>
+                                <h2 class="h2 fw-bold mb-2">Where Salesforce Has Its Deepest Center of Gravity</h2>
+                                <p>Salesforce's core identity is customer relationship management. Odoo also provides
+                                    CRM, but its CRM is part of a broader ERP application model.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Sales Pipeline</h3>
+                                        <p>Both platforms can manage leads, opportunities, activities, quotations and
+                                            sales processes. Salesforce offers a deep sales ecosystem with forecasting,
+                                            automation, sales engagement, analytics and AI-oriented products.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Customer Service</h3>
+                                        <p>Salesforce Service Cloud is a major platform area for case management,
+                                            self-service, digital channels, contact-center capabilities and AI-assisted
+                                            service. Odoo provides Helpdesk and Field Service as native applications
+                                            connected to the wider ERP.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Customer 360 vs Operational 360</h3>
+                                        <p>Salesforce emphasizes a connected customer view across sales, service,
+                                            marketing and data. Odoo emphasizes connecting that customer view to the
+                                            operational records that execute the business.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">FINANCE</span>
+                                <h2 class="h2 fw-bold mb-2">The Accounting Question Changes the Comparison</h2>
+                                <p>If the project is only CRM, the comparison is mostly about customer operations. If it
+                                    is intended to replace the ERP, finance becomes a major architectural dividing line.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4">
+                                        <h3 class="h5 fw-bold mb-2">Odoo</h3>
+                                        <p>Accounting is a native application in the same suite as CRM, Sales,
+                                            Inventory, Purchase, Manufacturing, eCommerce and other business
+                                            applications. This enables transaction flows such as quotation → order →
+                                            delivery → invoice → payment within one ERP ecosystem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4">
+                                        <h3 class="h5 fw-bold mb-2">Salesforce</h3>
+                                        <p>Salesforce's primary platform focus is CRM and customer operations. Companies
+                                            needing a full accounting ERP typically evaluate integrations, Salesforce
+                                            ecosystem products or a separate financial system alongside the CRM
+                                            platform.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">OPERATIONS</span>
+                                <h2 class="h2 fw-bold mb-2">Inventory and Manufacturing: A Major Architectural
+                                    Checkpoint
+                                </h2>
+                                <p>For manufacturers and distributors, CRM cannot be evaluated separately from stock,
+                                    procurement, production and fulfillment.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4">
+                                        <h3 class="h5 fw-bold mb-2">Odoo Inventory</h3>
+                                        <p>Native inventory management covers stock and logistics workflows, with
+                                            related barcode, replenishment, purchase, quality and traceability
+                                            capabilities.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4">
+                                        <h3 class="h5 fw-bold mb-2">Odoo Manufacturing</h3>
+                                        <p>Manufacturing includes MRP, bills of materials, production orders, PLM,
+                                            quality and maintenance applications within the same suite.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4">
+                                        <h3 class="h5 fw-bold mb-2">Salesforce Manufacturing</h3>
+                                        <p>Agentforce Manufacturing, formerly Manufacturing Cloud, is designed around
+                                            customer-centric manufacturing CRM and value-chain visibility. It should be
+                                            evaluated alongside the ERP or back-office systems that execute physical
+                                            production.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">COMMERCE</span>
+                                <h2 class="h2 fw-bold mb-2">eCommerce and the Path From Customer to Fulfillment</h2>
+                                <p>Commerce architecture matters when an online order immediately becomes an inventory,
+                                    delivery and accounting transaction.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Odoo Website + eCommerce</h3>
+                                        <p>Odoo provides Website and eCommerce applications alongside Sales, Inventory,
+                                            Accounting and other ERP applications. This can create a direct path from
+                                            online order to operational fulfillment.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Salesforce Commerce Cloud</h3>
+                                        <p>Salesforce provides Commerce Cloud for B2C and B2B commerce and can connect
+                                            commerce activity with the wider Salesforce customer platform. The
+                                            back-office fulfillment and accounting architecture should be mapped
+                                            separately.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">What to Test</h3>
+                                        <p>Test product catalog, variants, pricing, promotions, payment, inventory
+                                            availability, shipping, returns, customer accounts, tax and invoice
+                                            generation as one end-to-end scenario.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">MARKETING + SERVICE</span>
+                                <h2 class="h2 fw-bold mb-2">Customer Engagement Beyond the Sales Pipeline</h2>
+                                <p>The platform choice becomes more nuanced when marketing, support, automation and
+                                    customer data become central to the business model.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Odoo provides</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Marketing Automation</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Email, SMS and Social Marketing</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Helpdesk and Field Service</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Events, Surveys and Appointments</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Salesforce provides</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Sales Cloud and Service Cloud</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Marketing Cloud and customer journeys</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Commerce Cloud and digital engagement</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Data, analytics, Slack and Agentforce ecosystem</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">DEVELOPMENT</span>
+                                <h2 class="h2 fw-bold mb-2">Customization and Integration: Two Mature Ecosystems</h2>
+                                <p>The technical question is not whether customization exists. It is how your
+                                    organization will build, govern and maintain it.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Odoo development path</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Python ORM and custom modules</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>XML views and QWeb templates</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>OWL and JavaScript front-end development</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Studio and external API capabilities</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Salesforce development path</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Flow for declarative automation</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Apex and Lightning technologies for custom development</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>APIs and platform integration capabilities</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>AppExchange ecosystem for extensions and packaged solutions</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dics-kb-note mt-4 p-3 border border-warning rounded-3 bg-warning-subtle d-flex align-items-start gap-2">
+                                <span class="material-symbols-outlined">warning</span>
+                                <p>
+                                    <strong>Important:</strong>
+                                    Every customization creates a maintenance surface. Before building custom logic, ask
+                                    whether the requirement can be handled through standard configuration, an existing
+                                    application, or a simpler integration.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">PRICING + TCO</span>
+                                <h2 class="h2 fw-bold mb-2">Do Not Compare CRM Prices as if They Were Complete ERP
+                                    Costs
+                                </h2>
+                                <p>The platforms can have very different commercial shapes because the products being
+                                    purchased are not identical.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Odoo</h3>
+                                        <p>Odoo currently publishes Standard and Custom subscription plans that include
+                                            all in-house apps for a single fee. The Custom plan adds capabilities such
+                                            as Odoo Studio, multi-company, external API access and additional deployment
+                                            options.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Salesforce</h3>
+                                        <p>Salesforce publishes product-specific editions. Current Sales Cloud pricing
+                                            ranges from Starter and Pro through higher tiers, while Service, Marketing,
+                                            Commerce, Data and industry products can add separate costs depending on the
+                                            architecture.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Three-Year TCO</h3>
+                                        <p>Compare users, products, add-ons, implementation, integrations, data
+                                            migration, custom development, training, support, analytics, automation,
+                                            storage and internal administration. The subscription number alone is not
+                                            the project cost.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">INTEGRATIONS</span>
+                                <h2 class="h2 fw-bold mb-2">When the CRM Must Talk to the Rest of the Company</h2>
+                                <p>Integration requirements should be mapped before the platform is selected, especially
+                                    when ERP, commerce and operational systems are already in place.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Odoo Integration Surface</h3>
+                                        <p>External APIs can connect Odoo with payment providers, marketplaces, shipping
+                                            systems, banks, mobile applications, legacy systems, BI tools and other
+                                            services. The Custom plan includes external API access.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Salesforce Integration Surface</h3>
+                                        <p>Salesforce provides a large integration ecosystem around APIs, AppExchange,
+                                            MuleSoft and partner solutions. The architecture depends on whether
+                                            Salesforce is the system of record or the customer-facing layer over another
+                                            ERP.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Integration Questions</h3>
+                                        <p>Ask who owns the master record, how synchronization works, how errors are
+                                            retried, where transformations happen, how API limits are handled, how data
+                                            is monitored and what happens when either platform changes.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head dics-kb-section-head--center mb-4 text-center">
+                                <span class="dics-kb-eyebrow">IMPLEMENTATION FRAMEWORK</span>
+                                <h2 class="h2 fw-bold mb-2">How to Compare Odoo and Salesforce Properly</h2>
+                                <p>Six stages turn a feature comparison into an architecture decision.</p>
+                            </div>
+                            <div class="dics-detail-process d-grid gap-0 border-top">
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Map the Customer Journey</h3>
+                                        <p>Document lead generation, opportunity management, quoting, order capture,
+                                            service, renewals, marketing and customer communication.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Map the Back Office</h3>
+                                        <p>Document accounting, purchasing, inventory, manufacturing, fulfillment,
+                                            projects and other operational processes that must connect to CRM.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Define the System of Record</h3>
+                                        <p>Decide where customers, products, pricing, orders, inventory, invoices and
+                                            financial truth should live. This prevents duplicate ownership later.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">04</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Run Real Scenarios</h3>
+                                        <p>Demonstrate lead-to-cash, customer support, quote-to-order, online purchase,
+                                            return, invoice and reporting workflows using realistic data.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">05</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Model Three-Year TCO</h3>
+                                        <p>Include licenses, applications, add-ons, integrations, implementation,
+                                            customization, training, support and internal administration.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">06</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Design the Future State</h3>
+                                        <p>Test whether the chosen architecture can support expected users, customers,
+                                            transactions, entities, products, integrations and automation over the next
+                                            several years.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">BUSINESS SCENARIOS</span>
+                                <h2 class="h2 fw-bold mb-2">The Right Comparison Depends on What You Are Building</h2>
+                                <p>Different operating models create different evaluation priorities.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4">
+                                        <h3 class="h5 fw-bold mb-2">CRM-Centric Company</h3>
+                                        <p>If sales, service, marketing, customer journeys, forecasting and customer
+                                            data are the primary requirements, evaluate Salesforce deeply across Sales
+                                            Cloud, Service Cloud, Marketing Cloud, data and automation.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4">
+                                        <h3 class="h5 fw-bold mb-2">ERP-Centric Company</h3>
+                                        <p>If accounting, inventory, procurement, manufacturing, eCommerce and CRM need
+                                            one connected operational platform, evaluate Odoo's integrated application
+                                            architecture against the full process map.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card card h-100 border shadow-sm rounded-3 p-4">
+                                        <h3 class="h5 fw-bold mb-2">Hybrid Enterprise</h3>
+                                        <p>If Salesforce is already the customer platform and another ERP runs finance
+                                            and operations, evaluate whether the integration boundary should remain or
+                                            whether consolidating applications would simplify the architecture.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">MIGRATION + CONSOLIDATION</span>
+                                <h2 class="h2 fw-bold mb-2">Moving Between Odoo and Salesforce</h2>
+                                <p>Migration is a business-process redesign exercise, not a database copy.</p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Salesforce → Odoo</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Map leads, contacts, accounts, opportunities and activities</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Define how products, quotations, orders and invoices move into the
+                                                ERP
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Rebuild workflows around native Odoo CRM, Sales and back-office
+                                                processes where appropriate
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Reassess integrations that were previously used to connect CRM and ERP
+                                                systems
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Odoo → Salesforce</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Separate CRM data from ERP transaction data before migration</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Document custom Odoo modules, workflows and integrations</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Define which finance, inventory and manufacturing processes remain in
+                                                another ERP
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Design new system-of-record boundaries before rebuilding
+                                                integrations
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">DECISION FRAMEWORK</span>
+                                <h2 class="h2 fw-bold mb-2">Which Platform Characteristics Match Your Requirements?</h2>
+                                <p>There is no universal winner. The useful decision is the architecture that fits your
+                                    actual operating model.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Evaluate Odoo closely when:</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>CRM needs to connect directly with accounting, inventory, purchasing
+                                                or manufacturing.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>You want Website and eCommerce as part of the same ERP suite.</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>You need broad customization through modules, Studio and developer
+                                                tools.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>You prefer a public bundled application pricing model for the in-house
+                                                suite.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Evaluate Salesforce closely when:</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Sales, service, marketing and customer data are the center of the
+                                                transformation.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>You need a mature CRM ecosystem with specialized clouds and industry
+                                                solutions.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Advanced customer analytics, automation, data and AI capabilities are
+                                                central requirements.
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Your architecture already relies on Salesforce and its integration
+                                                ecosystem.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">FAQ</span>
+                                <h2 class="h2 fw-bold mb-2">Odoo vs Salesforce: Common Questions</h2>
+                            </div>
+                            <div class="accordion d-grid gap-3" id="odooSalesforceFaq">
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false"
+                                                aria-controls="faq1">Is Odoo a CRM like Salesforce?
+                                        </button>
+                                    </h3>
+                                    <div id="faq1" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooSalesforceFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">Odoo includes a
+                                            native CRM application, but it is part of a broader ERP and business
+                                            application suite that also covers accounting, inventory, manufacturing,
+                                            eCommerce, projects and other functions.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
+                                                aria-controls="faq2">Is Salesforce an ERP?
+                                        </button>
+                                    </h3>
+                                    <div id="faq2" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooSalesforceFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">Salesforce is
+                                            primarily a CRM and customer platform. It provides sales, service,
+                                            marketing, commerce, data, analytics and industry capabilities, while
+                                            companies commonly connect it with ERP or financial systems for back-office
+                                            operations.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
+                                                aria-controls="faq3">Which has stronger CRM functionality?
+                                        </button>
+                                    </h3>
+                                    <div id="faq3" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooSalesforceFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">Both provide CRM
+                                            functionality. Salesforce is specifically centered on CRM and customer
+                                            operations, while Odoo embeds CRM within a wider ERP application model. The
+                                            relevant comparison depends on whether CRM depth or end-to-end ERP
+                                            integration is the primary requirement.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
+                                                aria-controls="faq4">Can Odoo replace Salesforce?
+                                        </button>
+                                    </h3>
+                                    <div id="faq4" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooSalesforceFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">For
+                                            organizations whose CRM requirements are tightly connected to ERP processes,
+                                            Odoo can provide CRM alongside sales, accounting, inventory, manufacturing
+                                            and commerce in one suite. Map the Salesforce capabilities currently in use
+                                            before deciding what can be replaced natively.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false"
+                                                aria-controls="faq5">Can Salesforce replace Odoo?
+                                        </button>
+                                    </h3>
+                                    <div id="faq5" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooSalesforceFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">Salesforce can
+                                            cover extensive customer and revenue workflows, but a company considering
+                                            replacing an ERP should separately evaluate accounting, inventory,
+                                            purchasing, manufacturing, fulfillment and other operational requirements.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false"
+                                                aria-controls="faq6">Which is cheaper?
+                                        </button>
+                                    </h3>
+                                    <div id="faq6" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooSalesforceFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">There is no
+                                            universal answer for total cost. Odoo publishes bundled Standard and Custom
+                                            plans, while Salesforce pricing is split across editions and products.
+                                            Compare the complete architecture, implementation, integrations, add-ons and
+                                            three-year operating cost.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head dics-kb-section-head--center mb-4 text-center">
+                                <span class="dics-kb-eyebrow">FINAL TAKEAWAY</span>
+                                <h2 class="h2 fw-bold mb-2">Compare the Operating Model, Not Just the CRM Screen</h2>
+                                <p>Odoo and Salesforce can both become important systems in a company's technology
+                                    stack. The right architecture depends on what the organization needs to connect,
+                                    standardize and scale.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">If CRM Is the Center</h3>
+                                        <p>Evaluate Salesforce across sales, service, marketing, commerce, customer
+                                            data, analytics, automation and AI.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">If ERP Is the Center</h3>
+                                        <p>Evaluate Odoo across CRM, sales, accounting, inventory, manufacturing,
+                                            eCommerce, purchasing and operational reporting.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">If Both Matter</h3>
+                                        <p>Map system ownership carefully. Decide whether one platform should become the
+                                            operational core or whether a deliberate integration architecture is the
+                                            better fit.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="dics-kb-section text-center">
+                        <div class="dics-container">
+                            <span class="dics-kb-eyebrow">NEXT STEP</span>
+                            <h2 class="h1 mt-2">Build the customer and ERP architecture your business actually needs.
+                            </h2>
+                            <p class="mx-auto" style="max-width:700px;">DataInteger can map your CRM, finance, sales,
+                                inventory, manufacturing, commerce and integration requirements before you commit to
+                                Odoo, Salesforce, or a connected architecture.
+                            </p>
+                            <a href="/contact" class="dics-btn dics-btn-primary mt-4">Talk to an ERP architect
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -15,57 +15,83 @@
         <div id="wrap" class="dics-home dics-knowledge-page">
             <main class="dics-main">
 
-
-
-
-
-
                 <section class="dics-kb-hero h-auto">
-                    <div class="dics-kb-dot-grid"/>
-                    <div class="dics-container dics-kb-hero__inner">
-                        <div class="dics-kb-badge-row">
-                            <div class="dics-kb-badge dics-kb-badge--red">
-                                <span class="material-symbols-outlined">compare_arrows</span>
-                                <span>HEAD-TO-HEAD COMPARISON</span>
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container dics-kb-hero__inner">
+                            <div class="dics-kb-badge-row">
+                                <div class="dics-kb-badge dics-kb-badge--red">
+                                    <span class="material-symbols-outlined">compare_arrows</span>
+                                    <span>HEAD-TO-HEAD COMPARISON</span>
+                                </div>
+                                <span class="dics-kb-mono">• ARCHITECTURAL REVIEW</span>
                             </div>
-                            <span class="dics-kb-mono">• ARCHITECTURAL REVIEW</span>
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>Odoo vs SAP:<br/><span>Which ERP Actually Fits Growing Enterprises?</span></h1>
+                                    <div class="dics-kb-lead">
+                                        <p>SAP S/4HANA remains the default choice for very large, complex organisations with deep legacy processes. Odoo 18 Enterprise has emerged as the stronger option for high-growth manufacturers, distributors, and multi-entity businesses that need speed, lower total cost of ownership, and genuine flexibility.</p>
+                                        <p>This comparison examines real architectural differences — implementation timelines, licensing models, customisation risk, and long-term maintainability — rather than marketing claims.</p>
+                                    </div>
+                                    <div class="dics-kb-byline">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>9 Min Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">verified</span>
+                                            <span class="dics-kb-byline__strong">Verified on Odoo 18 Enterprise</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- At-a-glance panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">ODOO VS SAP AT A GLANCE</span>
+                                    </div>
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">TARGET SCALE</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>Growth vs Global Enterprise</strong>
+                                            <span>DIFFERENT SWEET SPOTS</span>
+                                        </div>
+                                        <p>SAP targets very large, process-heavy organisations. Odoo targets high-growth and multi-entity businesses.</p>
+                                    </div>
+                                    <div class="dics-kb-telemetry__stack">
+                                        <div>
+                                            <span class="dics-kb-mono">Implementation speed</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-FASTER</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Total cost of ownership</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-LOWER</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Very large legacy estates</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">SAP-STRONGER</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Customisation flexibility</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-FLEXIBLE</span>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-telemetry__footer">
+                                        <span class="dics-kb-mono">Full breakdown below</span>
+                                    </div>
+                                </aside>
+                            </div>
                         </div>
-
-                        <div class="dics-kb-hero-copy">
-                            <h1>
-                                Odoo vs SAP:<br/>
-                                <span>Which ERP Actually Fits Growing Enterprises?</span>
-                            </h1>
-                            <div class="dics-kb-lead">
-                                <p>
-                                    SAP S/4HANA remains the default choice for very large, complex organisations with deep legacy processes. Odoo 18 Enterprise has emerged as the stronger option for high-growth manufacturers, distributors, and multi-entity businesses that need speed, lower total cost of ownership, and genuine flexibility.
-                                </p>
-                                <p>
-                                    This comparison examines real architectural differences — implementation timelines, licensing models, customisation risk, and long-term maintainability — rather than marketing claims.
-                                </p>
-                            </div>
-                            <div class="dics-kb-byline">
-                                <div>
-                                    <span class="material-symbols-outlined">engineering</span>
-                                    <span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span>
-                                </div>
-                                <span>•</span>
-                                <div>
-                                    <span class="material-symbols-outlined">schedule</span>
-                                    <span>9 Min Read</span>
-                                </div>
-                                <span>•</span>
-                                <div>
-                                    <span class="material-symbols-outlined dics-kb-icon-green">verified</span>
-                                    <span class="dics-kb-byline__strong">Verified on Odoo 18 Enterprise</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-
+                    </section>
 
                 <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
@@ -156,9 +182,6 @@
                     </div>
                 </section>
 
-
-
-
                 <section class="dics-kb-section py-5 bg-white border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
                         <div class="dics-kb-section-head mb-4">
@@ -209,9 +232,6 @@
                         </div>
                     </div>
                 </section>
-
-
-
 
                 <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
@@ -267,9 +287,6 @@
                     </div>
                 </section>
 
-
-
-
                 <section class="dics-kb-section py-5 bg-white border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
                         <div class="dics-kb-section-head mb-4">
@@ -312,7 +329,6 @@
                     </div>
                 </section>
 
-
                 <!-- COMPARISON MATRIX -->
                 <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
                     <div class="dics-container container px-3 px-sm-4">
@@ -321,8 +337,8 @@
                             <h2 class="h2 fw-bold mb-2">Odoo vs SAP Across the ERP Stack</h2>
                             <p class="text-secondary mb-0">Use this matrix to validate the architectural differences described above against your own processes, entities, integrations and operating model.</p>
                         </div>
-                        <div class="table-responsive border rounded-3 bg-white shadow-sm overflow-hidden">
-                            <table class="table table-bordered table-hover align-middle mb-0">
+                        <div class="table-responsive border rounded-3 bg-white shadow-sm">
+                            <table class="table table-bordered table-hover align-middle mb-0" id="fs-05">
                                 <thead class="table-dark">
                                     <tr><th class="p-3 text-nowrap">Area</th><th class="p-3">Odoo 18 Enterprise</th><th class="p-3">SAP S/4HANA</th></tr>
                                 </thead>
@@ -340,7 +356,6 @@
                         </div>
                     </div>
                 </section>
-
 
                 <!-- FAQ -->
                 <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
@@ -374,9 +389,6 @@
                     </div>
                 </section>
 
-
-
-
                 <section class="dics-kb-section dics-kb-section--dark">
                     <div class="dics-container">
                         <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -407,16 +419,13 @@
                     </div>
                 </section>
 
-
-
-
                 <section class="dics-kb-cta">
                     <div class="dics-container container px-3 px-sm-4">
                         <div class="dics-kb-cta-card border rounded-3 shadow-sm p-4 bg-white">
                             <div>
                                 <span class="dics-kb-eyebrow">NEXT STEP</span>
                                 <h2>Need a Side-by-Side Evaluation for Your Business?</h2>
-                                <p>
+                                <p class="text-black">
                                     Our architects can map your current processes, estimate realistic timelines and costs for both platforms, and give you a clear recommendation without sales pressure.
                                 </p>
                                 <a href="/contact" class="dics-btn dics-btn-primary">

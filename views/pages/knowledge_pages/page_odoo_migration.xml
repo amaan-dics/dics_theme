@@ -44,26 +44,14 @@
 
                                     <div class="dics-kb-lead">
                                         <p>
-                                            Odoo migration means moving your existing Odoo system from an older version
-                                            to a newer version.
-                                            Your business data, customers, products, invoices, orders, inventory, custom
-                                            modules, and settings can all be moved to the new Odoo version.
+                                            Odoo migration means moving your existing Odoo system to a newer version
+                                            while keeping your data, custom modules, and settings intact.
                                         </p>
                                         <p>
-                                            A proper Odoo migration lets you use the latest Odoo features while keeping
-                                            the data and processes your business already uses.
-                                            This guide explains what Odoo migration is, why businesses upgrade Odoo, how
-                                            the migration process works, common problems, and how DataInteger handles
-                                            Odoo migrations.
-                                        </p>
-                                        <p>
-                                            Upgrading your system ensures your business stays competitive by leveraging
-                                            enhanced security protocols, faster performance speeds, and a more intuitive
-                                            user interface. It eliminates the technical debt accumulated from outdated
-                                            customizations and opens the door to third-party integrations that only
-                                            support recent versions. Ultimately, a seamless migration minimizes
-                                            operational downtime, helps your team work more efficiently, and provides a
-                                            scalable foundation for your company's future growth.
+                                            A proper migration gives you the latest features, better security and
+                                            performance, and less technical debt, with minimal downtime. This guide
+                                            covers why businesses upgrade, how the process works, common problems,
+                                            and how DataInteger handles it.
                                         </p>
                                     </div>
 

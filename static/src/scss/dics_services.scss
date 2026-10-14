@@ -1472,3 +1472,15 @@ $dics-bg: #0000;
     font-size: 12px;
     color: #aaa;
 }
+// ── SERVICES PAGE: MOBILE CTA CONTAINER WIDTH ────────────────
+
+@media (max-width: 431px) {
+    .dics-services-page {
+        .dics-container:has(.dics-svc-cta-card) {
+            min-width: 322.5px !important;
+            .dics-svc-cta-card__btn{
+                padding: 1rem 1.25rem !important;
+                }
+        }
+    }
+}

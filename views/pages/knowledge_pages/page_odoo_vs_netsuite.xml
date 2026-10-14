@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="dics_odoo_vs_netsuite"
+              name="DataInteger — Odoo vs NetSuite"
+              key="dics_theme.dics_odoo_vs_netsuite"
+              website_id="dics_theme.dics_website">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Odoo vs NetSuite: A Detailed ERP Comparison for Growing and Global Businesses —
+                DataInteger
+            </t>
+            <t t-set="meta_description">Odoo vs NetSuite comparison covering ERP architecture, accounting,
+                manufacturing, inventory, eCommerce, customization, integrations, multi-company operations,
+                implementation, and total cost of ownership.
+            </t>
+
+            <div id="wrap" class="dics-home dics-knowledge-page">
+                <main class="dics-main">
+
+                    <!-- HERO -->
+                    <section class="dics-kb-hero h-auto">
+                        <div class="dics-kb-dot-grid"/>
+                        <div class="dics-container dics-kb-hero__inner">
+                            <div class="dics-kb-badge-row">
+                                <div class="dics-kb-badge dics-kb-badge--red">
+                                    <span class="material-symbols-outlined">compare_arrows</span>
+                                    <span>HEAD-TO-HEAD ERP COMPARISON</span>
+                                </div>
+                                <span class="dics-kb-mono">• ARCHITECTURAL REVIEW</span>
+                            </div>
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>Odoo vs NetSuite:<br/><span>Which ERP Architecture Fits Your Business?</span></h1>
+                                    <div class="dics-kb-lead">
+                                        <p class="text-secondary mb-0">Odoo and Oracle NetSuite both cover finance, sales, CRM, inventory, manufacturing, commerce, and business operations. The important differences appear in architecture, customization, global operations, implementation, licensing, and long-term ownership.</p>
+                                        <p class="text-secondary mb-0">This guide compares the two platforms from both business and technical perspectives, so decision-makers can evaluate the ERP against their real workflows instead of a generic feature checklist.</p>
+                                    </div>
+                                    <div class="dics-kb-byline">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>12 Min Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">verified</span>
+                                            <span class="dics-kb-byline__strong">Business + Technical Comparison</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- At-a-glance panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">ODOO VS NETSUITE AT A GLANCE</span>
+                                    </div>
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">DEPLOYMENT</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>Open vs Proprietary</strong>
+                                            <span>HOSTING &amp; CONTROL</span>
+                                        </div>
+                                        <p>Odoo can run on Odoo Online, Odoo.sh or your own servers. NetSuite is delivered as Oracle-hosted SaaS.</p>
+                                    </div>
+                                    <div class="dics-kb-telemetry__stack">
+                                        <div>
+                                            <span class="dics-kb-mono">Core ERP &amp; finance</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">BOTH COVER IT</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Hosting flexibility</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-FLEXIBLE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Customization path</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">PYTHON/OWL vs SUITESCRIPT</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Multi-entity &amp; global</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">BOTH SUPPORT</span>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-telemetry__footer">
+                                        <span class="dics-kb-mono">Full breakdown below</span>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- AT A GLANCE -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">AT A GLANCE</span>
+                                <h2 class="h2 fw-bold mb-2">Two ERP Platforms, Different Operating Models</h2>
+                                <p class="text-secondary mb-0">Both platforms can become the operational core of a
+                                    business. The useful comparison is how each platform approaches data, finance,
+                                    operations, customization, and global growth.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card dics-kb-compare-card--good h-100 border rounded-3 shadow-sm p-4">
+                                        <div class="dics-kb-card-corner"/>
+                                        <div class="dics-kb-card-head">
+                                            <div class="dics-kb-card-title">
+                                                <div class="dics-kb-square-icon dics-kb-square-icon--red-solid">
+                                                    <span class="material-symbols-outlined">hub</span>
+                                                </div>
+                                                <div>
+                                                    <h3 class="h5 fw-bold mb-2">Odoo</h3>
+                                                    <span>Open-source, modular ERP ecosystem</span>
+                                                </div>
+                                            </div>
+                                            <em>FLEXIBLE MODEL</em>
+                                        </div>
+                                        <p class="text-secondary mb-0">Odoo combines a broad application portfolio with
+                                            an open-source foundation, multiple deployment approaches, Studio, custom
+                                            modules, and a common business data model.
+                                        </p>
+                                        <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>Accounting, CRM, Sales, Inventory, Manufacturing, Website and
+                                                    eCommerce in one suite
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>Custom modules, Studio, APIs and developer extensibility</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>Odoo Online, Odoo.sh and applicable on-premise options</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>Public subscription plans with Community and Enterprise models
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card dics-kb-compare-card--bad h-100 border rounded-3 shadow-sm p-4">
+                                        <div class="dics-kb-card-corner"/>
+                                        <div class="dics-kb-card-head">
+                                            <div class="dics-kb-card-title">
+                                                <div class="dics-kb-square-icon dics-kb-square-icon--red">
+                                                    <span class="material-symbols-outlined">account_balance</span>
+                                                </div>
+                                                <div>
+                                                    <h3 class="h5 fw-bold mb-2">NetSuite</h3>
+                                                    <span>Cloud ERP with enterprise financial depth</span>
+                                                </div>
+                                            </div>
+                                            <em>GLOBAL ERP MODEL</em>
+                                        </div>
+                                        <p class="text-secondary mb-0">Oracle NetSuite provides cloud ERP across
+                                            financial management, CRM, commerce, supply chain, manufacturing, analytics,
+                                            and global subsidiary operations.
+                                        </p>
+                                        <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                            <li>
+                                                <span class="material-symbols-outlined">info</span>
+                                                <span>Strong financial and multi-subsidiary architecture</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">info</span>
+                                                <span>OneWorld for global entities, currencies, tax and consolidation
+                                                    scenarios
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">info</span>
+                                                <span>SuiteCloud, SuiteScript, SuiteTalk, SuiteFlow and SuiteApps</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">info</span>
+                                                <span>Commercial structure generally depends on configuration and
+                                                    contract scope
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ARCHITECTURE -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">ARCHITECTURE</span>
+                                <h2 class="h2 fw-bold mb-2">The Difference Starts Under the Applications</h2>
+                                <p class="text-secondary mb-0">Feature lists can look surprisingly similar. The deeper
+                                    question is how business processes and data are represented underneath those
+                                    features.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Integrated Business Model</h3>
+                                        <p class="text-secondary mb-0">Odoo connects sales, purchasing, inventory,
+                                            manufacturing, projects and accounting inside one application ecosystem.
+                                            NetSuite likewise connects financial and operational records across its
+                                            cloud suite. During evaluation, map the actual transaction flow rather than
+                                            comparing isolated screens.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Open-Source Extensibility vs SuiteCloud</h3>
+                                        <p class="text-secondary mb-0">Odoo can be extended through Studio, custom
+                                            modules, Python, XML, JavaScript, APIs and its ORM. NetSuite uses its own
+                                            extension ecosystem including SuiteScript, SuiteTalk, SuiteFlow and
+                                            SuiteApps. The key decision is which development model your internal team
+                                            and implementation partner can maintain.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Cloud and Deployment Strategy</h3>
+                                        <p class="text-secondary mb-0">Odoo provides different deployment paths
+                                            depending on the selected plan and implementation model. NetSuite is
+                                            delivered primarily as a cloud SaaS platform. Deployment flexibility matters
+                                            when your organization has infrastructure, compliance, integration, or
+                                            development requirements that go beyond standard SaaS.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">04</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">ERP Standardization vs Process Adaptation</h3>
+                                        <p class="text-secondary mb-0">Every ERP project must decide which processes
+                                            should be standardized and which genuinely require customization. The
+                                            strongest architecture is usually the one that reduces unnecessary custom
+                                            code while preserving workflows that create real operational value.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- COMPARISON MATRIX -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CORE COMPARISON</span>
+                                <h2 class="h2 fw-bold mb-2">Odoo vs NetSuite Across the ERP Stack</h2>
+                                <p class="text-secondary mb-0">Use this matrix as a starting point, then validate each
+                                    area against your own processes, data, legal entities and integrations.
+                                </p>
+                            </div>
+                            <div class="table-responsive border rounded-3 bg-white shadow-sm">
+                                <table class="table table-bordered table-hover align-middle mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Area</th>
+                                            <th>Odoo</th>
+                                            <th>NetSuite</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <strong>ERP scope</strong>
+                                            </td>
+                                            <td>Broad integrated business application suite</td>
+                                            <td>Cloud ERP suite spanning finance and operations</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Accounting</strong>
+                                            </td>
+                                            <td>Native accounting integrated with operational apps</td>
+                                            <td>Core financial management with extensive global capabilities</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Multi-company</strong>
+                                            </td>
+                                            <td>Supported with multi-company architecture</td>
+                                            <td>Strong multi-subsidiary model through OneWorld</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Inventory</strong>
+                                            </td>
+                                            <td>Native WMS, replenishment, traceability and barcode workflows</td>
+                                            <td>Integrated inventory and supply-chain capabilities</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Manufacturing</strong>
+                                            </td>
+                                            <td>MRP, BOMs, work centers, quality, maintenance and production workflows
+                                            </td>
+                                            <td>Manufacturing, work orders, BOM-related functions and planning
+                                                capabilities
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>eCommerce</strong>
+                                            </td>
+                                            <td>Native Website and eCommerce applications connected to ERP</td>
+                                            <td>Commerce capabilities integrated with the NetSuite environment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Customization</strong>
+                                            </td>
+                                            <td>Studio, Python modules, XML, JavaScript, ORM and APIs</td>
+                                            <td>SuiteScript, SuiteFlow, SuiteTalk, SuiteApps and SuiteCloud tools</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Deployment</strong>
+                                            </td>
+                                            <td>Odoo Online, Odoo.sh and applicable on-premise options</td>
+                                            <td>Cloud SaaS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <strong>Pricing visibility</strong>
+                                            </td>
+                                            <td>Public subscription plans are available</td>
+                                            <td>Typically configuration and contract dependent</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FINANCE -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">FINANCE</span>
+                                <h2 class="h2 fw-bold mb-2">Accounting Is the Backbone of the ERP</h2>
+                                <p class="text-secondary mb-0">The correct comparison depends on legal entities, tax
+                                    jurisdictions, currencies, consolidation and intercompany complexity.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Odoo Financial Flow</h3>
+                                        <p class="text-secondary mb-0">Sales, purchasing, inventory, expenses,
+                                            subscriptions and other operational applications can feed directly into
+                                            accounting. A typical flow is Sales Order → Delivery → Invoice → Payment →
+                                            Accounting Entry.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">NetSuite Financial Flow</h3>
+                                        <p class="text-secondary mb-0">NetSuite places financial management at the
+                                            center of its ERP architecture. OneWorld extends that model across
+                                            subsidiaries, currencies, tax environments and consolidated reporting
+                                            scenarios.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Questions to Validate</h3>
+                                        <p class="text-secondary mb-0">Compare chart of accounts, tax, multi-currency,
+                                            intercompany transactions, consolidation, revenue recognition, fixed assets,
+                                            budgeting, audit requirements and management reporting using real examples.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- OPERATIONS -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">OPERATIONS</span>
+                                <h2 class="h2 fw-bold mb-2">Inventory, Manufacturing and Supply Chain</h2>
+                                <p class="text-secondary mb-0">Operational depth matters when ERP becomes the system
+                                    that runs the warehouse and factory, not just the accounting office.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4">
+                                        <h3 class="h5 fw-bold mb-2">Inventory</h3>
+                                        <p class="text-secondary mb-0">Evaluate warehouses, locations, lots, serial
+                                            numbers, barcode operations, replenishment, valuation, transfers, returns,
+                                            fulfillment and traceability.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4">
+                                        <h3 class="h5 fw-bold mb-2">Manufacturing</h3>
+                                        <p class="text-secondary mb-0">Evaluate BOMs, routes, work centers,
+                                            subcontracting, production planning, quality checks, maintenance, capacity
+                                            and production costing.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4">
+                                        <h3 class="h5 fw-bold mb-2">Procurement</h3>
+                                        <p class="text-secondary mb-0">Evaluate vendor management, purchase automation,
+                                            demand planning, replenishment, dropshipping, intercompany procurement and
+                                            supplier performance.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- COMMERCE CRM -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">CUSTOMER OPERATIONS</span>
+                                <h2 class="h2 fw-bold mb-2">CRM, Sales, Marketing and eCommerce</h2>
+                                <p class="text-secondary mb-0">When customer activity connects directly to stock,
+                                    fulfillment and finance, the architecture of the ERP becomes especially important.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Lead to Cash</h3>
+                                        <p class="text-secondary mb-0">Compare the complete path from lead and
+                                            opportunity to quotation, order, delivery, invoice and payment. Measure the
+                                            number of manual handoffs required in each platform.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Commerce to Fulfillment</h3>
+                                        <p class="text-secondary mb-0">For online businesses, test product catalog,
+                                            pricing, promotions, inventory availability, payment, shipping, returns,
+                                            customer accounts and ERP synchronization as one workflow.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Customer Data</h3>
+                                        <p class="text-secondary mb-0">Test whether sales, support, marketing, orders,
+                                            invoices and customer history can be accessed at the point where employees
+                                            actually need them.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CUSTOMIZATION -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">DEVELOPMENT</span>
+                                <h2 class="h2 fw-bold mb-2">Customization: Flexibility Also Creates Responsibility</h2>
+                                <p class="text-secondary mb-0">Both platforms are extensible, but their development
+                                    models are different.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Odoo development path</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Python ORM and custom modules</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>XML views and QWeb templates</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>OWL and JavaScript front-end development</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Studio and external API capabilities</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">NetSuite development path</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>SuiteScript for application logic</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>SuiteTalk for integrations</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>SuiteFlow for workflow automation</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>SuiteApps and SuiteCloud ecosystem</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dics-kb-note mt-4 p-3 border border-warning rounded-3 bg-warning-subtle d-flex align-items-start gap-2">
+                                <span class="material-symbols-outlined">warning</span>
+                                <p class="text-secondary mb-0">
+                                    <strong>Important:</strong>
+                                    Customization should solve a genuine business requirement. Every custom workflow,
+                                    module, integration or script creates testing, documentation, security, maintenance
+                                    and upgrade responsibilities.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- COST -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">TOTAL COST</span>
+                                <h2 class="h2 fw-bold mb-2">Do Not Compare ERP Prices Without Comparing the Whole
+                                    System
+                                </h2>
+                                <p class="text-secondary mb-0">The subscription is only one component of an ERP
+                                    investment.
+                                </p>
+                            </div>
+                            <div class="dics-kb-pillars d-grid gap-3">
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">License and Subscription</h3>
+                                        <p class="text-secondary mb-0">Odoo publishes subscription plans, while
+                                            NetSuite's commercial structure is generally based on the configured
+                                            solution and contract scope. Compare actual user, module and entity
+                                            requirements.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Implementation</h3>
+                                        <p class="text-secondary mb-0">Include discovery, solution design,
+                                            configuration, customization, integrations, data migration, testing,
+                                            training, project management and go-live support.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="border rounded-3 bg-white p-4 shadow-sm d-flex align-items-start gap-3">
+                                    <span class="flex-shrink-0">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Three-Year TCO</h3>
+                                        <p class="text-secondary mb-0">Model licenses, partner services, custom
+                                            development, integrations, support, upgrades, infrastructure where
+                                            applicable, training and internal ERP staffing over at least three years.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- GLOBAL -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">GLOBAL OPERATIONS</span>
+                                <h2 class="h2 fw-bold mb-2">Multi-Company, Multi-Currency and International Growth</h2>
+                                <p class="text-secondary mb-0">Global ERP requirements should be evaluated through
+                                    actual legal-entity and consolidation scenarios.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4">
+                                        <h3 class="h5 fw-bold mb-2">Odoo</h3>
+                                        <p class="text-secondary mb-0">Odoo supports multi-company environments and can
+                                            connect financial and operational workflows across companies. The
+                                            implementation should carefully model accounting, intercompany operations,
+                                            localizations and shared master data.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="dics-kb-compare-card h-100 border rounded-3 shadow-sm p-4">
+                                        <h3 class="h5 fw-bold mb-2">NetSuite OneWorld</h3>
+                                        <p class="text-secondary mb-0">OneWorld is designed for organizations operating
+                                            across multiple subsidiaries, currencies, tax environments and countries,
+                                            with consolidated visibility across the group.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- IMPLEMENTATION PROCESS -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head dics-kb-section-head--center mb-4 text-center">
+                                <span class="dics-kb-eyebrow">IMPLEMENTATION FRAMEWORK</span>
+                                <h2 class="h2 fw-bold mb-2">How to Compare Odoo and NetSuite Properly</h2>
+                                <p class="text-secondary mb-0">Six stages turn an ERP comparison into an evidence-based
+                                    implementation decision.
+                                </p>
+                            </div>
+                            <div class="dics-detail-process d-grid gap-0 border-top">
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">01</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Map the Business</h3>
+                                        <p class="text-secondary mb-0">Document finance, sales, purchasing, inventory,
+                                            manufacturing, service, commerce and reporting workflows before looking at
+                                            configuration screens.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">02</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Define Critical Requirements</h3>
+                                        <p class="text-secondary mb-0">Separate must-have capabilities from useful
+                                            features. Identify legal, operational, compliance and integration
+                                            requirements that cannot be compromised.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">03</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Run Real Scenarios</h3>
+                                        <p class="text-secondary mb-0">Demonstrate order-to-cash, procure-to-pay,
+                                            inventory, manufacturing, month-end and reporting workflows using realistic
+                                            business examples.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">04</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Model the Architecture</h3>
+                                        <p class="text-secondary mb-0">Compare data ownership, integrations,
+                                            customization, security, hosting, APIs, reporting and master-data strategy
+                                            instead of evaluating screens in isolation.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">05</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Calculate Three-Year TCO</h3>
+                                        <p class="text-secondary mb-0">Combine subscription, implementation,
+                                            development, integrations, migration, training, support and internal
+                                            staffing into one financial model.
+                                        </p>
+                                    </div>
+                                </article>
+                                <article
+                                        class="dics-detail-process-item border-bottom py-4 d-flex align-items-start gap-3">
+                                    <span class="dics-detail-process-number">06</span>
+                                    <div>
+                                        <h3 class="h5 fw-bold mb-2">Plan the Future State</h3>
+                                        <p class="text-secondary mb-0">Test whether the selected architecture can
+                                            support your expected users, entities, locations, products, transactions and
+                                            integrations several years from now.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- MIGRATION -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">MIGRATION</span>
+                                <h2 class="h2 fw-bold mb-2">Moving Between Odoo and NetSuite</h2>
+                                <p class="text-secondary mb-0">Migration is not simply exporting records from one
+                                    database and importing them into another.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">NetSuite → Odoo</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Map customers, vendors, products, accounts and opening balances</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Classify historical data as migrate, archive, transform or rebuild
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Rebuild workflows around Odoo's native processes before recreating
+                                                custom logic
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Validate financial and inventory opening positions before go-live
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Odoo → NetSuite</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Document custom Odoo modules and business logic</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Map companies, accounts, products, inventory and historical
+                                                transactions
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Identify which custom processes can be replaced by native NetSuite
+                                                capabilities
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Rebuild integrations and validate consolidated reporting</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- DECISION FRAMEWORK -->
+                    <section class="dics-kb-section py-5 bg-white border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">DECISION FRAMEWORK</span>
+                                <h2 class="h2 fw-bold mb-2">Which ERP Characteristics Match Your Requirements?</h2>
+                                <p class="text-secondary mb-0">There is no universal winner. The useful decision is the
+                                    one supported by your processes, data, people and growth model.
+                                </p>
+                            </div>
+                            <div class="row g-4 align-items-stretch">
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">Odoo characteristics to evaluate</h3>
+                                    <ul class="dics-kb-list dics-kb-list--good list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Broad integrated application portfolio</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Open-source foundation and extensive customization path</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Native website, eCommerce, inventory and manufacturing applications
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Flexible deployment and development options</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="h5 fw-bold mb-3">NetSuite characteristics to evaluate</h3>
+                                    <ul class="dics-kb-list dics-kb-list--bad list-unstyled d-grid gap-2 mb-0">
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Cloud-first ERP architecture</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Strong financial and multi-subsidiary capabilities</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>Global operations through OneWorld</span>
+                                        </li>
+                                        <li>
+                                            <span class="material-symbols-outlined">info</span>
+                                            <span>SuiteCloud extensibility and Oracle ecosystem</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FAQ -->
+                    <section class="dics-kb-section dics-kb-section--gray py-5 bg-light border-bottom">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <div class="dics-kb-section-head mb-4">
+                                <span class="dics-kb-eyebrow">FAQ</span>
+                                <h2 class="h2 fw-bold mb-2">Odoo vs NetSuite: Common Questions</h2>
+                            </div>
+                            <div class="accordion d-grid gap-3" id="odooNetSuiteFaq">
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#netSuiteFaq1"
+                                                aria-expanded="false" aria-controls="netSuiteFaq1">Q1 Is Odoo suitable
+                                            for large companies?
+                                        </button>
+                                    </h3>
+                                    <div id="netSuiteFaq1" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooNetSuiteFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">Odoo positions
+                                            its platform across organizations of different sizes and provides
+                                            applications across finance, supply chain, manufacturing, services, HR,
+                                            marketing, websites and more. Suitability should be validated against the
+                                            organization's exact governance, localization, integration and operational
+                                            requirements.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#netSuiteFaq2"
+                                                aria-expanded="false" aria-controls="netSuiteFaq2">Q2 Can NetSuite
+                                            handle manufacturing?
+                                        </button>
+                                    </h3>
+                                    <div id="netSuiteFaq2" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooNetSuiteFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">Yes. NetSuite
+                                            provides manufacturing capabilities including work orders, bills of
+                                            materials and production planning features. Manufacturing requirements
+                                            should be validated through realistic plant scenarios.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#netSuiteFaq3"
+                                                aria-expanded="false" aria-controls="netSuiteFaq3">Q3 Can both platforms
+                                            support multiple companies?
+                                        </button>
+                                    </h3>
+                                    <div id="netSuiteFaq3" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooNetSuiteFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">Yes. Odoo
+                                            supports multi-company environments, while NetSuite OneWorld is designed
+                                            around multi-subsidiary and global operating structures.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border rounded-3 shadow-sm overflow-hidden">
+                                    <h3 class="accordion-header mb-0">
+                                        <button class="accordion-button collapsed fw-bold p-4" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#netSuiteFaq4"
+                                                aria-expanded="false" aria-controls="netSuiteFaq4">Q4 Which platform is
+                                            easier to customize?
+                                        </button>
+                                    </h3>
+                                    <div id="netSuiteFaq4" class="accordion-collapse collapse"
+                                         data-bs-parent="#odooNetSuiteFaq">
+                                        <div class="accordion-body border-top px-4 py-3 text-secondary">Both are
+                                            extensible, but through different technologies. Odoo offers Studio, custom
+                                            modules, Python, XML, JavaScript and APIs. NetSuite provides SuiteScript,
+                                            SuiteTalk, SuiteFlow, SuiteCloud and SuiteApps.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <section class="dics-kb-section text-center">
+                        <div class="dics-container container px-3 px-sm-4">
+                            <span class="dics-kb-eyebrow">NEXT STEP</span>
+                            <h2 class="h1 mt-2">Choose the ERP architecture that fits the business you are building.
+                            </h2>
+                            <p class="mx-auto" style="max-width:700px;">DataInteger can map your current workflows, data
+                                model, reporting requirements, integrations and growth plans before you commit to an ERP
+                                architecture.
+                            </p>
+                            <a href="/contact" class="dics-btn dics-btn-primary mt-4">Talk to an ERP architect
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+        </t>
+    </template>
+</odoo>

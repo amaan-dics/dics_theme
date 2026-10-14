@@ -5,16 +5,12 @@ from odoo.addons.website.controllers.main import Website
 from odoo.addons.account.controllers.portal import PortalAccount
 import logging
 
+from .industry_content import INDUSTRY_EXTRA
+
 _logger = logging.getLogger(__name__)
 
 
 class DataIntegerWebsiteController(Website):
-    """Website controller for the Datainteger Consultancy Services theme.
-
-    Inherits Website so index() and other core routes can be selectively
-    overridden. Every route guards with _is_dics_website() so pages are
-    only served on the DICS website record, leaving other websites untouched.
-    """
 
     INDUSTRIES = {
         'healthcare': {
@@ -278,7 +274,10 @@ class DataIntegerWebsiteController(Website):
         },
     }
 
-    # ── Shared helpers ────────────────────────────────────────────────────────
+    @classmethod
+    def _industries(cls):
+        """INDUSTRIES merged with the per-industry extras (cards, console, modules)."""
+        return {slug: {**data, **INDUSTRY_EXTRA.get(slug, {})} for slug, data in cls.INDUSTRIES.items()}
 
     def _is_dics_website(self):
         website = request.website
@@ -286,12 +285,6 @@ class DataIntegerWebsiteController(Website):
         return bool(website and dics_website and website.id == dics_website.id)
 
     def _render_page(self, template, page_name, **extra):
-        """Render a page template with the matching website.page as main_object.
-
-        Passing main_object correctly enables the Website editor SEO panel
-        (meta title, description, robots, sitemap) for every registered page.
-        The URL lookup must match the canonical url field on website.page exactly.
-        """
         website = request.website
         page = request.env['website.page'].sudo().search([
             ('url', '=', request.httprequest.path),
@@ -308,7 +301,7 @@ class DataIntegerWebsiteController(Website):
         return request.render(view.id if view else template, ctx)
 
     def _render_industry(self, slug):
-        industry = self.INDUSTRIES.get(slug)
+        industry = self._industries().get(slug)
         if not industry:
             return request.not_found()
         return self._render_page(
@@ -318,8 +311,6 @@ class DataIntegerWebsiteController(Website):
             industry_slug=slug,
         )
 
-    # ── Index / 404 ───────────────────────────────────────────────────────────
-
     @http.route()
     def index(self, **kw):
         if self._is_dics_website():
@@ -328,6 +319,11 @@ class DataIntegerWebsiteController(Website):
 
     @http.route('/<path:invalid_path>', type='http', auth='public', website=True)
     def handle_404(self, invalid_path, **kw):
+        page = request.env['ir.http']._serve_page()
+        _logger.info("handle_404: path=%s website=%s served_page=%s",
+                     request.httprequest.path, request.website.id, bool(page))
+        if page:
+            return page
         if not self._is_dics_website():
             return request.not_found()
         view = request.env.ref('dics_theme.page_404', raise_if_not_found=False)
@@ -341,7 +337,6 @@ class DataIntegerWebsiteController(Website):
             return request.not_found()
         return request.redirect('/dics_theme/static/src/img/favicon.svg')
 
-    # ── Core pages ────────────────────────────────────────────────────────────
 
     @http.route('/about-us', type='http', auth='public', website=True)
     def about(self, **kw):
@@ -367,11 +362,11 @@ class DataIntegerWebsiteController(Website):
             return request.not_found()
         return request.redirect('/contactus', code=301)
 
-    @http.route('/contactus-thank-you', type='http', auth='public', website=True)
-    def contact_thank_you(self, **kw):
-        if not self._is_dics_website():
-            return request.not_found()
-        return self._render_page('dics_theme.dics_contact_thank_you', 'contact_thank_you')
+    # @http.route('/contactus-thank-you', type='http', auth='public', website=True)
+    # def contact_thank_you(self, **kw):
+    #     if not self._is_dics_website():
+    #         return request.not_found()
+    #     return self._render_page('dics_theme.dics_contact_thank_you', 'contact_thank_you')
 
     @http.route('/insights', type='http', auth='public', website=True)
     def insights(self, **kw):
@@ -379,7 +374,6 @@ class DataIntegerWebsiteController(Website):
             return request.not_found()
         return self._render_page('dics_theme.dics_insights', 'insights')
 
-    # ── Services ──────────────────────────────────────────────────────────────
 
     @http.route('/services', type='http', auth='public', website=True)
     def services(self, **kw):
@@ -435,13 +429,12 @@ class DataIntegerWebsiteController(Website):
             return request.not_found()
         return self._render_page('dics_theme.page_claude_integration', 'claude_integration')
 
-    # ── Industries ────────────────────────────────────────────────────────────
 
     @http.route('/industries', type='http', auth='public', website=True)
     def industries(self, **kw):
         if not self._is_dics_website():
             return request.not_found()
-        return self._render_page('dics_theme.dics_industries', 'industries', industries=self.INDUSTRIES)
+        return self._render_page('dics_theme.dics_industries', 'industries', industries=self._industries())
 
     @http.route('/industries/<string:slug>', type='http', auth='public', website=True)
     def industry_detail(self, slug, **kw):
@@ -449,7 +442,6 @@ class DataIntegerWebsiteController(Website):
             return request.not_found()
         return self._render_industry(slug)
 
-    # ── Knowledge / blog pages ────────────────────────────────────────────────
 
     @http.route('/what-is-odoo', type='http', auth='public', website=True)
     def what_is_odoo(self, **kw):
@@ -492,8 +484,6 @@ class DataIntegerWebsiteController(Website):
         if not self._is_dics_website():
             return request.not_found()
         return self._render_page('dics_theme.dics_glossary', 'glossary')
-
-    # ── Odoo vs competitor comparison pages ───────────────────────────────────
 
     @http.route('/odoo-vs-sap', type='http', auth='public', website=True)
     def odoo_vs_sap(self, **kw):
@@ -577,36 +567,27 @@ class DataIntegerPortalAccount(PortalAccount):
         for invoice in invoices:
             sign = -1 if invoice.move_type == "out_refund" else 1
 
-            # 1. Draft invoices -> Pending
             if invoice.state == "draft":
                 totals["pending"] += sign * abs(invoice.amount_total)
                 continue
 
-            # 2. Ignore anything except posted invoices
             if invoice.state != "posted":
                 continue
 
-            # 3. Ignore fully-paid invoices
             if invoice.currency_id.is_zero(invoice.amount_residual):
                 continue
 
             amount = sign * abs(invoice.amount_residual)
 
-            # Add/subtract from Total Outstanding
             totals["outstanding"] += amount
 
-            # 4. Add past-due invoices AND past-due credit notes to Overdue
             if invoice.invoice_date_due and invoice.invoice_date_due < today:
                 totals["overdue"] += amount
 
-        # 5. ACCOUNTING SAFETY CLAMPS:
-        # - Overdue can never be negative
-        # - Overdue can NEVER exceed Total Outstanding (credit notes offset overdue first)
         totals["outstanding"] = max(0.0, totals["outstanding"])
         totals["overdue"] = max(0.0, min(totals["overdue"], totals["outstanding"]))
         totals["pending"] = max(0.0, totals["pending"])
 
-        # Prevent floating-point drift
         for key in totals:
             totals[key] = round(totals[key], 2)
 
@@ -614,17 +595,13 @@ class DataIntegerPortalAccount(PortalAccount):
 
     def _prepare_my_invoices_values(self, page, date_begin, date_end, sortby, filterby, domain=None,
                                     url="/my/invoices"):
-        """
-        Override Odoo 17's native value preparation to calculate summary card totals
-        globally across all matching records before pagination slicing occurs.
-        """
         values = super()._prepare_my_invoices_values(
             page, date_begin, date_end, sortby, filterby, domain=domain, url=url
         )
 
         AccountInvoice = request.env['account.move']
 
-        # Reconstruct the exact global search domain used by Odoo for the active filter/dates
+
         search_domain = expression.AND([
             domain or [],
             self._get_invoices_domain(),
@@ -637,7 +614,7 @@ class DataIntegerPortalAccount(PortalAccount):
         if date_begin and date_end:
             search_domain += [('create_date', '>', date_begin), ('create_date', '<=', date_end)]
 
-        # Search ALL matching invoices globally across all pages (no limit/offset)
+
         if AccountInvoice.check_access_rights('read', raise_exception=False):
             all_invoices = AccountInvoice.search(search_domain)
         else:
@@ -645,7 +622,6 @@ class DataIntegerPortalAccount(PortalAccount):
 
         _logger.info("Global matching invoices count for summary cards: %s", len(all_invoices))
 
-        # Compute global totals and inject into QWeb template context
         values['dics_invoice_totals'] = self._compute_invoice_summary_totals(all_invoices)
 
         return values

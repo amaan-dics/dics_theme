@@ -18,9 +18,6 @@
             <div id="wrap" class="dics-home dics-knowledge-page">
                 <main id="odoo-glossary" class="dics-main">
 
-
-
-
                     <section class="dics-kb-hero py-5">
                         <div class="dics-kb-dot-grid"/>
                         <div class="container">
@@ -67,9 +64,6 @@
                         </div>
                     </section>
 
-
-
-
                     <section class="dics-glossary-stats glossary-list">
                         <div class="container">
                             <div class="dics-glossary-stat">
@@ -90,9 +84,6 @@
                             </div>
                         </div>
                     </section>
-
-
-
 
                     <section class="glossary-list">
                         <div class="dics-glossary-nav">
@@ -117,9 +108,6 @@
                             </div>
                         </div>
                     </section>
-
-
-
 
                     <section class="dics-kb-section glossary-list dics-kb-section--light" id="glossary-list">
                         <div class="container">
@@ -551,9 +539,6 @@
                             </div>
                         </div>
                     </section>
-
-
-
 
                     <section class="dics-kb-section py-5" id="consultation">
                         <div class="container">

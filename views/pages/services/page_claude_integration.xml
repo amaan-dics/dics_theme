@@ -8,10 +8,8 @@
                 <section class="dics-cl-hero">
                     <div class="dics-cl-hero__bg-glow"/>
                     <div class="dics-cl-hero__grid-dots"/>
-
                     <div class="dics-container">
                         <div class="dics-cl-hero__inner dics-cl-hero__inner--split">
-
                             <!-- Left: Hero content -->
                             <div class="dics-cl-hero__content">
 

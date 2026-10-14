@@ -12,16 +12,76 @@
                         <div class="dics-kb-dot-grid"/>
                         <div class="dics-container dics-kb-hero__inner px-3 px-sm-4 container">
                             <div class="dics-kb-badge-row">
-                                <div class="dics-kb-badge dics-kb-badge--red"><span class="material-symbols-outlined">compare_arrows</span><span>INDIA ERP COMPARISON</span></div>
+                                <div class="dics-kb-badge dics-kb-badge--red">
+                                    <span class="material-symbols-outlined">compare_arrows</span>
+                                    <span>INDIA ERP COMPARISON</span>
+                                </div>
                                 <span class="dics-kb-mono">• ACCOUNTING + ERP GUIDE</span>
                             </div>
-                            <div class="dics-kb-hero-copy">
-                                <h1 class="h1 mt-2">Odoo vs TallyPrime:<br/><span>Which One Is Right for Your Business?</span></h1>
-                                <div class="dics-kb-lead">
-                                    <p>Odoo and TallyPrime both handle accounting, invoices and inventory. Odoo is a full ERP with many business apps, while TallyPrime is mainly focused on accounting, GST, inventory and business management.</p>
-                                    <p>This guide compares Odoo and TallyPrime for accounting, GST, inventory, manufacturing, CRM, sales, eCommerce, payroll, customization, integrations, pricing and future business needs.</p>
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>Odoo vs TallyPrime:<br/><span>Which One Is Right for Your Business?</span></h1>
+                                    <div class="dics-kb-lead">
+                                        <p>Odoo and TallyPrime both handle accounting, invoices and inventory. Odoo is a full ERP with many business apps, while TallyPrime is mainly focused on accounting, GST, inventory and business management.</p>
+                                        <p>This guide compares Odoo and TallyPrime for accounting, GST, inventory, manufacturing, CRM, sales, eCommerce, payroll, customization, integrations, pricing and future business needs.</p>
+                                    </div>
+                                    <div class="dics-kb-byline d-flex flex-wrap align-items-center gap-2">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>13 Min Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">verified</span>
+                                            <span class="dics-kb-byline__strong">Business Comparison</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="dics-kb-byline d-flex flex-wrap align-items-center gap-2"><div><span class="material-symbols-outlined">engineering</span><span class="dics-kb-byline__strong d-flex flex-wrap align-items-center gap-2">Written by DataInteger ERP Architects</span></div><span>•</span><div><span class="material-symbols-outlined">schedule</span><span>13 Min Read</span></div><span>•</span><div><span class="material-symbols-outlined dics-kb-icon-green">verified</span><span class="dics-kb-byline__strong d-flex flex-wrap align-items-center gap-2">Business Comparison</span></div></div>
+                                <!-- At-a-glance panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">ODOO VS TALLYPRIME AT A GLANCE</span>
+                                    </div>
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">SCOPE</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>Accounting vs Full ERP</strong>
+                                            <span>FOCUS DIFFERS</span>
+                                        </div>
+                                        <p>TallyPrime centres on accounting, GST and inventory. Odoo adds CRM, manufacturing, eCommerce, HR and more on one system.</p>
+                                    </div>
+                                    <div class="dics-kb-telemetry__stack">
+                                        <div>
+                                            <span class="dics-kb-mono">Accounting &amp; GST</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">BOTH CAPABLE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Accounting-only simplicity</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">TALLY-STRONG</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">CRM, MRP, eCommerce, HR</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-NATIVE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Integrations &amp; customization</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-FLEXIBLE</span>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-telemetry__footer">
+                                        <span class="dics-kb-mono">Full breakdown below</span>
+                                    </div>
+                                </aside>
                             </div>
                         </div>
                     </section>
@@ -98,7 +158,7 @@
                                 <h2 class="h2 fw-bold mb-2">Odoo vs TallyPrime: Feature Comparison</h2>
                                 <p class="text-secondary mb-0">Use this table for a quick comparison. Your final choice depends on your business process, users, integrations and reports.</p>
                             </div>
-                            <div class="table-responsive border rounded-3 bg-white shadow-sm overflow-hidden">
+                            <div class="table-responsive border rounded-3 bg-white shadow-sm">
                                 <table class="table align-middle mb-0 table-bordered table-hover">
                                     <thead><tr class="table-dark"><th class="text-nowrap p-3">Area</th><th class="text-nowrap p-3">Odoo</th><th class="text-nowrap p-3">TallyPrime</th></tr></thead>
                                     <tbody>

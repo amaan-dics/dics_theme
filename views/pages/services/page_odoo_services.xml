@@ -15,7 +15,6 @@
 
                     <div id="wrap" class="dics-service-detail-page">
 
-                        <!-- HERO -->
                         <section class="dics-service-detail-hero"
                                  id="top-odoo-erp">
 
@@ -84,7 +83,6 @@
                         </section>
 
 
-                        <!-- WHAT WE DELIVER -->
                         <section class="dics-detail-section">
 
                             <div class="dics-container">
@@ -230,448 +228,448 @@
 
 
                         <!-- ODOO SERVICES GRID -->
-<section class="dics-detail-section dics-detail-section--soft"
-         id="odoo-services-grid">
-<div class="dics-container">
-    <div class="dics-odoo-services-list">
+                        <section class="dics-detail-section dics-detail-section--soft"
+                                 id="odoo-services-grid">
+                            <div class="dics-container">
+                                <div class="dics-odoo-services-list">
 
-    <!-- 01 -->
-    <article class="dics-odoo-service" id="odoo-development">
-        <span class="dics-odoo-service-number">01</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Development</h3>
-            <p>
-                Build powerful Odoo solutions tailored around your business processes,
-                operational requirements, and industry-specific workflows. We develop
-                custom modules, features, integrations, and business logic that extend
-                Odoo beyond its standard capabilities while keeping the system
-                structured and maintainable.
-            </p>
-            <p>
-                From a single custom feature to a complete ERP ecosystem, our Odoo
-                development approach focuses on clean architecture, reliable
-                performance, and long-term scalability. We work across Odoo modules
-                and workflows to create solutions that fit naturally into your
-                existing operations.
-            </p>
-        </div>
-    </article>
+                                    <!-- 01 -->
+                                    <article class="dics-odoo-service" id="odoo-development">
+                                        <span class="dics-odoo-service-number">01</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Development</h3>
+                                            <p>
+                                                Build powerful Odoo solutions tailored around your business processes,
+                                                operational requirements, and industry-specific workflows. We develop
+                                                custom modules, features, integrations, and business logic that extend
+                                                Odoo beyond its standard capabilities while keeping the system
+                                                structured and maintainable.
+                                            </p>
+                                            <p>
+                                                From a single custom feature to a complete ERP ecosystem, our Odoo
+                                                development approach focuses on clean architecture, reliable
+                                                performance, and long-term scalability. We work across Odoo modules
+                                                and workflows to create solutions that fit naturally into your
+                                                existing operations.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 02 -->
-    <article class="dics-odoo-service" id="odoo-saas-development">
-        <span class="dics-odoo-service-number">02</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo SAAS Development</h3>
-            <p>
-                Launch scalable SaaS products powered by Odoo with customized
-                workflows, user experiences, subscription management, and
-                multi-company capabilities. We help transform Odoo into a
-                centralized platform that can support multiple customers,
-                organizations, or business environments.
-            </p>
-            <p>
-                Our development approach covers the technical foundation required
-                for a reliable SaaS platform, including tenant management,
-                automation, access control, integrations, and custom application
-                functionality. The result is an Odoo-based SaaS environment built
-                around your product and commercial model.
-            </p>
-        </div>
-    </article>
+                                    <!-- 02 -->
+                                    <article class="dics-odoo-service" id="odoo-saas-development">
+                                        <span class="dics-odoo-service-number">02</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo SAAS Development</h3>
+                                            <p>
+                                                Launch scalable SaaS products powered by Odoo with customized
+                                                workflows, user experiences, subscription management, and
+                                                multi-company capabilities. We help transform Odoo into a
+                                                centralized platform that can support multiple customers,
+                                                organizations, or business environments.
+                                            </p>
+                                            <p>
+                                                Our development approach covers the technical foundation required
+                                                for a reliable SaaS platform, including tenant management,
+                                                automation, access control, integrations, and custom application
+                                                functionality. The result is an Odoo-based SaaS environment built
+                                                around your product and commercial model.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 03 -->
-    <article class="dics-odoo-service" id="hire-odoo-developer">
-        <span class="dics-odoo-service-number">03</span>
-        <div class="dics-odoo-service-content">
-            <h3>Hire Odoo Developer</h3>
-            <p>
-                Extend your development capacity with experienced Odoo developers
-                who can work alongside your internal team or take ownership of
-                specific Odoo projects. Whether you need short-term development
-                support or dedicated technical resources, we provide developers
-                familiar with Odoo customization, integrations, modules, and
-                business workflows.
-            </p>
-            <p>
-                Our developers can adapt to your existing architecture, development
-                practices, and project requirements. From implementing new features
-                and resolving technical issues to maintaining and extending existing
-                modules, you get focused Odoo development support without the
-                overhead of building an entirely new team.
-            </p>
-        </div>
-    </article>
+                                    <!-- 03 -->
+                                    <article class="dics-odoo-service" id="hire-odoo-developer">
+                                        <span class="dics-odoo-service-number">03</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Hire Odoo Developer</h3>
+                                            <p>
+                                                Extend your development capacity with experienced Odoo developers
+                                                who can work alongside your internal team or take ownership of
+                                                specific Odoo projects. Whether you need short-term development
+                                                support or dedicated technical resources, we provide developers
+                                                familiar with Odoo customization, integrations, modules, and
+                                                business workflows.
+                                            </p>
+                                            <p>
+                                                Our developers can adapt to your existing architecture, development
+                                                practices, and project requirements. From implementing new features
+                                                and resolving technical issues to maintaining and extending existing
+                                                modules, you get focused Odoo development support without the
+                                                overhead of building an entirely new team.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 04 -->
-    <article class="dics-odoo-service" id="odoo-headless-development">
-        <span class="dics-odoo-service-number">04</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Headless Development</h3>
-            <p>
-                Build modern digital experiences using Odoo as the business and ERP
-                backend while separating the presentation layer from the core
-                application. Our headless Odoo development services connect
-                customized frontends with Odoo through APIs and structured data
-                flows.
-            </p>
-            <p>
-                This architecture gives businesses greater flexibility when building
-                ecommerce platforms, customer portals, mobile experiences, and
-                specialized applications. We design the integration layer to keep
-                data synchronized while allowing the frontend experience to evolve
-                independently from the Odoo backend.
-            </p>
-        </div>
-    </article>
+                                    <!-- 04 -->
+                                    <article class="dics-odoo-service" id="odoo-headless-development">
+                                        <span class="dics-odoo-service-number">04</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Headless Development</h3>
+                                            <p>
+                                                Build modern digital experiences using Odoo as the business and ERP
+                                                backend while separating the presentation layer from the core
+                                                application. Our headless Odoo development services connect
+                                                customized frontends with Odoo through APIs and structured data
+                                                flows.
+                                            </p>
+                                            <p>
+                                                This architecture gives businesses greater flexibility when building
+                                                ecommerce platforms, customer portals, mobile experiences, and
+                                                specialized applications. We design the integration layer to keep
+                                                data synchronized while allowing the frontend experience to evolve
+                                                independently from the Odoo backend.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 05 -->
-    <article class="dics-odoo-service" id="odoo-implementation-services">
-        <span class="dics-odoo-service-number">05</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Implementation Services</h3>
-            <p>
-                Implement Odoo around the way your organization actually operates.
-                We help businesses configure applications, workflows, users,
-                permissions, automation, and integrations while aligning the ERP
-                environment with their operational requirements.
-            </p>
-            <p>
-                A successful implementation goes beyond installing modules. We work
-                through business processes, data requirements, custom functionality,
-                and system configuration to create an environment that teams can
-                use effectively. Our goal is to establish a strong foundation that
-                can continue to evolve as your business grows.
-            </p>
-        </div>
-    </article>
+                                    <!-- 05 -->
+                                    <article class="dics-odoo-service" id="odoo-implementation-services">
+                                        <span class="dics-odoo-service-number">05</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Implementation Services</h3>
+                                            <p>
+                                                Implement Odoo around the way your organization actually operates.
+                                                We help businesses configure applications, workflows, users,
+                                                permissions, automation, and integrations while aligning the ERP
+                                                environment with their operational requirements.
+                                            </p>
+                                            <p>
+                                                A successful implementation goes beyond installing modules. We work
+                                                through business processes, data requirements, custom functionality,
+                                                and system configuration to create an environment that teams can
+                                                use effectively. Our goal is to establish a strong foundation that
+                                                can continue to evolve as your business grows.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 06 -->
-    <article class="dics-odoo-service" id="odoo-mobile-app-development">
-        <span class="dics-odoo-service-number">06</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Mobile App Development</h3>
-            <p>
-                Extend your Odoo environment to mobile devices with applications
-                designed around the needs of employees, customers, sales teams,
-                field workers, and other users. We develop mobile experiences that
-                connect with Odoo data and workflows while keeping everyday tasks
-                simple and accessible.
-            </p>
-            <p>
-                From mobile sales and inventory operations to customer portals and
-                specialized business applications, we can create experiences that
-                work alongside your existing ERP. Integrations are designed to keep
-                important information synchronized between mobile applications and
-                your Odoo environment.
-            </p>
-        </div>
-    </article>
+                                    <!-- 06 -->
+                                    <article class="dics-odoo-service" id="odoo-mobile-app-development">
+                                        <span class="dics-odoo-service-number">06</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Mobile App Development</h3>
+                                            <p>
+                                                Extend your Odoo environment to mobile devices with applications
+                                                designed around the needs of employees, customers, sales teams,
+                                                field workers, and other users. We develop mobile experiences that
+                                                connect with Odoo data and workflows while keeping everyday tasks
+                                                simple and accessible.
+                                            </p>
+                                            <p>
+                                                From mobile sales and inventory operations to customer portals and
+                                                specialized business applications, we can create experiences that
+                                                work alongside your existing ERP. Integrations are designed to keep
+                                                important information synchronized between mobile applications and
+                                                your Odoo environment.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 07 -->
-    <article class="dics-odoo-service" id="odoo-pos-development">
-        <span class="dics-odoo-service-number">07</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo POS Development</h3>
-            <p>
-                Customize Odoo Point of Sale workflows to support the way your
-                retail, hospitality, restaurant, or service business operates. We
-                develop POS features, interfaces, integrations, and business logic
-                that extend the standard Odoo POS experience.
-            </p>
-            <p>
-                Custom pricing rules, payment integrations, inventory workflows,
-                receipts, customer management, and third-party systems can be
-                connected into the POS environment. We focus on creating a reliable
-                checkout experience while ensuring POS activity remains connected
-                with the wider Odoo ecosystem.
-            </p>
-        </div>
-    </article>
+                                    <!-- 07 -->
+                                    <article class="dics-odoo-service" id="odoo-pos-development">
+                                        <span class="dics-odoo-service-number">07</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo POS Development</h3>
+                                            <p>
+                                                Customize Odoo Point of Sale workflows to support the way your
+                                                retail, hospitality, restaurant, or service business operates. We
+                                                develop POS features, interfaces, integrations, and business logic
+                                                that extend the standard Odoo POS experience.
+                                            </p>
+                                            <p>
+                                                Custom pricing rules, payment integrations, inventory workflows,
+                                                receipts, customer management, and third-party systems can be
+                                                connected into the POS environment. We focus on creating a reliable
+                                                checkout experience while ensuring POS activity remains connected
+                                                with the wider Odoo ecosystem.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 08 -->
-    <article class="dics-odoo-service" id="odoo-seo-services">
-        <span class="dics-odoo-service-number">08</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo SEO Services</h3>
-            <p>
-                Improve the search visibility of Odoo websites and ecommerce
-                platforms with SEO-focused technical and content improvements. We
-                work with website structures, metadata, URLs, page content,
-                technical configuration, and other elements that influence how
-                search engines understand your website.
-            </p>
-            <p>
-                Our approach combines Odoo-specific technical knowledge with
-                practical SEO requirements. We help create a cleaner site structure,
-                optimize important landing pages, and ensure that your Odoo website
-                provides a stronger foundation for organic search growth.
-            </p>
-        </div>
-    </article>
+                                    <!-- 08 -->
+                                    <article class="dics-odoo-service" id="odoo-seo-services">
+                                        <span class="dics-odoo-service-number">08</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo SEO Services</h3>
+                                            <p>
+                                                Improve the search visibility of Odoo websites and ecommerce
+                                                platforms with SEO-focused technical and content improvements. We
+                                                work with website structures, metadata, URLs, page content,
+                                                technical configuration, and other elements that influence how
+                                                search engines understand your website.
+                                            </p>
+                                            <p>
+                                                Our approach combines Odoo-specific technical knowledge with
+                                                practical SEO requirements. We help create a cleaner site structure,
+                                                optimize important landing pages, and ensure that your Odoo website
+                                                provides a stronger foundation for organic search growth.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 09 -->
-    <article class="dics-odoo-service" id="odoo-theme-development">
-        <span class="dics-odoo-service-number">09</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Theme Development Services</h3>
-            <p>
-                Create distinctive Odoo websites with custom themes designed around
-                your brand identity, content structure, and user experience. We
-                develop responsive layouts, reusable components, navigation systems,
-                landing pages, and visual elements that work within the Odoo website
-                environment.
-            </p>
-            <p>
-                Custom theme development also gives your team greater control over
-                how the website evolves. We can build structured SCSS, templates,
-                components, and frontend interactions that maintain consistency
-                across pages while providing the flexibility needed for future
-                content and functionality.
-            </p>
-        </div>
-    </article>
+                                    <!-- 09 -->
+                                    <article class="dics-odoo-service" id="odoo-theme-development">
+                                        <span class="dics-odoo-service-number">09</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Theme Development Services</h3>
+                                            <p>
+                                                Create distinctive Odoo websites with custom themes designed around
+                                                your brand identity, content structure, and user experience. We
+                                                develop responsive layouts, reusable components, navigation systems,
+                                                landing pages, and visual elements that work within the Odoo website
+                                                environment.
+                                            </p>
+                                            <p>
+                                                Custom theme development also gives your team greater control over
+                                                how the website evolves. We can build structured SCSS, templates,
+                                                components, and frontend interactions that maintain consistency
+                                                across pages while providing the flexibility needed for future
+                                                content and functionality.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 10 -->
-    <article class="dics-odoo-service" id="odoo-custom-app-development">
-        <span class="dics-odoo-service-number">10</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Custom App Development</h3>
-            <p>
-                Develop dedicated Odoo applications when your business requirements
-                go beyond the functionality available in standard modules. Custom
-                applications can introduce new workflows, data structures,
-                automation, dashboards, user interfaces, and integrations tailored
-                specifically to your operations.
-            </p>
-            <p>
-                We build custom apps with a focus on maintainability and integration
-                with the wider Odoo environment. This allows new functionality to
-                work alongside existing sales, accounting, inventory, CRM, website,
-                and other business processes instead of becoming an isolated system.
-            </p>
-        </div>
-    </article>
+                                    <!-- 10 -->
+                                    <article class="dics-odoo-service" id="odoo-custom-app-development">
+                                        <span class="dics-odoo-service-number">10</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Custom App Development</h3>
+                                            <p>
+                                                Develop dedicated Odoo applications when your business requirements
+                                                go beyond the functionality available in standard modules. Custom
+                                                applications can introduce new workflows, data structures,
+                                                automation, dashboards, user interfaces, and integrations tailored
+                                                specifically to your operations.
+                                            </p>
+                                            <p>
+                                                We build custom apps with a focus on maintainability and integration
+                                                with the wider Odoo environment. This allows new functionality to
+                                                work alongside existing sales, accounting, inventory, CRM, website,
+                                                and other business processes instead of becoming an isolated system.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 11 -->
-    <article class="dics-odoo-service" id="odoo-shipping-method-development">
-        <span class="dics-odoo-service-number">11</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Shipping Method Development</h3>
-            <p>
-                Connect Odoo with shipping providers and build customized delivery
-                workflows around your logistics requirements. We develop shipping
-                methods that can handle carrier integrations, delivery rules,
-                pricing logic, tracking information, and order fulfillment processes.
-            </p>
-            <p>
-                Custom shipping functionality can help businesses manage complex
-                delivery conditions across different products, locations, carriers,
-                and customer types. We integrate these processes directly into Odoo
-                so that order management, fulfillment, and shipment information
-                remain connected.
-            </p>
-        </div>
-    </article>
+                                    <!-- 11 -->
+                                    <article class="dics-odoo-service" id="odoo-shipping-method-development">
+                                        <span class="dics-odoo-service-number">11</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Shipping Method Development</h3>
+                                            <p>
+                                                Connect Odoo with shipping providers and build customized delivery
+                                                workflows around your logistics requirements. We develop shipping
+                                                methods that can handle carrier integrations, delivery rules,
+                                                pricing logic, tracking information, and order fulfillment processes.
+                                            </p>
+                                            <p>
+                                                Custom shipping functionality can help businesses manage complex
+                                                delivery conditions across different products, locations, carriers,
+                                                and customer types. We integrate these processes directly into Odoo
+                                                so that order management, fulfillment, and shipment information
+                                                remain connected.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 12 -->
-    <article class="dics-odoo-service" id="odoo-consulting-services">
-        <span class="dics-odoo-service-number">12</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Consulting Services</h3>
-            <p>
-                Get practical guidance on how Odoo can support your business
-                processes, technical architecture, integrations, and future growth.
-                Our consulting services help identify the right Odoo applications,
-                customization requirements, workflow improvements, and technical
-                approaches for your environment.
-            </p>
-            <p>
-                We can support organizations at different stages, from initial
-                planning and solution design to existing Odoo optimization and
-                technical assessments. The focus is on understanding your
-                requirements first and then translating them into a clear,
-                implementable Odoo strategy.
-            </p>
-        </div>
-    </article>
+                                    <!-- 12 -->
+                                    <article class="dics-odoo-service" id="odoo-consulting-services">
+                                        <span class="dics-odoo-service-number">12</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Consulting Services</h3>
+                                            <p>
+                                                Get practical guidance on how Odoo can support your business
+                                                processes, technical architecture, integrations, and future growth.
+                                                Our consulting services help identify the right Odoo applications,
+                                                customization requirements, workflow improvements, and technical
+                                                approaches for your environment.
+                                            </p>
+                                            <p>
+                                                We can support organizations at different stages, from initial
+                                                planning and solution design to existing Odoo optimization and
+                                                technical assessments. The focus is on understanding your
+                                                requirements first and then translating them into a clear,
+                                                implementable Odoo strategy.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 13 -->
-    <article class="dics-odoo-service" id="odoo-customization-services">
-        <span class="dics-odoo-service-number">13</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Customization Services</h3>
-            <p>
-                Adapt standard Odoo functionality to match the specific processes
-                and requirements of your organization. We customize views, workflows,
-                reports, business rules, automation, permissions, and application
-                behavior without forcing your teams to change established processes
-                unnecessarily.
-            </p>
-            <p>
-                Our customization work is designed to fit into your existing Odoo
-                ecosystem while keeping future maintenance in mind. Whether the
-                requirement is a focused modification or a broader workflow change,
-                we structure the solution around usability, reliability, and
-                compatibility with the rest of your ERP.
-            </p>
-        </div>
-    </article>
+                                    <!-- 13 -->
+                                    <article class="dics-odoo-service" id="odoo-customization-services">
+                                        <span class="dics-odoo-service-number">13</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Customization Services</h3>
+                                            <p>
+                                                Adapt standard Odoo functionality to match the specific processes
+                                                and requirements of your organization. We customize views, workflows,
+                                                reports, business rules, automation, permissions, and application
+                                                behavior without forcing your teams to change established processes
+                                                unnecessarily.
+                                            </p>
+                                            <p>
+                                                Our customization work is designed to fit into your existing Odoo
+                                                ecosystem while keeping future maintenance in mind. Whether the
+                                                requirement is a focused modification or a broader workflow change,
+                                                we structure the solution around usability, reliability, and
+                                                compatibility with the rest of your ERP.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 14 -->
-    <article class="dics-odoo-service" id="odoo-pim-development">
-        <span class="dics-odoo-service-number">14</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo PIM Development Services</h3>
-            <p>
-                Build product information management workflows in Odoo to organize,
-                enrich, maintain, and distribute product data across your business
-                channels. We can customize product structures, attributes,
-                categories, specifications, media, and related information around
-                your catalog requirements.
-            </p>
-            <p>
-                A structured PIM environment helps teams maintain consistent product
-                information while reducing repetitive data management. We connect
-                product information with ecommerce, sales, inventory, and other Odoo
-                processes so that product data remains centralized and easier to
-                manage.
-            </p>
-        </div>
-    </article>
+                                    <!-- 14 -->
+                                    <article class="dics-odoo-service" id="odoo-pim-development">
+                                        <span class="dics-odoo-service-number">14</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo PIM Development Services</h3>
+                                            <p>
+                                                Build product information management workflows in Odoo to organize,
+                                                enrich, maintain, and distribute product data across your business
+                                                channels. We can customize product structures, attributes,
+                                                categories, specifications, media, and related information around
+                                                your catalog requirements.
+                                            </p>
+                                            <p>
+                                                A structured PIM environment helps teams maintain consistent product
+                                                information while reducing repetitive data management. We connect
+                                                product information with ecommerce, sales, inventory, and other Odoo
+                                                processes so that product data remains centralized and easier to
+                                                manage.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 15 -->
-    <article class="dics-odoo-service" id="odoo-migration-services">
-        <span class="dics-odoo-service-number">15</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Migration Services</h3>
-            <p>
-                Move your Odoo environment to a newer version or a new technical
-                setup while preserving important business data and workflows. We
-                assess the existing database, custom modules, integrations, and
-                configurations before planning the migration process.
-            </p>
-            <p>
-                Migration projects often involve more than transferring database
-                records. Customizations, third-party applications, dependencies, and
-                historical data all need to be considered. We structure migrations
-                carefully to reduce disruption and provide a stable foundation for
-                continued Odoo development after the upgrade.
-            </p>
-        </div>
-    </article>
+                                    <!-- 15 -->
+                                    <article class="dics-odoo-service" id="odoo-migration-services">
+                                        <span class="dics-odoo-service-number">15</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Migration Services</h3>
+                                            <p>
+                                                Move your Odoo environment to a newer version or a new technical
+                                                setup while preserving important business data and workflows. We
+                                                assess the existing database, custom modules, integrations, and
+                                                configurations before planning the migration process.
+                                            </p>
+                                            <p>
+                                                Migration projects often involve more than transferring database
+                                                records. Customizations, third-party applications, dependencies, and
+                                                historical data all need to be considered. We structure migrations
+                                                carefully to reduce disruption and provide a stable foundation for
+                                                continued Odoo development after the upgrade.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 16 -->
-    <article class="dics-odoo-service" id="odoo-multi-platform-integration">
-        <span class="dics-odoo-service-number">16</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Multi-Platform Integration</h3>
-            <p>
-                Connect Odoo with the other platforms your business relies on,
-                including ecommerce systems, marketplaces, CRM platforms, logistics
-                providers, payment services, and internal applications. We design
-                integrations that allow systems to exchange the data required for
-                day-to-day operations.
-            </p>
-            <p>
-                Our integration work focuses on reliable data synchronization,
-                structured APIs, automation, error handling, and clear business
-                workflows. The objective is to reduce manual data entry and create a
-                connected technology environment where Odoo can serve as a central
-                operational platform.
-            </p>
-        </div>
-    </article>
+                                    <!-- 16 -->
+                                    <article class="dics-odoo-service" id="odoo-multi-platform-integration">
+                                        <span class="dics-odoo-service-number">16</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Multi-Platform Integration</h3>
+                                            <p>
+                                                Connect Odoo with the other platforms your business relies on,
+                                                including ecommerce systems, marketplaces, CRM platforms, logistics
+                                                providers, payment services, and internal applications. We design
+                                                integrations that allow systems to exchange the data required for
+                                                day-to-day operations.
+                                            </p>
+                                            <p>
+                                                Our integration work focuses on reliable data synchronization,
+                                                structured APIs, automation, error handling, and clear business
+                                                workflows. The objective is to reduce manual data entry and create a
+                                                connected technology environment where Odoo can serve as a central
+                                                operational platform.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 17 -->
-    <article class="dics-odoo-service" id="odoo-support-maintenance">
-        <span class="dics-odoo-service-number">17</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Support and Maintenance Services</h3>
-            <p>
-                Keep your Odoo environment stable, secure, and ready for ongoing
-                business requirements with dedicated support and maintenance. We
-                assist with bug fixes, technical issues, module updates,
-                configuration changes, performance concerns, and ongoing development
-                requirements.
-            </p>
-            <p>
-                Continuous maintenance also helps prevent small technical issues
-                from becoming larger operational problems. Our team can work with
-                your existing Odoo implementation to resolve issues, improve
-                functionality, and support the system as your business processes
-                continue to evolve.
-            </p>
-        </div>
-    </article>
+                                    <!-- 17 -->
+                                    <article class="dics-odoo-service" id="odoo-support-maintenance">
+                                        <span class="dics-odoo-service-number">17</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Support and Maintenance Services</h3>
+                                            <p>
+                                                Keep your Odoo environment stable, secure, and ready for ongoing
+                                                business requirements with dedicated support and maintenance. We
+                                                assist with bug fixes, technical issues, module updates,
+                                                configuration changes, performance concerns, and ongoing development
+                                                requirements.
+                                            </p>
+                                            <p>
+                                                Continuous maintenance also helps prevent small technical issues
+                                                from becoming larger operational problems. Our team can work with
+                                                your existing Odoo implementation to resolve issues, improve
+                                                functionality, and support the system as your business processes
+                                                continue to evolve.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 18 -->
-    <article class="dics-odoo-service" id="odoo-marketplace-development">
-        <span class="dics-odoo-service-number">18</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Marketplace Pioneers</h3>
-            <p>
-                Develop and customize Odoo marketplace solutions for businesses
-                managing multiple vendors, sellers, products, orders, and
-                marketplace operations. We can extend marketplace functionality to
-                support vendor workflows, commissions, product management, order
-                processing, and platform-specific requirements.
-            </p>
-            <p>
-                Whether you are building a marketplace from the ground up or
-                extending an existing Odoo marketplace environment, we can customize
-                the platform around your operational model. Integrations with
-                payments, shipping, inventory, and other services can also be
-                incorporated into the overall marketplace workflow.
-            </p>
-        </div>
-    </article>
+                                    <!-- 18 -->
+                                    <article class="dics-odoo-service" id="odoo-marketplace-development">
+                                        <span class="dics-odoo-service-number">18</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Marketplace Pioneers</h3>
+                                            <p>
+                                                Develop and customize Odoo marketplace solutions for businesses
+                                                managing multiple vendors, sellers, products, orders, and
+                                                marketplace operations. We can extend marketplace functionality to
+                                                support vendor workflows, commissions, product management, order
+                                                processing, and platform-specific requirements.
+                                            </p>
+                                            <p>
+                                                Whether you are building a marketplace from the ground up or
+                                                extending an existing Odoo marketplace environment, we can customize
+                                                the platform around your operational model. Integrations with
+                                                payments, shipping, inventory, and other services can also be
+                                                incorporated into the overall marketplace workflow.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 19 -->
-    <article class="dics-odoo-service" id="odoo-payment-method-development">
-        <span class="dics-odoo-service-number">19</span>
-        <div class="dics-odoo-service-content">
-            <h3>Odoo Payment Method Development</h3>
-            <p>
-                Integrate payment providers and create customized payment workflows
-                within Odoo. We work with payment APIs and Odoo payment flows to
-                connect transactions with ecommerce, sales, subscriptions, and other
-                business processes.
-            </p>
-            <p>
-                Custom payment development can include payment initiation,
-                transaction handling, callbacks, status synchronization, refunds,
-                and related order updates. The integration is structured to keep
-                payment information connected with the appropriate Odoo records and
-                workflows.
-            </p>
-        </div>
-    </article>
+                                    <!-- 19 -->
+                                    <article class="dics-odoo-service" id="odoo-payment-method-development">
+                                        <span class="dics-odoo-service-number">19</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Odoo Payment Method Development</h3>
+                                            <p>
+                                                Integrate payment providers and create customized payment workflows
+                                                within Odoo. We work with payment APIs and Odoo payment flows to
+                                                connect transactions with ecommerce, sales, subscriptions, and other
+                                                business processes.
+                                            </p>
+                                            <p>
+                                                Custom payment development can include payment initiation,
+                                                transaction handling, callbacks, status synchronization, refunds,
+                                                and related order updates. The integration is structured to keep
+                                                payment information connected with the appropriate Odoo records and
+                                                workflows.
+                                            </p>
+                                        </div>
+                                    </article>
 
-    <!-- 20 -->
-    <article class="dics-odoo-service" id="salesforce-odoo-migration">
-        <span class="dics-odoo-service-number">20</span>
-        <div class="dics-odoo-service-content">
-            <h3>Salesforce Odoo Migration Services</h3>
-            <p>
-                Transition business processes and data from Salesforce into Odoo
-                with a structured migration strategy. We can help map existing
-                customer, sales, CRM, and related business information to the
-                appropriate Odoo models and workflows.
-            </p>
-            <p>
-                A Salesforce-to-Odoo migration also provides an opportunity to
-                redesign processes around the Odoo ecosystem instead of simply
-                copying an existing system. We focus on data mapping, migration
-                preparation, custom requirements, integrations, and validation so
-                that the new environment is ready for day-to-day business use.
-            </p>
-        </div>
-    </article>
+                                    <!-- 20 -->
+                                    <article class="dics-odoo-service" id="salesforce-odoo-migration">
+                                        <span class="dics-odoo-service-number">20</span>
+                                        <div class="dics-odoo-service-content">
+                                            <h3>Salesforce Odoo Migration Services</h3>
+                                            <p>
+                                                Transition business processes and data from Salesforce into Odoo
+                                                with a structured migration strategy. We can help map existing
+                                                customer, sales, CRM, and related business information to the
+                                                appropriate Odoo models and workflows.
+                                            </p>
+                                            <p>
+                                                A Salesforce-to-Odoo migration also provides an opportunity to
+                                                redesign processes around the Odoo ecosystem instead of simply
+                                                copying an existing system. We focus on data mapping, migration
+                                                preparation, custom requirements, integrations, and validation so
+                                                that the new environment is ready for day-to-day business use.
+                                            </p>
+                                        </div>
+                                    </article>
 
-</div>
-</div>
+                                </div>
+                            </div>
 
-</section>
+                        </section>
 
 
                         <!-- PROCESS -->
@@ -994,46 +992,46 @@
                         </section>
 
 
-                            <!-- CTA -->
-                            <section class="dics-detail-cta">
+                        <!-- CTA -->
+                        <section class="dics-detail-cta">
 
-                                <div class="dics-container">
+                            <div class="dics-container">
 
-                                    <div class="dics-detail-cta-card">
+                                <div class="dics-detail-cta-card">
 
-                                        <div class="dics-detail-cta-glow"></div>
+                                    <div class="dics-detail-cta-glow"></div>
 
-                                        <div class="dics-detail-cta-content">
+                                    <div class="dics-detail-cta-content">
 
-                                            <span class="dics-detail-eyebrow">
-                                                Start the conversation
+                                        <span class="dics-detail-eyebrow">
+                                            Start the conversation
+                                        </span>
+
+                                        <h2>
+                                            Ready to unify your operations?
+                                        </h2>
+
+                                        <p>
+                                            Book a free technical consultation and we'll map
+                                            out exactly what an Odoo implementation would look
+                                            like for your business.
+                                        </p>
+
+                                        <a href="/contact"
+                                           class="dics-btn dics-btn-primary">
+                                            Book a Consultation
+                                            <span class="material-symbols-outlined">
+                                                arrow_forward
                                             </span>
-
-                                            <h2>
-                                                Ready to unify your operations?
-                                            </h2>
-
-                                            <p>
-                                                Book a free technical consultation and we'll map
-                                                out exactly what an Odoo implementation would look
-                                                like for your business.
-                                            </p>
-
-                                            <a href="/contact"
-                                               class="dics-btn dics-btn-primary">
-                                                Book a Consultation
-                                                <span class="material-symbols-outlined">
-                                                    arrow_forward
-                                                </span>
-                                            </a>
-
-                                        </div>
+                                        </a>
 
                                     </div>
 
                                 </div>
 
-                            </section>
+                            </div>
+
+                        </section>
 
                     </div>
 

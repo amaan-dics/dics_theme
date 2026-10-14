@@ -771,6 +771,7 @@ div#dics-odoo-panel {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
+    margin-top: 12px !important;
 
     ul {
         list-style: none;

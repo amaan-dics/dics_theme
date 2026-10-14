@@ -15,11 +15,6 @@
 
             <div id="wrap" class="dics-home dics-knowledge-page">
                 <main class="dics-main">
-
-
-
-
-
                     <section class="dics-kb-hero">
                         <div class="dics-kb-dot-grid"/>
                         <div class="dics-container dics-kb-hero__inner">
@@ -173,9 +168,6 @@
                             </div>
                         </div>
                     </section>
-
-
-
 
                     <section class="dics-kb-section dics-kb-section--gray">
                         <div class="dics-container">
@@ -337,9 +329,6 @@
                         </div>
                     </section>
 
-
-
-
                     <section class="dics-kb-section">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -463,9 +452,6 @@
                         </div>
                     </section>
 
-
-
-
                     <section class="dics-kb-section dics-kb-section--light">
                         <div class="dics-container">
                             <div class="dics-kb-engineering">
@@ -553,9 +539,6 @@
                         </div>
                     </section>
 
-
-
-
                     <section class="dics-kb-section dics-kb-section--dark">
                         <div class="dics-container">
                             <div class="dics-kb-section-head dics-kb-section-head--center">
@@ -591,9 +574,6 @@
                             </div>
                         </div>
                     </section>
-
-
-
 
                     <section class="dics-kb-cta">
                         <div class="dics-container">

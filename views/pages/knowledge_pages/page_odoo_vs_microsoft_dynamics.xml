@@ -16,16 +16,76 @@
                         <div class="dics-kb-dot-grid"/>
                         <div class="dics-container dics-kb-hero__inner">
                             <div class="dics-kb-badge-row">
-                                <div class="dics-kb-badge dics-kb-badge--red"><span class="material-symbols-outlined">compare_arrows</span><span>HEAD-TO-HEAD ERP COMPARISON</span></div>
+                                <div class="dics-kb-badge dics-kb-badge--red">
+                                    <span class="material-symbols-outlined">compare_arrows</span>
+                                    <span>HEAD-TO-HEAD ERP COMPARISON</span>
+                                </div>
                                 <span class="dics-kb-mono">• ARCHITECTURAL REVIEW</span>
                             </div>
-                            <div class="dics-kb-hero-copy">
-                                <h1>Odoo vs Microsoft Dynamics 365:<br/><span>Which ERP Architecture Fits Your Business?</span></h1>
-                                <div class="dics-kb-lead">
-                                    <p class="text-secondary mb-0">Odoo and Microsoft Dynamics 365 can both become the operational core of a business, but they approach the ERP landscape differently. Odoo delivers a broad integrated application suite, while Dynamics 365 is a family of connected business applications covering finance, supply chain, sales, customer service, commerce and more.</p>
-                                    <p class="text-secondary mb-0">This guide compares the platforms across finance, CRM, inventory, manufacturing, supply chain, eCommerce, customization, integrations, Microsoft ecosystem fit, licensing, implementation and long-term ownership.</p>
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>Odoo vs Microsoft Dynamics 365:<br/><span>Which ERP Architecture Fits Your Business?</span></h1>
+                                    <div class="dics-kb-lead">
+                                        <p class="text-secondary mb-0">Odoo and Microsoft Dynamics 365 can both become the operational core of a business, but they approach the ERP landscape differently. Odoo delivers a broad integrated application suite, while Dynamics 365 is a family of connected business applications covering finance, supply chain, sales, customer service, commerce and more.</p>
+                                        <p class="text-secondary mb-0">This guide compares the platforms across finance, CRM, inventory, manufacturing, supply chain, eCommerce, customization, integrations, Microsoft ecosystem fit, licensing, implementation and long-term ownership.</p>
+                                    </div>
+                                    <div class="dics-kb-byline">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>13 Min Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">verified</span>
+                                            <span class="dics-kb-byline__strong">Business + Technical Comparison</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="dics-kb-byline"><div><span class="material-symbols-outlined">engineering</span><span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span></div><span>•</span><div><span class="material-symbols-outlined">schedule</span><span>13 Min Read</span></div><span>•</span><div><span class="material-symbols-outlined dics-kb-icon-green">verified</span><span class="dics-kb-byline__strong">Business + Technical Comparison</span></div></div>
+                                <!-- At-a-glance panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">ODOO VS DYNAMICS 365 AT A GLANCE</span>
+                                    </div>
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">ARCHITECTURE</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>Suite vs App Family</strong>
+                                            <span>TWO MODELS</span>
+                                        </div>
+                                        <p>Odoo ships as one integrated suite. Dynamics 365 is a set of connected applications you license and combine.</p>
+                                    </div>
+                                    <div class="dics-kb-telemetry__stack">
+                                        <div>
+                                            <span class="dics-kb-mono">Finance &amp; accounting</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">BOTH CAPABLE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Microsoft 365 / Teams fit</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">DYNAMICS-NATIVE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Apps on one data model</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-NATIVE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Licensing structure</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">COMPARE CAREFULLY</span>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-telemetry__footer">
+                                        <span class="dics-kb-mono">Full breakdown below</span>
+                                    </div>
+                                </aside>
                             </div>
                         </div>
                     </section>
@@ -105,7 +165,7 @@
                                 <h2 class="h2 fw-bold mb-2">Odoo vs Microsoft Dynamics 365 Across the ERP Stack</h2>
                                 <p class="text-secondary mb-0">Use this matrix as a first-pass map. The exact Dynamics capability depends on which Dynamics 365 applications are included in the proposed architecture.</p>
                             </div>
-                            <div class="table-responsive border rounded-3 bg-white shadow-sm overflow-hidden">
+                            <div class="table-responsive border rounded-3 bg-white shadow-sm">
                                 <table class="table table-bordered table-hover align-middle mb-0">
                                     <thead class="table-dark"><tr><th class="p-3 text-nowrap">Area</th><th class="p-3">Odoo</th><th class="p-3">Microsoft Dynamics 365</th></tr></thead>
                                     <tbody>

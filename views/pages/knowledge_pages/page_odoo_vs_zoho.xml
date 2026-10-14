@@ -22,39 +22,70 @@
                                 </div>
                                 <span class="dics-kb-mono">• ARCHITECTURAL REVIEW</span>
                             </div>
-                            <div class="dics-kb-hero-copy">
-                                <h1>Odoo vs Zoho:
-                                    <br/>
-                                    <span>Which Platform Builds a Stronger Operating Core?</span>
-                                </h1>
-                                <div class="dics-kb-lead">
-                                    <p>Zoho One is an accessible suite of cloud applications for sales, service, and
-                                        office productivity. Odoo 18 Enterprise is a unified business platform with
-                                        deeper ERP, inventory, manufacturing, accounting, and extensibility
-                                        capabilities.
-                                    </p>
-                                    <p>This guide compares the underlying data model, operational depth, customization
-                                        path, integration ownership, total cost, and the point at which a growing
-                                        company should choose one platform over the other.
-                                    </p>
-                                </div>
-                                <div class="dics-kb-byline">
-                                    <div>
-                                        <span class="material-symbols-outlined">engineering</span>
-                                        <span class="dics-kb-byline__strong">Written by DataInteger ERP Architects
-                                        </span>
+                            <div class="dics-kb-hero-grid">
+                                <div class="dics-kb-hero-copy">
+                                    <h1>Odoo vs Zoho:<br/><span>Which Platform Builds a Stronger Operating Core?</span></h1>
+                                    <div class="dics-kb-lead">
+                                        <p>Zoho One is an accessible suite of cloud applications for sales, service, and office productivity. Odoo 18 Enterprise is a unified business platform with deeper ERP, inventory, manufacturing, accounting, and extensibility capabilities.</p>
+                                        <p>This guide compares the underlying data model, operational depth, customization path, integration ownership, total cost, and the point at which a growing company should choose one platform over the other.</p>
                                     </div>
-                                    <span>•</span>
-                                    <div>
-                                        <span class="material-symbols-outlined">schedule</span>
-                                        <span>8 Min Read</span>
-                                    </div>
-                                    <span>•</span>
-                                    <div>
-                                        <span class="material-symbols-outlined dics-kb-icon-green">verified</span>
-                                        <span class="dics-kb-byline__strong">Reviewed for Odoo 18</span>
+                                    <div class="dics-kb-byline">
+                                        <div>
+                                            <span class="material-symbols-outlined">engineering</span>
+                                            <span class="dics-kb-byline__strong">Written by DataInteger ERP Architects</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined">schedule</span>
+                                            <span>8 Min Read</span>
+                                        </div>
+                                        <span>•</span>
+                                        <div>
+                                            <span class="material-symbols-outlined dics-kb-icon-green">verified</span>
+                                            <span class="dics-kb-byline__strong">Reviewed for Odoo 18</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- At-a-glance panel -->
+                                <aside class="dics-kb-telemetry">
+                                    <div class="dics-kb-telemetry__top">
+                                        <div class="dics-kb-window-dots">
+                                            <span class="is-red"/>
+                                            <span class="is-gray"/>
+                                            <span class="is-light"/>
+                                        </div>
+                                        <span class="dics-kb-mono dics-kb-mono--strong">ODOO VS ZOHO AT A GLANCE</span>
+                                    </div>
+                                    <div class="dics-kb-telemetry__metric">
+                                        <span class="dics-kb-mono">DATA MODEL</span>
+                                        <div class="dics-kb-telemetry__metric-row">
+                                            <strong>Unified vs Connected Apps</strong>
+                                            <span>ARCHITECTURE</span>
+                                        </div>
+                                        <p>Odoo apps share one database. Zoho One bundles many separate apps that are connected through integrations.</p>
+                                    </div>
+                                    <div class="dics-kb-telemetry__stack">
+                                        <div>
+                                            <span class="dics-kb-mono">Sales, service &amp; marketing</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">BOTH CAPABLE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Office productivity apps</span>
+                                            <span class="dics-kb-status dics-kb-status--yellow">ZOHO-STRONG</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">Inventory &amp; manufacturing depth</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-NATIVE</span>
+                                        </div>
+                                        <div>
+                                            <span class="dics-kb-mono">One shared data model</span>
+                                            <span class="dics-kb-status dics-kb-status--green">ODOO-NATIVE</span>
+                                        </div>
+                                    </div>
+                                    <div class="dics-kb-telemetry__footer">
+                                        <span class="dics-kb-mono">Full breakdown below</span>
+                                    </div>
+                                </aside>
                             </div>
                         </div>
                     </section>
@@ -218,8 +249,8 @@
                                     affect ERP depth, operational complexity, customization, and long-term ownership.
                                 </p>
                             </div>
-                            <div class="table-responsive border rounded-3 bg-white shadow-sm overflow-hidden">
-                                <table class="table table-bordered table-hover align-middle mb-0">
+                            <div class="table-responsive border rounded-3 bg-white shadow-sm">
+                                <table class="table table-bordered table-hover align-middle mb-0" >
                                     <thead class="table-dark">
                                         <tr>
                                             <th class="p-3">Area</th>

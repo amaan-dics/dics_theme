@@ -20,9 +20,9 @@
     <record id="dics_contact" model="ir.ui.view">
         <field name="key">dics_theme.dics_contact</field>
     </record>
-    <record id="dics_contact_thank_you" model="ir.ui.view">
-        <field name="key">dics_theme.dics_contact_thank_you</field>
-    </record>
+<!--    <record id="dics_contact_thank_you" model="ir.ui.view">-->
+<!--        <field name="key">dics_theme.dics_contact_thank_you</field>-->
+<!--    </record>-->
     <record id="page_whatsapp_integration" model="ir.ui.view">
         <field name="key">dics_theme.page_whatsapp_integration</field>
     </record>

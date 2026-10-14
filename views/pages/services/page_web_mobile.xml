@@ -7,7 +7,6 @@
             <div id="wrap" class="dics-home">
                 <main class="dics-main">
 
-                    <!-- HERO -->
                     <section class="dics-hero">
                         <div class="dics-hero-grid services-hero-grid dics-container">
                             <div class="dics-hero-copy">
@@ -29,10 +28,56 @@
                                     </a>
                                 </div>
                             </div>
+
+                        <style>
+                            .dics-hv{position:relative;min-height:420px;display:flex;align-items:center;justify-content:center;font-family:inherit}
+                            .dics-hv *{box-sizing:border-box}
+                            .dics-hv-card{background:#fff;color:#1b1f2a;border:1px solid rgba(0,0,0,.08);border-radius:16px;box-shadow:0 24px 60px rgba(15,20,40,.18)}
+                            .dics-hv-bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid rgba(0,0,0,.07)}
+                            .dics-hv-bar i{width:10px;height:10px;border-radius:50%;background:#d9dce3}
+                            .dics-hv-bar i:first-child{background:var(--dics-red,#e5312b)}
+                            .dics-hv-chip{position:absolute;display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:#fff;color:#1b1f2a;font-size:13px;font-weight:600;border:1px solid rgba(0,0,0,.08);box-shadow:0 10px 28px rgba(15,20,40,.16);animation:dicsHvFloat 5s ease-in-out infinite}
+                            .dics-hv-chip .material-symbols-outlined{font-size:18px;color:var(--dics-red,#e5312b)}
+                            .dics-hv-chip.c2{animation-delay:-1.7s}.dics-hv-chip.c3{animation-delay:-3.2s}
+                            @keyframes dicsHvFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+                            @media (prefers-reduced-motion:reduce){.dics-hv-chip{animation:none}}
+                            @media (max-width:991.98px){.dics-hv{display:none}}
+                            .dics-hv-browser{width:400px;max-width:100%}
+                            .dics-hv-code{padding:18px;display:flex;flex-direction:column;gap:10px}
+                            .dics-hv-code span{display:block;height:9px;border-radius:5px;background:#e6e8ee}
+                            .dics-hv-code span.r{background:rgba(229,49,43,.55)}
+                            .dics-hv-phone{position:absolute;right:6%;bottom:2%;width:150px;padding:10px;border-radius:26px;border:5px solid #1b1f2a}
+                            .dics-hv-phone .notch{width:48px;height:5px;border-radius:3px;background:#1b1f2a;margin:0 auto 12px}
+                            .dics-hv-tile{height:46px;border-radius:10px;background:#f1f2f6;margin-bottom:8px}
+                            .dics-hv-tile.r{background:linear-gradient(135deg,var(--dics-red,#e5312b),#ff7a59)}
+                        </style>
+
+                        <div class="dics-hv" aria-hidden="true">
+                            <div class="dics-hv-card dics-hv-browser">
+                                <div class="dics-hv-bar"><i/><i/><i/></div>
+                                <div class="dics-hv-code">
+                                    <span class="r" style="width:42%"/>
+                                    <span style="width:78%"/>
+                                    <span style="width:64%"/>
+                                    <span class="r" style="width:30%"/>
+                                    <span style="width:86%"/>
+                                    <span style="width:52%"/>
+                                    <span style="width:70%"/>
+                                </div>
+                            </div>
+                            <div class="dics-hv-card dics-hv-phone">
+                                <div class="notch"/>
+                                <div class="dics-hv-tile r"/>
+                                <div class="dics-hv-tile"/>
+                                <div class="dics-hv-tile"/>
+                            </div>
+                            <div class="dics-hv-chip" style="top:6%;right:4%"><span class="material-symbols-outlined">web</span>Web Portals</div>
+                            <div class="dics-hv-chip c2" style="top:44%;left:-2%"><span class="material-symbols-outlined">api</span>Odoo API</div>
+                            <div class="dics-hv-chip c3" style="bottom:4%;left:6%"><span class="material-symbols-outlined">smartphone</span>iOS &amp; Android</div>
+                        </div>
                         </div>
                     </section>
 
-                    <!-- CAPABILITIES -->
                     <section class="dics-detail-section dics-detail-section--dark">
                         <div class="dics-container">
                             <div class="dics-detail-section-head dics-detail-section-head--center">
@@ -71,7 +116,6 @@
                         </div>
                     </section>
 
-                    <!-- CORE ARCHITECTURE & INTEGRATION -->
                     <section class="dics-section">
                         <div class="dics-container">
                             <div class="dics-centered-heading">
@@ -140,8 +184,6 @@
                             </div>
                         </div>
                     </section>
-
-                    <!-- TECH STACK -->
                     <section id="tech-stack" class="dics-section dics-section-light">
                         <div class="dics-container">
                             <div class="dics-centered-heading">
@@ -173,7 +215,6 @@
                         </div>
                     </section>
 
-                    <!-- DEVELOPMENT PROCESS -->
                     <section class="dics-section">
                         <div class="dics-container">
                             <div class="dics-centered-heading">
@@ -225,7 +266,6 @@
                         </div>
                     </section>
 
-                    <!-- CTA -->
                     <section class="dics-section">
                         <div class="dics-container">
                             <div class="dics-detail-cta-card">

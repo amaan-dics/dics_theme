@@ -8,7 +8,6 @@
             <div id="wrap" class="dics-home">
                 <main class="dics-main">
 
-                    <!-- HERO -->
                     <section class="dics-hero" id="top-saas">
                         <div class="dics-hero-grid services-hero-grid dics-container">
                             <div class="dics-hero-copy">
@@ -34,10 +33,49 @@
                                     </a>
                                 </div>
                             </div>
+
+                        <style>
+                            .dics-hv{position:relative;min-height:420px;display:flex;align-items:center;justify-content:center;font-family:inherit}
+                            .dics-hv *{box-sizing:border-box}
+                            .dics-hv-card{background:#fff;color:#1b1f2a;border:1px solid rgba(0,0,0,.08);border-radius:16px;box-shadow:0 24px 60px rgba(15,20,40,.18)}
+                            .dics-hv-bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid rgba(0,0,0,.07)}
+                            .dics-hv-bar i{width:10px;height:10px;border-radius:50%;background:#d9dce3}
+                            .dics-hv-bar i:first-child{background:var(--dics-red,#e5312b)}
+                            .dics-hv-chip{position:absolute;display:flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:#fff;color:#1b1f2a;font-size:13px;font-weight:600;border:1px solid rgba(0,0,0,.08);box-shadow:0 10px 28px rgba(15,20,40,.16);animation:dicsHvFloat 5s ease-in-out infinite}
+                            .dics-hv-chip .material-symbols-outlined{font-size:18px;color:var(--dics-red,#e5312b)}
+                            .dics-hv-chip.c2{animation-delay:-1.7s}.dics-hv-chip.c3{animation-delay:-3.2s}
+                            @keyframes dicsHvFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+                            @media (prefers-reduced-motion:reduce){.dics-hv-chip{animation:none}}
+                            @media (max-width:991.98px){.dics-hv{display:none}}
+                            .dics-hv-dash{width:390px;max-width:100%;padding:20px}
+                            .dics-hv-label{font-size:12px;color:#6b7280;text-transform:uppercase;letter-spacing:.06em}
+                            .dics-hv-mrr{font-size:30px;font-weight:700;margin:2px 0 14px;display:flex;align-items:center;gap:10px}
+                            .dics-hv-mrr small{font-size:12px;font-weight:600;color:#16a34a;background:rgba(22,163,74,.12);padding:3px 8px;border-radius:999px}
+                            .dics-hv-bars{display:flex;align-items:flex-end;gap:10px;height:130px}
+                            .dics-hv-bars b{flex:1;border-radius:6px 6px 0 0;background:#e6e8ee}
+                            .dics-hv-bars b:last-child{background:linear-gradient(180deg,#ff7a59,var(--dics-red,#e5312b))}
+                            .dics-hv-plans{display:flex;gap:8px;margin-top:16px}
+                            .dics-hv-plans span{flex:1;text-align:center;font-size:12px;font-weight:600;padding:7px 0;border-radius:8px;background:#f1f2f6}
+                            .dics-hv-plans span.on{background:rgba(229,49,43,.12);color:var(--dics-red,#e5312b)}
+                        </style>
+
+                        <div class="dics-hv" aria-hidden="true">
+                            <div class="dics-hv-card dics-hv-dash">
+                                <div class="dics-hv-label">Monthly recurring revenue</div>
+                                <div class="dics-hv-mrr">₹12.4L <small>▲ 18%</small></div>
+                                <div class="dics-hv-bars">
+                                    <b style="height:30%"/><b style="height:42%"/><b style="height:38%"/>
+                                    <b style="height:58%"/><b style="height:70%"/><b style="height:92%"/>
+                                </div>
+                                <div class="dics-hv-plans"><span>Starter</span><span class="on">Growth</span><span>Scale</span></div>
+                            </div>
+                            <div class="dics-hv-chip" style="top:5%;right:2%"><span class="material-symbols-outlined">cloud</span>Multi-Tenant</div>
+                            <div class="dics-hv-chip c2" style="top:46%;left:-3%"><span class="material-symbols-outlined">receipt_long</span>Auto Billing</div>
+                            <div class="dics-hv-chip c3" style="bottom:3%;right:6%"><span class="material-symbols-outlined">group_add</span>+248 new users</div>
+                        </div>
                         </div>
                     </section>
 
-                    <!-- CAPABILITIES -->
                     <section class="dics-section dics-section-light" id="capabilities">
                         <div class="dics-container">
                             <div class="dics-centered-heading">
@@ -100,7 +138,6 @@
                         </div>
                     </section>
 
-                    <!-- PROCESS -->
                     <section class="dics-section">
                         <div class="dics-container">
                             <div class="dics-section-heading">
@@ -136,7 +173,6 @@
                         </div>
                     </section>
 
-                    <!-- STACK -->
                     <section class="dics-section dics-section-surface">
                         <div class="dics-container">
                             <div class="dics-centered-heading">
@@ -157,7 +193,6 @@
                         </div>
                     </section>
 
-                    <!-- WHY -->
                     <section class="dics-detail-section dics-detail-section--dark">
                         <div class="dics-container">
                             <div class="dics-detail-section-head dics-detail-section-head--center">
@@ -185,7 +220,6 @@
                         </div>
                     </section>
 
-                    <!-- CONTACT -->
                     <section class="dics-detail-cta">
                         <div class="dics-container">
 

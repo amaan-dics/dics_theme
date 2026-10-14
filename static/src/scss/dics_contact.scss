@@ -1,58 +1,229 @@
+// ============================================================
+// CONTACT PAGE — soft themed background + single two-column card
+// ============================================================
+$contact-tint: #dc3545; // theme red; same hue already used for tints in this file
+
 .dics-contact-page {
-    padding-top: 1rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;      // header offset moved into padding so the background runs behind the header
+    padding-top: 6rem;  // 5rem header offset + the original 1rem
     padding-bottom: 6rem;
+    background: linear-gradient(180deg, #fff5f6 0%, #fafafb 40%, #ffffff 100%);
+
+    > .container {
+        position: relative;
+        z-index: 1;
+    }
 }
 
+// ── Decorative background ──────────────────────────────────────
+.contact-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    > span {
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+    }
+
+    // soft glow, top-right
+    &::before {
+        content: "";
+        position: absolute;
+        top: 2rem;
+        right: -10rem;
+        width: 38rem;
+        height: 30rem;
+        background: radial-gradient(closest-side, rgba($contact-tint, .13), transparent);
+        filter: blur(24px);
+    }
+
+    // sweeping wave, bottom-left
+    &::after {
+        content: "";
+        position: absolute;
+        left: -22%;
+        bottom: -17rem;
+        width: 95%;
+        height: 30rem;
+        border-radius: 50%;
+        transform: rotate(8deg);
+        background: linear-gradient(100deg,
+            rgba($contact-tint, .16) 0%,
+            rgba($contact-tint, .07) 50%,
+            rgba(24, 30, 40, .02) 100%);
+    }
+}
+
+.contact-bg-orb {
+    top: 4.5rem;
+    left: -8vw;
+    width: clamp(18rem, 32vw, 30rem);
+    aspect-ratio: 1;
+    background: radial-gradient(circle at 32% 70%,
+        rgba($contact-tint, .30) 0%,
+        rgba($contact-tint, .12) 55%,
+        rgba($contact-tint, .03) 100%);
+}
+
+.contact-bg-dot {
+    top: 11.5rem;
+    left: 25%;
+    width: 3rem;
+    height: 3rem;
+    background: rgba($contact-tint, .16);
+}
+
+.contact-bg-ring {
+    top: 9rem;
+    right: -26rem;
+    width: 52rem;
+    height: 52rem;
+    border: 1.5px solid rgba($contact-tint, .28);
+}
+
+// ── Hero (centered) ────────────────────────────────────────────
 .contact-hero {
-    max-width: 48rem;
-    margin-bottom: 4rem;
+    max-width: 44rem;
+    margin: 0 auto 4.5rem;
+    text-align: center;
 
     h1 {
-        font-size: clamp(2.75rem, 5vw, 4.5rem);
+        font-size: clamp(2.75rem, 5vw, 4.25rem);
         font-weight: 700;
         letter-spacing: -0.02em;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.25rem;
         color: $color-foreground;
     }
 
     p {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         line-height: 1.7;
         color: rgba(24, 30, 40, 0.7);
-        max-width: none;
-        margin: 0;
+        max-width: 36rem;
+        margin: 0 auto;
+    }
+
+    .contact-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: .6rem;
+        margin-bottom: 1.1rem;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        font-size: .8rem;
+        font-weight: 600;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: $color-primary;
+    }
+
+    .contact-eyebrow-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: $color-primary;
+        box-shadow: 0 0 0 4px rgba($contact-tint, .14);
+    }
+
+    .contact-response-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: .55rem;
+        margin-top: 1.75rem;
+        padding: .5rem 1rem;
+        font-size: .875rem;
+        font-weight: 500;
+        color: rgba(24, 30, 40, .75);
+        background: rgba(255, 255, 255, .85);
+        border: 1px solid rgba(24, 30, 40, .08);
+        border-radius: 999px;
+        box-shadow: 0 6px 18px rgba(24, 30, 40, .06);
+    }
+
+    .response-dot {
+        width: 8px;
+        height: 8px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: #16a34a;
     }
 }
 
-// ── Two-column layout ──────────────────────────────────────────
+// ── One card, two columns ──────────────────────────────────────
 .contact-layout {
     display: grid;
-    grid-template-columns: 5fr 7fr;  // sidebar slightly narrower than form
-    gap: 4rem;
-    align-items: start;
+    grid-template-columns: 5fr 7fr;
+    gap: 0;
+    align-items: stretch;
+    background: rgba(255, 255, 255, .88);
+    -webkit-backdrop-filter: blur(16px);
+            backdrop-filter: blur(16px);
+    border: 1px solid rgba(24, 30, 40, .06);
+    border-radius: 14px;
+    box-shadow: 0 30px 80px -24px rgba(24, 30, 40, .18), 0 6px 20px rgba(24, 30, 40, .04);
+    overflow: hidden;
 }
 
 @media (max-width: 1024px) {
     .contact-layout {
         grid-template-columns: 1fr;
-        gap: 3rem;
     }
+    .contact-sidebar {
+        border-right: 0 !important;
+        border-bottom: 1px solid rgba(24, 30, 40, .07);
+    }
+    .oe_website_login_container{
+            height: 70vh !important;
+        }
+}
+
+// ── Panel headings (shared by both columns) ────────────────────
+.contact-panel-eyebrow {
+    margin: 0 0 .9rem;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: $color-primary;
+}
+
+.contact-panel-title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: $color-foreground;
+}
+
+.contact-panel-text {
+    margin: 0 0 2.25rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(24, 30, 40, .65);
 }
 
 // ── Left sidebar ───────────────────────────────────────────────
 .contact-sidebar {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    padding: 3.25rem;
+    border-right: 1px solid rgba(24, 30, 40, .07);
 }
 
 // ── Map ────────────────────────────────────────────────────────
 .contact-map {
-    height: 320px;
-    border-radius: $radius-xl;
+    height: 240px;
+    margin-top: 2.5rem;
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid rgba(24, 30, 40, 0.08);
-    box-shadow: $shadow-lg;
 
     iframe {
         height: 100% !important;
@@ -74,31 +245,33 @@
     }
 }
 
-// ── Office details list ────────────────────────────────────────
+// ── Office details list (stacked, round icons) ─────────────────
 .contact-info-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 1.75rem;
 
     li {
         display: flex;
-        align-items: flex-start;
-        gap: 0.875rem;
+        align-items: center;
+        gap: 1.25rem;
     }
 
     h4 {
+        font-size: 1rem;
         font-weight: 700;
-        margin: 0 0 0.25rem;
+        margin: 0 0 0.2rem;
         color: $color-foreground;
     }
 
     p, a {
         margin: 0;
-        color: rgba(24, 30, 40, 0.7);
-        line-height: 1.6;
+        font-size: 1.05rem;
+        color: rgba(24, 30, 40, 0.75);
+        line-height: 1.55;
         text-decoration: none;
         transition: color 200ms ease;
     }
@@ -108,34 +281,26 @@
     }
 }
 
-@media (max-width: 600px) {
-    .contact-info-list {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-}
-
 .contact-info-icon {
-    width: 2.75rem;
-    height: 2.75rem;
-    border-radius: $radius-lg;
-    background: #dc35452e;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    background: rgba($contact-tint, .10);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     color: $color-primary;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 // ── Right: droppable form card ─────────────────────────────────
 .contact-form-card {
-    background: #ffffff;
-    border: 1px solid rgba(24, 30, 40, 0.08);
-    border-radius: $radius-xl;
-    padding: 3rem;
-    box-shadow: $shadow-lg;
-    min-height: 520px;
+    padding: 3.25rem;
+
+    .contact-panel-title {
+        margin-bottom: 2rem;
+    }
 
     // Empty-state hint visible in editor, invisible on frontend
     .oe_structure:empty::before {
@@ -184,14 +349,14 @@
     select.form-select,
     textarea.form-control {
         height: 3rem;
-        background: rgba(24, 30, 40, 0.02);
+        background: #ffffff;
         border: 1px solid rgba(24, 30, 40, 0.12);
-        border-radius: $radius-md;
+        border-radius: 12px;
         padding: 0 1rem;
         font-size: 1rem;
         color: $color-foreground;
         box-shadow: none;
-        transition: border-color 200ms ease, background 200ms ease;
+        transition: border-color 200ms ease, background 200ms ease, box-shadow 200ms ease;
 
         &:focus {
             background: #ffffff;
@@ -206,13 +371,14 @@
 
     textarea.form-control {
         height: auto;
-        min-height: 10rem;
+        min-height: 9.5rem;
         padding: 1rem;
         resize: none;
     }
 
     .s_website_form_submit {
         margin-top: 0.5rem;
+        text-align: left !important;
 
         .s_website_form_label {
             display: none;
@@ -220,23 +386,39 @@
     }
 
     .s_website_form_send {
-        width: 100%;
-        height: 3.5rem;
+        width: auto;
+        min-width: 11.5rem;
+        height: 3.25rem;
+        padding: 0 2rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border-radius: 999px;
-        font-size: 1.1rem;
+        gap: .6rem;
+        border-radius: 12px;
+        font-size: 1rem;
         font-weight: 600;
         border: none;
-        background: $color-primary;
+        background: linear-gradient(135deg, $color-primary 0%, #bb0112 100%);
         color: $color-primary-foreground;
-        transition: opacity 200ms ease, transform 200ms ease;
+        box-shadow: 0 10px 24px -8px rgba($contact-tint, .55);
+        transition: opacity 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+
+        &::after {
+            content: "\2192";
+            font-size: 1.15em;
+            line-height: 1;
+            transition: transform 200ms ease;
+        }
 
         &:hover {
-            opacity: 0.92;
+            opacity: 0.95;
             color: $color-primary-foreground;
             background: black !important;
+            transform: translateY(-1px);
+
+            &::after {
+                transform: translateX(3px);
+            }
         }
     }
 
@@ -248,8 +430,13 @@
 }
 
 @media (max-width: 720px) {
+    .contact-sidebar,
     .contact-form-card {
         padding: 2rem 1.5rem;
+    }
+
+    .contact-bg-dot {
+        display: none;
     }
 }
 
@@ -274,383 +461,307 @@ div#footer{
 
 // ============================================================
 // AUTH PAGES — Login / Reset Password
-// Deep Space theme matching .dics-footer
-// Target: .o_portal_wrap / .oe_login_form / #o_reset_password_form
-// ============================================================
+// Dark card + red accents, matched to the login design mock
+$auth-red: #e8333f;
+$auth-card-top: 11rem; // page top -> card top (assumes header overlays the page)
 
-body.o_login_page,
-body:has(#o_reset_password_form),
-body:has(.oe_login_form) {
-    background: #05070d !important;
+$auth-icon-mail: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238e949e' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='1.5' y='4' width='21' height='16' rx='3'/><path d='m2.5 6.5 9.5 7 9.5-7'/></svg>");
+$auth-icon-lock: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238e949e' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><rect x='3.5' y='10' width='17' height='11.5' rx='3'/><path d='M7.5 10V7.2a4.5 4.5 0 0 1 9 0V10'/><circle cx='12' cy='15.5' r='1'/></svg>");
+
+// ── Page background ────────────────────────────────────────────
+body:has(.oe_login_form),
+body:has(.oe_reset_password_form) {
+    background: #090c12 linear-gradient(180deg, #0a0e14 0%, #090c12 55%, #040508 100%) fixed !important;
 }
-.oe_login_form,.o_user_switch{
-    margin-top: 10rem !important;
-}
 
-// Full-page dark space background
-.o_login_page #wrapwrap,
-.o_login_page #wrap {
-    min-height: 100vh;
-    background: #05070d;
-    background-image:
-        radial-gradient(1.5px 1.5px at 8%  15%, rgba(255,255,255,0.85), transparent),
-        radial-gradient(1px   1px   at 22% 70%, rgba(255,255,255,0.60), transparent),
-        radial-gradient(1.5px 1.5px at 40% 28%, rgba(255,255,255,0.80), transparent),
-        radial-gradient(1px   1px   at 61% 80%, rgba(255,255,255,0.55), transparent),
-        radial-gradient(1.5px 1.5px at 78% 18%, rgba(255,255,255,0.75), transparent),
-        radial-gradient(1px   1px   at 90% 60%, rgba(255,255,255,0.60), transparent),
-        radial-gradient(1.5px 1.5px at 33% 45%, rgba(255,255,255,0.50), transparent),
-        radial-gradient(2px   2px   at 55% 30%, rgba(255,255,255,0.35), transparent);
-    position: relative;
+// ── Red diagonal light streaks (top-left / bottom-right) ───────
+.oe_website_login_container:has(.oe_login_form, .oe_reset_password_form) {
 
-    // Nebula glows — matching footer ::before
-    &::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background:
-            radial-gradient(ellipse 70% 55% at 10% 15%, rgba(201, 87, 98, 0.28) 0%, transparent 55%),
-            radial-gradient(ellipse 60% 45% at 90% 80%, rgba(201, 87, 98, 0.18) 0%, transparent 50%),
-            radial-gradient(ellipse 50% 40% at 50% 100%, rgba(255,255,255,0.05) 0%, transparent 45%),
-            radial-gradient(ellipse 40% 30% at 70%  5%,  rgba(120,140,255,0.06) 0%, transparent 50%);
-        pointer-events: none;
-        z-index: 0;
-    }
-
-    // Top edge light — matching footer ::after
+    &::before,
     &::after {
         content: "";
         position: fixed;
-        top: 0; left: 0; right: 0;
-        height: 1px;
-        background: linear-gradient(
-            90deg,
-            transparent 0%,
-            rgba(201, 87, 98, 0.45) 30%,
-            rgba(255,255,255,0.28) 50%,
-            rgba(201, 87, 98, 0.45) 70%,
-            transparent 100%
-        );
-        z-index: 1;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+        width: 460px;
+        height: 460px;
+        background: linear-gradient(135deg,
+            transparent 34.6%,
+            rgba(255, 255, 255, .045) 34.8%,
+            rgba(255, 255, 255, .022) 36.5%,
+            rgba(255, 255, 255, .03) 42%,
+            rgba($auth-red, .16) 46.4%,
+            rgba(255, 48, 64, .95) 47.7%,
+            rgba(255, 48, 64, .95) 47.95%,
+            rgba($auth-red, .14) 48.8%,
+            transparent 52%);
+        -webkit-mask-image: linear-gradient(45deg, #000 0%, #000 38%, transparent 88%);
+                mask-image: linear-gradient(45deg, #000 0%, #000 38%, transparent 88%);
+    }
+
+    &::after {
+        right: 0;
+        bottom: 0;
+        width: 520px;
+        height: 520px;
+        background: linear-gradient(135deg,
+            transparent 57.2%,
+            rgba(255, 70, 80, .06) 57.5%,
+            rgba(255, 60, 70, .03) 59%,
+            rgba($auth-red, .10) 64.5%,
+            rgba(255, 50, 66, .95) 65.8%,
+            rgba(255, 50, 66, .95) 66.1%,
+            rgba(200, 22, 40, .28) 67%,
+            rgba(150, 12, 30, .16) 80%,
+            rgba(90, 6, 18, .08) 100%);
+        -webkit-mask-image: linear-gradient(45deg, transparent 8%, #000 40%, #000 92%);
+                mask-image: linear-gradient(45deg, transparent 8%, #000 40%, #000 92%);
+    }
+
+    @media (max-width: 767.98px) {
+        &::before { width: 260px; height: 260px; }
+        &::after  { width: 300px; height: 300px; }
     }
 }
-.oe_login_form,.o_user_switch{
-    margin-top: 200px !important;
-    .btn-link{
-        color: white !important;
-        }
-    .oe_login_buttons{
-        gap: 1.25rem !important;
-        }
-    }
-// ── Card container ─────────────────────────────────────────────
+
+.o_user_switch {
+    margin-top: $auth-card-top;
+}
+
+// ── Card (shared: login + reset password) ──────────────────────
 .oe_login_form,
-#o_reset_password_form {
+.oe_reset_password_form {
     position: relative;
     z-index: 2;
+    width: calc(100% - 2rem);
+    max-width: 28rem !important;
+    margin: $auth-card-top auto 4rem;
+    padding: 2.75rem 2.65rem 3rem;
+    background: linear-gradient(180deg, #1a1e26 0%, #13171e 20%, #0e1118 40%, #0a0d13 60%, #080b0f 75%, #080b10 100%);
+    border: 1px solid rgba($auth-red, .28);
+    border-top-color: rgba(225, 70, 80, .65);
+    border-bottom-color: rgba($auth-red, .16);
+    border-radius: 28px;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, .65), 0 0 40px rgba($auth-red, .05);
 
+    @media (max-width: 480px) {
+        padding: 2rem 1.5rem 2.25rem;
 
-    // Odoo wraps these in a .col / .card — target the card
-    .card,
-    &.card {
-        background: linear-gradient(
-            145deg,
-            rgba(255,255,255,0.13) 0%,
-            rgba(255,255,255,0.06) 40%,
-            rgba(201, 87, 98,  0.06) 100%
-        ) !important;
-        border: 1px solid rgba(255,255,255,0.14) !important;
-        border-top-color: rgba(255,255,255,0.28) !important;
-        border-left-color: rgba(255,255,255,0.20) !important;
-        border-radius: 20px !important;
-        box-shadow:
-            0 0 0 1px rgba(201, 87, 98, 0.12),
-            0 8px 32px  rgba(0,0,0,0.55),
-            0 32px 64px rgba(0,0,0,0.35),
-            inset 0  1px 0 rgba(255,255,255,0.20),
-            inset 0 -1px 0 rgba(0,0,0,0.30) !important;
-        backdrop-filter: blur(20px) !important;
-        -webkit-backdrop-filter: blur(20px) !important;
-        overflow: hidden;
-
-        // Gloss sheen — top-half highlight
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 50%;
-            border-radius: 20px 20px 60% 60% / 20px 20px 40px 40px;
-            background: linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.02) 100%);
-            pointer-events: none;
-            z-index: 0;
-        }
     }
 
-    // Card body padding
-    .card-body {
-        padding: 2.5rem 2.25rem !important;
-        position: relative;
-        z-index: 1;
-    }
-}
-
-// ── Typography inside card ─────────────────────────────────────
-.oe_login_form,
-.oe_reset_password_form, .o_user_switch{
-    h2, h3, .card-title {
-        font-family: "Plus Jakarta Sans", sans-serif !important;
-        font-weight: 700 !important;
-        color: #ffffff !important;
-        letter-spacing: -0.02em;
-    }
-
-    p, .card-text {
-        color: rgba(255,255,255,0.45) !important;
-        font-size: 0.875rem;
-    }
-
+    // Labels
     label {
-        font-size: 0.75rem !important;
-        font-weight: 600 !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 27px;
+        margin-bottom: .55rem;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: .03em;
         text-transform: uppercase;
-        letter-spacing: 0.07em;
-        color: rgba(255,255,255,0.50) !important;
+        color: rgba(255, 255, 255, .8);
     }
 
-    // ── Form inputs ────────────────────────────────────────────
+    // Inputs
     .form-control {
-        height: 44px;
-        background: rgba(255,255,255,0.06) !important;
-        border: 1px solid rgba(255,255,255,0.10) !important;
-        border-radius: 10px !important;
-        color: rgba(255,255,255,0.88) !important;
-        font-size: 0.9375rem;
-        box-shadow: none !important;
-        transition: border-color 200ms ease, background 200ms ease, box-shadow 200ms ease;
+        height: 54px;
+        padding: 0 1rem;
+        font-size: 1.05rem;
+        color: #fff;
+        background-color: rgba(255, 255, 255, .05);
+        border: 1px solid rgba(255, 255, 255, .14);
+        border-radius: 14px;
+        box-shadow: none;
+        transition: border-color 200ms ease, background-color 200ms ease, box-shadow 200ms ease;
 
         &::placeholder {
-            color: rgba(255,255,255,0.22) !important;
+            color: rgba(255, 255, 255, .42);
         }
 
         &:focus {
-            background: rgba(201, 87, 98, 0.07) !important;
-            border-color: rgba(201, 87, 98, 0.60) !important;
-            box-shadow: 0 0 0 3px rgba(201, 87, 98, 0.15) !important;
-            color: rgba(255,255,255,0.92) !important;
+            color: #fff;
+            background-color: rgba(255, 255, 255, .07);
+            border-color: rgba($auth-red, .7);
+            box-shadow: 0 0 0 3px rgba($auth-red, .18);
+        }
+
+        // keep the dark field when Chrome autofills
+        &:-webkit-autofill {
+            -webkit-text-fill-color: #fff;
+            caret-color: #fff;
+            transition: background-color 600000s 0s;
         }
     }
 
-    // ── Forgot password / helper links ─────────────────────────
-    a:not(.btn) {
-        color: rgba(201, 87, 98, 0.88) !important;
-        text-decoration: none !important;
-        transition: color 200ms ease;
-
-        &:hover {
-            color: #e8747f !important;
-        }
-    }
-
-    // ── 3D Submit button ───────────────────────────────────────
-    .btn-primary,
-    [type="submit"].btn {
+    // Primary button
+    .btn-primary {
         width: 100%;
-        height: 48px;
-        font-family: "Plus Jakarta Sans", sans-serif !important;
-        font-size: 0.9375rem !important;
-        font-weight: 700 !important;
-        letter-spacing: 0.01em;
-        color: #ffffff !important;
-        border: none !important;
-        border-radius: 12px !important;
-        cursor: pointer;
-
-        background: linear-gradient(
-            160deg,
-            #c95762 0%,
-            #8b1a24 60%,
-            #5c0d14 100%
-        ) !important;
-
+        height: 56px;
+        padding: 0;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: .01em;
+        text-transform: capitalize; // "Log in" -> "Log In"
+        color: #fff !important;
+        border: 0 !important;
+        border-radius: 14px !important;
+        background: linear-gradient(171deg, #fb3d4c 0%, #c51326 75%, #b30519 100%) !important;
         box-shadow:
-            inset 0  1px 0 rgba(255,255,255,0.18),
-            inset 0 -1px 0 rgba(0,0,0,0.45),
-            0 4px 0 #3a0509,
-            0 6px 14px rgba(90,10,18,0.70),
-            0 2px 4px  rgba(0,0,0,0.50) !important;
+            inset 0 1px 0 rgba(255, 255, 255, .28),
+            inset 0 -2px 0 rgba(0, 0, 0, .28),
+            0 6px 20px rgba(225, 30, 50, .25) !important;
+        transition: filter 160ms ease, transform 160ms ease;
 
-        transform: translateY(0);
-        transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease !important;
-
-        &:hover {
-            filter: brightness(1.08);
-            box-shadow:
-                inset 0  1px 0 rgba(255,255,255,0.22),
-                inset 0 -1px 0 rgba(0,0,0,0.45),
-                0 4px 0 #3a0509,
-                0 8px 20px rgba(90,10,18,0.75),
-                0 2px 4px  rgba(0,0,0,0.50) !important;
-            color: #ffffff !important;
-        }
-
-        &:active,
-        &:focus:active {
-            transform: translateY(3px);
-            box-shadow:
-                inset 0  1px 0 rgba(255,255,255,0.18),
-                inset 0 -1px 0 rgba(0,0,0,0.45),
-                0 1px 0 #3a0509,
-                0 2px 6px  rgba(90,10,18,0.50),
-                0 1px 2px  rgba(0,0,0,0.40) !important;
-        }
+        &:hover  { filter: brightness(1.07); transform: translateY(-1px); }
+        &:active { filter: brightness(.95);  transform: translateY(0); }
     }
 
-    // ── Alerts / error messages ────────────────────────────────
+    // Alerts
+    .alert {
+        font-size: .9rem;
+        border-radius: 14px;
+    }
+
     .alert-danger {
-        background: rgba(201, 87, 98, 0.12) !important;
-        border: 1px solid rgba(201, 87, 98, 0.30) !important;
-        border-radius: 10px !important;
-        color: #e8a0a6 !important;
+        color: #ff8a93;
+        background: rgba($auth-red, .12);
+        border: 1px solid rgba($auth-red, .35);
     }
 
     .alert-success {
-        background: rgba(50, 200, 120, 0.10) !important;
-        border: 1px solid rgba(50, 200, 120, 0.25) !important;
-        border-radius: 10px !important;
-        color: rgba(140, 230, 180, 0.90) !important;
+        color: rgba(140, 230, 180, .9);
+        background: rgba(50, 200, 120, .10);
+        border: 1px solid rgba(50, 200, 120, .25);
     }
 }
 
-// ── Odoo portal header / breadcrumb — hide or darken ──────────
-.o_login_page .o_portal_wrap > .o_portal_navbar {
-    background: rgba(5, 7, 13, 0.85) !important;
-    border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+// ── Login-only pieces ──────────────────────────────────────────
+.oe_login_form {
+    // Logo (inline style caps it at 220px, so !important)
+    .field-login > .text-center {
+        margin-bottom: 2.9rem !important;
 
-    .navbar-brand, .nav-link, .breadcrumb-item, .breadcrumb-item a {
-        color: rgba(255,255,255,0.55) !important;
-    }
-}
-// ============================================================
-// WHATSAPP HERO — RESPONSIVE LAYOUT FIX
-// ============================================================
-
-.dics-whatsapp-page {
-
-    // ── Hero layout ─────────────────────────────────────────
-    .dics-hero.style-greenish .dics-container {
-        display: grid;
-        grid-template-rows: auto auto auto auto; // copy | image | divider | metrics
-        gap: 0;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 320px !important;
+            height: auto;
+            margin: 0 auto;
+        }
     }
 
-    .dics-hero-copy {
-        width: 100%;
+    // Field spacing
+    > .mb-3 {
+        margin-bottom: 1.6rem !important;
     }
 
-    // ── Image ────────────────────────────────────────────────
-    .dics-hero-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    > p.text-center {
+        margin: 0 !important; // empty <p class="mt-2 text-center">
+    }
+
+    // "Choose a user" chip (top-right of the Email row)
+    .o_user_switch_btn {
+        display: inline-flex;
         align-items: center;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-    }
+        height: 27px;
+        padding: 0 11px !important;
+        margin: 0 !important;
+        font-size: .875rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        text-transform: none;
+        text-decoration: none;
+        color: #fff;
+        background: rgba(0, 0, 0, .35);
+        border: 1px solid rgba($auth-red, .45);
+        border-radius: 999px;
+        transition: border-color 200ms ease, background-color 200ms ease;
 
-    .dics-hero-image__img {
-        display: block;
-        width: 100%;
-        max-width: 900px;
-        height: auto;
-        max-height: 420px;
-        object-fit: contain;
-        margin: 0 auto;
-    }
-
-    // ── Metrics grid ─────────────────────────────────────────
-    .dics-hero-metrics-grid {
-        // Bootstrap row handles columns via col-6 col-md-3 already in XML
-        // Just ensure numbers don't overflow on small screens
-        .dics-metric-num {
-            font-size: clamp(1.25rem, 5vw, 2.5rem) !important;
-            word-break: break-word;
+        &:hover {
+            color: #fff;
+            background: rgba($auth-red, .14);
+            border-color: rgba($auth-red, .8);
         }
     }
 
-    // ── Tablet (768px – 991px) ───────────────────────────────
-    @media (min-width: 768px) and (max-width: 991.98px) {
-        .dics-hero-image__img {
-            max-width: 720px;
-            max-height: 340px;
+    // "Reset Password" link (top-right of the Password row)
+    label .btn-link {
+        padding: 0;
+        font-size: .9rem;
+        font-weight: 500;
+        letter-spacing: .04em;
+        text-decoration: none;
+        color: rgba(255, 255, 255, .92);
+
+        &:hover { color: #fff; text-decoration: underline; }
+    }
+
+    // Buttons block
+    .oe_login_buttons {
+        gap: 1.65rem !important;
+        padding-top: 1.25rem !important;
+
+        .o_login_auth:empty {
+            display: none;
+        }
+
+        // "Log in as superuser"
+        .btn-link {
+            height: 54px;
+            padding: 0;
+            font-size: 1.05rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(235, 60, 80, .07);
+            border: 1.5px solid $auth-red;
+            border-radius: 14px;
+            box-shadow: 0 0 14px rgba($auth-red, .18), inset 0 0 12px rgba($auth-red, .06);
+            transition: background-color 200ms ease, box-shadow 200ms ease;
+
+            &:hover {
+                color: #fff;
+                background: rgba($auth-red, .16);
+                box-shadow: 0 0 18px rgba($auth-red, .32), inset 0 0 12px rgba($auth-red, .08);
+            }
         }
     }
 
-    // ── Desktop (≥992px) — two-column split ─────────────────
-    @media (min-width: 992px) {
-        .dics-hero.style-greenish .dics-container {
-            // Left: copy | Right: image, stacked vertically on right
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;  // [copy + metrics] left, [image] right
-            grid-template-areas:
-                "copy  image"
-                "divider divider"
-                "metrics metrics";
-            align-items: center;
-            gap: 0 3rem;
-        }
+    // Mail / lock icons inside the inputs (no template change needed)
+    .field-login,
+    .mb-3:has(> #password) {
+        position: relative;
 
-        .dics-hero-copy {
-            grid-area: copy;
-            align-self: center;
-        }
-
-        .dics-hero-image {
-            grid-area: image;
-            margin-top: 0;
-            margin-bottom: 0;
-            align-self: center;
-        }
-
-        .dics-hero-image__img {
-            max-width: 100%;
-            max-height: 350px;
-        }
-
-        .dics-hero-divider {
-            grid-area: divider;
-        }
-
-        .dics-hero-metrics-grid {
-            grid-area: metrics;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 13px;
+            bottom: 15px; // input is 54px tall -> 24px icon centered
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            pointer-events: none;
         }
     }
 
-    // ── Mobile (< 768px) ─────────────────────────────────────
-    @media (max-width: 767.98px) {
-        .dics-hero-image__img {
-            max-width: 100%;
-            max-height: 280px;
-            order: -2;
-        }
+    .field-login::after            { background-image: $auth-icon-mail; }
+    .mb-3:has(> #password)::after  { background-image: $auth-icon-lock; }
 
-        .dics-hero-metrics-grid .col-6 {
-            // keep 2-col on small phones, numbers won't wrap
-        }
-    }
-
-    // ── Small mobile (< 480px) ───────────────────────────────
-    @media (max-width: 479.98px) {
-        .dics-hero-image__img {
-            max-height: 100%;
-        }
-
-    .dics-hero-image{
-        order: -2;
-        }
-
-
+    #login,
+    #password {
+        padding-left: 54px;
     }
 }
+.oe_reset_password_form a{
+    color: #c51326 !important;;
+    }
 // ─────────────────────────────────────────────────────────
 // Hero Visual — Capability Card
 // ─────────────────────────────────────────────────────────
@@ -922,3 +1033,115 @@ body:has(.oe_login_form) {
     color: var(--dics-text-muted, #64748b);
     letter-spacing: 0.04em;
 }
+
+// ── Default "Thank You" page (/contactus-thank-you) ───────────
+// Odoo's own page, restyled. Scoped by its markup (paper-plane icon) so no other page is touched.
+#wrap:has(.s_text_block .fa-paper-plane) {
+    margin-top: 80px;
+    > .s_text_block {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+    }
+
+    .row {
+        align-items: center;
+        row-gap: 2.5rem;
+    }
+
+    // Left: confirmation card
+    .col-lg-6 > .d-inline-block {
+        display: block !important;
+        padding: 3rem 2.5rem !important;
+        background: #ffffff;
+        border: 1px solid rgba(24, 30, 40, 0.08);
+        border-radius: $radius-xl;
+        box-shadow: $shadow-lg;
+    }
+
+    .fa-paper-plane {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-bottom: 1.5rem !important;
+        background: #dc35452e !important;
+        color: $color-primary !important;
+        font-size: 1.75rem;
+        box-shadow: 0 0 0 0.6rem #dc354514;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: clamp(2rem, 4vw, 3rem);
+        letter-spacing: -0.02em;
+        color: $color-foreground;
+    }
+
+    .lead {
+        font-size: 1.15rem;
+        line-height: 1.7;
+        font-weight: 400;
+        color: rgba(24, 30, 40, 0.7);
+    }
+
+    .col-lg-6 > .d-inline-block > a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+        padding: 0.75rem 1.75rem;
+        border-radius: 999px;
+        background: $color-primary;
+        color: #ffffff;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 200ms ease, box-shadow 200ms ease;
+
+        &::after { content: "→"; }
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px #dc354540;
+        }
+    }
+
+    // Right: company details
+    .col-lg-4 {
+        h5 {
+            margin-bottom: 1.25rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: $color-primary;
+        }
+
+        li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(24, 30, 40, 0.08);
+            color: rgba(24, 30, 40, 0.7);
+
+            &:last-child { border-bottom: 0; }
+        }
+
+        .fa {
+            color: $color-primary;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        > .s_text_block {
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+        }
+
+        .col-lg-6 > .d-inline-block {
+            padding: 2rem 1.25rem !important;
+        }
+    }
+}
+
+#fs-05{
+    font-size: 0.5rem !important;
+    }

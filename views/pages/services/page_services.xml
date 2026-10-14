@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-
-    <!-- ================================================================
-         Reusable service text block (shared by desktop + mobile layouts)
-         No website_id — this is a pure utility snippet, not a page.
-    ================================================================ -->
     <record id="dics_service_text" model="ir.ui.view">
         <field name="name">DataInteger: service text block</field>
         <field name="type">qweb</field>
@@ -56,8 +51,6 @@
                 <t t-call="website.layout">
 
                     <t t-set="additional_title">Services — DataInteger Consultancy</t>
-
-                    <!-- Services data mapped to routes from main.py -->
                     <t t-set="all_services" t-value="[
                         {
                             'id': 'odoo-erp',
@@ -114,13 +107,8 @@
                             'features': ['SLA Response Guarantee', 'Performance Audits', 'Odoo Upgrades', 'Team Training'],
                         },
                     ]"/>
-
                     <div id="wrap" class="dics-services-page">
-
-                        <!-- Scroll progress (handled by dics_nav.js) -->
                         <div id="scrollProgress" class="dics-scroll-progress" aria-hidden="true"/>
-
-                        <!-- ── HERO ── -->
                         <section class="dics-svc-hero">
                             <div class="dics-svc-hero__glow"/>
                             <div class="dics-svc-hero__dotgrid"/>
@@ -143,34 +131,25 @@
                             </div>
                         </section>
 
-                        <!-- ── SERVICE PANELS ── -->
                         <section class="dics-svc-list">
                             <div class="dics-container">
                                 <t t-foreach="all_services" t-as="svc" t-key="svc_index">
-
-                                    <!-- Desktop: sticky scroll-driven expanding panel -->
                                     <div class="dics-svc-scroll"
                                          t-attf-id="#{svc['id']}"
                                          t-att-data-index="svc_index">
                                         <div class="dics-svc-scroll__sticky">
                                             <div t-attf-class="dics-svc-scroll__row #{'is-reverse' if svc_index % 2 else ''}">
 
-                                                <!-- Visual panel -->
                                                 <div class="dics-svc-scroll__visual">
                                                     <div class="dics-svc-scroll__glow"/>
                                                     <div class="dics-svc-scroll__dotgrid"/>
 
-                                                    <!-- Large background icon -->
                                                     <div class="dics-svc-scroll__icon-bg">
                                                         <span t-esc="svc['icon']"/>
                                                     </div>
-
-                                                    <!-- Corner badge -->
                                                     <div t-attf-class="dics-svc-scroll__badge #{'is-reverse' if svc_index % 2 else ''}">
                                                         <span t-esc="svc['icon']"/>
                                                     </div>
-
-                                                    <!-- Hover overlay with full copy -->
                                                     <div t-attf-class="dics-svc-scroll__overlay #{'is-reverse' if svc_index % 2 else ''}">
                                                         <div class="dics-svc-scroll__overlay-content">
                                                             <span class="dics-svc-scroll__overlay-eyebrow" t-esc="svc['subtitle']"/>
@@ -190,7 +169,6 @@
                                                     </div>
                                                 </div>
 
-                                                <!-- Text panel -->
                                                 <div class="dics-svc-scroll__text-wrap">
                                                     <t t-call="dics_theme.dics_service_text"/>
                                                 </div>
@@ -199,7 +177,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- Mobile: static card + text -->
                                     <div class="dics-svc-mobile dics-reveal">
                                         <div class="dics-svc-mobile__visual">
                                             <div class="dics-svc-mobile__icon-bg">
@@ -217,8 +194,6 @@
                                 </t>
                             </div>
                         </section>
-
-                        <!-- ── CTA ── -->
                         <section class="dics-svc-cta-section mx-auto w-75">
                             <div class="dics-container">
                                 <div class="dics-svc-cta-card dics-reveal">
@@ -238,9 +213,6 @@
                                 </div>
                             </div>
                         </section>
-
-
-
                     </div>
 
                 </t>

@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!--
-        WHY website_id here?
-
-        Without website_id, this template is visible to and editable from
-        every website in the database. Adding website_id="dics_theme.dics_website"
-        tells Odoo's website module to only serve/edit this template in the
-        context of this specific website.
-
-        This is what makes the Website Editor, SEO panel, and page manager
-        in the backend correctly scope this page to DataInteger's website only.
-
-        DO NOT touch anything inside <t t-call="website.layout"> — that is
-        your existing content, completely preserved.
-    -->
     <template id="dics_home"
               name="DataInteger Home"
               key="dics_theme.dics_home"
@@ -27,17 +13,16 @@
             </t>
 
             <div id="wrap" class="dics-home">
-
-                <!-- Scroll progress -->
                 <div id="scrollProgress" class="dics-scroll-progress" aria-hidden="true"></div>
 
                 <main class="dics-main">
 
-
-
-
                     <section id="home" class="dics-hero">
-
+                        <div class="dics-hero-bg" aria-hidden="true">
+                            <span class="dics-hero-bg__rings"/>
+                            <span class="dics-hero-bg__beams"/>
+                            <span class="dics-hero-bg__band"/>
+                        </div>
                         <div class="dics-hero-grid services-hero-grid dics-container">
 
                             <div class="dics-hero-copy ">
@@ -61,7 +46,7 @@
                                 </p>
 
                                 <div class="dics-actions">
-                                    <a href="#contact" class="dics-btn dics-btn-primary">
+                                    <a href="/contact" class="dics-btn dics-btn-primary">
                                         <span>Talk to Us</span>
                                         <span class="dics-arrow">→</span>
                                     </a>
@@ -89,21 +74,15 @@
 
                             </div>
 
-                            <!-- Hero visual — capability card carousel -->
                             <div class="dics-hero-visual dics-delay-2">
-
-                                <!-- Floating top-right badge -->
                                 <div class="dics-hero-badge dics-hero-badge--top">
                                     <span class="dics-hero-badge__dot dics-hero-badge__dot--green"/>
                                     <span class="dics-hero-badge__label">Capabilities</span>
                                     <span class="dics-hero-badge__count">01 / 06</span>
                                 </div>
 
-                                <!-- Main capability card -->
-                                <!-- Main capability card carousel -->
                                 <div class="dics-hero-cap-card">
 
-                                    <!-- Card header -->
                                     <div class="dics-hero-cap-card__header">
                                         <div class="dics-hero-cap-card__icon">
                                             <span class="material-symbols-outlined">account_tree</span>
@@ -116,7 +95,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- Card body -->
                                     <h3 class="dics-hero-cap-card__title">Odoo ERP</h3>
 
                                     <p class="dics-hero-cap-card__desc">
@@ -125,7 +103,6 @@
                                         organization actually works.
                                     </p>
 
-                                    <!-- Two metric rows -->
                                     <div class="dics-hero-cap-card__metrics">
 
                                         <div class="dics-hero-cap-card__metric">
@@ -193,10 +170,6 @@
 
                     </section>
 
-
-
-
-
                     <section id="trust" class="dics-section dics-section-light">
 
                         <div class="dics-container">
@@ -257,10 +230,6 @@
                         </div>
 
                     </section>
-
-
-
-
 
                     <section id="about" class="dics-section dics-section-surface">
 
@@ -329,10 +298,6 @@
                         </div>
 
                     </section>
-
-
-
-
 
                     <section id="capabilities" class="dics-section dics-section-light">
 
@@ -612,122 +577,91 @@
 
                     </section>
 
-
-
-
-
                     <section id="architecture" class="dics-section dics-section-surface">
-
                         <div class="dics-container">
-
                             <div class="dics-centered-heading ">
-
                                 <span class="dics-eyebrow">
                                     One Connected Business System
                                 </span>
-
                                 <h2>
                                     One connected system.
                                     Built for your business.
                                 </h2>
-
                                 <p>
                                     Odoo is the main business system. DataInteger connects
                                     your business work and data so everything works together.
                                 </p>
-
                             </div>
 
                             <div class="dics-module-grid">
-
                                 <article class="dics-module-card ">
                                     <div class="dics-module-icon">◎</div>
                                     <h3>Customers &amp; Inquiries</h3>
                                     <p>Track leads, follow sales, and collect WhatsApp &amp; email messages.</p>
                                 </article>
-
                                 <article class="dics-module-card  dics-delay-1">
                                     <div class="dics-module-icon">▤</div>
                                     <h3>Sales &amp; Quotes</h3>
                                     <p>Quick e-signatures, pricing rules, and customer approvals online.</p>
                                 </article>
-
                                 <article class="dics-module-card  dics-delay-2">
                                     <div class="dics-module-icon">⌁</div>
                                     <h3>Finance</h3>
                                     <p>Bank updates, multiple currencies, profit and loss, and GST.</p>
                                 </article>
-
                                 <article class="dics-module-card ">
                                     <div class="dics-module-icon">▦</div>
                                     <h3>Inventory</h3>
                                     <p>Track lots and serial numbers, refill stock, and see warehouse stock.</p>
                                 </article>
-
                                 <article class="dics-module-card  dics-delay-1">
                                     <div class="dics-module-icon">⌂</div>
                                     <h3>Manufacturing</h3>
                                     <p>Product parts lists, work steps, quality checks, and maintenance.</p>
                                 </article>
-
                                 <article class="dics-module-card  dics-delay-2">
                                     <div class="dics-module-icon">↗</div>
                                     <h3>Purchasing</h3>
                                     <p>Automatic quote requests, supplier lists, receipt checks, and order matching.</p>
                                 </article>
-
                                 <article class="dics-module-card ">
                                     <div class="dics-module-icon">◇</div>
                                     <h3>HR &amp; Salary</h3>
                                     <p>Attendance, leave, reviews, team planning, and salary processing.</p>
                                 </article>
-
                                 <article class="dics-module-card  dics-delay-1">
                                     <div class="dics-module-icon">☷</div>
                                     <h3>Projects &amp; Work</h3>
                                     <p>Time tracking, project steps, team planning, and customer portals.</p>
                                 </article>
-
                                 <article class="dics-module-card  dics-delay-2">
                                     <div class="dics-module-icon">▣</div>
                                     <h3>Billing &amp; POS</h3>
                                     <p>Checkout that can work offline, barcode scanning, and register management.</p>
                                 </article>
-
                                 <article class="dics-module-card dics-module-card-accent ">
                                     <div class="dics-module-icon">◫</div>
                                     <h3>Live Business Reports</h3>
                                     <p>Simple dashboards, profit margin, cash flow, and stock movement.</p>
                                 </article>
-
                             </div>
 
                         </div>
 
                     </section>
 
-
-
-
-
                     <section id="workflow" class="dics-workflow">
 
                         <div class="dics-container">
-
                             <div class="dics-workflow-heading ">
-
                                 <span class="dics-eyebrow">Less Repeated Work</span>
-
                                 <h2>Automate the steps between tasks.</h2>
-
                                 <p>
                                     See business information move between teams without extra manual work.
                                 </p>
-
                             </div>
 
                             <div class="dics-pipeline">
-
                                 <article class="dics-pipeline-card">
                                     <small>01 • INBOUND</small>
                                     <span class="dics-pipeline-dot"/>
@@ -814,14 +748,9 @@
 
                     </section>
 
-
-
-
-
                     <section id="process" class="dics-section dics-section-light">
 
                         <div class="dics-container">
-
                             <div class="dics-section-heading ">
 
                                 <div>
@@ -888,10 +817,6 @@
                         </div>
 
                     </section>
-
-
-
-
 
                     <section id="industries" class="dics-section dics-section-surface">
 
@@ -999,10 +924,6 @@
 
                     </section>
 
-
-
-
-
                     <section id="case-studies" class="dics-section dics-section-light">
 
                         <div class="dics-container">
@@ -1108,10 +1029,6 @@
 
                     </section>
 
-
-
-
-
                     <section id="insights" class="dics-section dics-section-surface">
 
                         <div class="dics-container">
@@ -1167,10 +1084,6 @@
                         </div>
 
                     </section>
-
-
-
-
 
                     <section id="faq" class="dics-section dics-section-light">
 
@@ -1242,8 +1155,6 @@
                     </section>
 
                 </main>
-
-                <!-- Odoo's native footer remains untouched. -->
 
 
             </div>
